@@ -1,1 +1,1 @@
-# hct_gold_mobil
+# hct_gold_mobile
