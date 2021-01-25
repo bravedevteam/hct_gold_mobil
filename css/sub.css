@@ -1,0 +1,38 @@
+.section { padding:0; }
+.section+.section { margin-top:10px; }
+
+h1.title { padding:25px; text-align:center; font-size:17px; font-weight:700; }
+h3.title { padding:5px 11px; font-size:15px; font-weight:400; }
+
+
+/* Input */
+.inputBasic { width:100%; height:50px; padding:0 15px; position:relative; background:#fff; border:1px solid #d5d5d5; border-radius:5px; color:#000; font-size:15px; z-index:1; }
+.inputBasic::placeholder { color:#ccc; }
+input[type="password"].inputBasic { padding-right:50px; }
+.inputPassword { position:relative; }
+.inputPassword input.danger { border-color:#ff6363; }
+.btnHiddenPass { width:50px; height:50px; position:absolute; right:0; top:0; background:url('../images/common/iconPassword.png') center center no-repeat; background-size:20px auto; z-index:5; }
+
+
+/* Input Certify */
+.boxInputCertify { padding-right:98px; position:relative; }
+.boxInputCertify:after { content:''; display:block; clear:both; visibility:visible; }
+.boxInputCertify .btnCertify { width:95px; height:50px; position:absolute; right:0; top:0; border:1px solid #2750f2; border-radius:5px; font-size:17px; color:#2750f2; }
+
+
+/* Guide Text */
+.guide-text { display:block; margin-top:3px; color:#999; font-weight:300; }
+.guide-text.danger { color:#ff6363; }
+
+
+/* Agree List */
+.boxBasicAgree { margin-top:50px; }
+.boxBasicAgree input[type='checkbox'] { position:absolute; left:-99999px; top:0; opacity:0; }
+.boxBasicAgree label { display:block; padding-left:27px; background-image:url('../images/common/iconCheckBasic.png'); background-position:left 2px; background-repeat:no-repeat; background-size:20px auto; line-height:22px; font-size:15px; }
+.boxBasicAgree input[type='checkbox']:checked + label { background-image:url('../images/common/iconCheckBasic_on.png'); }
+.boxBasicAgree .with--detail label { margin-right:30px; }
+.boxBasicAgree a.detail { position:absolute; right:0; top:0; line-height:22px; font-size:15px; color:#999; }
+.boxBasicAgree .areaAllCheck { margin-bottom:15px; position:relative; }
+
+.boxBasicAgree .areaCheck .item { position:relative; }
+.boxBasicAgree .areaCheck .item+.item { margin-top:15px; }
