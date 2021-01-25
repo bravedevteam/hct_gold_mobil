@@ -70,30 +70,5 @@
 			<button type="button" class="btnBasic">가입하기</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
 		</div>
 	</div>
-	<script type="text/javascript">
-	$(function(){
-		$(".areaAllCheck input[type='checkbox']").click(function(){
-			if($(this).prop("checked") == false){
-				$(this).parents(".boxBasicAgree").find(".item").children("input[type='checkbox']").prop("checked", "");
-			}else{
-				$(this).parents(".boxBasicAgree").find(".item").children("input[type='checkbox']").prop("checked", "checked");
-			}
-		});
-
-		
-		$(".areaCheck input[type='checkbox']").click(function(){
-			var $parents = $(this).parents(".boxBasicAgree");
-			var $parent = $(this).parents(".areaCheck");
-			var itemLen = $parent.find("input[type='checkbox']").length;
-			var checkLen = $parent.find("input[type='checkbox']:checked").length;
-			
-			if(itemLen == checkLen){
-				$parents.find(".areaAllCheck").children("input[type='checkbox']").prop("checked", "checked");
-			}else{
-				$parents.find(".areaAllCheck").children("input[type='checkbox']").prop("checked", "");
-			}
-		});
-	});
-	</script>
 </body>
 </html>
