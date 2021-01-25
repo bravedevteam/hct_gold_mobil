@@ -86,8 +86,7 @@
 			var $parent = $(this).parents(".areaCheck");
 			var itemLen = $parent.find("input[type='checkbox']").length;
 			var checkLen = $parent.find("input[type='checkbox']:checked").length;
-
-			console.log("itemLen : " + itemLen + ", checkLen : " + checkLen);
+			
 			if(itemLen == checkLen){
 				$parents.find(".areaAllCheck").children("input[type='checkbox']").prop("checked", "checked");
 			}else{
