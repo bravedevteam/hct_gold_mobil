@@ -1,9 +1,67 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    font-weight: 100;
+    src: local('SpoqaHanSansNeo-Thin'),
+    url('../font/SpoqaHanSansNeo-Thin.woff2') format('woff2'),
+    url('../font/SpoqaHanSansNeo-Thin.woff') format('woff'),
+    url('../font/SpoqaHanSansNeo-Thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    font-weight: 300;
+    src: local('SpoqaHanSansNeo-Light'),
+    url('../font/SpoqaHanSansNeo-Light.woff2') format('woff2'),
+    url('../font/SpoqaHanSansNeo-Light.woff') format('woff'),
+    url('../font/SpoqaHanSansNeo-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    font-weight: 400;
+    src: local('SpoqaHanSansNeo-Regular'),
+    url('../font/SpoqaHanSansNeo-Regular.woff2') format('woff2'),
+    url('../font/SpoqaHanSansNeo-Regular.woff') format('woff'),
+    url('../font/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    font-weight: 500;
+    src: local('SpoqaHanSansNeo-Medium'),
+    url('../font/SpoqaHanSansNeo-Medium.woff2') format('woff2'),
+    url('../font/SpoqaHanSansNeo-Medium.woff') format('woff'),
+    url('../font/SpoqaHanSansNeo-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    font-weight: 700;
+    src: local('SpoqaHanSansNeo-Bold'),
+    url('../font/SpoqaHanSansNeo-Bold.woff2') format('woff2'),
+    url('../font/SpoqaHanSansNeo-Bold.woff') format('woff'),
+    url('../font/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SFProDisplay';
+    font-weight: 400;
+    src: local('SF-Pro-Display-Regular'),
+    url('../font/SF-Pro-Display-Regular.woff2') format('woff2'),
+    url('../font/SF-Pro-Display-Regular.woff') format('woff'),
+    url('../font/SF-Pro-Display-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SFProDisplay';
+    font-weight: 700;
+    src: local('SF-Pro-Display-Bold'),
+    url('../font/SF-Pro-Display-Bold.woff2') format('woff2'),
+    url('../font/SF-Pro-Display-Bold.woff') format('woff'),
+    url('../font/SF-Pro-Display-Bold.ttf') format('truetype');
+}
+
 /* common */
 * {margin:0; padding:0; box-sizing: border-box; list-style:none; text-decoration:none;
     outline: none; -webkit-text-size-adjust: none;}
-html, body { width: 100%; position: relative; font-size:12px; font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; letter-spacing: -0.05em; }
+html, body { width: 100%; position: relative; font-size:12px; font-family: 'SpoqaHanSansNeo', 'Sans-serif'; letter-spacing: -0.05em; line-height:1.4; font-weight:400; color:#000; }
 ul>li>a { text-decoration:none; }
 a {color: inherit;}
 table { border-collapse: collapse; }
@@ -20,30 +78,42 @@ button {box-sizing: border-box; border: 0; background-color: transparent; cursor
 textarea {box-sizing: border-box; resize: none;}
 select {-webkit-border-radius: 0; -webkit-appearance: none; -moz-appearance: none; -webkit-appearance: none; appearance: none; box-sizing: border-box; cursor: pointer;}
 select::-ms-expand {display: none;}
+img { max-width:100%; }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
 
-.taLeft { text-align:left; }
-.taCenter { text-align:center; }
-.taRight { text-align:right; }
 
-/*
+/* Text Align */
+.ta-l { text-align:left !important; }
+.ta-c { text-align:center !important; }
+.ta-r { text-align:right !important; }
 
-폰트 _ 12, 14, 16, 18, 20, 30
-박스 _ color, line, arrow
-네모 박스
-모서리 둥근 박스 _ 1, 2
 
-*/
+/* Padding */
+.pt0 { padding-top:0 !important; }
+.pt10 { padding-top:10px !important; }
+.pt20 { padding-top:20px !important; }
+.pt30 { padding-top:30px !important; }
+.pt40 { padding-top:40px !important; }
+.pt50 { padding-top:50px !important; }
+.pb0 { padding-bottom:0 !important; }
+.pb10 { padding-bottom:10px !important; }
+.pb20 { padding-bottom:20px !important; }
+.pb30 { padding-bottom:30px !important; }
+.pb40 { padding-bottom:40px !important; }
+.pb50 { padding-bottom:50px !important; }
+
 
 /* LAYOUT */
-#header { height:50px; position:relative; }
-#header h1 { width:100px; height:50px; line-height:50px; text-align:center; }
-#header .btnMypage { width:30px; height:30px; position:absolute; right:10px; top:10px; background:url('https://via.placeholder.com/60x60'); background-size:100% auto; font-size:0; text-indent:-99999px; }
+#header { padding:5px 15px 6px; position:relative; background:#fff; }
+#header h1 { width:104px; height:36px; background:url('../images/common/logo.png') no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+#header .btnMypage { width:38px; height:36px; position:absolute; right:15px; top:5px; background:url('../images/common/btmMypage.png') center center no-repeat; background-size:18px auto; font-size:0; text-indent:-99999px; }
 
 #container { padding:0 15px; }
 
 .box { position:relative; }
+.section { padding:55px 0; margin-bottom:8px; background:#fff; }
+.section:last-child { margin-bottom:0; }
 
 .radius10 { border-radius:10px; }
 .radius20 { border-radius:20px; }
@@ -52,17 +122,16 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .bgBlue { background:#00f; }
 .bgYellow { background:#ff0; }
 
-#footer { padding:0 15px; position:relative; }
+#footer { padding:22px 15px; position:relative; }
 #footer:after { content:''; display:block; clear:both; visibility:visible; }
-#footer h2 { margin-bottom:10px; float:left; font-size:16px; }
-#footer ul.privacy { padding-top:2px; float:right; }
+#footer h2 { width:84px; height:42px; margin-bottom:26px; float:left; background:url('../images/common/logo_f.png') no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+#footer ul.privacy { float:right; }
 #footer ul.privacy li { float:left; position:relative; }
-#footer ul.privacy li+li:after { content:''; width:1px; height:10px; position:absolute; left:0; top:50%; margin-top:-5px; background:#ddd; }
-#footer ul.privacy li a { display:block; padding:0 10px; }
+#footer ul.privacy li+li:after { content:''; width:1px; height:12px; position:absolute; left:0; top:50%; margin-top:-6px; background:#999; }
+#footer ul.privacy li a { display:block; padding:0 6px; color:#999; font-weight:300; }
 #footer ul.privacy li:first-child a { padding-left:0; }
 #footer ul.privacy li:last-child a { padding-right:0; }
 
-#address { clear:both; font-style:normal; }
+#address { clear:both; font-style:normal; text-align:center; color:#999; font-weight:300; }
 
-
-h3.title { font-size:20px; color:#000; font-weight:700; }
+h3.title { margin-bottom:16px; padding:0 15px; font-size:17px; color:#000; font-weight:700; }
