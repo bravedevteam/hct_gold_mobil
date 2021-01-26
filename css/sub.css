@@ -1,8 +1,28 @@
-.section { padding:0; }
+/* Common */
+.section { padding:0 15px; }
 .section+.section { margin-top:10px; }
+.section.line { margin-top:40px; border-top:8px solid #f2f4f6 }
 
-h1.title { padding:25px; text-align:center; font-size:17px; font-weight:700; }
+h1.title { padding:34px 25px 25px; text-align:center; font-size:17px; font-weight:700; }
+h2.title { padding:30px 10px; font-size:17px; font-weight:400; text-align:center; }
 h3.title { padding:5px 11px; font-size:15px; font-weight:400; }
+
+.headerArea { margin:0 15px; position:relative; }
+
+.topStep { position:absolute; right:0; top:37px; overflow:hidden; }
+.topStep li { width:20px; height:20px; position:relative; float:left; border:1px solid #bebebe; border-radius:50%; text-align:center; line-height:18px; color:#bebebe; font-family:"SFProDisplay", 'Sans-serif'; }
+.topStep li+li { margin-left:4px; }
+.topStep li+li:after { content:''; width:4px; height:1px; position:absolute; left:-5px; top:50%; background:#bebebe; }
+.topStep li.active { border-color:#2750f2; color:#2750f2; }
+
+.listDocument dt { margin-bottom:3px; padding:0 13px; position:relative; display:block; font-size:15px; font-weight:700 }
+.listDocument dt:after { content:''; width:3px; height:3px; position:absolute; left:5px; top:8px; background:#000; border-radius:50%; }
+.listDocument dd { padding:0 13px; margin-bottom:15px; display:block; font-size:15px; font-weight:300; }
+
+.listCompanyInfo dl { display:block; overflow:hidden; }
+.listCompanyInfo dl+dl { margin-top:12px; }
+.listCompanyInfo dt { float:left; font-size:15px; color:#999; }
+.listCompanyInfo dd { margin-left:10px; float:left; font-size:15px; }
 
 
 /* Input */
@@ -14,10 +34,23 @@ input[type="password"].inputBasic { padding-right:50px; }
 .btnHiddenPass { width:50px; height:50px; position:absolute; right:0; top:0; background:url('../images/common/iconPassword.png') center center no-repeat; background-size:20px auto; z-index:5; }
 
 
-/* Input Certify */
-.boxInputCertify { padding-right:98px; position:relative; }
-.boxInputCertify:after { content:''; display:block; clear:both; visibility:visible; }
-.boxInputCertify .btnCertify { width:95px; height:50px; position:absolute; right:0; top:0; border:1px solid #2750f2; border-radius:5px; font-size:17px; color:#2750f2; }
+/* Row */
+.row { position:relative; }
+.row+.row { margin-top:3px; }
+.row.division { padding-right:98px; }
+.row.division:after { content:''; display:block; clear:both; visibility:visible; }
+.row.division .btnBasic { width:95px; height:50px; position:absolute; right:0; top:0; font-weight:400; }
+.row.division_half { display:flex; }
+.row.division_half > div { flex: 1; }
+.row.division_half > div+div { margin-left:5px; }
+
+
+
+/* Select */
+.select { position:relative; }
+.select:after { content:''; width:11px; height:6px; position:absolute; right:13px; top:50%; margin-top:-3px; background:url('../images/common/iconSelect.png') center center no-repeat; background-size:100% auto; }
+.select select { width:100%; height:50px; position:relative; padding:0 15px; border:1px solid #d5d5d5; border-radius:5px; background:transparent; font-size:15px; z-index:3; }
+.select select option { padding:0 15px; }
 
 
 /* Guide Text */
@@ -26,9 +59,9 @@ input[type="password"].inputBasic { padding-right:50px; }
 
 
 /* Agree List */
-.boxBasicAgree { margin-top:50px; }
+.boxBasicAgree { margin:50px 0 20px; }
 .boxBasicAgree input[type='checkbox'] { position:absolute; left:-99999px; top:0; opacity:0; }
-.boxBasicAgree label { display:block; padding-left:27px; background-image:url('../images/common/iconCheckBasic.png'); background-position:left 2px; background-repeat:no-repeat; background-size:20px auto; line-height:22px; font-size:15px; }
+.boxBasicAgree label { display:block; padding-left:27px; background-image:url('../images/common/iconCheckBasic.png'); background-position:left 2px; background-repeat:no-repeat; background-size:20px auto; line-height:22px; font-size:15px; font-weight:300; letter-spacing:-0.075em; }
 .boxBasicAgree input[type='checkbox']:checked + label { background-image:url('../images/common/iconCheckBasic_on.png'); }
 .boxBasicAgree .with--detail label { margin-right:30px; }
 .boxBasicAgree a.detail { position:absolute; right:0; top:0; line-height:22px; font-size:15px; color:#999; }
@@ -36,3 +69,19 @@ input[type="password"].inputBasic { padding-right:50px; }
 
 .boxBasicAgree .areaCheck .item { position:relative; }
 .boxBasicAgree .areaCheck .item+.item { margin-top:15px; }
+
+
+/* Complate */
+.boxComplate { padding:132px 20px; }
+.boxComplate .cont.icon--join { padding-top:48px; background:url('../images/common/iconJoinComplate.png') left top no-repeat; background-size:auto 34px; }
+.boxComplate .cont .title { margin-bottom:20px; font-size:25px; font-weight:700; }
+.boxComplate .cont .explanation { margin-bottom:23px; font-size:17px; line-height:1.65; letter-spacing:-.085em; }
+.boxComplate .cont .explanation .etc { font-size:15px; color:#999; font-weight:300; }
+
+
+/* Filebox */
+.filebox { padding-right:98px; position:relative; }
+.filebox .uploadName { width:100%; height:50px; padding:0 15px; display:block; border:1px solid #d5d5d5; border-radius:5px; font-size:15px; }
+.filebox .uploadName::placeholder { color:rgba(0, 0, 0, 0.35); }
+.filebox label { width:95px; height:50px; position:absolute; right:0; top:0; border:1px solid #2750f2; border-radius:5px; text-align:center; line-height:50px; color:#2750f2; font-size:17px; }
+.filebox .uploadHidden { position:absolute; left:-99999px; top:0; opacity:0; }
