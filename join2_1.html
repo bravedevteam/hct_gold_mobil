@@ -12,24 +12,28 @@
 
 <body>
 	<div id="container" class="sub">
-		<div class="headerArea">
-			<h1 class="title">회원가입</h1>
-		</div>
+    <div class="headerArea">
+      <h1 class="title">기업회원가입</h1>
+      <ul class="topStep">
+        <li class="active">1</li>
+        <li>2</li>
+      </ul>
+    </div>
 		<div class="section">
 			<h3 class="title">이메일 주소</h3>
-			<input type="text" class="inputBasic" value="brave@brave-f.com" placeholder="정보를 입력하세요" />
+			<input type="text" class="inputBasic" placeholder="정보를 입력하세요" />
 		</div>
 		<div class="section">
 			<h3 class="title">휴대폰 번호</h3>
 			<div class="row division">
-				<input type="number" class="inputBasic" value="01012345678" placeholder="-없이 번호 입력" />
+				<input type="number" class="inputBasic" placeholder="-없이 번호 입력" />
 				<button type="button" class="btnBasic blueLine">인증하기</button>
 			</div>
 		</div>
 		<div class="section">
 			<h3 class="title">비밀번호</h3>
 			<div class="inputPassword">
-				<input type="password" maxlength="12" value="123456789012" class="inputBasic" placeholder="정보를 입력하세요." />
+				<input type="password" maxlength="12" class="inputBasic" placeholder="정보를 입력하세요." />
 				<button type="button" class="btnHiddenPass"></button>
 			</div>
 			<p class="guide-text">영문+숫자+특수문자 중 2가지 이상 조합 8자리~12자리 이내</p>
@@ -37,10 +41,18 @@
 		<div class="section">
 			<h3 class="title">비밀번호 확인</h3>
 			<div class="inputPassword">
-				<input type="password" maxlength="12" value="123456789012" class="inputBasic danger" placeholder="정보를 입력하세요." />
+				<input type="password" maxlength="12" class="inputBasic" placeholder="정보를 입력하세요." />
 				<button type="button" class="btnHiddenPass"></button>
 			</div>
-			<p class="guide-text danger">비밀번호 정보가 일치하지 않습니다.</p>
+			<p class="guide-text">영문+숫자+특수문자 중 2가지 이상 조합 8자리~12자리 이내</p>
+    </div>
+    <div class="section">
+			<h3 class="title">사업자등록번호</h3>
+			<div class="row division">
+				<input type="text" class="inputBasic" placeholder="-없이 번호 입력" />
+				<button type="button" class="btnBasic bgBlue">확인</button>
+      </div>
+      <p class="guide-text danger">*사업자등록번호 확인 후 다시 입력해주세요.</p>
 		</div>
 		<div class="section">
 			<div class="boxBasicAgree">
@@ -67,9 +79,19 @@
 					</div>
 				</div>
 			</div>
-		</div>
+    </div>
+    <div class="section line">
+      <h2 class="title">필수 제출 서류</h2>
+      <dl class="listDocument">
+        <dt>개인사업자</dt>
+        <dd>사업자등록증, 대표자 신분증, 재무제표</dd>
+        <dt>법인사업자</dt>
+        <dd>사업자등록증, 대표자 신분증, 재무제표,<br />법인등기부등본, 법인인감증명서</dd>
+      </dl>
+      <p class="guide-text">* 서류를 모두 제출해야 가입 신청이 완료되며, 심사(2~3일) 완료 후 최종 가입이 완료됩니다.</p>
+    </div>
 		<div class="footer--btn">
-			<button type="button" class="btnBasic active">가입하기</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
+			<button type="button" class="btnBasic active">다음</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
 		</div>
 	</div>
 </body>
