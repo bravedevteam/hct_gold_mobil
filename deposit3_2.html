@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>AROWANA GOLD FINANCE</title>
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/sub.css" />
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+
+<body>
+	<div id="container" class="sub">
+    <div class="headerArea">
+      <a href="#" class="btnPagePrev black">이전</a>
+      <h1 class="title">출금</h1>
+    </div>
+    <div class="section">
+      <div class="tokenSelect">
+        <select>
+          <option>BTC</option>
+          <option>HGX</option>
+          <option>ETH</option>
+          <option>USTD</option>
+        </select>
+      </div>
+      <div class="inputGold">
+        <input type="text" value="156,450" class="inputBasic" placeholder="출금 수량 입력" />
+        <span>BTC</span>
+      </div>
+      <div class="tabBasic">
+        <button type="button" class="active">25%</button>
+        <button type="button">50%</button>
+        <button type="button">75%</button>
+        <button type="button">100%</button>
+      </div>
+      <div class="guide-text">출금가능 수량 : 1,1231 BTC (3,000,000 원) / 수수료 : 0.0121 BTC</div>
+      <div class="guide-text danger">출금 가능한 수량을 초과하였습니다.</div>
+      <div class="inputAddress active mtb25">
+        <input type="text" value="helpx.adobe.com/kr/xd/user-guider/xd/help/prime" class="inputBasic" placeholder="출금 주소 입력" />
+        <button type="button" class="btnQRcode">QR code</button>
+      </div>
+      <div class="guide-text type--dot">출금신청이 완료되면 취소가 불가합니다.</div>
+      <div class="guide-text type--dot">암호화폐는 출금 시점의 환산금액을 반영해 1일 출금가능 한도가 관리됩니다.</div>
+    </div>
+
+    <div class="footer--btn">
+			<button type="button" class="btnBasic active">다음</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
+		</div>
+  </div>
+</body>
+</html>
