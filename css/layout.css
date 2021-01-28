@@ -59,6 +59,14 @@
 }
 @font-face {
     font-family: 'SFProDisplay';
+    font-weight: 500;
+    src: local('SF-Pro-Display-Medium'),
+    url('../font/SF-Pro-Display-Medium.woff2') format('woff2'),
+    url('../font/SF-Pro-Display-Medium.woff') format('woff'),
+    url('../font/SF-Pro-Display-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SFProDisplay';
     font-weight: 600;
     src: local('SF-Pro-Display-Semibold'),
     url('../font/SF-Pro-Display-Semibold.woff2') format('woff2'),
@@ -127,9 +135,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .mtb20 { margin:20px 0 !important; }
 .mtb25 { margin:25px 0 !important; }
 .mtb30 { margin:30px 0 !important; }
+.mtb40 { margin:40px 0 !important; }
+.mtb50 { margin:50px 0 !important; }
 
 .mb0 { margin-bottom:0px !important; }
 .mb10 { margin-bottom:10px !important; }
+.mb15 { margin-bottom:15px !important; }
 .mb20 { margin-bottom:20px !important; }
 .mb25 { margin-bottom:25px !important; }
 .mb30 { margin-bottom:30px !important; }
@@ -138,6 +149,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .mb60 { margin-bottom:60px !important; }
 
 .mt0 { margin-top:0px !important; }
+.mt5 { margin-top:5px !important; }
 .mt10 { margin-top:10px !important; }
 .mt20 { margin-top:20px !important; }
 .mt30 { margin-top:30px !important; }
@@ -170,6 +182,8 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 .radius10 { border-radius:10px; }
 .radius20 { border-radius:20px; }
 
+.color-blue { color:#2750f2; }
+
 .bgRed { background:#f00; }
 .bgBlue { background:#00f; }
 .bgYellow { background:#ff0; }
@@ -179,6 +193,8 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 .top--btn button:after { content:''; width:60px; height:5px; position:absolute; left:50%; top:15px; margin-left:-30px; background:#f2f4f6; border-radius:4px; }
 
 .footer--btn { width:100%; position:fixed; left:0; bottom:0; display:flex; z-index:8; }
+.footer--btn .btnText { width:100%; position:relative; padding:15px 18px; margin-bottom:10px; border-top:1px solid #f2f4f6; text-align:left; font-size:15px; color:rgba(0,0,0,.5); }
+.footer--btn .btnText:after { content:''; width:7px; height:11px; position:absolute; right:15px; top:50%; margin-top:-5px; background:url('../images/common/iconArrowGray.png') no-repeat; background-size:8px auto; }
 
 .boxBtn { position:relative; }
 .boxBtn.left { text-align:left; }
@@ -186,12 +202,19 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 .boxBtn.center { text-align:center; }
 .boxBtn.btn--full { display:flex; }
 
+.textBasic { font-size:15px; color:#000; }
+.textBasic+.textBasic { margin-top:5px; }
+.textBasic strong { color:#2750f2; font-weight:700; }
+
 .btnBasic { width:100%; height:58px; background:#a1a4a7; text-align:center; color:#fff; font-size:17px; font-weight:700; }
-.btnBasic.size--half { width:145px; height:50px; font-size:15px; font-weight:400; }
+.btnBasic.size--half { width:145px; height:50px; font-size:15px; font-weight:400; border-radius:5px; }
+.btnBasic.size--half+.size--half { margin-left:12px; }
 .btnBasic.active { background:#2750f2; }
 .btnBasic.blueLine { background:#fff; border:1px solid #2750f2; border-radius:5px; color:#2750f2; }
 .btnBasic.bgBlue { background:#2750f2; border-radius:5px; color:#fff; }
-.btnBasic.bgYellow { background:#ffdf31; border-radius:5px; color:#000; }
+.btnBasic.bgYellow { background:#ffdf31; color:#000; }
+.btnBasic.bgLightGray { background:#f2f4f6; border:1px solid #d4d8db; color:#000; }
+.btnBasic.bgWhite { background:#fff; border:1px solid #000; color:#000; }
 
 #footer { padding:22px 15px; position:relative; }
 #footer:after { content:''; display:block; clear:both; visibility:visible; }
@@ -209,15 +232,24 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 /* Popup Layer */
 #dim { width:100%; height:100%; display:none; position:fixed; left:0; top:0; background:rgba(0, 0, 0, 0.6); z-index:20; }
 
-.bottomLayer { width:100%; padding:58px 0 110px; position:fixed; left:0; bottom:-100%; border-top-left-radius:20px; border-top-right-radius:20px; background:#fff; z-index:21; overflow:hidden; transition:bottom .5s; }
+.bottomLayer { width:100%; max-height:68.75%; display:flex; flex-direction:column; padding:58px 0 110px; position:fixed; left:0; bottom:-100%; border-top-left-radius:20px; border-top-right-radius:20px; background:#fff; z-index:21; overflow:hidden; transition:bottom .5s; }
 .bottomLayer.active { bottom:0; }
-.bottomLayer .title { margin-bottom:20px; font-size:17px; text-align:center; }
-.bottomLayer .title.icon--exmark { padding-top:35px; background:url('../images/common/iconExMark.png') top center no-repeat; background-size:20px auto; }
+.bottomLayer .inner { overflow-y:auto; }
+.bottomLayer .cont .title { margin-bottom:20px; font-size:17px; text-align:center; }
+.bottomLayer .cont .title.icon--exmark { padding-top:35px; background:url('../images/common/iconExMark.png') top center no-repeat; background-size:20px auto; }
 .bottomLayer .layerTop { margin-bottom:10px; }
 .bottomLayer .layerTop:after { content:''; display:block; clear:both; }
 .bottomLayer .layerTop .title { float:left; margin:0; font-size:17px; font-weight:700; }
-.bottomLayer .layerTop .mark_status { width:48px; height:22px; margin-left:10px; float:left; border:1px solid #5facdd; border-radius:11px; text-align:center; line-height:20px; font-size:10px; color:#5facdd; }
+.bottomLayer .layerTop .mark_status { width:48px; height:22px; margin:2px 0 0 10px; float:left; border:1px solid #5facdd; border-radius:11px; text-align:center; line-height:20px; font-size:10px; color:#5facdd; }
 .bottomLayer .footer--btn { position:absolute; }
+
+.bottomLayer.type--basic { padding:0; }
+.bottomLayer.type--basic .topArea { margin:17px 24px 0; padding:10px 0; position:relative; border-bottom:1px solid #f2f4f6; }
+.bottomLayer.type--basic .topArea .btnClose { width:32px; height:32px; position:absolute; left:-10px; top:50%; background:url('../images/common/iconCloseBlack.png') center center no-repeat; background-size:12px auto; font-size:0; text-indent:-99999px; transform:translateY(-50%); }
+.bottomLayer.type--basic .topArea .btnSubmit { padding:10px; position:absolute; right:-10px; top:50%; transform:translateY(-50%); font-size:12px; }
+.bottomLayer.type--basic .topArea .title { margin:0; font-size:15px; text-align:center; }
+.bottomLayer.type--basic .contArea { margin:25px 24px 50px; }
+.bottomLayer.type--basic .content+h4.title { margin-top:25px; }
 
 .textLayer { display:none; padding:36px 25px 28px; position:absolute; left:30px; top:0; right:30px; background:#fff; border-radius:5px; border:1px solid #999; }
 .textLayer.active { display:block; }

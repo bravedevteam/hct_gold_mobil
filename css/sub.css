@@ -1,5 +1,7 @@
 /* Common */
 .section { padding:0 15px; }
+.section--small { padding:0 8px; }
+.section--large { padding:0 24px; }
 .section+.section { margin-top:10px; }
 
 h1.title { padding:34px 25px 25px; text-align:center; font-size:17px; font-weight:700; }
@@ -7,17 +9,27 @@ h2.title { padding:30px 10px; font-size:17px; font-weight:400; text-align:center
 h3.title { padding:5px 11px; font-size:15px; font-weight:400; }
 h3.title--large { padding:30px 0 16px; font-size:17px; font-weight:700; }
 h3.title--large span { font-weight:400; }
+h4.title { margin-bottom:15px; font-size:12px; font-weight:400; text-align:left; }
 
 .headerArea { margin:0 15px; position:relative; }
 .headerArea .btnPagePrev { width:41px; height:49px; position:absolute; left:-15px; top:20px; background-image:url('../images/common/iconArrowWhite.png'); background-position:center center; background-repeat:no-repeat; background-size:12px auto; font-size:0; text-indent:-99999px; }
 .headerArea .btnPagePrev.black { background-image:url('../images/common/iconArrowBlack.png'); }
 .headerArea .btnPageHome { width:52px; height:50px; position:absolute; right:-15px; top:20px; background:url('../images/common/iconHome.png') center center no-repeat; background-size:22px auto; font-size:0; text-indent:-99999px; }
+.headerArea .btnPageHome.black { background-image:url('../images/common/iconHomeBlack.png'); }
 
 .topStep { position:absolute; right:0; top:37px; overflow:hidden; }
 .topStep li { width:20px; height:20px; position:relative; float:left; border:1px solid #bebebe; border-radius:50%; text-align:center; line-height:18px; color:#bebebe; font-family:"SFProDisplay", 'Sans-serif'; }
 .topStep li+li { margin-left:4px; }
 .topStep li+li:after { content:''; width:4px; height:1px; position:absolute; left:-5px; top:50%; background:#bebebe; }
 .topStep li.active { border-color:#2750f2; color:#2750f2; }
+
+.centerStep { padding:5px 0; position:relative; text-align:center; }
+.centerStep ul { display:inline-block; overflow:hidden; }
+.centerStep ul li { width:24px; height:24px; position:relative; float:left; border:1px solid #d5d5d5; border-radius:50%; line-height:22px; color:#d5d5d5; font-family:"SFProDisplay", 'Sans-serif'; }
+.centerStep ul li.active { background:#2750f2; border:1px solid #2750f2; color:#fff; }
+.centerStep ul li+li { margin-left:14px; }
+.centerStep ul li+li:after { content:''; width:14px; height:1px; position:absolute; left:-15px; top:50%; background:#d5d5d5; }
+
 
 .listDocument dt { margin-bottom:3px; padding:0 13px; position:relative; display:block; font-size:15px; font-weight:700 }
 .listDocument dt:after { content:''; width:3px; height:3px; position:absolute; left:5px; top:8px; background:#000; border-radius:50%; }
@@ -79,10 +91,10 @@ input[type="password"].inputBasic { padding-right:50px; }
 /* Agree List */
 .boxBasicAgree { margin:50px 0 40px; }
 .boxBasicAgree input[type='checkbox'] { position:absolute; left:-99999px; top:0; opacity:0; }
-.boxBasicAgree label { display:block; padding-left:27px; background-image:url('../images/common/iconCheckBasic.png'); background-position:left 2px; background-repeat:no-repeat; background-size:20px auto; line-height:22px; font-size:15px; font-weight:300; letter-spacing:-0.075em; }
+.boxBasicAgree label { display:block; padding-left:23px; background-image:url('../images/common/iconCheckBasic.png'); background-position:left 2px; background-repeat:no-repeat; background-size:18px auto; line-height:22px; font-size:15px; font-weight:300; letter-spacing:-0.1em; }
 .boxBasicAgree input[type='checkbox']:checked + label { background-image:url('../images/common/iconCheckBasic_on.png'); }
-.boxBasicAgree .with--detail label { margin-right:30px; }
-.boxBasicAgree a.detail { position:absolute; right:0; top:0; line-height:22px; font-size:15px; color:#999; }
+.boxBasicAgree .with--detail label { margin-right:25px; }
+.boxBasicAgree a.detail { position:absolute; right:0; top:0; line-height:22px; font-size:12px; color:#999; }
 .boxBasicAgree .areaAllCheck { margin-bottom:15px; position:relative; }
 
 .boxBasicAgree .areaCheck .item { position:relative; }
@@ -111,15 +123,52 @@ input[type="password"].inputBasic { padding-right:50px; }
 .boxWalletTop .top { overflow:hidden; }
 .boxWalletTop .top .title { float:left; position:relative; padding-right:18px; color:#fff; line-height:26px; }
 .boxWalletTop .top .btnInfo { width:14px; height:14px; position:absolute; right:0; top:50%; margin-top:-7px; background:url('../images/common/iconMarkSmall.png') center center no-repeat; background-size:14px auto; font-size:0; text-indent:-99999px; }
+.boxWalletTop .top .typeMark { width:40px; height:40px; float:left; display:flex; background:#fff; border-radius:50%; align-items:center; justify-content:center; }
+.boxWalletTop .top .typeMark img { width:25px; }
 .boxWalletTop .top .btnTransList { width:80px; height:26px; float:right; border:1px solid rgba(255,255,255,.4); border-radius:13px; color:#f2f4f6; font-size:12px; text-align:center; line-height:24px; }
 .boxWalletTop .priceWrap { margin:40px 0 60px; text-align:center; }
+.boxWalletTop .priceWrap .title { font-size:19px; color:#000; font-weight:700; }
 .boxWalletTop .priceWrap > .price { font-size:30px; font-weight:700; color:#fff; }
 .boxWalletTop .priceWrap .bottomPrice > div { display:inline-block; }
 .boxWalletTop .priceWrap .bottomPrice .subTitle { font-size:15px; color:#c6e9ff; }
 .boxWalletTop .priceWrap .bottomPrice .usePrice { margin-left:20px; font-size:15px; color:#fff; }
-.boxWalletTop .btn { border:1px solid #5273f5; border-radius:5px; overflow:hidden; }
-.boxWalletTop .btn button { width:50%; height:50px; float:left; position:relative; font-size:15px; color:#fff; }
+.boxWalletTop .priceWrap .bottomPriceGroup { margin:10px auto; display:inline-block; text-align:left; }
+.boxWalletTop .priceWrap .bottomPriceGroup .subTitle { width:95px; float:left; }
+.boxWalletTop .priceWrap .bottomPriceGroup .usePrice { margin-left:95px; display:block; }
+.boxWalletTop .btn { display:flex; border:1px solid #5273f5; border-radius:5px; overflow:hidden; }
+.boxWalletTop .btn button { flex:1; height:50px; position:relative; font-size:15px; color:#fff; }
 .boxWalletTop .btn button+button:after { content:''; width:1px; height:15px; position:absolute; left:0; top:50%; margin-top:-7px; background:#5273f5; }
+
+.boxWalletTop.type--hgx { padding:20px 18px 25px; border-radius:13px; background:#ffdf0b; box-shadow: 0 7px 5px 0 rgba(255, 199, 48, 0.2); }
+.boxWalletTop.type--hgx .top .btnTransList { margin-top:7px; border-color:#000; color:#000; }
+.boxWalletTop.type--hgx .top .btnTransList:before { content:''; width:12px; height:12px; margin-right:4px; display:inline-block; background:url('../images/common/iconTrans.png') center center no-repeat; background-size:100% auto; }
+.boxWalletTop.type--hgx .priceWrap { margin:17px 0 22px; }
+.boxWalletTop.type--hgx .priceWrap > .price { color:#000; }
+.boxWalletTop.type--hgx .priceWrap .bottomPrice { color:#847000; font-size:17px; font-weight:500; }
+.boxWalletTop.type--hgx .priceWrap .bottomPrice--guide { margin-top:15px; color:rgba(132,112,0,0.5); }
+.boxWalletTop.type--hgx .btn { border-color:#ccb327; }
+.boxWalletTop.type--hgx .btn button { color:#000; }
+.boxWalletTop.type--hgx .btn button+button:after { background:#CCB309; }
+
+.boxWalletTop.type--hgx2 { padding:20px 18px 25px; border-radius:13px; background:#2750f2; box-shadow: 0 7px 5px 0 rgba(41, 193, 207, 0.11); }
+.boxWalletTop.type--hgx2 .top .btnTransList { margin-top:7px; }
+.boxWalletTop.type--hgx2 .top .btnTransList:before { content:''; width:12px; height:12px; margin-right:4px; display:inline-block; background:url('../images/common/iconTransWhite.png') center center no-repeat; background-size:100% auto; }
+.boxWalletTop.type--hgx2 .top .typeMark img { width:17px; }
+.boxWalletTop.type--hgx2 .priceWrap { margin:0 0 20px; }
+.boxWalletTop.type--hgx2 .priceWrap .title { color:#fff; }
+
+.boxWalletTop.type--btc { padding:20px 18px 25px; border-radius:13px; background:#29c1cf; box-shadow: 0 7px 5px 0 rgba(41, 130, 207, 0.09); }
+.boxWalletTop.type--btc .top .typeMark img { width:10px; }
+.boxWalletTop.type--btc .priceWrap { margin:8px 0 20px; }
+.boxWalletTop.type--btc .priceWrap .title { color:#fff; }
+.boxWalletTop.type--btc .priceWrap .bottomPrice .subTitle { color:#a9ecf2; }
+.boxWalletTop.type--btc .btn { border:1px solid #6ad7e2; }
+.boxWalletTop.type--btc .btn button+button:after { background:#6ad7e2; }
+
+.boxInfoHGX { margin:40px 12px 0 0; position:relative; background:url('../images/content/imgInfo_hgx.png') right top no-repeat; background-size:132px auto; }
+.boxInfoHGX .title { margin-bottom:15px; font-size:28px; font-weight:100; }
+.boxInfoHGX .subject { margin-bottom:18px; font-size:17px; font-weight:700; }
+.boxInfoHGX p { font-size:15px; font-weight:100; color:#999; }
 
 .boxWalletDigital { margin-bottom:0; padding-bottom:50px; border-top-left-radius:20px; border-top-right-radius:20px; }
 
@@ -150,7 +199,9 @@ input[type="password"].inputBasic { padding-right:50px; }
 .boxAccountList {  }
 .boxAccountList .listSort { margin-bottom:16px; }
 .boxAccountList .listSort:after { content:''; display:block; clear:both; }
-.boxAccountList .listSort ul { margin-right:8px; float:right; padding-right:14px; background:url('../images/common/iconArrowSort.png') right center no-repeat; background-size:9px auto; }
+.boxAccountList .listSort ul { margin-right:8px; float:right; position:relative; padding-right:14px; }
+.boxAccountList .listSort ul:after { content:''; width:9px; height:6px; position:absolute; right:0; top:50%; margin-top:-3px; background:url('../images/common/iconArrowSort.png') right center no-repeat; background-size:9px auto; }
+.boxAccountList .listSort ul.up:after { margin-top:-2px; transform:rotate(180deg); }
 .boxAccountList .listSort ul li { padding:0 4px; float:left; position:relative; color:#6d7278; }
 .boxAccountList .listSort ul li+li:after { content:''; width:2px; height:2px; position:absolute; left:-1px; top:50%; margin-top:-1px; border-radius:50%; background:#6d7278; }
 .boxAccountList .listYear { height:26px; padding:0 14px;  background:#f2f4f6; font-size:10px; color:#999; line-height:26px; }
@@ -163,15 +214,19 @@ input[type="password"].inputBasic { padding-right:50px; }
 .boxAccountList .cont .title .date { float:left; margin-right:8px; line-height:22px; color:#999; }
 .boxAccountList .cont .title .status { width:48px; height:22px; float:left; border:1px solid #d4d8db; border-radius:11px; line-height:20px; text-align:center; color:#a1a4a7; font-size:10px; }
 .boxAccountList .cont .info { float:1; text-align:right; }
-.boxAccountList .cont .info .price { font-size:15px; font-weight:700; color:#2750f2; }
+.boxAccountList .cont .info .price { font-size:15px; font-weight:700; color:#2750f2; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxAccountList .cont .info .price.out { color:#000; }
 .boxAccountList .cont .info .total { color:#999; font-family:"SFProDisplay", 'Sans-serif'; }
+
+
+.listTop--title { padding:5px 0 15px; position:relative; }
+.listTop--title h3.title { padding:0 0 0 8px; }
+.listTop--title .listSort { position:absolute; right:0; top:50%; transform:translateY(-50%); margin:0; }
 
 
 /* Account Popup */
 .popAccount { padding:33px 0 0; }
 .popAccount .section { padding:25px 15px; }
-.popAccount .section:first-of-type { padding-top:0; }
 .popAccount .detail { height:88px; margin-bottom:30px; display:flex; align-items:center; justify-content:center; flex-direction:column; background:#f2f4f6; border-radius:13px; }
 .popAccount .detail .usePrice { font-size:19px; font-weight:700; font-family:"SFProDisplay", 'Sans-serif'; }
 .popAccount .detail .price { font-size:15px; color:#999; }
@@ -179,7 +234,7 @@ input[type="password"].inputBasic { padding-right:50px; }
 .listDetail li { overflow:hidden; }
 .listDetail li+li { margin-top:10px; }
 .listDetail li .title { float:left; margin:0; font-size:15px; }
-.listDetail li .cont { float:right; color:#999; font-size:15px; }
+.listDetail li .cont { float:right; color:#999; font-size:15px; font-family:"SFProDisplay", 'Sans-serif'; }
 
 .listTable dt { display:block; margin-bottom:5px; font-size:15px; }
 .listTable dd { display:block; margin-bottom:20px; font-family:"SFProDisplay", 'Sans-serif'; font-size:15px; color:#999; word-break:break-all; }
@@ -211,3 +266,20 @@ input[type="password"].inputBasic { padding-right:50px; }
 .tabBasic button:last-child { border-right:1px solid #d5d5d5; border-top-right-radius:5px; border-bottom-right-radius:5px; }
 .tabBasic button.active { background:#fff; border-color:#2750f2; color:#2750f2; font-weight:600; }
 .tabBasic button.active+button { border-left-color: #2750f2; }
+
+
+/* Date */
+.dateBasic { height:40px; position:relative; display:flex; border:1px solid #d5d5d5; border-radius:5px; }
+.dateBasic:after { content:''; width:6px; height:1px; position:absolute; left:50%; top:50%; transform:translate(-50% -50%); background:#000; }
+.dateBasic a { flex:1; display:flex; align-items:center; justify-content:center; font-size:13px; }
+.dateBasic a:before { content:''; width:14px; height:15px; margin-right:12px; display:inline-block; background:url('../images/common/iconDatepicker.png') center center no-repeat; background-size:100% auto; }
+
+
+
+/* Security */
+.listSecurity {  }
+.listSecurity li+li { margin-top:10px; }
+.listSecurity li a { display:block; border-radius:5px; border:1px solid #f2f4f6; box-shadow: 0 3px 6px 0 rgba(173, 173, 173, 0.16); }
+.listSecurity li a.active { border-color:#2750f2; }
+.listSecurity li .bottom { overflow:hidden; }
+.listSecurity li .bottom .link { padding-right:14px; background:url('../images/common/iconArrow.png') right center no-repeat; background-size:auto 10px; }
