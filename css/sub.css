@@ -6,6 +6,7 @@
 
 h1.title { padding:34px 25px 25px; text-align:center; font-size:17px; font-weight:700; }
 h2.title { padding:30px 10px; font-size:17px; font-weight:400; text-align:center; }
+h2.title.icon--exmark { margin-bottom:20px; padding:42px 0 0; background:url('../images/common/iconExMark.png') center 6px no-repeat; background-size:20px auto; }
 h3.title { padding:5px 11px; font-size:15px; font-weight:400; }
 h3.title--large { padding:30px 0 16px; font-size:17px; font-weight:700; }
 h3.title--large span { font-weight:400; }
@@ -106,7 +107,9 @@ input[type="password"].inputBasic { padding-right:50px; }
 .boxComplate .cont.icon--join { padding-top:48px; background:url('../images/common/iconJoinComplate.png') left top no-repeat; background-size:auto 34px; }
 .boxComplate .cont.icon--complate { padding-top:48px; background:url('../images/common/iconCheckBlack.png') left top no-repeat; background-size:auto 35px; }
 .boxComplate .cont .title { margin-bottom:20px; font-size:25px; font-weight:700; }
-.boxComplate .cont .explanation { margin-bottom:23px; font-size:17px; line-height:1.65; letter-spacing:-.085em; }
+.boxComplate .cont .explanation { margin-bottom:23px; font-size:17px; line-height:1.65; letter-spacing:-.085em; word-break:keep-all; }
+.boxComplate .cont .explanation ul li { position:relative; }
+.boxComplate .cont .explanation ul li:before { content:'·'; position:absolute; left:-9px; top:0; font-size:17px; }
 .boxComplate .cont .explanation .etc { font-size:15px; color:#999; font-weight:300; }
 
 
