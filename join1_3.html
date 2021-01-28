@@ -12,19 +12,24 @@
 
 <body>
 	<div id="container" class="sub">
-		<div class="boxComplate">
-			<div class="cont icon--join">
-				<div class="title">회원가입이<br />완료되었습니다.</div>
-				<div class="explanation">
-					한컴프라임의<br />금예치 서비스 및 상품투자 등의 모든 서비스를<br />안전하게 이용하시려면<br />보안/인증을 완료해 주세요!
-				</div>
-				<div class="boxBtn btn--full">
-					<button type="button" class="btnBasic blueLine">보안레벨 올리기</button>
-				</div>
-			</div>
+		<div class="headerArea">
+      <a href="#" class="btnPagePrev black">이전</a>
+      <h1 class="title">휴대폰 인증</h1>
 		</div>
-		<div class="footer--btn">
-			<button type="button" class="btnBasic active">홈으로</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
+		<div class="section">
+			<h2 class="title icon--exmark">입력한 휴대폰 번호로 인증코드를 발송 했습니다.<br />인증코드 6자리를 입력하세요.</h2>
+			<div class="boxCertifySix">
+				<div class="input">
+					<input type="number" maxlength="1" oninput="maxLengthCheck(this)" />
+					<input type="number" maxlength="1" oninput="maxLengthCheck(this)" />
+					<input type="number" maxlength="1" oninput="maxLengthCheck(this)" />
+					<input type="number" maxlength="1" oninput="maxLengthCheck(this)" />
+					<input type="number" maxlength="1" oninput="maxLengthCheck(this)" />
+					<input type="number" maxlength="1" oninput="maxLengthCheck(this)" />
+				</div>
+				<div class="limit">유효시간 : 2:58</div>		
+				<a href="#" class="retry">재전송</a>
+			</div>
 		</div>
 	</div>
 </body>
