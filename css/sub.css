@@ -11,6 +11,7 @@ h3.title { padding:5px 11px; font-size:15px; font-weight:400; }
 h3.title--large { padding:30px 0 16px; font-size:17px; font-weight:700; }
 h3.title--large span { font-weight:400; }
 h4.title { margin-bottom:15px; font-size:12px; font-weight:400; text-align:left; }
+h4.title--large { font-size:18px; font-weight:700; }
 
 .headerArea { margin:0 15px; position:relative; }
 .headerArea .btnPagePrev { width:41px; height:49px; position:absolute; left:-15px; top:20px; background-image:url('../images/common/iconArrowWhite.png'); background-position:center center; background-repeat:no-repeat; background-size:12px auto; font-size:0; text-indent:-99999px; }
@@ -286,3 +287,48 @@ input[type="password"].inputBasic { padding-right:50px; }
 .listSecurity li a.active { border-color:#2750f2; }
 .listSecurity li .bottom { overflow:hidden; }
 .listSecurity li .bottom .link { padding-right:14px; background:url('../images/common/iconArrow.png') right center no-repeat; background-size:auto 10px; }
+
+
+/* Gold Service */
+.boxGoldService { margin-bottom:45px; padding:50px 25px 45px; position:relative; background:#ffdf0b; }
+.boxGoldService .title { margin-bottom:20px; font-size:26px; font-weight:700; }
+.boxGoldService .cont { margin-bottom:15px; font-size:16px; }
+.boxGoldService .etc { color:#a59002; }
+.boxGoldService:after { content:''; width:134px; height:134px; position:absolute; right:0; bottom:15px; background:url('../images/content/bgGoldService.png') no-repeat; background-size:100% auto; }
+
+
+/* Gold Item */
+.boxGoldItem { display:flex; }
+.boxGoldItem .item { flex:1; margin:0 5px; text-align:center; }
+.boxGoldItem .item:first-child { margin-left:0; margin-right:8px; }
+.boxGoldItem .item:last-child { margin-right:0; margin-left:8px; }
+.boxGoldItem .item .thumb { height:96px; margin-bottom:10px; display:flex; position:relative; border:1px solid #edeffa; border-radius:13px; align-items:center; justify-content:center; }
+.boxGoldItem .item .thumb i { width:36px; }
+.boxGoldItem .item .title { font-size:15px; }
+
+
+/* List Process */
+.listProcess { padding:0 10px; }
+.listProcess li { position:relative; padding-left:56px; }
+.listProcess li:before { content:''; width:38px; height:38px; position:absolute; left:0; top:0; border-radius:50%; background:#ffe11c; text-align:center; line-height:38px; }
+.listProcess li:nth-child(1):before { content:'1'; }
+.listProcess li:nth-child(2):before { content:'2'; }
+.listProcess li:nth-child(3):before { content:'3'; }
+.listProcess li:nth-child(4):before { content:'4'; }
+.listProcess li:after { content:''; width:1px; height:100%; position:absolute; left:19px; top:38px; background:#ffe11c; }
+.listProcess li:last-child:after { display:none; }
+.listProcess li+li { margin-top:25px; }
+.listProcess li .title { margin-bottom:2px; font-size:15px; }
+.listProcess li .cont { color:#999; font-size:15px; font-family:"SFProDisplay", 'Sans-serif'; }
+
+
+/* List Text */
+.listText {  }
+.listText li { position:relative; font-size:15px; letter-spacing:-0.075em; }
+.listText li+li { margin-top:12px; }
+.listText.type--dot li { padding-left:9px; }
+.listText.type--dot li:before { content:'·'; position:absolute; left:0; top:0; font-size:15px; }
+
+
+.boxMap .mapArea { margin-bottom:15px; }
+.boxMap .mapAddress { font-size:15px; }
