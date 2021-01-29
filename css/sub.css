@@ -11,11 +11,13 @@ h3.title { padding:5px 11px; font-size:15px; font-weight:400; }
 h3.title--large { padding:30px 0 16px; font-size:17px; font-weight:700; }
 h3.title--large span { font-weight:400; }
 h4.title { margin-bottom:15px; font-size:12px; font-weight:400; text-align:left; }
+h4.title--medium { margin-bottom:11px; font-size:15px; font-weight:700; }
 h4.title--large { font-size:18px; font-weight:700; }
 
 .headerArea { margin:0 15px; position:relative; }
 .headerArea .btnPagePrev { width:41px; height:49px; position:absolute; left:-15px; top:20px; background-image:url('../images/common/iconArrowWhite.png'); background-position:center center; background-repeat:no-repeat; background-size:12px auto; font-size:0; text-indent:-99999px; }
 .headerArea .btnPagePrev.black { background-image:url('../images/common/iconArrowBlack.png'); }
+.headerArea .btnPageClose { width:40px; height:40px; position:absolute; left:-8px; top:26px; background:url('../images/common/iconCloseBlack.png') center center no-repeat; background-size:20px auto; font-size:0; text-indent:-99999px; }
 .headerArea .btnPageHome { width:52px; height:50px; position:absolute; right:-15px; top:20px; background:url('../images/common/iconHome.png') center center no-repeat; background-size:22px auto; font-size:0; text-indent:-99999px; }
 .headerArea .btnPageHome.black { background-image:url('../images/common/iconHomeBlack.png'); }
 
@@ -54,12 +56,37 @@ input[type="password"].inputBasic { padding-right:50px; }
 .inputGold input { padding:0 108px 0 20px; z-index:1; font-size:15px; font-weight:600; font-family:"SFProDisplay", 'Sans-serif'; }
 .inputGold input::placeholder { color:#d5d5d5; }
 .inputGold span { height:50px; position:absolute; right:20px; top:0; font-size:15px; z-index:2; line-height:50px; }
+.inputUnit { position:relative; }
+.inputUnit input { padding:0 20px 0 90px; z-index:1; }
+.inputUnit.value--max input { padding-right:50px; }
+.inputUnit span { width:70px; height:50px; padding-left:20px; position:absolute; left:0; top:0; font-family:"SFProDisplay", 'Sans-serif'; line-height:50px; z-index:2; }
+.inputUnit span:after { content:''; width:1px; height:18px; position:absolute; right:0; top:50%; margin-top:-9px; background:#d5d5d5; }
+.inputUnit .max { height:50px; display:none; position:absolute; right:20px; top:0; z-index:2; line-height:50px; color:#2750f2; font-size:12px; }
+.inputUnit.value--max .max { display:block; }
+.inputUnit.icon--trade { margin-top:34px; }
+.inputUnit.icon--trade:after { content:''; width:19px; height:15px; position:absolute; left:50%; top:-25px; margin-left:-9px; background:url('../images/common/iconTrade.png') no-repeat; background-size:100% auto; }
 .inputAddress { position:relative; }
 .inputAddress input { padding-right:60px; position:relative; z-index:1; }
 .inputAddress .btnQRcode { width:50px; height:50px; position:absolute; right:0; top:0; background:url('../images/common/iconQRcode.png') center center no-repeat; background-size:20px auto; font-size:0; text-indent:-99999px; z-index:2; }
 .inputAddress.active input { padding-right:20px; }
 .inputAddress.active .btnQRcode { display:none; }
+.inputCalendar { position:relative; }
+.inputCalendar input { padding-right:50px; font-size:17px; }
+.inputCalendar .btnCalendar { width:44px; height:50px; position:absolute; right:0; top:0; background:url('../images/common/iconDatepicker.png') center center no-repeat; background-size:14px auto; font-size:0; text-indent:-99999px; z-index:3; }
 
+
+/* Input Checkbox */
+.inputCheckbox { margin-bottom:15px; overflow:hidden; }
+.inputCheckbox input { position:absolute; lefT:-99999px; top:0; opacity:0; }
+.inputCheckbox label { float:left; margin-left:15px; padding-left:38px; background:url('../images/common/iconCheckBasic.png') left center no-repeat; background-size:30px auto; line-height:30px; font-size:15px; font-weight:100; }
+.inputCheckbox input:checked+label { background-image:url('../images/common/iconCheckBasic_on.png'); }
+.inputCheckbox label:first-of-type { margin-left:0; }
+
+.boxCheckTab { margin-bottom:30px; }
+.boxCheckTab .cont { display:none; }
+.boxCheckTab .cont.active { display:block; }
+.boxCheckTab .cont .address { min-height:50px; display:flex; align-items:center; font-size:15px; word-break:keep-all; }
+.boxCheckTab .cont .btnBasic { font-size:15px; }
 
 
 /* Row */
@@ -67,7 +94,7 @@ input[type="password"].inputBasic { padding-right:50px; }
 .row+.row { margin-top:3px; }
 .row.division { padding-right:98px; }
 .row.division:after { content:''; display:block; clear:both; visibility:visible; }
-.row.division .btnBasic { width:95px; height:50px; position:absolute; right:0; top:0; font-weight:400; }
+.row.division .btnBasic { width:90px; height:50px; position:absolute; right:0; top:0; font-weight:400; }
 .row.division_half { display:flex; }
 .row.division_half > div { flex: 1; }
 .row.division_half > div+div { margin-left:5px; }
@@ -88,6 +115,7 @@ input[type="password"].inputBasic { padding-right:50px; }
 .guide-text.type--dot { padding:0 13px 0 6px; position:relative; }
 .guide-text.type--dot:before { content:'·'; position:absolute; left:0; top:0; }
 .guide-text.type--dot+.guide-text { margin-top:10px; }
+.guide-text.boxGray { padding:8px; background:#f2f4f6; text-align:center; border-radius:5px; }
 
 
 /* Agree List */
@@ -96,7 +124,7 @@ input[type="password"].inputBasic { padding-right:50px; }
 .boxBasicAgree label { display:block; padding-left:23px; background-image:url('../images/common/iconCheckBasic.png'); background-position:left 2px; background-repeat:no-repeat; background-size:18px auto; line-height:22px; font-size:15px; font-weight:300; letter-spacing:-0.1em; }
 .boxBasicAgree input[type='checkbox']:checked + label { background-image:url('../images/common/iconCheckBasic_on.png'); }
 .boxBasicAgree .with--detail label { margin-right:25px; }
-.boxBasicAgree a.detail { position:absolute; right:0; top:0; line-height:22px; font-size:12px; color:#999; }
+.boxBasicAgree a.detail { position:absolute; right:0; top:0; line-height:22px; font-size:12px; color:#999; text-decoration:underline; }
 .boxBasicAgree .areaAllCheck { margin-bottom:15px; position:relative; }
 
 .boxBasicAgree .areaCheck .item { position:relative; }
@@ -199,15 +227,18 @@ input[type="password"].inputBasic { padding-right:50px; }
 .boxAssetList li .info .total { color:#999; }
 
 
+/* List Sort */
+.listSort:after { content:''; display:block; clear:both; }
+.listSort ul { margin-right:8px; float:right; position:relative; padding-right:14px; }
+.listSort ul:after { content:''; width:9px; height:6px; position:absolute; right:0; top:50%; margin-top:-3px; background:url('../images/common/iconArrowSort.png') right center no-repeat; background-size:9px auto; }
+.listSort ul.up:after { margin-top:-2px; transform:rotate(180deg); }
+.listSort ul li { padding:0 4px; float:left; position:relative; color:#6d7278; }
+.listSort ul li+li:after { content:''; width:2px; height:2px; position:absolute; left:-1px; top:50%; margin-top:-1px; border-radius:50%; background:#6d7278; }
+
+
 /* Account */
 .boxAccountList {  }
 .boxAccountList .listSort { margin-bottom:16px; }
-.boxAccountList .listSort:after { content:''; display:block; clear:both; }
-.boxAccountList .listSort ul { margin-right:8px; float:right; position:relative; padding-right:14px; }
-.boxAccountList .listSort ul:after { content:''; width:9px; height:6px; position:absolute; right:0; top:50%; margin-top:-3px; background:url('../images/common/iconArrowSort.png') right center no-repeat; background-size:9px auto; }
-.boxAccountList .listSort ul.up:after { margin-top:-2px; transform:rotate(180deg); }
-.boxAccountList .listSort ul li { padding:0 4px; float:left; position:relative; color:#6d7278; }
-.boxAccountList .listSort ul li+li:after { content:''; width:2px; height:2px; position:absolute; left:-1px; top:50%; margin-top:-1px; border-radius:50%; background:#6d7278; }
 .boxAccountList .listYear { height:26px; padding:0 14px;  background:#f2f4f6; font-size:10px; color:#999; line-height:26px; }
 .boxAccountList .cont li+li { border-top:1px solid #f2f4f6; }
 .boxAccountList .cont a { height:106px; padding:0 30px 0 6px; position:relative; display:flex; align-items:center; }
@@ -222,6 +253,8 @@ input[type="password"].inputBasic { padding-right:50px; }
 .boxAccountList .cont .info .price.out { color:#000; }
 .boxAccountList .cont .info .total { color:#999; font-family:"SFProDisplay", 'Sans-serif'; }
 
+.title--top { position:relative; }
+.title--top .opt { position:absolute; right:0; bottom:0; }
 
 .listTop--title { padding:5px 0 15px; position:relative; }
 .listTop--title h3.title { padding:0 0 0 8px; }
@@ -331,4 +364,61 @@ input[type="password"].inputBasic { padding-right:50px; }
 
 
 .boxMap .mapArea { margin-bottom:15px; }
+.boxMap .mapArea img { width:100%; }
 .boxMap .mapAddress { font-size:15px; }
+
+
+.boxGoldOut { margin-bottom:40px; padding:0 25px 20px; border-radius:20px; background:#ffdf0b; }
+.boxGoldOut .cont { display:flex; text-align:center; }
+.boxGoldOut .cont > div { height:110px; position:relative; flex:1; flex-direction:column; display:flex; align-items:center; justify-content:center; }
+.boxGoldOut .cont > div+div:after { content:''; width:1px; height:40px; position:absolute; left:0; top:50%; margin-top:-20px; background:rgba(204,179,39,0.51) }
+.boxGoldOut .cont .title { font-size:15px; }
+.boxGoldOut .cont .price { font-size:20px; font-weight:700; font-family:"SFProDisplay", 'Sans-serif'; }
+.boxGoldOut .subject { border-top:1px solid rgba(204,179,39,.5); padding:12px 0; text-align:center; color:rgba(132,112,0,1.5); }
+
+
+/* Deposit Item */
+.boxDepositItem { margin-bottom:25px; padding:64px 30px; position:relative; background:#39aaf2;  }
+.boxDepositItem:after { content:''; width:170px; height:144px; position:absolute; right:0; bottom:26px; background:url('../images/content/bgDepositItem.png') no-repeat; background-size:100% auto; }
+.boxDepositItem .cont { position:relative; z-index:2; font-size:17px; color:#fff; font-weight:100; line-height:1.55; }
+
+.listDepositItem { padding:18px 0; }
+.listDepositItem li { padding:30px 20px; position:relative; border-radius:13px; border:1px solid #f2f4f6; box-shadow: 0 3px 3px 0 rgba(173, 173, 173, 0.16); }
+.listDepositItem li+li { margin-top:20px; }
+.listDepositItem .company { font-size:14px; }
+.listDepositItem .title { margin-bottom:24px; font-size:19px; font-weight:700; }
+.listDepositItem .title span.int { width:50px; height:24px; margin:-3px 0 0 8px; display:inline-block; border:1px solid #29c1cf; border-radius:13px; text-align:center; font-size:12px; color:#29c1cf; line-height:22px; font-weight:400; vertical-align:middle; }
+.listDepositItem .graph { width:90px; height:90px; position:absolute; right:15px; top:18px; }
+.listDepositItem .cont { margin-bottom:36px; overflow:hidden; }
+.listDepositItem .cont .date { float:left; margin-right:15px; font-size:15px; color:#999; }
+.listDepositItem .cont .date span.en { margin-left:4px; font-size:16px; }
+.listDepositItem .cont .dDay { float:left; padding-left:20px; background:url('../images/main/iconDayClock.png') left  center no-repeat; background-size:16px auto; font-size:16px; font-family:"SFProDisplay", 'Sans-serif'; font-weight:700; color:#020202; }
+.listDepositItem .cont .total { float:left; font-size:15px; color:#999; }
+.listDepositItem .cont .total span.en { margin-left:4px; font-size:17px; font-weight:700; color:#000; }
+
+
+.circular-chart { display: block; margin:5px; transform:rotateY(180deg) }
+.circular-chart .circle-bg { fill: none; stroke: #eee; stroke-width: 2.8; }
+.circular-chart .circle { stroke: #29c1cf; fill: none; stroke-width: 2.8; stroke-linecap: round; animation: progress 1s ease-out forwards;  }
+.circular-chart .percentage { fill: #f2f4f6; text-anchor: middle; }
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+
+/* Deposit Detail */
+.detailDepositTop { margin-bottom:35px; padding:30px 30px 30px 22px; border-radius:13px; background:#f0f9ff; overflow:hidden; }
+.detailDepositTop .vaild { width:97px; height:112px; float:left; background:url('../images/content/bgDepositTop.png') no-repeat; background-size:97px auto; text-align:center; }
+.detailDepositTop .vaild .title { width:80px; margin:10px auto 0; font-size:13px; color:#fff; line-height:19px; font-weight:300; }
+.detailDepositTop .vaild .percentage { width:80px; margin:0 auto; font-size:19px; color:#fff; line-height:19px; font-weight:700; }
+.detailDepositTop dl { display:block; margin-left:112px; }
+.detailDepositTop dl dt { width:80px; float:left; line-height:30px; font-size:15px; color:#2c2c2c; }
+.detailDepositTop dl dd { display:block; margin-left:85px; line-height:30px; font-size:15px; font-weight:700; color:#2c2c2c; }
+.detailDepositTop dl dd span.en { font-size:16px; font-weight:500; }
+
+.dropbox--item { overflow:hidden; }
+.dropDeposit { padding:20px 18px; background:#f0f9ff; overflow:hidden; }
+.dropDeposit .item { width:33.3%; margin:2px 0; float:left; color:#5facdd; text-align:center; }

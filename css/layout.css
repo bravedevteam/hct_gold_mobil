@@ -144,6 +144,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .mb20 { margin-bottom:20px !important; }
 .mb25 { margin-bottom:25px !important; }
 .mb30 { margin-bottom:30px !important; }
+.mb35 { margin-bottom:35px !important; }
 .mb40 { margin-bottom:40px !important; }
 .mb50 { margin-bottom:50px !important; }
 .mb60 { margin-bottom:60px !important; }
@@ -151,9 +152,13 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .mt0 { margin-top:0px !important; }
 .mt5 { margin-top:5px !important; }
 .mt10 { margin-top:10px !important; }
+.mt15 { margin-top:15px !important; }
 .mt20 { margin-top:20px !important; }
+.mt25 { margin-top:25px !important; }
 .mt30 { margin-top:30px !important; }
+.mt35 { margin-top:35px !important; }
 .mt40 { margin-top:40px !important; }
+.mt45 { margin-top:45px !important; }
 .mt50 { margin-top:50px !important; }
 
 
@@ -218,6 +223,14 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 .btnBasic.blueLine.iconCP { font-weight:700 }
 .btnBasic.blueLine.iconCP i { width:14px; height:20px; margin-right:3px; display:inline-block; background:#2750f2; vertical-align:middle; }
 
+.btnBasic.icon--detail { background:#2750f2; border-radius:5px; color:#fff; }
+.btnBasic.icon--detail:after { content:''; width:13px; height:15px; margin-left:6px; display:inline-block; background:url('../images/main/iconDetailPen.png') right center no-repeat; background-size:auto 100%; }
+
+.btnDropbox { padding-right:16px; position:relative; font-family: 'SpoqaHanSansNeo', 'Sans-serif';
+    letter-spacing: -0.05em; }
+.btnDropbox:after { content:''; width:9px; height:6px; position:absolute; right:0; top:50%; margin-top:-3px; background:url('../images/common/iconArrowSort.png') right center no-repeat; background-size:100% auto; }
+.btnDropbox.active:after { transform:rotate(180deg); }
+
 #footer { padding:22px 15px; position:relative; }
 #footer:after { content:''; display:block; clear:both; visibility:visible; }
 #footer h2 { width:84px; height:42px; margin-bottom:26px; float:left; background:url('../images/common/logo_f.png') no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
@@ -229,6 +242,9 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 #footer ul.privacy li:last-child a { padding-right:0; }
 
 #address { clear:both; font-style:normal; text-align:center; color:#999; font-weight:300; }
+
+
+i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-block; background:url('../images/main/iconDayClock.png') no-repeat; background-size:100% auto; vertical-align:middle; }
 
 
 /* Popup Layer */
