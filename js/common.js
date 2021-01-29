@@ -35,11 +35,46 @@ $(function(){
 	});
 
 
+	/* Input Radio Tab */
+	$(".inputCheckbox label").click(function(e){
+		e.preventDefault();
+
+		var $input = $(this).prev("input");
+		if($input.prop("checked") == false){
+			$input.prop("checked", true);
+
+			if($input.hasClass("checkTab")){
+				var target = $input.attr("id");
+
+				console.log(target)
+				
+				$("#"+target+"_cont").siblings().removeClass("active");
+				$("#"+target+"_cont").addClass("active");
+			}
+		}
+	});
+
+
 	/* tabBasic */
 	$(".tabBasic button").click(function(){
 		if(!$(this).hasClass("active")){
 			$(this).addClass("active");
 			$(this).siblings().removeClass("active");
+		}
+	});
+
+
+	/* Drop Box */
+	$(".dropbox--item").slideUp(0);
+	$(".btnDropbox").click(function(){
+		var target = $(this).attr("data-drop");
+		
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+			$("#"+target).slideUp(300);
+		}else{
+			$(this).addClass("active");
+			$("#"+target).slideDown(300);
 		}
 	});
 	
