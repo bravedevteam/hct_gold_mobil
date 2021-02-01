@@ -107,6 +107,26 @@ $(function(){
 		$(".textLayer").removeClass("active");
 		$("#dim").fadeOut(500);
 	}
+
+
+	/* Attach */
+	$(".selectAttach").each(function(){
+		if($(this).children(".title").hasClass("active")){
+			$(".selectAttach .cont").slideDown(0);
+		}else{
+			$(".selectAttach .cont").slideUp(0);
+		}
+	});
+	
+	$(".selectAttach .title").click(function(){
+		if($(this).hasClass("active")){
+			$(this).removeClass("active");
+			$(".selectAttach .cont").slideUp(300);
+		}else{
+			$(this).addClass("active");
+			$(".selectAttach .cont").slideDown(300);
+		}
+	});
 });
 
 /* Number MaxLength */
