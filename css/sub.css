@@ -50,7 +50,9 @@ h4.title--large { font-size:18px; font-weight:700; }
 .inputBasic::placeholder { color:#ccc; }
 input[type="password"].inputBasic { padding-right:50px; }
 .inputPassword { position:relative; }
-.inputPassword input.danger { border-color:#ff6363; }
+input[type="text"].danger,
+input[type="password"].danger { border-color:#ff6363; }
+input[type="text"]:disabled { border:1px solid #d5d5d5; background:#f2f4f6; }
 .btnHiddenPass { width:50px; height:50px; position:absolute; right:0; top:0; background:url('../images/common/iconPassword.png') center center no-repeat; background-size:20px auto; z-index:5; }
 .inputGold { position:relative; }
 .inputGold input { padding:0 108px 0 20px; z-index:1; font-size:15px; font-weight:600; font-family:"SFProDisplay", 'Sans-serif'; }
@@ -132,10 +134,13 @@ input[type="password"].inputBasic { padding-right:50px; }
 
 
 /* Complate */
-.boxComplate { padding:132px 20px; }
+.boxComplate { padding:130px 35px; }
 .boxComplate .cont.icon--join { padding-top:48px; background:url('../images/common/iconJoinComplate.png') left top no-repeat; background-size:auto 34px; }
 .boxComplate .cont.icon--complate { padding-top:48px; background:url('../images/common/iconCheckBlack.png') left top no-repeat; background-size:auto 35px; }
+.boxComplate .cont.icon--judge { padding-top:52px; background:url('../images/common/iconJoinJudge.png') left top no-repeat; background-size:auto 38px; }
+.boxComplate .cont.icon--defer { padding-top:52px; background:url('../images/common/iconJoinDefer.png') left top no-repeat; background-size:auto 39px; }
 .boxComplate .cont .title { margin-bottom:20px; font-size:25px; font-weight:700; }
+.boxComplate .cont .subject { margin-bottom:25px; font-size:17px; color:#2750f2; font-weight:700; }
 .boxComplate .cont .explanation { margin-bottom:23px; font-size:17px; line-height:1.65; letter-spacing:-.085em; word-break:keep-all; }
 .boxComplate .cont .explanation ul li { position:relative; }
 .boxComplate .cont .explanation ul li:before { content:'·'; position:absolute; left:-9px; top:0; font-size:17px; }
@@ -422,3 +427,26 @@ input[type="password"].inputBasic { padding-right:50px; }
 .dropbox--item { overflow:hidden; }
 .dropDeposit { padding:20px 18px; background:#f0f9ff; overflow:hidden; }
 .dropDeposit .item { width:33.3%; margin:2px 0; float:left; color:#5facdd; text-align:center; }
+
+
+
+/* Login */
+.boxCheckLogin { margin-top:15px; overflow:hidden; }
+.boxCheckLogin input { position:absolute; left:-99999px; top:0; opacity:0; }
+.boxCheckLogin label { padding-left:26px; float:left; background:url('../images/common/iconCheckBlue.png') left center no-repeat; background-size:21px auto; font-size:15px; line-height:20px; }
+.boxCheckLogin input:checked + label { background-image:url('../images/common/iconCheckBlue_on.png'); }
+.boxCheckLogin .btnLostPass { float:right; margin-right:5px; line-height:20px; color:#6c6c6c; font-size:15px; }
+
+.selectAttach { border:1px solid #f2f4f6; border-radius:5px; }
+.selectAttach > .title { height:65px; position:relative; padding:0 20px; line-height:65px; font-size:17px; }
+.selectAttach > .title:after { content:''; width:11px; height:6px; position:absolute; right:20px; top:50%; margin-top:-3px; background:url('../images/common/iconSelect.png') no-repeat; background-size:100% auto; transition:all .3s; }
+.selectAttach > .title.active:after { transform:rotate(180deg); }
+.selectAttach > .cont { padding:0 10px; overflow:hidden; }
+.selectAttach .inputAttach {  }
+.selectAttach .inputAttach+.inputAttach { margin-top:5px; }
+.selectAttach .inputAttach .filebox .uploadName { padding-right:80px; }
+.selectAttach .inputAttach .filebox span { position:absolute; right:117px; top:50%; transform:translateY(-50%); color:#ff6363; font-size:12px; }
+.selectAttach .inputAttach.complate .filebox { padding-right:0; }
+.selectAttach .inputAttach.complate label,
+.selectAttach .inputAttach.complate input[type="file"] { display:none; }
+.selectAttach .inputAttach.complate .filebox span { right:19px; color:#d5d5d5; font-size:15px; }

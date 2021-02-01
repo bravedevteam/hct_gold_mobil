@@ -121,12 +121,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .pt30 { padding-top:30px !important; }
 .pt40 { padding-top:40px !important; }
 .pt50 { padding-top:50px !important; }
+
 .pb0 { padding-bottom:0 !important; }
 .pb10 { padding-bottom:10px !important; }
 .pb20 { padding-bottom:20px !important; }
 .pb30 { padding-bottom:30px !important; }
 .pb40 { padding-bottom:40px !important; }
 .pb50 { padding-bottom:50px !important; }
+
+.prl15 { padding:0 15px !important; }
 
 
 /* Margin */
@@ -206,6 +209,9 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 .boxBtn.right { text-align:right; }
 .boxBtn.center { text-align:center; }
 .boxBtn.btn--full { display:flex; }
+.boxBtn.btn--full button { flex:1; }
+.boxBtn.btn--join button { position:relative; }
+.boxBtn.btn--join button+button:after { content:''; width:1px; height:90px; position:absolute; left:0; top:50%; margin-top:-45px; background:#f2f4f6; }
 
 .textBasic { font-size:15px; color:#000; }
 .textBasic+.textBasic { margin-top:5px; }
@@ -222,6 +228,9 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 .btnBasic.bgWhite { background:#fff; border:1px solid #000; color:#000; }
 .btnBasic.blueLine.iconCP { font-weight:700 }
 .btnBasic.blueLine.iconCP i { width:14px; height:20px; margin-right:3px; display:inline-block; background:#2750f2; vertical-align:middle; }
+
+.btnJoinGeneral { height:90px; padding-top:55px; background:url('../images/common/iconJoinGeneral.png') center 20px no-repeat; background-size:19px auto; font-size:15px; }
+.btnJoinBusiness { height:90px; padding-top:55px; background:url('../images/common/iconJoinBusiness.png') center 20px no-repeat; background-size:19px auto; font-size:15px; }
 
 .btnBasic.icon--detail { background:#2750f2; border-radius:5px; color:#fff; }
 .btnBasic.icon--detail:after { content:''; width:13px; height:15px; margin-left:6px; display:inline-block; background:url('../images/main/iconDetailPen.png') right center no-repeat; background-size:auto 100%; }
