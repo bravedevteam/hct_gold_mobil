@@ -127,6 +127,21 @@ $(function(){
 			$(".selectAttach .cont").slideDown(300);
 		}
 	});
+
+
+	/* Customer */
+	$(".listCustomer li .cont").slideUp(0);
+	$(".listCustomer li .top").click(function(){
+		var target = $(this).parent();
+		if(target.hasClass("active")){
+			target.removeClass("active");
+			target.children(".cont").slideUp(300);
+		}else{
+			target.siblings().removeClass("active").children(".cont").slideUp(300);
+			target.addClass("active");
+			target.children(".cont").slideDown(300);
+		}
+	});
 });
 
 /* Number MaxLength */
