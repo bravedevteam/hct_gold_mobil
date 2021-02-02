@@ -100,7 +100,7 @@ input {box-sizing: border-box; border: 1px solid #ddd; background-color: #fff; b
 input[type=text]::-ms-clear {display:none;}
 button {box-sizing: border-box; border: 0; background-color: transparent; cursor: pointer; color:inherit; font-family:inherit;}
 textarea {box-sizing: border-box; resize: none;}
-select {-webkit-border-radius: 0; -webkit-appearance: none; -moz-appearance: none; -webkit-appearance: none; appearance: none; box-sizing: border-box; cursor: pointer;}
+select {-webkit-border-radius: 0; -webkit-appearance: none; -moz-appearance: none; -webkit-appearance: none; appearance: none; box-sizing: border-box; cursor: pointer; font-family: inherit; }
 select::-ms-expand {display: none;}
 img { max-width:100%; }
 hr { border:0; }
@@ -129,6 +129,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .pb40 { padding-bottom:40px !important; }
 .pb50 { padding-bottom:50px !important; }
 
+.prl10 { padding:0 10px !important; }
 .prl15 { padding:0 15px !important; }
 
 
@@ -310,6 +311,7 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .boxCertifySix .input input[type="number"] { width:40px; height:58px; margin-left:6px; border:1px solid #d5d5d5; border-radius:5px; text-align:center; font-size:25px; font-weight:700; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxCertifySix .input input[type="number"]:first-child { margin-left:0; }
 .boxCertifySix .limit { margin-bottom:40px; color:#999; }
+.boxCertifySix .limit.danger { color:#ff6363; }
 .boxCertifySix .retry { color:#2750f2; font-size:17px; }
 
 .boxCheckBlue { position:relative; }
