@@ -42,7 +42,7 @@
 		table { width:100%; }
 		table th, table td { border:1px solid #ccc; text-align:center; }
 		table th { padding:15px 10px; background:#eee; border-bottom-width:2px; }
-		table td { padding:10px; }
+		table td { padding:10px; line-height:1.6; }
 		table td.complate { background:#C6EFCE; }
 		table td.ing { background:#FFFFCC; }
 		table td.modify { background:#FFC7CE; }
@@ -50,6 +50,8 @@
 		table td a { width:130px; height:30px; display:inline-block; background:rgb(0, 119, 255); border-radius:3px; border-bottom:2px solid rgb(0, 65, 139); line-height:30px; color:#fff; font-weight:bold; vertical-align:middle; }
 		table td a:hover { position:relative; top:2px; background:rgb(0, 94, 201); border-bottom:0; }
 		table tr.line td { border-top-width:2px; }
+		table tr.cancel td { background:rgba(255,99,99,.5); }
+		table td span { color:#2750f2; font-weight:bold; }
 	</style>
 	<script src="js/jquery-3.5.1.min.js"></script>
 </head>
@@ -72,7 +74,7 @@
 				<col width="110" />
 				<col width="110" />
 				<col width="110" />
-				<col width="110" />
+				<col width="140" />
 				<col width="150" />
 				<col width="100" />
 				<col width="100" />
@@ -145,9 +147,7 @@
 					<td><a href="./deposit5_1.html" target="_blank">deposit5_1.html</a></td>
 					<td class="complate">작업 완료</td>
 					<td>2021-01-29</td>
-					<td>
-						상품별 상단 그래프 모양은 추후 변경 가능성 있음.
-					</td>
+					<td><span>* 2020-02-02</span><br />- 상품별 그래프 변경</td>
 				</tr>
 				<tr>
 					<td></td>
@@ -336,7 +336,7 @@
 					<td>2021-01-27</td>
 					<td></td>
 				</tr>
-				<tr class="line">
+				<tr class="line cancel">
 					<td></td>
 					<td>자산교환</td>
 					<td>교환신청</td>
@@ -345,9 +345,9 @@
 					<td></td>
 					<td></td>
 					<td></td>
-					<td></td>
+					<td>1차 제외</td>
 				</tr>
-				<tr>
+				<tr class="cancel">
 					<td></td>
 					<td></td>
 					<td></td>
@@ -356,9 +356,9 @@
 					<td></td>
 					<td></td>
 					<td></td>
-					<td></td>
+					<td>1차 제외</td>
 				</tr>
-				<tr>
+				<tr class="cancel">
 					<td></td>
 					<td></td>
 					<td>교환내역</td>
@@ -367,7 +367,7 @@
 					<td></td>
 					<td></td>
 					<td></td>
-					<td></td>
+					<td>1차 제외</td>
 				</tr>
 				<tr class="line">
 					<td></td>
@@ -375,9 +375,9 @@
 					<td>진행중투자</td>
 					<td></td>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td><a href="./invest1.html" target="_blank">invest1.html</a></td>
+					<td class="complate">작업 완료</td>
+					<td>2021-02-02</td>
 					<td></td>
 				</tr>
 				<tr>
@@ -386,9 +386,9 @@
 					<td>종료된투자</td>
 					<td></td>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td><a href="./invest2.html" target="_blank">invest2.html</a></td>
+					<td class="complate">작업 완료</td>
+					<td>2021-02-02</td>
 					<td></td>
 				</tr>
 				<tr class="line">
@@ -400,7 +400,7 @@
 					<td><a href="./join1_1.html" target="_blank">join1_1.html</a></td>
 					<td class="complate">작업 완료</td>
 					<td>2021-01-25</td>
-					<td></td>
+					<td><span>* 2021-02-02</span><br />- 이메일 중복 검사 버튼 추가<br />-상단 네비게이션 이전 버튼 추가</td>
 				</tr>
 				<tr>
 					<td></td>
@@ -411,7 +411,7 @@
 					<td><a href="./join1_2.html" target="_blank">join1_2.html</a></td>
 					<td class="complate">작업 완료</td>
 					<td>2021-01-25</td>
-					<td></td>
+					<td><span>* 2021-02-02</span><br />- 이메일 중복 검사 버튼 추가<br />-상단 네비게이션 이전 버튼 추가</td>
 				</tr>
 				<tr>
 					<td></td>
@@ -444,7 +444,7 @@
 					<td><a href="./join2_1.html" target="_blank">join2_1.html</a></td>
 					<td class="complate">작업 완료</td>
 					<td>2021-01-26</td>
-					<td></td>
+					<td><span>* 2021-02-02</span><br />- 이메일 중복 검사 버튼 추가<br />-상단 네비게이션 이전 버튼 추가</td>
 				</tr>
 				<tr>
 					<td></td>
@@ -455,7 +455,7 @@
 					<td><a href="./join2_2.html" target="_blank">join2_2.html</a></td>
 					<td class="complate">작업 완료</td>
 					<td>2021-01-26</td>
-					<td></td>
+					<td><span>* 2021-02-02</span><br />-상단 네비게이션 이전 버튼 추가</td>
 				</tr>
 				<tr>
 					<td></td>
@@ -628,9 +628,9 @@
 					<td></td>
 					<td>휴대폰변경</td>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td><a href="./security3.html" target="_blank">security3.html</a></td>
+					<td class="complate">작업 완료</td>
+					<td>2021-02-02</td>
 					<td></td>
 				</tr>
 				<tr>
@@ -639,9 +639,9 @@
 					<td></td>
 					<td>OTP인증</td>
 					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td><a href="./security4.html" target="_blank">security4.html</a></td>
+					<td class="complate">작업 완료</td>
+					<td>2021-02-02</td>
 					<td></td>
 				</tr>
 				<tr>
@@ -649,10 +649,21 @@
 					<td></td>
 					<td></td>
 					<td>KYC인증</td>
+					<td>여권 인증</td>
+					<td><a href="./security5.html" target="_blank">security5.html</a></td>
+					<td class="complate">작업 완료</td>
+					<td>2021-02-02</td>
+					<td></td>
+				</tr>
+				<tr>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
+					<td>주민등록증 인증</td>
+					<td><a href="./security6.html" target="_blank">security6.html</a></td>
+					<td class="complate">작업 완료</td>
+					<td>2021-02-02</td>
 					<td></td>
 				</tr>
 				<tr>
@@ -660,10 +671,32 @@
 					<td></td>
 					<td></td>
 					<td>비밀번호 재설정</td>
+					<td>이메일 주소 입력</td>
+					<td><a href="./security7.html" target="_blank">security7.html</a></td>
+					<td class="complate">작업 완료</td>
+					<td>2021-02-02</td>
+					<td></td>
+				</tr>
+				<tr>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
+					<td>이메일 인증</td>
+					<td><a href="./security8.html" target="_blank">security8.html</a></td>
+					<td class="complate">작업 완료</td>
+					<td>2021-02-02</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>새 비밀번호 입력</td>
+					<td><a href="./security9.html" target="_blank">security9.html</a></td>
+					<td class="complate">작업 완료</td>
+					<td>2021-02-02</td>
 					<td></td>
 				</tr>
 				<tr>
@@ -671,10 +704,21 @@
 					<td></td>
 					<td>고객센터</td>
 					<td></td>
+					<td>공지사항</td>
+					<td><a href="./notice.html" target="_blank">notice.html</a></td>
+					<td class="complate">작업 완료</td>
+					<td>2021-02-02</td>
+					<td></td>
+				</tr>
+				<tr>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
+					<td>자주묻는 질문</td>
+					<td><a href="./faq.html" target="_blank">faq.html</a></td>
+					<td class="complate">작업 완료</td>
+					<td>2021-02-02</td>
 					<td></td>
 				</tr>
 				<tr>
@@ -682,10 +726,21 @@
 					<td></td>
 					<td>약관/정책</td>
 					<td></td>
+					<td>이용약관</td>
+					<td><a href="./yak1.html" target="_blank">yak1.html</a></td>
+					<td class="complate">작업 완료</td>
+					<td>2021-02-02</td>
+					<td></td>
+				</tr>
+				<tr>
 					<td></td>
 					<td></td>
 					<td></td>
 					<td></td>
+					<td>개인정보 처리방침</td>
+					<td><a href="./yak2.html" target="_blank">yak2.html</a></td>
+					<td class="complate">작업 완료</td>
+					<td>2021-02-02</td>
 					<td></td>
 				</tr>
 			</tbody>

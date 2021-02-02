@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>AROWANA GOLD FINANCE</title>
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/sub.css" />
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/common.js"></script>
+</head>
+
+<body>
+	<div id="container" class="sub">
+    <div class="headerArea">
+      <a href="#" class="btnPagePrev black">이전</a>
+      <h1 class="title">실명인증</h1>
+      <a href="#" class="btnPageHome black">처음으로</a>
+    </div>
+    <div class="section">
+      <div class="tabBasic mt0 mb25">
+        <button type="button">여권</button>
+        <button type="button" class="active">주민등록증</button>
+        <button type="button">운전면허증</button>
+      </div>
+      <h4 class="title title--medium prl10">기본정보<span>(주민등록증기준)</span></h4>
+      <div class="row">
+        <input type="text" class="inputBasic" placeholder="이름" />
+      </div>
+      <div class="row division age">
+        <input type="text" class="inputBasic" placeholder="생년월일 (8자리)" />
+        <div class="select gender">
+          <select>
+            <option>성별</option>
+            <option>남</option>
+            <option>여</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <input type="text" class="inputBasic" placeholder="발급번호" />
+      </div>
+      <div class="row">
+        <input type="text" class="inputBasic" placeholder="발급처" />
+      </div>
+    </div>
+    <div class="section mt25">
+      <h4 class="title title--medium prl10">신분증 사진 첨부</h4>
+      <div class="boxIdentityStep">
+        <ul>
+          <li>
+            <div class="title">1. 신분증 사진을 첨부하세요.</div>
+            <div class="identityThumb with--identity">
+              <a href="#">사진 선택</a>
+            </div>
+            <div class="guide-text">*주민번호 뒷자리를 가려주세요!</div>
+          </li>
+          <li>
+            <div class="title">2. 신분증을 들고 있는 본인 얼굴사진을 첨부하세요.</div>
+            <div class="identityThumb with--face">
+              <a href="#">사진 선택</a>
+            </div>
+            <div class="guide-text">*사진의 내용과 얼굴이 명확히 잘 보여야 합니다.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer--btn">
+			<button type="button" class="btnBasic active">인증신청</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
+		</div>
+  </div>
+</body>
+</html>
