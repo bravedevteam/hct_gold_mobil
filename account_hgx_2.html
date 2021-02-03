@@ -14,22 +14,27 @@
 	<div id="container">
     <div class="headerArea">
       <a href="#" class="btnPagePrev black">이전</a>
-      <h1 class="title">HGX</h1>
+      <h1 class="title">
+        <div class="tokenSelect">
+          <select>
+            <option>BTC</option>
+            <option selected="selected">HGX</option>
+            <option>ETH</option>
+            <option>USTD</option>
+          </select>
+        </div>
+      </h1>
     </div>
     <div class="section mb50">
       <div class="boxWalletTop type--hgx2">
         <div class="top">
           <div class="typeMark"><img src="./images/content/iconAccount_hgx2.png" alt="" /></div>
-          <button type="button" class="btnTransList">자산교환</button>
+          <div class="etc">금 인출</div>
         </div>
         <div class="priceWrap">
           <div class="title">보유자산</div>
           <div class="price"><span class="en">120,000 HGX</span></div>
           <div class="bottomPriceGroup">
-            <div class="bottomPrice">
-              <div class="subTitle">사용가능자산</div>
-              <div class="usePrice"><span class="en">100,000 HGX</span></div>
-            </div>
             <div class="bottomPrice">
               <div class="subTitle">평가금액</div>
               <div class="usePrice"><span class="en">10,000,000</span>원</div>
@@ -38,6 +43,7 @@
               <div class="subTitle">인출가능 금</div>
               <div class="usePrice"><span class="en">200g (24K)</span></div>
             </div>
+            <div class="bottomPrice small">현재 시세 <span class="en">1 HGX = 110 KRW</span></div>
           </div>
         </div>
         <div class="btn">
@@ -237,18 +243,6 @@
             </li>
           </ul>
         </div>
-      </div>
-      <hr class="section--space" />
-      <div class="section">
-        <div class="listTable">
-          <dl>
-            <dt>받는 지갑주소</dt>
-            <dd>1321dafdsaweg5454f dafdsaweg5454fasdef</dd>
-            <dt>거래아이디(TXID)</dt>
-            <dd>1eklsjdlk54adfas5343dafdsaweg5454fasdefg5454fasdef1eklsjdlk54adfas5343 dafdsaweg5454fasdefg5454fasdef</dd>
-          </dl>
-          <a href="#" class="underLink"><span class="en">TXID</span> 복사</a>
-        </div>
         <div class="boxBtn center mt40">
           <button type="button" class="btnBasic size--half bgWhite">계약서 보기</button>
         </div>
@@ -265,7 +259,7 @@
         </div>
         <div class="detail">
           <div class="usePrice">상품투자-<span class="en">123,000 HGX</span></div>
-          <div class="price"><span class="en">150g 24K</span></div>
+          <div class="price"><span class="en">150g 24K(120,000 원)</span></div>
         </div>
         <div class="listDetail">
           <ul>
