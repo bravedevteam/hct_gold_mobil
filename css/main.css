@@ -1,4 +1,4 @@
-.mainTop { padding:20px 0 0;
+.mainTop { padding:10px 0 0;
   background: #ffffff; /* Old browsers */
   background: -moz-linear-gradient(top,  #ffffff 0%, #f6f8ff 32%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f8ff 32%); /* Chrome10-25,Safari5.1-6 */
@@ -11,33 +11,55 @@ h3.title { margin-bottom:16px; padding:0 15px; font-size:17px; color:#000; font-
 .section { margin:0; }
 
 /* Assets */
-.boxAssets { margin-bottom:9px; padding:27px 17px 22px 24px; border-radius:20px; background:#2750f2; color:#fff; box-shadow: 0 7px 5px 0 rgba(0, 37, 181, 0.2); }
-.boxAssets .top { margin-bottom:35px; overflow:hidden; }
+.boxAssets { padding-bottom:15px; overflow:hidden; }
+.boxAssets .box { height:300px; position:relative; margin:0 15px; padding:27px 17px 72px; border-radius:20px; background:#2750f2; color:#fff; box-shadow: 0 7px 5px 0 rgba(0, 37, 181, 0.2); }
+.boxAssets .top { margin-bottom:50px; position:relative; overflow:hidden; }
 .boxAssets .title { height:26px; float:left; font-size:15px; line-height:26px; }
 .boxAssets .title span { color:#ffe11c; }
 .boxAssets .trade { width:80px; height:26px; float:right; border:1px solid #fff; border-radius:13px; text-align:center; line-height:26px; font-size:12px; }
 .boxAssets .trade i { width:11px; margin-right:2px; display:inline-block; vertical-align:middle; }
-.boxAssets .price { font-size:30px; font-weight:700; text-align:center; font-family:"SFProDisplay", 'Sans-serif'; }
-.boxAssets .usePrice { margin-bottom:40px; font-size:15px; text-align:center; color:#00fff5; font-weight:300; }
-.boxAssets .usePrice span { font-family:"SFProDisplay", 'Sans-serif'; }
-.boxAssets .btn { padding:0 5px; overflow:hidden; }
-.boxAssets .btn button { width:50%; height:36px; position:relative; display:block; float:left; text-align:center; font-size:17px; }
-.boxAssets .btn button+button:after { content:''; width:1px; height:15px; position:absolute; left:0; top:50%; transform:translateY(-50%); background:#5273f5; }
+.boxAssets .box .opt { position:absolute; right:0; top:5px; color:#847000; }
+.boxAssets .price { margin-bottom:5px; font-size:30px; font-weight:700; text-align:center; }
+.boxAssets .price span.unit { font-weight:500; font-size:19px; }
+.boxAssets .price span.unit2 { font-size:22px; }
+.boxAssets .bottomPrice { margin-bottom:30px; font-size:15px; text-align:center; color:rgba(255,255,255,0.6); }
+.boxAssets .bottomPrice i.icon { width:7px; height:6px; margin:0 3px 0 5px; display:inline-block; background:url('../images/main/iconDayArrow.png') no-repeat; background-size:100% auto; vertical-align:middle; }
+.boxAssets .bottomPrice i.icon.down { transform:rotate(180deg); }
+.boxAssets .guide { margin-bottom:12px; font-size:14px; color:#ffdf31; text-align:center; letter-spacing:-.07em; }
+.boxAssets .btn { position:absolute; left:17px; right:17px; bottom:21px; display:flex; overflow:hidden; border-radius:5px; border:1px solid #5273f5 }
+.boxAssets .btn button { height:50px; position:relative; flex:1; color:#fff; font-size:15px; }
+.boxAssets .btn button+button:after { content:''; width:1px; height:15px; position:absolute; left:0; top:50%; transform:translateY(-50%); background:rgba(255,255,255,.5); }
+
+.boxAssets .box.type--detail { background:#ffdf0b; color:#000; box-shadow: 0 7px 5px 0 rgba(255, 199, 48, 0.2); }
+.boxAssets .box.type--detail .top { margin-bottom:30px; }
+.boxAssets .box.type--detail .subject { text-align:center; font-size:19px ; }
+.boxAssets .box.type--detail .price { margin:0; font-family:"SFProDisplay", 'Sans-serif'; line-height:36px; }
+.boxAssets .box.type--detail .price_won { font-size:17px; text-align:center; font-weight:500; line-height:20px; }
+.boxAssets .box.type--detail .usePrice { margin-bottom:15px; text-align:center; color:#847000; font-size:16px; font-weight:500; }
+.boxAssets .box.type--detail .guidePrice { text-align:center; color:rgba(132,112,0,.5); }
+.boxAssets .box.type--detail .btn { border-color:#ccb327; }
+.boxAssets .box.type--detail .btn button { color:#2c2c2c; }
+.boxAssets .box.type--detail .btn button+button:after { background:rgba(0,0,0,0.5); }
+
+.boxAssets .swiper-container { overflow:visible; }
+.boxAssets .swiper-slide { width:92%; }
+.boxAssets .swiper-slide .box { margin:0; }
 
 
 /* Quick */
-.boxQuick { margin:0 15px 44px; }
+.boxQuick { margin:0 15px; }
 .boxQuick a { height:66px; position:relative; display:block; margin-right:3px; padding:0 22px; border-radius:10px; border:1px solid #e5e8f8; background:#fff; box-shadow: 0 3px 3px 0 rgba(173, 173, 173, 0.16); line-height:66px; }
 .boxQuick a+a { margin-top:8px; }
-.boxQuick a .title { font-size:16px; color:#000; font-weight:500; }
-.boxQuick a .title i { width:20px; display:inline-block; margin-right:15px; vertical-align:middle; }
+.boxQuick a .title { position:relative; padding-left:34px; font-size:16px; color:#000; font-weight:500; }
+.boxQuick a .title i { width:22px; position:absolute; left:0; top:20px; line-height:1; }
+.boxQuick a .title i img { vertical-align:top; }
 .boxQuick a .subject { position:absolute; right:24px; top:50%; padding-right:18px; transform:translateY(-50%); font-size:14px; color:#999; }
 .boxQuick a .subject:after { content:''; width:7px; height:13px; position:absolute; right:0; top:50%; margin-top:-5px; background:url('../images/common/iconArrow.png') center center no-repeat; background-size:100% auto; }
 
 
 /* Guide */
-.boxDepositGuide { margin:0 15px; padding:0 18px 60px; position:relative; }
-.boxDepositGuide:after { content:''; width:183px; height:301px; position:absolute; right:-15px; bottom:0; background:url('../images/main/bgDeposit.png') no-repeat; background-size:100% auto; z-index:1; }
+.boxDepositGuide { margin:54px 15px 0; padding:0 18px 60px; position:relative; }
+.boxDepositGuide:after { content:''; width:174px; height:297px; position:absolute; right:-15px; bottom:0; background:url('../images/main/bgDeposit.png') no-repeat; background-size:100% auto; z-index:1; }
 .boxDepositGuide .subject { margin-bottom:8px; font-size:15px; font-weight:700; color:#29c1cf; }
 .boxDepositGuide .title { margin-bottom:20px; font-size:22px; font-weight:700; }
 .boxDepositGuide .title span { position:relative; z-index:1; }
@@ -45,6 +67,10 @@ h3.title { margin-bottom:16px; padding:0 15px; font-size:17px; color:#000; font-
 .boxDepositGuide .cont { margin-bottom:30px; font-size:14px; color:#999; line-height:1.6; }
 .boxDepositGuide .link { height:24px; display:inline-block; color:#000; font-size:14px; font-weight:500; }
 .boxDepositGuide .link:after { content:'';  }
+
+.boxDepositGuide.type--short { margin-top:50px; padding-bottom:45px; }
+.boxDepositGuide.type--short:after { width:177px; height:188px; background-image:url('../images/main/bgDeposit2.png'); }
+.boxDepositGuide.type--short .cont { margin:0; }
 
 
 /* Invest Item */

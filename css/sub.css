@@ -10,6 +10,8 @@ h2.title.icon--exmark { margin-bottom:20px; padding:42px 0 0; background:url('..
 h3.title { padding:5px 11px; font-size:15px; font-weight:400; }
 h3.title--large { padding:30px 0 16px; font-size:17px; font-weight:700; }
 h3.title--large span { font-weight:400; }
+h3.title--ing { color:#2750f2; }
+h3.title--end { color:#999; }
 h4.title { margin-bottom:15px; font-size:12px; font-weight:400; text-align:left; }
 h4.title--medium { margin-bottom:11px; font-size:15px; font-weight:700; }
 h4.title--large { font-size:18px; font-weight:700; }
@@ -21,6 +23,7 @@ h4.title span { font-size:12px; }
 .headerArea .btnPageClose { width:40px; height:40px; position:absolute; left:-8px; top:26px; background:url('../images/common/iconCloseBlack.png') center center no-repeat; background-size:20px auto; font-size:0; text-indent:-99999px; }
 .headerArea .btnPageHome { width:52px; height:50px; position:absolute; right:-15px; top:20px; background:url('../images/common/iconHome.png') center center no-repeat; background-size:22px auto; font-size:0; text-indent:-99999px; }
 .headerArea .btnPageHome.black { background-image:url('../images/common/iconHomeBlack.png'); }
+.headerArea .btnInOut { position:absolute; right:0; top:40px; color:#f2f4f6; }
 
 .topStep { position:absolute; right:0; top:37px; overflow:hidden; }
 .topStep li { width:20px; height:20px; position:relative; float:left; border:1px solid #bebebe; border-radius:50%; text-align:center; line-height:18px; color:#bebebe; font-family:"SFProDisplay", 'Sans-serif'; }
@@ -170,24 +173,45 @@ h1 .tokenSelect { margin:0 auto; }
 
 
 /* Wallet */
-.boxWalletTop { position:relative; padding:0 15px 34px; }
+.boxWalletTop { position:relative; padding:0 15px 24px; }
+.boxWalletTop .walletTab { height:45px; display:flex; position:relative; margin:0 auto; background:#264ce3; border-radius:5px; }
+.boxWalletTop .walletTab:after { content:''; width:33.3%; height:45px; position:absolute; top:0; background:#1ed6e6; box-shadow: 3px 6px 10px 0 rgba(0, 22, 108, 0.37); border-radius:5px; z-index:2; transition:left .5s; }
+.boxWalletTop .walletTab.tab1:after { left:0; }
+.boxWalletTop .walletTab.tab2:after { left:33.3%; }
+.boxWalletTop .walletTab.tab3:after { left:66.6%; }
+.boxWalletTop .walletTab button { width:33.3%; height:45px; position:relative; text-align:center; color:rgba(255,255,255,.5); z-index:5; font-size:15px; }
+.boxWalletTop .walletTab button.active { color:#fff; }
+.boxWalletTop .walletTab button+button:after { content:''; width:1px; height:15px; position:absolute; left:-1px; top:50%; background:rgba(255,255,255,.5); transform:translateY(-50%); z-index:1; opacity:.4; }
+
 .boxWalletTop .top { overflow:hidden; }
-.boxWalletTop .top .title { float:left; position:relative; padding-right:18px; color:#fff; line-height:26px; }
-.boxWalletTop .top .btnInfo { width:14px; height:14px; position:absolute; right:0; top:50%; margin-top:-7px; background:url('../images/common/iconMarkSmall.png') center center no-repeat; background-size:14px auto; font-size:0; text-indent:-99999px; }
+.boxWalletTop .top .title { float:left; position:relative; color:#fff; line-height:26px; }
 .boxWalletTop .top .typeMark { width:40px; height:40px; float:left; display:flex; background:#fff; border-radius:50%; align-items:center; justify-content:center; }
 .boxWalletTop .top .typeMark img { width:25px; }
 .boxWalletTop .top .btnTransList { width:80px; height:26px; float:right; border:1px solid rgba(255,255,255,.4); border-radius:13px; color:#f2f4f6; font-size:12px; text-align:center; line-height:24px; }
 .boxWalletTop .top .etc { float:right; margin-top:10px; color:#fff; }
-.boxWalletTop .priceWrap { margin:40px 0 60px; text-align:center; }
-.boxWalletTop .priceWrap .title { font-size:19px; color:#000; font-weight:700; }
-.boxWalletTop .priceWrap > .price { font-size:30px; font-weight:700; color:#fff; }
+.boxWalletTop .priceWrap { margin:35px 0; text-align:center; }
+.boxWalletTop .priceWrap .title { font-size:19px; color:#fff; }
+.boxWalletTop .priceWrap > .price { display:inline-block; position:relative; font-size:25px; font-weight:700; color:#fff; }
+.boxWalletTop .priceWrap > .price.with--info { padding-right:24px; }
+.boxWalletTop .priceWrap > .price span { font-size:30px; }
+.boxWalletTop .priceWrap .btnInfo { width:14px; height:14px; position:absolute; right:0; top:50%; margin-top:-5px; background:url('../images/common/iconMarkSmall.png') center center no-repeat; background-size:14px auto; font-size:0; text-indent:-99999px; }
+.boxWalletTop .priceWrap .percent { font-size:15px; color:#fff; }
+.boxWalletTop .priceWrap .percent i.icon { width:7px; height:6px; margin:0 3px 0 5px; display:inline-block; background:url('../images/common/iconRateArrow.png') no-repeat; background-size:100% auto; vertical-align:middle; }
+.boxWalletTop .priceWrap .percent span { color:#ff7474; font-weight:500; font-size:17px; }
+.boxWalletTop .priceWrap .bottomPrice { color:#ffdf31; }
 .boxWalletTop .priceWrap .bottomPrice > div { display:inline-block; }
-.boxWalletTop .priceWrap .bottomPrice .subTitle { font-size:15px; color:#c6e9ff; }
-.boxWalletTop .priceWrap .bottomPrice .usePrice { margin-left:20px; font-size:15px; color:#fff; }
+.boxWalletTop .priceWrap .bottomPrice .subTitle { font-size:15px; }
+.boxWalletTop .priceWrap .bottomPrice .usePrice { margin-left:25px; font-size:14px; }
+.boxWalletTop .priceWrap .bottomPrice .usePrice span { font-size:15px; }
 .boxWalletTop .priceWrap .bottomPriceGroup { margin:10px auto; display:inline-block; text-align:left; }
 .boxWalletTop .priceWrap .bottomPriceGroup .subTitle { width:95px; float:left; }
 .boxWalletTop .priceWrap .bottomPriceGroup .usePrice { margin-left:95px; display:block; }
 .boxWalletTop .priceWrap .bottomPrice.small { margin-top:5px; text-align:center; color:#c6e9ff; }
+.boxWalletTop .listPrice { margin:0 18px; padding:15px 0; background:#2241be; border-radius:5px; text-align:center; }
+.boxWalletTop .listPrice dl { display:inline-block; overflow:hidden; color:#fff; font-size:15px; }
+.boxWalletTop .listPrice dt { width:100px; float:left; text-align:center; }
+.boxWalletTop .listPrice dd { margin-left:100px; padding:0 20px; font-size:14px; }
+.boxWalletTop .listPrice dd span { font-size:15px; }
 .boxWalletTop .btn { display:flex; border:1px solid #5273f5; border-radius:5px; overflow:hidden; }
 .boxWalletTop .btn button { flex:1; height:50px; position:relative; font-size:15px; color:#fff; }
 .boxWalletTop .btn button+button:after { content:''; width:1px; height:15px; position:absolute; left:0; top:50%; margin-top:-7px; background:#5273f5; }
@@ -225,7 +249,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxInfoHGX .subject { margin-bottom:18px; font-size:17px; font-weight:700; }
 .boxInfoHGX p { font-size:15px; font-weight:100; color:#999; }
 
-.boxWalletDigital { margin-bottom:0; padding-bottom:50px; border-top-left-radius:20px; border-top-right-radius:20px; }
+.boxWalletDigital { margin-bottom:0; padding-top:25px; padding-bottom:50px; border-top-left-radius:20px; border-top-right-radius:20px; }
 
 .boxGoldNow { height:88px; position:relative; padding:0 38px 0 20px; display:flex; align-items:center; border-radius:13px; background:#ffdf0b; }
 .boxGoldNow:after { content:''; width:8px; height:14px; position:absolute; right:18px; top:50%; margin-top:-7px; background:url('../images/common/iconArrowYellow.png') center center no-repeat; background-size:100% auto; }
@@ -248,6 +272,47 @@ h1 .tokenSelect { margin:0 auto; }
 .boxAssetList li .info { flex:1; text-align:right; }
 .boxAssetList li .info .price { font-size:15px; font-weight:700; color:#2750f2; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxAssetList li .info .total { color:#999; }
+
+.boxDepositDetail { padding:30px 15px; background:#f0f9ff; border-radius:5px; }
+.boxDepositDetail.type--end { background:#f2f4f6; }
+.boxDepositDetail+.boxDepositDetail { margin-top:30px; }
+
+.boxDepositDetail .top { margin-bottom:30px; position:relative; display:flex; }
+.boxDepositDetail .top.line { padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #f2f4f6; }
+.boxDepositDetail .top .bedge { width:48px; height:20px; margin:2px 8px 0 0; float:left; background:rgba(39, 80, 242, 0.1); border-radius:5px; font-size:10px; color:#2750f2; line-height:20px; text-align:center; }
+.boxDepositDetail .top .cont { margin-right:70px; }
+.boxDepositDetail .top .title { font-weight:700; font-size:15px; word-break:keep-all; }
+.boxDepositDetail .top .title span { font-size:17px; }
+.boxDepositDetail .top .date { color:#999; font-size:13px; font-family:"SFProDisplay", 'Sans-serif'; }
+.boxDepositDetail .top .opt { position:absolute; right:0; top:6px; font-family:"SFProDisplay", 'Sans-serif'; }
+.boxDepositDetail .top .opt a { text-decoration: underline; color:#999; }
+.boxDepositDetail .top .opt .cancel { color:#ff6363; }
+.boxDepositDetail .boxInvestDetail { padding:28px 20px; margin:0 0 12px; background:#fff; border-radius:5px; }
+.boxDepositDetail .boxInvestDetail .priceWrap { padding-bottom:12px; margin-bottom:13px; overflow:hidden; border-bottom:1px solid #d4d8db; }
+.boxDepositDetail .boxInvestDetail .priceWrap.price--cancel { padding-bottom:0; margin-bottom:8px; border-bottom:0; }
+.boxDepositDetail .boxInvestDetail .priceWrap .title { float:left; font-size:15px; line-height:24px; }
+.boxDepositDetail .boxInvestDetail .priceWrap .price { margin-left:70px; text-align:right; color:#29c1cf; font-size:20px; font-weight:700; line-height:24px; }
+.boxDepositDetail .boxInvestDetail .priceWrap .price--kr { margin-left:70px; text-align:right; color:#999; font-size:14px; }
+.boxDepositDetail .boxInvestDetail .priceDetail { display:flex; }
+.boxDepositDetail .boxInvestDetail .priceDetail > div { display:flex; align-items:center; flex-direction:column; text-align:center; justify-content:center; }
+.boxDepositDetail .boxInvestDetail .priceDetail > div:nth-child(1) { flex:1; }
+.boxDepositDetail .boxInvestDetail .priceDetail > div:nth-child(2) { flex:2; }
+.boxDepositDetail .boxInvestDetail .priceDetail > div:nth-child(3) { flex:1; }
+.boxDepositDetail .boxInvestDetail .priceDetail > div .title { color:#000; font-size:13px; }
+.boxDepositDetail .boxInvestDetail .priceDetail > div .cont { font-size:14px; color:#29c1cf; font-family:"SFProDisplay", 'Sans-serif'; font-weight:700; }
+
+.boxDepositDetail .boxInvestDetail .priceReward {  }
+.boxDepositDetail .boxInvestDetail .priceReward ul li { overflow:hidden; line-height:24px; }
+.boxDepositDetail .boxInvestDetail .priceReward ul li .title { float:left; font-size:15px; }
+.boxDepositDetail .boxInvestDetail .priceReward ul li .price { float:right; font-size:15px; }
+.boxDepositDetail .boxInvestDetail .priceReward ul li .price span { font-size:16px; }
+.boxDepositDetail .boxInvestDetail .priceReward ul li .price span.per { color:#29c1cf; font-weight:700; }
+
+.boxDepositDetail .boxInvestDetail .dropDeposit { padding:0 0 0 30px; background:transparent; }
+.boxDepositDetail .boxInvestDetail .dropDeposit .item { width:100%; float:none; display:flex; }
+.boxDepositDetail .boxInvestDetail .dropDeposit .item > div { flex:1; text-align:center; font-size:13px; color:#999; }
+
+.boxWalletData { padding:200px 30px 50px; margin-top:40px; background:url('../images/common/bgDepositData.png') center 40px no-repeat; background-size:138px auto; text-align:center; font-size:17px; }
 
 
 /* List Sort */
@@ -283,6 +348,7 @@ h1 .tokenSelect { margin:0 auto; }
 
 .listTop--title { padding:5px 0 15px; position:relative; }
 .listTop--title h3.title { padding:0 0 0 8px; }
+.title--top .listSort { position:absolute; right:0; top:34px; }
 .listTop--title .listSort { position:absolute; right:0; top:50%; transform:translateY(-50%); margin:0; }
 
 

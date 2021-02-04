@@ -120,6 +120,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .pt20 { padding-top:20px !important; }
 .pt30 { padding-top:30px !important; }
 .pt40 { padding-top:40px !important; }
+.pt45 { padding-top:45px !important; }
 .pt50 { padding-top:50px !important; }
 
 .pb0 { padding-bottom:0 !important; }
@@ -194,6 +195,7 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 .radius10 { border-radius:10px; }
 .radius20 { border-radius:20px; }
 
+.color-000 { color:#000; }
 .color-blue { color:#2750f2; }
 
 .bgRed { background:#f00; }
@@ -301,7 +303,7 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 
 .bottomLayer.with--footer .inner { padding-bottom:80px; }
 
-.textLayer { display:none; padding:36px 25px 28px; position:absolute; left:30px; top:0; right:30px; background:#fff; border-radius:5px; border:1px solid #999; }
+.textLayer { display:none; padding:36px 25px 28px; position:absolute; left:30px; top:0; right:30px; background:#fff; border-radius:5px; border:1px solid #999; z-index:20; }
 .textLayer.active { display:block; }
 .textLayer .cont { line-height:1.5 }
 .textLayer .cont span { color:#999; }
