@@ -188,9 +188,9 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop .top .typeMark { width:40px; height:40px; float:left; display:flex; background:#fff; border-radius:50%; align-items:center; justify-content:center; }
 .boxWalletTop .top .typeMark img { width:25px; }
 .boxWalletTop .top .btnTransList { width:80px; height:26px; float:right; border:1px solid rgba(255,255,255,.4); border-radius:13px; color:#f2f4f6; font-size:12px; text-align:center; line-height:24px; }
-.boxWalletTop .top .etc { float:right; margin-top:10px; color:#fff; }
+.boxWalletTop .top .etc { float:right; margin-top:10px; color:#8b7b15; }
 .boxWalletTop .priceWrap { margin:35px 0; text-align:center; }
-.boxWalletTop .priceWrap .title { font-size:19px; color:#fff; }
+.boxWalletTop .priceWrap .title { font-size:19px; }
 .boxWalletTop .priceWrap > .price { display:inline-block; position:relative; font-size:25px; font-weight:700; color:#fff; }
 .boxWalletTop .priceWrap > .price.with--info { padding-right:24px; }
 .boxWalletTop .priceWrap > .price span { font-size:30px; }
@@ -233,6 +233,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop.type--hgx2 .top .btnTransList { margin-top:7px; }
 .boxWalletTop.type--hgx2 .top .btnTransList:before { content:''; width:12px; height:12px; margin-right:4px; display:inline-block; background:url('../images/common/iconTransWhite.png') center center no-repeat; background-size:100% auto; }
 .boxWalletTop.type--hgx2 .top .typeMark img { width:17px; }
+.boxWalletTop.type--hgx2 .top .etc { color:#fff; }
 .boxWalletTop.type--hgx2 .priceWrap { margin:0 0 20px; }
 .boxWalletTop.type--hgx2 .priceWrap .title { color:#fff; }
 
@@ -247,7 +248,12 @@ h1 .tokenSelect { margin:0 auto; }
 .boxInfoHGX { margin:40px 12px 0 0; position:relative; background:url('../images/content/imgInfo_hgx.png') right top no-repeat; background-size:132px auto; }
 .boxInfoHGX .title { margin-bottom:15px; font-size:28px; font-weight:100; }
 .boxInfoHGX .subject { margin-bottom:18px; font-size:17px; font-weight:700; }
+.boxInfoHGX .subject .btnInfo { width:14px; height:14px; margin:4px 0 0 4px; display:inline-block; background:url('../images/common/iconMarkSmallBlack.png') no-repeat; background-size:100% auto; vertical-align:top; font-size:0; text-indent:-99999px; }
 .boxInfoHGX p { font-size:15px; font-weight:100; color:#999; }
+
+.boxInfoHGX .textLayer { left:15px; right:15px; }
+.boxInfoHGX .textLayer p { font-size:12px; color:#000; font-weight:400; }
+.boxInfoHGX .textLayer span { font-weight:400; }
 
 .boxWalletDigital { margin-bottom:0; padding-top:25px; padding-bottom:50px; border-top-left-radius:20px; border-top-right-radius:20px; }
 
@@ -331,11 +337,11 @@ h1 .tokenSelect { margin:0 auto; }
 .boxAccountList .cont li+li { border-top:1px solid #f2f4f6; }
 .boxAccountList .cont a { height:106px; padding:0 30px 0 6px; position:relative; display:flex; align-items:center; }
 .boxAccountList .cont a:after { content:''; width:8px; height:14px; position:absolute; right:8px; top:50%; margin-top:-7px; background:url('../images/common/iconArrow.png') center center no-repeat; background-size:100% auto; }
-.boxAccountList .cont .title { flex:1; }
+.boxAccountList .cont .title { flex:1; position:relative; }
 .boxAccountList .cont .title .company { font-size:15px; }
 .boxAccountList .cont .title .use { min-width:60px; float:left; line-height:22px; font-size:15px; }
 .boxAccountList .cont .title .date { float:left; margin-right:8px; line-height:22px; color:#999; }
-.boxAccountList .cont .title .status { width:48px; height:22px; float:left; border:1px solid #d4d8db; border-radius:11px; line-height:20px; text-align:center; color:#a1a4a7; font-size:10px; }
+.boxAccountList .cont .title .status { position:absolute; left:0; top:-20px; color:#4fd884; font-size:10px; }
 .boxAccountList .cont .info { float:1; text-align:right; }
 .boxAccountList .cont .info .price { font-size:15px; font-weight:700; color:#2750f2; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxAccountList .cont .info .price.out { color:#000; }
@@ -438,8 +444,11 @@ h1 .tokenSelect { margin:0 auto; }
 .listSecurity li a .process { margin-top:20px; color:#2750f2; font-size:15px; font-weight:700; }
 .listSecurity li a.complate .process { color:#000; }
 .listSecurity li a.complate .process:after { content:''; width:11px; height:8px; margin-left:8px; margin-top:-3px; display:inline-block; background:url('../images/common/iconComplate.png') no-repeat; background-size:100% auto; vertical-align:middle; }
+.listSecurity li a .certifyGuide { margin-top:5px; color:#28edff; }
 .listSecurity li a .btnCertify { margin-top:9px; padding:8px 36px 8px 18px; position:relative; border:1px solid #28edff; border-radius:20px; color:#28edff; }
 .listSecurity li a .btnCertify:after { content:''; width:6px; height:10px; position:absolute; right:16px; top:50%; margin-top:-5px; background:url('../images/common/iconArrowCertify.png') no-repeat; background-size:100% auto; }
+.listSecurity li a .btnCertify.ing { margin-top:5px; padding:0; border:0; font-size:15px; font-weight:700; }
+.listSecurity li a .btnCertify.ing:after { display:none; }
 
 .listSecurity li a.active:after { content:''; position:absolute; right:-6px; bottom:-32px; font-weight:100; font-size:140px; color:rgba(255,255,255,.2); }
 .listSecurity li:nth-child(1) a.active:after { content:'1'; }
@@ -519,11 +528,11 @@ h1 .tokenSelect { margin:0 auto; }
 .listDepositItem .graph { width:90px; height:90px; position:absolute; right:15px; top:18px; }
 .listDepositItem .graph .percent { position:absolute; left:50%; top:50%; font-size:16px; font-weight:700; font-family:"SFProDisplay", 'Sans-serif'; color:#020202; transform:translate(-50%, -50%); }
 .listDepositItem .graph canvas { width:90px !important; height:90px !important; transform:rotateY(180deg) }
-.listDepositItem .cont { margin-bottom:36px; overflow:hidden; }
-.listDepositItem .cont .date { float:left; margin-right:15px; font-size:15px; color:#999; }
+.listDepositItem .cont { margin-bottom:36px; position:relative; }
+.listDepositItem .cont .date { font-size:15px; color:#999; clear:both; }
 .listDepositItem .cont .date span.en { margin-left:4px; font-size:16px; }
-.listDepositItem .cont .dDay { float:left; padding-left:20px; background:url('../images/main/iconDayClock.png') left  center no-repeat; background-size:16px auto; font-size:16px; font-family:"SFProDisplay", 'Sans-serif'; font-weight:700; color:#020202; }
-.listDepositItem .cont .total { float:left; font-size:15px; color:#999; }
+.listDepositItem .cont .dDay { position:absolute; right:0; bottom:0; padding-left:20px; background:url('../images/main/iconDayClock.png') left  center no-repeat; background-size:16px auto; font-size:16px; font-family:"SFProDisplay", 'Sans-serif'; font-weight:700; color:#020202; }
+.listDepositItem .cont .total { font-size:15px; color:#999; }
 .listDepositItem .cont .total span.en { margin-left:4px; font-size:17px; font-weight:700; color:#000; }
 
 
@@ -556,11 +565,11 @@ h1 .tokenSelect { margin:0 auto; }
 
 
 /* Login */
-.boxCheckLogin { margin-top:15px; overflow:hidden; }
+.boxCheckLogin { margin-top:25px; overflow:hidden; text-align:center; }
 .boxCheckLogin input { position:absolute; left:-99999px; top:0; opacity:0; }
 .boxCheckLogin label { padding-left:26px; float:left; background:url('../images/common/iconCheckBlue.png') left center no-repeat; background-size:21px auto; font-size:15px; line-height:20px; }
 .boxCheckLogin input:checked + label { background-image:url('../images/common/iconCheckBlue_on.png'); }
-.boxCheckLogin .btnLostPass { float:right; margin-right:5px; line-height:20px; color:#6c6c6c; font-size:15px; }
+.boxCheckLogin .btnLostPass { line-height:20px; color:#6c6c6c; font-size:15px; }
 
 .selectAttach { border:1px solid #f2f4f6; border-radius:5px; }
 .selectAttach > .title { height:65px; position:relative; padding:0 20px; line-height:65px; font-size:17px; }
@@ -585,13 +594,17 @@ h1 .tokenSelect { margin:0 auto; }
 .boxMypageTop .title .loginDate { font-size:12px; color:#a1a4a7; }
 .boxMypageTop .btnSetup { width:41px; height:41px; position:absolute; right:-10px; top:-10px; background:url('../images/common/btnSetup.png') center center no-repeat; background-size:21px auto; font-size:0; text-indent:-99999px; }
 .boxMypageQuick { margin-bottom:10px; display:flex; }
-.boxMypageQuick a { height:90px; flex:1; margin:0 3px; padding-top:50px; background-size:20px auto; background-repeat:no-repeat; background-position:center 18px; border:1px solid #f2f4f6; border-radius:5px; box-shadow: 0 3px 6px 0 rgba(173, 173, 173, 0.16); font-size:15px; text-align:center; }
+.boxMypageQuick a { height:90px; flex:1; margin:0 3px; padding-top:50px; background-size:21px auto; background-repeat:no-repeat; background-position:center 18px; border:1px solid #f2f4f6; border-radius:5px; box-shadow: 0 3px 6px 0 rgba(173, 173, 173, 0.16); font-size:15px; text-align:center; }
 .boxMypageQuick a.wallet { margin:0 6px 0 0; background-image:url('../images/content/iconMyQuick1.png'); }
 .boxMypageQuick a.deposit { background-image:url('../images/content/iconMyQuick2.png'); }
-.boxMypageQuick a.trade { margin:0 0 0 6px; background-image:url('../images/content/iconMyQuick3.png'); }
+.boxMypageQuick a.gold { margin:0 0 0 6px; background-image:url('../images/content/iconMyQuick3.png'); }
 .btnSecretLevel { height:58px; display:block; position:relative; background:#eff3ff; border-radius:5px; text-align:center; line-height:58px; font-size:15px; }
 .btnSecretLevel span { color:#2750f2; }
 .btnSecretLevel:after { content:''; width:11px; height:11px; position:absolute; right:27px; top:50%; background:url('../images/common/iconArrow.png') right center no-repeat; background-size:auto 100%; transform:translateY(-50%); }
+.mypageGuide { padding:0 17px 20px; position:relative; }
+.mypageGuide:after { content:''; width:138px; height:113px; position:absolute; right:17px; top:0; background:url('../images/content/bgMypageGuide.png') no-repeat; background-size:100% auto; z-index:1; }
+.mypageGuide .title { margin-bottom:10px; position:relative; font-size:22px; line-height:29px; font-weight:700; z-index:2; }
+.mypageGuide .subject { position:relative; font-size:14px; color:#999; z-index:2; }
 
 .boxDepositDate { margin-bottom:5px; color:#999; }
 
@@ -601,11 +614,15 @@ h1 .tokenSelect { margin:0 auto; }
 .boxDepositInfo > div .title { font-size:15px; }
 .boxDepositInfo > div .price { margin-top:10px; font-size:15px; }
 .boxDepositInfo > div .price span:first-child { font-size:17px; font-weight:700; }
+.boxDepositInfo > div .price.price--two { height:45px; margin-top:5px; display:flex; flex-direction: column; line-height:20px; justify-content:center; }
+.boxDepositInfo > div .price .price2 { font-size:15px; font-family:"SFProDisplay", 'Sans-serif'; }
 
 .boxMypageTop.type--business .title { background-image:url('../images/common/iconJoinBusiness.png'); background-position:5px 1px; }
 
-.myBusinessGuide .title { padding:0 18px; margin-bottom:10px; font-size:22px; font-weight:700; }
-.myBusinessGuide .subject { padding:0 18px; margin-bottom:20px; font-size:14px; color:#999; }
+.myBusinessGuide { padding:0 18px; position:relative; }
+.myBusinessGuide:after { content:''; width:135px; height:100px; position:absolute; right:17px; top:0; background:url('../images/content/bgMybusinessGuide.png'); background-size:100% auto; z-index:1; }
+.myBusinessGuide .title { margin-bottom:10px; position:relative; font-size:22px; font-weight:700; z-index:2; }
+.myBusinessGuide .subject { margin-bottom:20px; position:relative; font-size:14px; color:#999; z-index:2; }
 .btnInvestBanner { padding:20px; display:block; position:relative; border-radius:5px; background:#ffdf31; font-size:15px; }
 .btnInvestBanner:after { content:''; width:90px; height:65px; position:absolute; right:17px; top:50%; margin-top:-33px; background:url('../images/content/bgMybusinessBanner.png') no-repeat; background-size:100% auto; }
 .btnInvestBanner span { font-weight:700; }
@@ -697,3 +714,22 @@ h1 .tokenSelect { margin:0 auto; }
 .listCustomer li .title:after { content:'·'; position:absolute; left:-10px; top:0; }
 .listCustomer li .date { color:#d5d5d5; }
 .listCustomer li .cont { padding:24px 18px; background:rgba(240,240,240,0.2); border-bottom:1px solid #f0f0f0; font-size:15px; line-height:1.74 }
+
+.listNotice {  }
+.listNotice li { position:relative; }
+.listNotice li a { height:74px; display:block; padding:15px 40px 15px 0; position:relative; display:flex; border-bottom:1px solid #f0f0f0; flex-direction:column; justify-content: center; }
+.listNotice li a:after { content:''; width:8px; height:14px; position:absolute; right:15px; top:50%; margin-top:-7px; background:url('../images/common/iconArrow.png') no-repeat; background-size:100% auto; }
+.listNotice li .title { position:relative; padding-left:20px; font-size:15px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.listNotice li .title:after { content:'·'; position:absolute; left:10px; top:0; }
+.listNotice li .date { padding-left:20px; color:#d5d5d5; }
+
+.listNotice .listBtn { margin-top:15px; text-align:center; }
+.listNotice .listBtn a { width:65px; height:65px; display:inline-block; background:url('../images/common/btnPageArrow.png') center center no-repeat; background-size:25px auto; vertical-align:middle; font-size:0; text-indent:-99999px; }
+.listNotice .listBtn a.next { transform:rotate(180deg); }
+.listNotice .listBtn a:hover { background-image:url('../images/common/btnPageArrowOn.png'); }
+.listNotice .listBtn .num { display:inline-block; vertical-align:middle; font-family:"SFProDisplay", 'Sans-serif'; font-size:15px; }
+
+.boxCustomerLink { margin-bottom:40px; }
+.boxCustomerLink a { height:58px; display:block; position:relative; border-bottom:1px solid #f2f4f6; color:#999999; line-height:58px; font-size:15px; }
+.boxCustomerLink a:first-child { border-top:1px solid #f2f4f6; }
+.boxCustomerLink a:after { content:''; width:8px; height:14px; position:absolute; right:0; top:50%; background:url('../images/common/iconArrow.png') no-repeat; background-size:100% auto; transform:translateY(-50%); }
