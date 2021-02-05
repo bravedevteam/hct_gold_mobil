@@ -20,7 +20,7 @@
       <div class="boxWalletTop type--hgx">
         <div class="top">
           <div class="typeMark"><img src="./images/content/iconAccount_hgx.png" alt="" /></div>
-          <button type="button" class="btnTransList">자산교환</button>
+          <div class="etc">금 인출</div>
         </div>
         <div class="priceWrap">
           <div class="title">인출가능 금</div>
@@ -38,8 +38,16 @@
     <div class="section">
       <div class="boxInfoHGX">
         <div class="title">안전한 금보관,<br />편리한 금거래</div>
-        <div class="subject">한컴금거래소는 실물 예치된 금의<br />순도와 중량을 보증합니다.</div>
-        <p>실물예치된 금은 토큰시세와 상관없으며,<br />예치한 금의 순도 중량에 따라 토큰 수량이 자동으로<br />변동됩니다. 단, 투자등의 용도로 토큰을 사용하였을 경우<br />사용 토큰 비율만큼 금 중량의 보존량은 변동됩니다.</p>
+        <div class="subject">예치된 실물 금의 순도와 중량을<br />보증합니다.
+          <button type="button" class="btnInfo layer--open noDim" data-pop="popInfoHGX">popup</button>
+        </div>
+        <div id="popInfoHGX" class="textLayer">
+          <div class="cont">
+            <p>한컴금거래소에  실물 예치된 금은 토큰시세와 상관 없으며, 예치한 금의 순도와 중량에 따라 토큰 수량이 자동으로 변동됩니다.<br></p>
+            <span>단, 투자 등의 용도로 토큰을 사용하였을 경우 사용 토큰 비율만큼 금 중량의 보존량은 변동됩니다.</span>
+          </div>
+          <button type="button" class="btnClose layer--close">close</button>
+        </div>
       </div>
     </div>
     <hr class="section--space mtb40" />
