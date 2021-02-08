@@ -190,7 +190,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop .top .btnTransList { width:80px; height:26px; float:right; border:1px solid rgba(255,255,255,.4); border-radius:13px; color:#f2f4f6; font-size:12px; text-align:center; line-height:24px; }
 .boxWalletTop .top .etc { float:right; margin-top:10px; color:#8b7b15; }
 .boxWalletTop .priceWrap { margin:35px 0; text-align:center; }
-.boxWalletTop .priceWrap .title { font-size:19px; }
+.boxWalletTop .priceWrap .title { font-size:19px; color:#fff; }
 .boxWalletTop .priceWrap > .price { display:inline-block; position:relative; font-size:25px; font-weight:700; color:#fff; }
 .boxWalletTop .priceWrap > .price.with--info { padding-right:24px; }
 .boxWalletTop .priceWrap > .price span { font-size:30px; }
@@ -222,6 +222,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop.type--hgx .top .btnTransList { margin-top:7px; border-color:#000; color:#000; }
 .boxWalletTop.type--hgx .top .btnTransList:before { content:''; width:12px; height:12px; margin-right:4px; display:inline-block; background:url('../images/common/iconTrans.png') center center no-repeat; background-size:100% auto; }
 .boxWalletTop.type--hgx .priceWrap { margin:17px 0 22px; }
+.boxWalletTop.type--hgx .priceWrap .title { color:#000; }
 .boxWalletTop.type--hgx .priceWrap > .price { color:#000; }
 .boxWalletTop.type--hgx .priceWrap .bottomPrice { color:#847000; font-size:17px; font-weight:500; }
 .boxWalletTop.type--hgx .priceWrap .bottomPrice--guide { margin-top:15px; color:rgba(132,112,0,0.5); }
