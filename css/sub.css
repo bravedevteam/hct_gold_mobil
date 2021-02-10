@@ -734,3 +734,17 @@ h1 .tokenSelect { margin:0 auto; }
 .boxCustomerLink a { height:58px; display:block; position:relative; border-bottom:1px solid #f2f4f6; color:#999999; line-height:58px; font-size:15px; }
 .boxCustomerLink a:first-child { border-top:1px solid #f2f4f6; }
 .boxCustomerLink a:after { content:''; width:8px; height:14px; position:absolute; right:0; top:50%; background:url('../images/common/iconArrow.png') no-repeat; background-size:100% auto; transform:translateY(-50%); }
+
+
+/* Access */
+.boxAccessTop { padding:60px 0; text-align:center; }
+.boxAccessTop h2 { width:132px; margin:0 auto 30px; }
+.boxAccessTop p { font-size:17px; letter-spacing:-.08em; }
+.listAccessItem { margin-bottom:30px; }
+.listAccessItem li { padding:25px 18px; position:relative; overflow:hidden; }
+.listAccessItem li+li { border-top:1px solid #f0f0f0; }
+.listAccessItem li i { width:37px; float:left; margin:2px 0; }
+.listAccessItem li .title { margin-left:70px; font-size:15px; font-weight:700; }
+.listAccessItem li .cont { margin-left:70px; font-size:15px; color:#999; }
+
+.listAccessItem.type--single li { padding:10px 18px; }
