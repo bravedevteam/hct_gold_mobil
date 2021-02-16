@@ -12,24 +12,72 @@
 
 <body>
 	<div id="container" class="sub">
-		<div class="boxComplate">
-			<div class="cont icon--complate">
-				<div class="title">금 인출 신청이<br />완료되었습니다.</div>
-				<div class="explanation">
-					<ul>
-						<li>금 수령시 반드시 신분증을 지참하셔야 합니다.</li>
-            <li>인출 신청 후 취소가 불가합니다.</li>
-            <li>궁금한 사항은 고객센터에 문의 바랍니다.</li>
-					</ul>
-				</div>
-				<div class="boxBtn btn--full">
-					<button type="button" class="btnBasic blueLine">인출 신청 내역</button>
-				</div>
-			</div>
+    <div class="headerArea">
+      <a href="#" class="btnPagePrev black">이전</a>
+      <h1 class="title">금 인출</h1>
+    </div>
+    <div class="section">
+      <div class="boxGoldOut">
+        <div class="cont">
+          <div>
+            <div class="title">인출가능 금</div>
+            <div class="price">200g (24K)</div>
+          </div>
+          <div>
+            <div class="title">HGX</div>
+            <div class="price">100,000</div>
+          </div>
+        </div>
+        <div class="subject">현재 시세 <span class="en">1 HGX = 110 KRW</span></div>
+      </div>
+      <h4 class="title title--medium">인출할 금 중량</h4>
+      <div class="inputUnit value--max"><!-- input의 값이 최대일 때 value--max 추가 -->
+        <input type="text" value="" class="inputBasic" />
+        <span>GOLD</span>
+        <div class="max">최대</div>
+      </div>
+      <div class="guide-text danger mb30">최소 인출단위(10g) 이하 금액은 자동 절사됩니다.</div>
+      <div class="guide-text type--dot">인출 가능 금은 예치 후 대금 결제, 상품투자 등으로 사용한 중량이 계산된 중량입니다.</div>
+      <div class="guide-text type--dot">최대 인출가능 중량 초과 인출이 필요하거나 당일 수령을 원하실 경우 고객센터(1544-0000) 문의 바랍니다.</div>
+    </div>
+    <hr class="section--space mtb40" />
+    <div class="section">
+      <h4 class="title title--medium">수령 희망일</h4>
+      <div class="inputCalendar mb35">
+        <input type="text" value="2020.12.22" class="inputBasic" />
+        <button type="button" class="btnCalendar">달력</button>
+      </div>
+      <h4 class="title title--medium">수령 방법</h4>
+      <div class="inputCheckbox">
+        <input type="radio" id="chk1_1" name="chk1" class="checkTab" checked="checked" />
+        <label for="chk1_1">방문수령</label>
+      </div>
+      <div class="boxCheckTab">
+        <div id="chk1_1_cont" class="cont active">
+          <div class="row division">
+            <div class="address">서울 종로구 돈화문로 5가길 1 피카디리플러스 3층</div>
+            <button type="button" class="btnBasic blueLine">지도보기</button>
+          </div>
+        </div>
+        <div id="chk1_2_cont" class="cont">
+          <div class="row division">
+            <input type="text" class="inputBasic" placeholder="정보를 입력하세요." />
+            <button type="button" class="btnBasic blueLine">주소찾기</button>
+          </div>
+          <input type="text" class="inputBasic mt10" placeholder="상세 주소를 입력하세요." />
+        </div>
+      </div>
+      <h4 class="title title--medium">수령인</h4>
+      <input type="text" class="inputBasic" placeholder="이름" />
+      <input type="text" class="inputBasic mt10" placeholder="휴대폰 -없이" />
+      <div class="guide-text">
+        실제 수령자와 다를 경우 금 수령이 불가합니다.(신분증 확인)
+      </div>
+      <input type="text" class="inputBasic mt20" placeholder="Google OTP 인증코드 6자리" />
+    </div>
+    <div class="footer--btn">
+			<button type="button" class="btnBasic active">인출 신청</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
 		</div>
-		<div class="footer--btn">
-			<button type="button" class="btnBasic active">확인</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
-		</div>
-	</div>
+  </div>
 </body>
 </html>
