@@ -131,6 +131,9 @@ h1 .tokenSelect { margin:0 auto; }
 .guide-text.type--dot { padding:0 13px 0 6px; position:relative; }
 .guide-text.type--dot:before { content:'·'; position:absolute; left:0; top:0; }
 .guide-text.type--dot+.guide-text { margin-top:10px; }
+.guide-text.type--line { padding:0 10px; position:relative; font-size:15px; color:#000; letter-spacing:-.075em; }
+.guide-text.type--line:before { content:'-'; position:absolute; left:0; top:0; }
+.guide-text.type--line+.guide-text { margin-top:5px; }
 .guide-text.boxGray { padding:8px; background:#f2f4f6; text-align:center; border-radius:5px; }
 .guide-text ul li { padding-left:10px; position:relative; text-align:left; }
 .guide-text ul li:after { content:'·'; position:absolute; left:2px; top:0; }
@@ -156,12 +159,14 @@ h1 .tokenSelect { margin:0 auto; }
 .boxComplate .cont.icon--complate { padding-top:48px; background:url('../images/common/iconCheckBlack.png') left top no-repeat; background-size:auto 35px; }
 .boxComplate .cont.icon--judge { padding-top:52px; background:url('../images/common/iconJoinJudge.png') left top no-repeat; background-size:auto 38px; }
 .boxComplate .cont.icon--defer { padding-top:52px; background:url('../images/common/iconJoinDefer.png') left top no-repeat; background-size:auto 39px; }
+.boxComplate .cont.icon--withdrawal { padding-top:50px; background:url('../images/common/iconJoinWithdrawal.png') left top no-repeat; background-size:auto 39px; }
 .boxComplate .cont .title { margin-bottom:20px; font-size:25px; font-weight:700; }
 .boxComplate .cont .subject { margin-bottom:25px; font-size:17px; color:#2750f2; font-weight:700; }
 .boxComplate .cont .explanation { margin-bottom:23px; font-size:17px; line-height:1.65; letter-spacing:-.085em; word-break:keep-all; }
 .boxComplate .cont .explanation ul li { position:relative; }
 .boxComplate .cont .explanation ul li:before { content:'·'; position:absolute; left:-9px; top:0; font-size:17px; }
 .boxComplate .cont .explanation .etc { font-size:15px; color:#999; font-weight:300; }
+.boxComplate .cont.icon--withdrawal .explanation { font-size:15px; }
 
 
 /* Filebox */
@@ -479,7 +484,7 @@ h1 .tokenSelect { margin:0 auto; }
 
 
 /* List Process */
-.listProcess { padding:0 10px; }
+.listProcess { padding:0 0 0 10px; }
 .listProcess li { position:relative; padding-left:56px; }
 .listProcess li:before { content:''; width:38px; height:38px; position:absolute; left:0; top:0; border-radius:50%; background:#ffe11c; text-align:center; line-height:38px; }
 .listProcess li:nth-child(1):before { content:'1'; }
@@ -491,6 +496,7 @@ h1 .tokenSelect { margin:0 auto; }
 .listProcess li+li { margin-top:25px; }
 .listProcess li .title { margin-bottom:2px; font-size:15px; }
 .listProcess li .cont { color:#999; font-size:15px; font-family:"SFProDisplay", 'Sans-serif'; }
+.listProcess li .cont span { color:#ff6363; font-size:12px; }
 
 
 /* List Text */
@@ -506,13 +512,16 @@ h1 .tokenSelect { margin:0 auto; }
 .boxMap .mapAddress { font-size:15px; }
 
 
-.boxGoldOut { margin-bottom:40px; padding:0 25px 20px; border-radius:20px; background:#ffdf0b; }
+.boxGoldOut { margin-bottom:40px; padding:0 25px 20px; border-radius:20px; background:#ffdf0b; box-shadow: 0 7px 5px 0 rgba(255, 225, 28, 0.15); }
 .boxGoldOut .cont { display:flex; text-align:center; }
 .boxGoldOut .cont > div { height:110px; position:relative; flex:1; flex-direction:column; display:flex; align-items:center; justify-content:center; }
 .boxGoldOut .cont > div+div:after { content:''; width:1px; height:40px; position:absolute; left:0; top:50%; margin-top:-20px; background:rgba(204,179,39,0.51) }
 .boxGoldOut .cont .title { font-size:15px; }
 .boxGoldOut .cont .price { font-size:20px; font-weight:700; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxGoldOut .subject { border-top:1px solid rgba(204,179,39,.5); padding:12px 0; text-align:center; color:rgba(132,112,0,.5); }
+
+.boxGoldOut.is--cancel { padding:23px 0; background:#f2f4f6; box-shadow: 0 7px 5px 0 rgba(131, 131, 131, 0.15); }
+.boxGoldOut.is--cancel .cont > div+div:after { background:#a1a4a7; }
 
 
 /* Deposit Item */
@@ -748,3 +757,14 @@ h1 .tokenSelect { margin:0 auto; }
 .listAccessItem li .cont { margin-left:70px; font-size:15px; color:#999; }
 
 .listAccessItem.type--single li { padding:10px 18px; }
+
+
+/* Withdrawal */
+.boxComplate.is--withdrawal { padding:60px 35px; }
+.boxWithdrawalGuide { padding:40px 18px 20px; margin:0 15px; background:#eff3ff; border-radius:5px; text-align:center; font-size:15px; line-height:26px; word-break:keep-all; }
+
+.boxWithdrawalResult { padding:35px 0 40px; margin-bottom:30px; border-radius:5px; background:#f2f4f6; text-align:center; }
+.boxWithdrawalResult .title { margin-bottom:5px; font-size:15px; }
+.boxWithdrawalResult .cont { font-size:19px; color:#2750f2; font-weight:700; font-family:"SFProDisplay", 'Sans-serif'; }
+
+.boxWithdrawalFinal { padding-top:300px; background:url('../images/content/bgWithdrawalFinal.png') center 80px no-repeat; background-size:154px auto; text-align:center; font-size:17px; line-height:28px; }

@@ -98,7 +98,7 @@ i {display: inline-block;}
 em {font-style: normal; letter-spacing: -1px;}
 input {box-sizing: border-box; border: 1px solid #ddd; background-color: #fff; border-radius: 0; -webkit-appearance: none; -moz-appearance: none; appearance: none; font-family:inherit; }
 input[type=text]::-ms-clear {display:none;}
-button {box-sizing: border-box; border: 0; background-color: transparent; cursor: pointer; color:inherit; font-family:inherit;}
+button {box-sizing: border-box; border: 0; background-color: transparent; cursor: pointer; color:inherit; font-family: 'SpoqaHanSansNeo', 'Sans-serif'; }
 textarea {box-sizing: border-box; resize: none;}
 select {-webkit-border-radius: 0; -webkit-appearance: none; -moz-appearance: none; -webkit-appearance: none; appearance: none; box-sizing: border-box; cursor: pointer; font-family: inherit; }
 select::-ms-expand {display: none;}
@@ -243,7 +243,9 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 .btnBasic.bgLightGray { background:#f2f4f6; border:1px solid #d4d8db; color:#000; }
 .btnBasic.bgWhite { background:#fff; border:1px solid #000; color:#000; }
 .btnBasic.blueLine.iconCP { font-weight:700 }
-.btnBasic.blueLine.iconCP i { width:14px; height:20px; margin-right:3px; display:inline-block; background:#2750f2; vertical-align:middle; }
+.btnBasic.blueLine.iconCP i { width:14px; height:19px; margin-top:-2px; margin-right:5px; display:inline-block; background:url('../images/common/iconJoinBusinessBlue.png') no-repeat; background-size:100% auto; vertical-align:middle; }
+.btnBasic.blueLine.icon--file { width:230px; height:50px; position:relative; font-size:15px; font-weight:400; }
+.btnBasic.blueLine.icon--file:after { content:''; width:12px; height:15px; position:absolute; right:17px; top:17px; background:url('../images/common/iconDownBlue.png') no-repeat; background-size:100% auto; }
 
 .btnJoinGeneral { height:90px; padding-top:55px; background:url('../images/common/iconJoinGeneral.png') center 20px no-repeat; background-size:19px auto; font-size:15px; }
 .btnJoinBusiness { height:90px; padding-top:55px; background:url('../images/common/iconJoinBusiness.png') center 20px no-repeat; background-size:19px auto; font-size:15px; }
@@ -290,6 +292,8 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .bottomLayer .layerTop:after { content:''; display:block; clear:both; }
 .bottomLayer .layerTop .title { float:left; margin:0; font-size:17px; font-weight:700; }
 .bottomLayer .layerTop .mark_status { width:48px; height:22px; margin:2px 0 0 10px; float:left; border:1px solid #5facdd; border-radius:11px; text-align:center; line-height:20px; font-size:10px; color:#5facdd; }
+.bottomLayer .layerTop .mark_status.is--ing { border-color:#4fd884; color:#4fd884; }
+.bottomLayer .layerTop .mark_status.is--cancel { border-color:#ff7474; color:#ff7474; }
 .bottomLayer .footer--btn { position:absolute; }
 
 .bottomLayer.type--basic { padding:0; }
@@ -299,6 +303,8 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .bottomLayer.type--basic .topArea .btnSubmit { padding:10px; position:absolute; right:-10px; top:50%; transform:translateY(-50%); font-size:12px; }
 .bottomLayer.type--basic .topArea .title { margin:0; font-size:15px; text-align:center; }
 .bottomLayer.type--basic .topArea .title.info { font-size:17px; font-weight:700; }
+.bottomLayer.type--basic .topArea .opt { position:absolute; right:0; top:12px; }
+.bottomLayer.type--basic .topArea .opt a { text-decoration:underline; color:#999; }
 .bottomLayer.type--basic .contArea { margin:25px 24px 50px; }
 .bottomLayer.type--basic .content+h4.title { margin-top:25px; }
 
