@@ -158,8 +158,9 @@ h4.title { padding:0 20px; margin-bottom:28px; font-size:20px; font-weight:700; 
 .tableBasic.type--vertical th:last-of-type { border-right:1px solid #dde9fd; }
 .tableBasic.type--vertical td:first-of-type { border-left:1px solid #dde9fd; }
 
-.inputBasic { height:30px; padding:0 10px; border:1px solid #dde9fd; border-radius:5px; }
+.inputBasic { height:52px; padding:0 23px; border:1px solid #b1bfd5; border-radius:2px; }
 
 .btnBasic { width:110px; height:38px; display:inline-block; background:#5899ff; border-radius:2px; color:#fff; line-height:38px; text-align:center; font-size:17px; }
 
-a.type--link { color:#00f; }
+a.type--link { font-size:17px; color:#2750f2; }
+a.type--link+a.type--link { margin-left:80px; }
