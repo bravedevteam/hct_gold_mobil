@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>AROWANA GOLD FINANCE</title>
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+</head>
+
+<body>
+	<section id="wrap">
+		<header id="header">
+			<h1 class="logo">AROWANA GOLD FINANCE</h1>
+			<div id="nav">
+				<ul>
+					<li><a href="#" class="icon1">대시보드</a></li>
+					<li class="on"><a href="#" class="icon2">회원관리</a></li>
+					<li><a href="#" class="icon3">금 예치/인출</a></li>
+					<li><a href="#" class="icon4">상품관리</a></li>
+					<li><a href="#" class="icon5">자산교환</a></li>
+					<li><a href="#" class="icon6">지갑관리</a></li>
+					<li><a href="#" class="icon7">운영관리</a></li>
+					<li><a href="#" class="icon8">시스템관리</a></li>
+				</ul>
+			</div>
+			<div class="topInfo">
+				<div class="name">홍길동 님</div>
+				<a href="#" class="btnLogout">로그아웃</a>
+			</div>
+		</header>
+		<div id="lnb">
+			<h2>회원관리</h2>
+			<ul>
+				<li><a href="#"><span>개인회원</span></a></li>
+				<li class="on"><a href="#"><span>기업회원</span></a></li>
+				<li><a href="#"><span>본인인증 심사</span></a></li>
+			</ul>
+		</div>
+		<div id="container">
+			<div class="titCont">
+				<div class="title">기업회원</div>
+				<div class="info">메인 > <a href="#">회원관리</a> > <a href="#">기업회원</a></div>
+			</div>
+			<div class="wrapCont">
+				<div class="boxSearch">
+					<div class="inputPicker">
+						<input type="text" class="datepicker" placeholder="시작일">
+					</div>
+					<span class="hyp">~</span>
+					<div class="inputPicker">
+						<input type="text" class="datepicker" placeholder="종료일">
+					</div>
+					<select>
+						<option>사업자유형</option>
+					</select>
+					<select>
+						<option>상태</option>
+					</select>
+					<input type="text" placeholder="아이디 / 기업명 / 휴대폰 번호" class="searchText" />
+					<div class="btn">
+						<a href="#" class="btnReset">초기화</a>
+						<a href="#" class="btnSearch">검색</a>
+					</div>
+				</div>
+				<div class="boxCont">
+					<div class="top">
+						<div class="title">목록</div>
+						<div class="btn">
+							<a href="#" class="btnBasic">회원 등록</a>
+						</div>
+					</div>
+					<div class="cont">
+						<table class="tableBasic">
+							<colgroup>
+								<col width="100" />
+								<col width="100" />
+								<col width="100" />
+								<col width="120" />
+								<col width="100" />
+								<col width="100" />
+								<col width="100" />
+								<col width="100" />
+								<col width="100" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>신청일시</th>
+									<th>아이디(이메일)</th>
+									<th>기업명</th>
+									<th>휴대폰번호</th>
+									<th>사업자 유형</th>
+									<th>가입/처리 일시</th>
+									<th>처리자</th>
+									<th>상태</th>
+									<th>관리</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>2021-02-01<br />10:00:00</td>
+									<td>jason@xtock.io</td>
+									<td>기업 1</td>
+									<td>010-1234-5678</td>
+									<td>개인 사업자</td>
+									<td>2021-02-01<br />10:00:00</td>
+									<td></td>
+									<td><span class="color--red">심사대기</span></td>
+									<td><a href="#" class="btnBasic">상세보기</a></td>
+								</tr>
+								<tr>
+									<td>2021-02-01<br />10:00:00</td>
+									<td>jason@xtock.io</td>
+									<td>기업 2</td>
+									<td>010-1234-5678</td>
+									<td>개인 사업자</td>
+									<td>2021-02-01<br />10:00:00</td>
+									<td>관리자 1</td>
+									<td><span class="color--blue">심사반려</span></td>
+									<td><a href="#" class="btnBasic">상세보기</a></td>
+								</tr>
+								<tr>
+									<td>2021-02-01<br />10:00:00</td>
+									<td>jason@xtock.io</td>
+									<td>기업 3</td>
+									<td>010-1234-5678</td>
+									<td>개인 사업자</td>
+									<td>2021-02-01<br />10:00:00</td>
+									<td>관리자 1</td>
+									<td>가입완료</td>
+									<td><a href="#" class="btnBasic">상세보기</a></td>
+								</tr>
+								<tr>
+									<td>2021-02-01<br />10:00:00</td>
+									<td>jason@xtock.io</td>
+									<td>기업 4</td>
+									<td>010-1234-5678</td>
+									<td>개인 사업자</td>
+									<td>2021-02-01<br />10:00:00</td>
+									<td>관리자 1</td>
+									<td>가입완료</td>
+									<td><a href="#" class="btnBasic">상세보기</a></td>
+								</tr>
+								<tr>
+									<td>2021-02-01<br />10:00:00</td>
+									<td>jason@xtock.io</td>
+									<td>기업 5</td>
+									<td>010-1234-5678</td>
+									<td>개인 사업자</td>
+									<td>2021-02-01<br />10:00:00</td>
+									<td>관리자 1</td>
+									<td>가입완료</td>
+									<td><a href="#" class="btnBasic">상세보기</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script>
+	$( function() {
+		$( ".datepicker" ).datepicker({
+			dateFormat : "yy.mm.dd"
+		});
+	} );
+	</script>
+</body>
+</html>
