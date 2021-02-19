@@ -142,6 +142,10 @@ $(function(){
 			target.children(".cont").slideDown(300);
 		}
 	});
+
+	$( ".datepicker" ).datepicker({
+		dateFormat : "yy.mm.dd"
+	});
 });
 
 /* Number MaxLength */
