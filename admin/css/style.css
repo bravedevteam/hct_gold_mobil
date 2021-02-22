@@ -102,6 +102,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 #wrap { min-height:100%; padding-top:100px; position:relative; background:#f5f7ff; }
 #wrap:before { content:''; width:240px; position:absolute; left:0; top:100px; bottom:0; background:#2750f2; }
 #wrap:after { content:''; display:block; clear:both; }
+#wrap.page--login:before { display:none; }
+
+.boxLogin { width:300px; margin:0 auto; }
 
 #lnb { width:240px; float:left; position:relative; z-index:2; }
 #lnb h2 { height:162px; padding:87px 0 0; position:relative; background:#2249e2; text-align:center; color:#fff; font-size:20px; }
@@ -164,3 +167,28 @@ h4.title { padding:0 20px; margin-bottom:28px; font-size:20px; font-weight:700; 
 
 a.type--link { font-size:17px; color:#2750f2; }
 a.type--link+a.type--link { margin-left:80px; }
+
+.boxBtn { position:relative; margin:70px 0; text-align:center; }
+.boxBtn button { width:110px; height:52px; border-radius:2px; font-size:17px; background:#273444; color:#fff; }
+.boxBtn button+button { margin-left:16px; }
+.boxBtn .submit { background:#2750f2; }
+.boxBtn .modify { background:#c10000; }
+.boxBtn .opt { position:absolute; right:0; top:0; }
+
+.pageBasic { margin-top:30px; text-align:center; }
+.pageBasic > a { width:30px; height:30px; display:inline-block; border:1px solid #ccc; border-radius:2px; vertical-align:middle; line-height:28px; }
+.pageBasic > a.first, .pageBasic > a.prev,
+.pageBasic > a.next, .pageBasic > a.last { font-size:0; text-indent:-99999px; }
+.pageBasic ul { display:inline-block; overflow:hidden; vertical-align:middle; }
+.pageBasic ul li { float:left; }
+.pageBasic ul li+li { margin-left:2px; }
+.pageBasic ul li a { width:30px; height:30px; display:block; border:1px solid #ccc; border-radius:2px; line-height:28px; font-size:15px; }
+.pageBasic ul li.on a { border:1px solid #5899FF; color:#5899FF; font-weight:700; }
+
+.topArea_tab { padding:30px 24px; margin-bottom:30px; background:#fff; border:1px solid #ebedef; overflow:hidden; }
+.topArea_tab a { float:left; padding:5px; font-size:16px; font-weight:700; }
+.topArea_tab a+a { margin-left:20px; }
+.topArea_tab a.active { border-bottom:2px solid #2249e2; }
+
+.tabArea { display:none; }
+.tabArea.active { display:block; }
