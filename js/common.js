@@ -143,9 +143,11 @@ $(function(){
 		}
 	});
 
-	$( ".datepicker" ).datepicker({
-		dateFormat : "yy.mm.dd"
-	});
+	if($( ".datepicker" ).length){
+		$( ".datepicker" ).datepicker({
+			dateFormat : "yy.mm.dd"
+		});
+	}
 });
 
 /* Number MaxLength */
