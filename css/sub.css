@@ -82,6 +82,9 @@ input[type="number"]:disabled { border:1px solid #d5d5d5; background:#f2f4f6; co
 .inputCalendar { position:relative; }
 .inputCalendar input { padding-right:50px; font-size:17px; }
 .inputCalendar .btnCalendar { width:44px; height:50px; position:absolute; right:0; top:0; background:url('../images/common/iconDatepicker.png') center center no-repeat; background-size:14px auto; font-size:0; text-indent:-99999px; z-index:3; }
+.inputVoucher { position:relative; }
+.inputVoucher .inputBasic { padding-left:130px; position:relative; text-align:right; z-index:1; }
+.inputVoucher span { height:50px; padding-left:18px; position:absolute; left:25px; top:0; background:url('../images/common/iconAsset-HGX.png') left center no-repeat; background-size:17px auto; z-index:5; line-height:50px; font-size:15px; letter-spacing:-0.07em; }
 
 
 /* Input Checkbox */
@@ -264,9 +267,9 @@ h1 .tokenSelect { margin:0 auto; }
 
 .boxWalletDigital { margin-bottom:0; padding-top:25px; padding-bottom:50px; border-top-left-radius:20px; border-top-right-radius:20px; }
 
-.boxGoldNow { height:88px; position:relative; padding:0 38px 0 20px; display:flex; align-items:center; border-radius:13px; background:#ffdf0b; }
+.boxGoldNow { height:88px; position:relative; padding:0 38px 0 18px; display:flex; align-items:center; border-radius:13px; background:#ffdf0b; }
 .boxGoldNow:after { content:''; width:8px; height:14px; position:absolute; right:18px; top:50%; margin-top:-7px; background:url('../images/common/iconArrowYellow.png') center center no-repeat; background-size:100% auto; }
-.boxGoldNow .title { padding:5px 0 5px 28px; flex:1; background:url('../images/main/iconDigitalPawn1.png') left center no-repeat; background-size:24px auto; font-size:15px; font-weight:700; }
+.boxGoldNow .title { padding:5px 0 5px 30px; flex:1; background:url('../images/main/iconGoldVoucher.png') left center no-repeat; background-size:25px auto; font-size:15px; font-weight:700; }
 .boxGoldNow .assets { flex:1; text-align:right; }
 .boxGoldNow .assets .price { font-family:"SFProDisplay", 'Sans-serif'; font-size:15px; font-weight:700; }
 .boxGoldNow .assets .info { margin-top:3px; font-family:"SFProDisplay", 'Sans-serif'; }
@@ -468,11 +471,11 @@ h1 .tokenSelect { margin:0 auto; }
 
 
 /* Gold Service */
-.boxGoldService { margin-bottom:45px; padding:50px 25px 45px; position:relative; background:#ffdf0b; }
+.boxGoldService { margin-bottom:45px; padding:50px 25px 55px; position:relative; background:#ffdf0b; }
 .boxGoldService .title { margin-bottom:20px; font-size:26px; font-weight:700; }
-.boxGoldService .cont { margin-bottom:15px; font-size:16px; }
+.boxGoldService .cont { margin-bottom:40px; font-size:15px; line-height:27px; }
 .boxGoldService .etc { color:#a59002; }
-.boxGoldService:after { content:''; width:134px; height:134px; position:absolute; right:0; bottom:15px; background:url('../images/content/bgGoldService.png') no-repeat; background-size:100% auto; }
+.boxGoldService:after { content:''; width:88px; height:141px; position:absolute; right:3px; top:62px; background:url('../images/content/bgGoldService.png') no-repeat; background-size:100% auto; }
 
 
 /* Gold Item */
@@ -514,21 +517,46 @@ h1 .tokenSelect { margin:0 auto; }
 .boxMap .mapAddress { font-size:15px; }
 
 
-.boxGoldOut { margin-bottom:40px; padding:0 25px 20px; border-radius:20px; background:#ffdf0b; box-shadow: 0 7px 5px 0 rgba(255, 225, 28, 0.15); }
+.boxGoldOut { margin-bottom:13px; padding:0 25px; border-radius:20px; background:#ffdf0b; box-shadow: 0 7px 5px 0 rgba(255, 225, 28, 0.15); }
 .boxGoldOut .cont { display:flex; text-align:center; }
-.boxGoldOut .cont > div { height:110px; position:relative; flex:1; flex-direction:column; display:flex; align-items:center; justify-content:center; }
+.boxGoldOut .cont > div { height:94px; position:relative; flex:1; flex-direction:column; display:flex; align-items:center; justify-content:center; }
 .boxGoldOut .cont > div+div:after { content:''; width:1px; height:40px; position:absolute; left:0; top:50%; margin-top:-20px; background:rgba(204,179,39,0.51) }
 .boxGoldOut .cont .title { font-size:15px; }
 .boxGoldOut .cont .price { font-size:20px; font-weight:700; font-family:"SFProDisplay", 'Sans-serif'; }
-.boxGoldOut .subject { border-top:1px solid rgba(204,179,39,.5); padding:12px 0; text-align:center; color:rgba(132,112,0,.5); }
+.boxGoldOut .subject { border-top:1px solid rgba(204,179,39,.5); padding:18px 0; text-align:center; color:rgba(132,112,0,.5); }
 
-.boxGoldOut.is--cancel { padding:23px 0; background:#f2f4f6; box-shadow: 0 7px 5px 0 rgba(131, 131, 131, 0.15); }
+.boxGoldOut.is--cancel { margin-bottom:50px; padding:30px 0; background:#f2f4f6; box-shadow: 0 7px 5px 0 rgba(131, 131, 131, 0.15); }
+.boxGoldOut.is--cancel .cont { margin-bottom:12px; }
+.boxGoldOut.is--cancel .cont > div { height:auto; }
 .boxGoldOut.is--cancel .cont > div+div:after { background:#a1a4a7; }
+.boxGoldOut.is--cancel .ps { color:#999; text-align:center; }
 
+.boxOutVoucher { margin-bottom:40px; overflow:hidden; }
+.boxOutVoucher .title { float:left; }
+.boxOutVoucher a { float:right; text-decoration:underline; color:#999; }
+
+.boxWeightRadio { width:136px; position:relative; border-radius:5px; background:#d5d5d5; }
+.boxWeightRadio:before { content:''; width:70px; height:27px; position:absolute; left:-1px; top:0; background:#29c1cf; box-shadow: 4px 0 6px 0 rgba(0, 0, 0, 0.16); border-radius:5px; z-index:1; transition:left .5s; }
+.boxWeightRadio.type2:before { left:67px; }
+.boxWeightRadio:after { content:''; display:block; clear:both; }
+.boxWeightRadio input { position:absolute; left:-99999px; top:0; opacity:0; }
+.boxWeightRadio label { width:50%; height:27px; position:relative; float:left; z-index:2; text-align:center; line-height:27px; color:#fff; }
+
+.boxDepositLength { height:120px; display:flex; align-items:center; justify-content:center; border-radius:20px; box-shadow: 0 7px 5px 0 rgba(39, 80, 242, 0.21); background:#2750f2; flex-direction: column; }
+.boxDepositLength .price { margin-bottom:5px; color:#fff; font-size:20px; font-weight:700; font-family:"SFProDisplay", 'Sans-serif'; }
+.boxDepositLength .ps { color:#fff; }
+
+.selGoldWeight { padding:0 0 12px; overflow:hidden; }
+.selGoldWeight button { width:23.5%; height:40px; margin-left:2%; float:left; border:1px solid #d4d8db; border-radius:5px; font-size:12px; }
+.selGoldWeight button:nth-child(1), .selGoldWeight button:nth-child(5) { margin-left:0; }
+.selGoldWeight button:nth-child(1),
+.selGoldWeight button:nth-child(2),
+.selGoldWeight button:nth-child(3),
+.selGoldWeight button:nth-child(4) { margin-bottom:12px; }
 
 /* Deposit Item */
-.boxDepositItem { margin-bottom:25px; padding:64px 30px; position:relative; background:#39aaf2;  }
-.boxDepositItem:after { content:''; width:170px; height:144px; position:absolute; right:0; bottom:26px; background:url('../images/content/bgDepositItem.png') no-repeat; background-size:100% auto; }
+.boxDepositItem { margin-bottom:25px; padding:74px 30px; position:relative; background:#39aaf2;  }
+.boxDepositItem:after { content:''; width:130px; height:109px; position:absolute; right:30px; top:48px; background:url('../images/content/bgDepositItem.png') no-repeat; background-size:100% auto; }
 .boxDepositItem .cont { position:relative; z-index:2; font-size:17px; color:#fff; font-weight:100; line-height:1.55; }
 
 .listDepositItem { padding:18px 0; }
