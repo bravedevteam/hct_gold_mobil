@@ -85,7 +85,10 @@ $(function(){
 		var target = $(this).attr("data-pop");
 
 		$("#"+target).addClass("active");
-		dim_open();
+
+		if(!$(this).hasClass("noDim")){
+			dim_open();
+		}
 	});
 
 	$(".layer--close").click(function(){
