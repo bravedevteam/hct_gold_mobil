@@ -182,7 +182,7 @@ h1 .tokenSelect { margin:0 auto; }
 
 /* Wallet */
 .boxWalletTop { position:relative; padding:0 15px 24px; }
-.boxWalletTop .walletTab { height:45px; display:flex; position:relative; margin:0 auto; background:#264ce3; border-radius:5px; }
+.boxWalletTop .walletTab { height:45px; display:flex; position:relative; margin:0 auto; background:#264ce3; border-radius:20px; }
 .boxWalletTop .walletTab:after { content:''; width:33.3%; height:45px; position:absolute; top:0; background:#1ed6e6; box-shadow: 3px 6px 10px 0 rgba(0, 22, 108, 0.37); border-radius:5px; z-index:2; transition:left .5s; }
 .boxWalletTop .walletTab.tab1:after { left:0; }
 .boxWalletTop .walletTab.tab2:after { left:33.3%; }
@@ -220,7 +220,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop .listPrice dt { width:100px; float:left; text-align:center; }
 .boxWalletTop .listPrice dd { margin-left:100px; padding:0 20px; font-size:14px; }
 .boxWalletTop .listPrice dd span { font-size:15px; }
-.boxWalletTop .btn { display:flex; border:1px solid #5273f5; border-radius:5px; overflow:hidden; }
+.boxWalletTop .btn { display:flex; border:1px solid #5273f5; border-radius:10px; overflow:hidden; }
 .boxWalletTop .btn button { flex:1; height:50px; position:relative; font-size:15px; color:#fff; }
 .boxWalletTop .btn button+button:after { content:''; width:1px; height:15px; position:absolute; left:0; top:50%; margin-top:-7px; background:#5273f5; }
 .boxWalletTop.type--invest .priceWrap { margin:40px 0; }
@@ -248,12 +248,32 @@ h1 .tokenSelect { margin:0 auto; }
 
 .boxWalletTop.type--btc { padding:20px 18px 25px; border-radius:13px; background:#29c1cf; box-shadow: 0 7px 5px 0 rgba(41, 130, 207, 0.09); }
 .boxWalletTop.type--btc .top .typeMark img { width:10px; }
-.boxWalletTop.type--btc .priceWrap { margin:8px 0 20px; }
+.boxWalletTop.type--btc .top .etc { color:#fff; }
+.boxWalletTop.type--btc .priceWrap { margin:8px 0 15px; }
+.boxWalletTop.type--btc .priceWrap > .price { font-size:30px; }
+.boxWalletTop.type--btc .priceWrap > .price span.small { font-size:25px; }
 .boxWalletTop.type--btc .priceWrap .title { color:#fff; }
+.boxWalletTop.type--btc .priceWrap .bottomPriceGroup { margin:28px auto; }
 .boxWalletTop.type--btc .priceWrap .bottomPrice { color:#fff; }
 .boxWalletTop.type--btc .priceWrap .bottomPrice .subTitle { color:#a9ecf2; }
-.boxWalletTop.type--btc .btn { border:1px solid #6ad7e2; }
-.boxWalletTop.type--btc .btn button+button:after { background:#6ad7e2; }
+.boxWalletTop.type--btc .btn { border:1px solid #5facdd; background:#fff; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
+.boxWalletTop.type--btc .btn button { color:#000; }
+.boxWalletTop.type--btc .btn button+button:after { background:#5facdd; }
+
+.boxWalletTop.type--voucher { padding:0; }
+.boxWalletTop.type--voucher .cont { position:relative; margin-bottom:20px; padding:20px 20px 30px; border-radius:20px; background:linear-gradient(117deg, #0b255f 46%, #031748 97%); box-shadow:0 5px 6px 0 rgba(0, 0, 0, 0.33); }
+.boxWalletTop.type--voucher .top .typeMark { width:auto; height:auto; position:absolute; left:18px; top:27px; background:none; }
+.boxWalletTop.type--voucher .top .typeMark img { width:137px; }
+.boxWalletTop.type--voucher .top .etc { color:#fff; }
+.boxWalletTop.type--voucher .priceWrap { margin:65px 0 0; text-align:right; }
+.boxWalletTop.type--voucher .priceWrap > .price { font-size:36px; }
+.boxWalletTop.type--voucher .priceWrap > .price span.small { font-size:20px; }
+.boxWalletTop.type--voucher .priceWrap .bottomPrice--guide { font-size:15px; color:#c9a247; }
+.boxWalletTop.type--voucher .priceWrap .bottomPrice--guide span.small { font-size:12px; }
+.boxWalletTop.type--voucher .btn { border:1px solid #c9a247; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
+.boxWalletTop.type--voucher .btn button { color:#000; }
+.boxWalletTop.type--voucher .btn button+button:after { background:#c9a247; }
+.boxWalletTop.type--voucher .btn button:hover { color:#a25203; }
 
 .boxInfoHGX { margin:40px 12px 0 0; position:relative; background:url('../images/content/imgInfo_hgx.png') right top no-repeat; background-size:132px auto; }
 .boxInfoHGX .title { margin-bottom:15px; font-size:28px; font-weight:100; }
@@ -264,6 +284,11 @@ h1 .tokenSelect { margin:0 auto; }
 .boxInfoHGX .textLayer { left:15px; right:15px; }
 .boxInfoHGX .textLayer p { font-size:12px; color:#000; font-weight:400; }
 .boxInfoHGX .textLayer span { font-weight:400; }
+
+.boxInfoVoucher { margin-top:20px; padding:20px 2px 5px 0; position:relative; background:url('../images/content/imgInfo_voucher.png') right bottom no-repeat; background-size:138px auto; }
+.boxInfoVoucher .title { margin-bottom:15px; font-size:28px; font-weight:100; }
+.boxInfoVoucher .subject { font-size:17px; font-weight:700; }
+.boxInfoVoucher p { font-size:15px; font-weight:100; color:#999; }
 
 .boxWalletDigital { margin-bottom:0; padding-top:25px; padding-bottom:50px; border-top-left-radius:20px; border-top-right-radius:20px; }
 
@@ -356,6 +381,8 @@ h1 .tokenSelect { margin:0 auto; }
 .boxAccountList .cont .info .price { font-size:15px; font-weight:700; color:#2750f2; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxAccountList .cont .info .price.out { color:#000; }
 .boxAccountList .cont .info .total { color:#999; font-family:"SFProDisplay", 'Sans-serif'; }
+.boxAccountList.voucher .cont .title .status { color:#ffdf31; }
+.boxAccountList.voucher .cont .title .status.ing { color:#4fd884 }
 
 .title--top { position:relative; }
 .title--top .opt { position:absolute; right:0; bottom:0; }
@@ -638,6 +665,8 @@ h1 .tokenSelect { margin:0 auto; }
 .boxMypageQuick a.wallet { margin:0 6px 0 0; background-image:url('../images/content/iconMyQuick1.png'); }
 .boxMypageQuick a.deposit { background-image:url('../images/content/iconMyQuick2.png'); }
 .boxMypageQuick a.gold { margin:0 0 0 6px; background-image:url('../images/content/iconMyQuick3.png'); }
+.boxMypageQuick a.level { position:relative; }
+.boxMypageQuick a.level span { width:100%; height:40px; position:absolute; left:0; top:10px; line-height:40px; color:#2750f2; font-size:15px; font-weight:700; }
 .btnSecretLevel { height:58px; display:block; position:relative; background:#eff3ff; border-radius:5px; text-align:center; line-height:58px; font-size:15px; }
 .btnSecretLevel span { color:#2750f2; }
 .btnSecretLevel:after { content:''; width:11px; height:11px; position:absolute; right:27px; top:50%; background:url('../images/common/iconArrow.png') right center no-repeat; background-size:auto 100%; transform:translateY(-50%); }
@@ -652,12 +681,21 @@ h1 .tokenSelect { margin:0 auto; }
 .boxDepositInfo > div { flex:1; position:relative; text-align:center; }
 .boxDepositInfo > div+div:after { content:''; width:1px; height:50px; position:absolute; left:0; top:50%; margin-top:-25px; background:rgba(255,255,255,.4); }
 .boxDepositInfo > div .title { font-size:15px; }
-.boxDepositInfo > div .price { margin-top:10px; font-size:15px; }
+.boxDepositInfo > div .price { margin-top:8px; font-size:20px; line-height:1; }
 .boxDepositInfo > div .price span:first-child { font-size:17px; font-weight:700; }
+.boxDepositInfo > div .price span.small { font-size:15px; }
 .boxDepositInfo > div .price.price--two { height:45px; margin-top:5px; display:flex; flex-direction: column; line-height:20px; justify-content:center; }
 .boxDepositInfo > div .price .price2 { font-size:15px; font-family:"SFProDisplay", 'Sans-serif'; }
 
 .boxMypageTop.type--business .title { background-image:url('../images/common/iconJoinBusiness.png'); background-position:5px 1px; }
+
+.boxMypageVoucher { margin-top:40px; }
+.boxMypageVoucher .guide { margin-bottom:10px; font-size:18px; line-height:1.55em; }
+.boxMypageVoucher .boxCustomerLink a { padding-left:35px; color:#000; }
+.boxMypageVoucher .boxCustomerLink a:first-child { border-top:0; }
+.boxMypageVoucher .boxCustomerLink a.myBank { background:url('../images/content/iconMyQuick3.png') left center no-repeat; background-size:20px auto; }
+.boxMypageVoucher .boxCustomerLink a.tradeVoucher { background:url('../images/content/iconMyQuick4.png') left center no-repeat; background-size:23px auto; }
+.boxMypageVoucher .boxCustomerLink a.sign { padding-left:30px; background:url('../images/content/iconMyQuick5.png') left center no-repeat; background-size:15px auto; }
 
 .myBusinessGuide { padding:0 18px; position:relative; }
 .myBusinessGuide:after { content:''; width:135px; height:100px; position:absolute; right:17px; top:0; background:url('../images/content/bgMybusinessGuide.png'); background-size:100% auto; z-index:1; }

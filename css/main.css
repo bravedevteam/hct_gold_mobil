@@ -40,7 +40,7 @@ h3.title { margin-bottom:16px; padding:0 15px; font-size:17px; color:#000; font-
 .boxAssets .box.type--detail .btn button:hover { color:#a25203; }
 .boxAssets .box.type--detail .btn button+button:after { background:#c9a247; }
 
-.boxAssets .boxVoucher { min-height:100px; padding:16px 0 0 140px; background:url('../images/main/imgVoucher.png') left top no-repeat; background-size:132px auto; text-align:right; font-family:"SFProDisplay", 'Sans-serif'; }
+.boxAssets .boxVoucher { min-height:100px; padding:16px 0 0 140px; background:url('../images/main/imgVoucher.png') left top no-repeat; background-size:137px auto; text-align:right; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxAssets .boxVoucher .priceGold { font-size:36px; font-weight:700; letter-spacing:-0.07em; }
 .boxAssets .boxVoucher .priceGold span { font-size:20px; }
 .boxAssets .boxVoucher .priceWon { font-size:15px; color:rgba(255,255,255,0.5); }
