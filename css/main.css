@@ -23,6 +23,7 @@ h3.title { margin-bottom:16px; padding:0 15px; font-size:17px; color:#000; font-
 .boxAssets .bottomPrice { margin-bottom:30px; font-size:15px; text-align:center; color:rgba(255,255,255,0.6); }
 .boxAssets .bottomPrice i.icon { width:7px; height:6px; margin:0 3px 0 5px; display:inline-block; background:url('../images/main/iconDayArrow.png') no-repeat; background-size:100% auto; vertical-align:middle; }
 .boxAssets .bottomPrice i.icon.down { transform:rotate(180deg); }
+.boxAssets .bottomPrice span.small { font-size:11px; }
 .boxAssets .guide { margin-bottom:12px; font-size:14px; color:#ffdf31; text-align:center; letter-spacing:-.07em; }
 .boxAssets .btn { position:absolute; left:17px; right:17px; bottom:21px; display:flex; overflow:hidden; border:1px solid #153edd; border-radius:10px; background:#fff; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
 .boxAssets .btn button { height:50px; position:relative; flex:1; font-size:15px; color:#000; }

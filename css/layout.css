@@ -129,12 +129,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .pb30 { padding-bottom:30px !important; }
 .pb40 { padding-bottom:40px !important; }
 .pb50 { padding-bottom:50px !important; }
+.pb100 { padding-bottom:100px !important; }
 
 .prl10 { padding:0 10px !important; }
 .prl15 { padding:0 15px !important; }
 
 
 /* Margin */
+.mtb0 { margin:0px 0 !important; }
 .mtb10 { margin:10px 0 !important; }
 .mtb15 { margin:15px 0 !important; }
 .mtb20 { margin:20px 0 !important; }
@@ -153,6 +155,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .mb30 { margin-bottom:30px !important; }
 .mb35 { margin-bottom:35px !important; }
 .mb40 { margin-bottom:40px !important; }
+.mb45 { margin-bottom:45px !important; }
 .mb50 { margin-bottom:50px !important; }
 .mb60 { margin-bottom:60px !important; }
 
@@ -169,6 +172,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .mt50 { margin-top:50px !important; }
 .mt55 { margin-top:55px !important; }
 .mt70 { margin-top:70px !important; }
+.mt100 { margin-top:100px !important; }
 
 .bd0 { border:0 !important; }
 
@@ -187,6 +191,8 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 #container.wallet { padding:0; background:#2750f2; }
 #container.wallet h1 { color:#fff; }
 #container.account { padding:0 8px; }
+#container.voucher { background:#0b255f; }
+#container.voucher h1 { color:#fff; }
 
 .box { position:relative; }
 .box.bgWhite { padding:22px 20px; background:#fff; }
@@ -203,6 +209,8 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 
 .bgRed { background:#f00 !important; }
 .bgBlue { background:#00f !important; }
+
+.ft15 { font-size:15px !important; }
 
 .top--btn { width:100%; position:absolute; left:0; top:0; }
 .top--btn button { width:100%; height:35px; position:absolute; left:0; top:0; font-size:0; text-indent:-99999px; }
