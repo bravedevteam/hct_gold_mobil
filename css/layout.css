@@ -82,6 +82,17 @@
     url('../font/SF-Pro-Display-Bold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Cinzel';
+    font-weight: 700;
+    src: local('Cinzel-Bold'),
+    url('../font/Cinzel-Bold.woff2') format('woff2'),
+    url('../font/Cinzel-Bold.woff') format('woff'),
+    url('../font/Cinzel-Bold.ttf') format('truetype');
+}
+
+
+
 /* common */
 * {margin:0; padding:0; box-sizing: border-box; list-style:none; text-decoration:none;
     outline: none; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: transparent; }

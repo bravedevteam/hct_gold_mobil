@@ -68,12 +68,21 @@ input[type="number"]:disabled { border:1px solid #d5d5d5; background:#f2f4f6; co
 .inputUnit { position:relative; }
 .inputUnit input { padding:0 20px 0 90px; z-index:1; }
 .inputUnit.value--max input { padding-right:50px; }
-.inputUnit span { width:70px; height:50px; padding-left:20px; position:absolute; left:0; top:0; font-family:"SFProDisplay", 'Sans-serif'; line-height:50px; z-index:2; }
-.inputUnit span:after { content:''; width:1px; height:18px; position:absolute; right:0; top:50%; margin-top:-9px; background:#d5d5d5; }
+.inputUnit > span { width:70px; height:50px; padding-left:20px; position:absolute; left:0; top:0; font-family:"SFProDisplay", 'Sans-serif'; line-height:50px; z-index:2; }
+.inputUnit > span:after { content:''; width:1px; height:18px; position:absolute; right:0; top:50%; margin-top:-9px; background:#d5d5d5; }
+.inputUnit > span .btnInfo { width:14px; height:14px; margin-left:5px; display:inline-block; background:url('../images/common/iconMarkSmallGray.png') no-repeat; background-size:14px auto; font-size:0; text-indent:-99999px; vertical-align:middle; }
 .inputUnit .max { height:50px; display:none; position:absolute; right:20px; top:0; z-index:2; line-height:50px; color:#2750f2; font-size:12px; }
 .inputUnit.value--max .max { display:block; }
 .inputUnit.icon--trade { margin-top:34px; }
 .inputUnit.icon--trade:after { content:''; width:19px; height:15px; position:absolute; left:50%; top:-25px; margin-left:-9px; background:url('../images/common/iconTrade.png') no-repeat; background-size:100% auto; }
+.inputUnit.type--select .tokenSelect { width:115px; height:50px; padding:0 30px; margin:0; position:absolute; left:0; top:0; background:url('../images/common/iconArrowSort.png') 87px center no-repeat; background-size:9px auto; z-index:2; line-height:48px; text-align:center; }
+.inputUnit.type--select .tokenSelect:after { content:''; width:1px; height:18px; position:absolute; right:0; top:50%; margin-top:-9px; background:#d5d5d5; }
+.inputUnit.type--select .tokenSelect.icon--btc:before { content:''; width:11px; height:14px; position:absolute; left:18px; top:50%; margin-top:-7px; background:url('../images/common/iconSelectSmall-BTC.png') no-repeat; background-size:100% auto; }
+.inputUnit.type--select .tokenSelect label { font-size:15px; }
+.inputUnit.type--select select { width:115px; height:50px; position:absolute; left:0; top:0; opacity:0; z-index:5; }
+.inputUnit.type--select input { padding:0 18px 0 120px; text-align:right; }
+.inputUnit.type--blue input { padding:0 20px 0 120px; text-align:right; color:#2750f2; }
+.inputUnit.type--blue > span { width:115px; padding-left:25px; text-align:center; color:#2750f2; }
 .inputAddress { position:relative; }
 .inputAddress input { padding-right:60px; position:relative; z-index:1; }
 .inputAddress .btnQRcode { width:50px; height:50px; position:absolute; right:0; top:0; background:url('../images/common/iconQRcode.png') center center no-repeat; background-size:20px auto; font-size:0; text-indent:-99999px; z-index:2; }
@@ -230,25 +239,25 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop.type--invest .priceWrap { margin:40px 0; }
 .boxWalletTop.type--invest .priceWrap .title { color:#fff; font-weight:400; }
 
-.boxWalletTop.type--hgx { padding:20px 18px 25px; border-radius:13px; background:#ffdf0b; box-shadow: 0 7px 5px 0 rgba(255, 199, 48, 0.2); }
-.boxWalletTop.type--hgx .top .btnTransList { margin-top:7px; border-color:#000; color:#000; }
-.boxWalletTop.type--hgx .top .btnTransList:before { content:''; width:12px; height:12px; margin-right:4px; display:inline-block; background:url('../images/common/iconTrans.png') center center no-repeat; background-size:100% auto; }
-.boxWalletTop.type--hgx .priceWrap { margin:17px 0 22px; }
-.boxWalletTop.type--hgx .priceWrap .title { color:#000; }
-.boxWalletTop.type--hgx .priceWrap > .price { color:#000; }
-.boxWalletTop.type--hgx .priceWrap .bottomPrice { color:#847000; font-size:17px; font-weight:500; }
-.boxWalletTop.type--hgx .priceWrap .bottomPrice--guide { margin-top:15px; color:rgba(132,112,0,0.5); }
-.boxWalletTop.type--hgx .btn { border-color:#ccb327; }
-.boxWalletTop.type--hgx .btn button { color:#000; }
-.boxWalletTop.type--hgx .btn button+button:after { background:#CCB309; }
+.boxWalletTop.type--arw { padding:20px 18px 25px; border-radius:13px; background:#ffdf0b; box-shadow: 0 7px 5px 0 rgba(255, 199, 48, 0.2); }
+.boxWalletTop.type--arw .top .btnTransList { margin-top:7px; border-color:#000; color:#000; }
+.boxWalletTop.type--arw .top .btnTransList:before { content:''; width:12px; height:12px; margin-right:4px; display:inline-block; background:url('../images/common/iconTrans.png') center center no-repeat; background-size:100% auto; }
+.boxWalletTop.type--arw .priceWrap { margin:17px 0 22px; }
+.boxWalletTop.type--arw .priceWrap .title { color:#000; }
+.boxWalletTop.type--arw .priceWrap > .price { color:#000; }
+.boxWalletTop.type--arw .priceWrap .bottomPrice { color:#847000; font-size:17px; font-weight:500; }
+.boxWalletTop.type--arw .priceWrap .bottomPrice--guide { margin-top:15px; color:rgba(132,112,0,0.5); }
+.boxWalletTop.type--arw .btn { border-color:#ccb327; }
+.boxWalletTop.type--arw .btn button { color:#000; }
+.boxWalletTop.type--arw .btn button+button:after { background:#CCB309; }
 
-.boxWalletTop.type--hgx2 { padding:20px 18px 25px; border-radius:13px; background:#2750f2; box-shadow: 0 7px 5px 0 rgba(41, 193, 207, 0.11); }
-.boxWalletTop.type--hgx2 .top .btnTransList { margin-top:7px; }
-.boxWalletTop.type--hgx2 .top .btnTransList:before { content:''; width:12px; height:12px; margin-right:4px; display:inline-block; background:url('../images/common/iconTransWhite.png') center center no-repeat; background-size:100% auto; }
-.boxWalletTop.type--hgx2 .top .typeMark img { width:17px; }
-.boxWalletTop.type--hgx2 .top .etc { color:#fff; }
-.boxWalletTop.type--hgx2 .priceWrap { margin:0 0 20px; }
-.boxWalletTop.type--hgx2 .priceWrap .title { color:#fff; }
+.boxWalletTop.type--arw2 { padding:20px 18px 25px; border-radius:13px; background:#2750f2; box-shadow: 0 7px 5px 0 rgba(41, 193, 207, 0.11); }
+.boxWalletTop.type--arw2 .top .btnTransList { margin-top:7px; }
+.boxWalletTop.type--arw2 .top .btnTransList:before { content:''; width:12px; height:12px; margin-right:4px; display:inline-block; background:url('../images/common/iconTransWhite.png') center center no-repeat; background-size:100% auto; }
+.boxWalletTop.type--arw2 .top .typeMark img { width:17px; }
+.boxWalletTop.type--arw2 .top .etc { color:#fff; }
+.boxWalletTop.type--arw2 .priceWrap { margin:0 0 20px; }
+.boxWalletTop.type--arw2 .priceWrap .title { color:#fff; }
 
 .boxWalletTop.type--btc { padding:20px 18px 25px; border-radius:13px; background:#29c1cf; box-shadow: 0 7px 5px 0 rgba(41, 130, 207, 0.09); }
 .boxWalletTop.type--btc .top .typeMark img { width:10px; }
@@ -279,15 +288,15 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop.type--voucher .btn button+button:after { background:#c9a247; }
 .boxWalletTop.type--voucher .btn button:hover { color:#a25203; }
 
-.boxInfoHGX { margin:40px 12px 0 0; position:relative; background:url('../images/content/imgInfo_hgx.png') right top no-repeat; background-size:132px auto; }
-.boxInfoHGX .title { margin-bottom:15px; font-size:28px; font-weight:100; }
-.boxInfoHGX .subject { margin-bottom:18px; font-size:17px; font-weight:700; }
-.boxInfoHGX .subject .btnInfo { width:14px; height:14px; margin:4px 0 0 4px; display:inline-block; background:url('../images/common/iconMarkSmallBlack.png') no-repeat; background-size:100% auto; vertical-align:top; font-size:0; text-indent:-99999px; }
-.boxInfoHGX p { font-size:15px; font-weight:100; color:#999; }
+.boxInfoARW { margin:40px 12px 0 0; position:relative; background:url('../images/content/imgInfo_arw.png') right top no-repeat; background-size:132px auto; }
+.boxInfoARW .title { margin-bottom:15px; font-size:28px; font-weight:100; }
+.boxInfoARW .subject { margin-bottom:18px; font-size:17px; font-weight:700; }
+.boxInfoARW .subject .btnInfo { width:14px; height:14px; margin:4px 0 0 4px; display:inline-block; background:url('../images/common/iconMarkSmallBlack.png') no-repeat; background-size:100% auto; vertical-align:top; font-size:0; text-indent:-99999px; }
+.boxInfoARW p { font-size:15px; font-weight:100; color:#999; }
 
-.boxInfoHGX .textLayer { left:15px; right:15px; }
-.boxInfoHGX .textLayer p { font-size:12px; color:#000; font-weight:400; }
-.boxInfoHGX .textLayer span { font-weight:400; }
+.boxInfoARW .textLayer { left:15px; right:15px; }
+.boxInfoARW .textLayer p { font-size:12px; color:#000; font-weight:400; }
+.boxInfoARW .textLayer span { font-weight:400; }
 
 .boxInfoVoucher { margin-top:20px; padding:20px 2px 5px 0; position:relative; background:url('../images/content/imgInfo_voucher.png') right bottom no-repeat; background-size:138px auto; }
 .boxInfoVoucher .title { margin-bottom:15px; font-size:28px; font-weight:100; }
@@ -310,7 +319,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxAssetList li a.active { border-color:#2750f2; }
 .boxAssetList li a:after { content:''; width:8px; height:14px; position:absolute; right:18px; top:50%; margin-top:-7px; background:url('../images/common/iconArrow.png') center center no-repeat; background-size:100% auto; }
 .boxAssetList li .title { padding-left:22px; flex:1; font-size:15px; font-weight:700; background-size:18px auto; background-position:left center; background-repeat:no-repeat; }
-.boxAssetList li .title.icon--hgx { background-image:url('../images/common/iconAsset-HGX.png'); }
+.boxAssetList li .title.icon--arw { background-image:url('../images/common/iconAsset-ARW.png'); }
 .boxAssetList li .title.icon--btc { background-image:url('../images/common/iconAsset-BTC.png'); }
 .boxAssetList li .title.icon--eth { background-image:url('../images/common/iconAsset-ETH.png'); }
 .boxAssetList li .title.icon--ustd { background-image:url('../images/common/iconAsset-USTD.png'); }
@@ -851,8 +860,13 @@ h1 .tokenSelect { margin:0 auto; }
 .boxTradeUse .cont .bottomPrice { color:#0c646c; }
 
 .boxVoucherCard { padding:0 33px 55px; background:linear-gradient(139deg, #0b255f 48%, #031748 96%); }
+.boxVoucherCard .imgCard { position:relative; }
+.boxVoucherCard .imgCard .opt { position:absolute; right:6%; bottom:14%; text-align:right; font-family:'Cinzel'; font-weight:700; }
+.boxVoucherCard .imgCard .opt .gram { padding-right:18px; background:url('../images/content/bgGram.png') right 22px no-repeat; background-size:12px auto; font-size:33px; letter-spacing:-1px; }
 .boxVoucherCard .listDetail .title { color:#c9a247; }
 .boxVoucherCard .listDetail .cont { color:#fff; }
+
+.iconTradeDigital { height:15px; margin:30px 0 12px; background:url('../images/common/iconTradeDigital.png') center center no-repeat; background-size:auto 15px; }
 
 
 /* Splash */
