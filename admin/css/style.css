@@ -77,6 +77,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 
 .w100 { width:100%; }
 
+.ml100 { margin-left:100px !important; }
+
 #header { width:100%; height:100px; padding:0 45px; position:absolute; left:0; top:0; background:#273444; overflow:hidden; }
 #header h1.logo { width:137px; height:100px; float:left; background:url('../images/logo.png') center 22px no-repeat; font-size:0; text-indent:-99999px; }
 #header .topInfo { position:absolute; right:0; top:0; }
@@ -108,7 +110,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 
 #lnb { width:240px; float:left; position:relative; z-index:2; }
 #lnb h2 { height:162px; padding:87px 0 0; position:relative; background:#2249e2; text-align:center; color:#fff; font-size:20px; }
-#lnb h2:before { content:''; width:40px; height:40px; position:absolute; left:50%; top:37px; margin-left:-20px; background:url('../images/split.png') -40px 0 no-repeat; }
+#lnb h2:before { content:''; width:40px; height:40px; position:absolute; left:50%; top:37px; margin-left:-20px; background-image:url('../images/split.png'); background-repeat:no-repeat; }
+#lnb h2.icon1:before { background-position:0 0; }
+#lnb h2.icon2:before { background-position:-40px 0; }
+#lnb h2.icon3:before { background-position:-80px 0; }
+#lnb h2.icon4:before { background-position:-120px 0; }
+#lnb h2.icon5:before { background-position:-160px 0; }
+#lnb h2.icon6:before { background-position:-200px 0; }
+#lnb h2.icon7:before { background-position:-240px 0; }
+#lnb h2.icon8:before { background-position:-280px 0; }
 #lnb ul { margin-top:20px; }
 #lnb ul li a { height:80px; display:block; text-align:center; line-height:80px; font-size:18px; color:#fff; }
 #lnb ul li a span { height:34px; padding:2px 0; display:inline-block; position:relative; vertical-align:middle; line-height:34px; }
@@ -148,9 +158,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 h4.title { padding:0 20px; margin-bottom:28px; font-size:20px; font-weight:700; }
 
 .tableBasic { width:100%; border:1px solid #b1bfd5; }
-.tableBasic th { padding:23px; background:#b1bfd5; border:1px solid #b1bfd5; border-right:1px solid #dde9fd; font-size:17px; font-weight:500; }
+.tableBasic th { padding:30px 20px; background:#b1bfd5; border:1px solid #b1bfd5; border-right:1px solid #dde9fd; font-size:17px; font-weight:500; }
 .tableBasic th:last-of-type { border-right:1px solid #b1bfd5; }
-.tableBasic td { padding:23px; border:1px solid #dde9fd; text-align:center; font-size:17px; font-weight:500; }
+.tableBasic td { padding:30px 20px; border:1px solid #dde9fd; text-align:center; font-size:17px; font-weight:500; }
 .tableBasic td:first-of-type { border-left:1px solid #b1bfd5; }
 .tableBasic td:last-of-type { border-right:1px solid #b1bfd5; }
 .tableBasic tr:last-child td { border-bottom:1px solid #b1bfd5; }
@@ -161,12 +171,24 @@ h4.title { padding:0 20px; margin-bottom:28px; font-size:20px; font-weight:700; 
 .tableBasic.type--vertical th:last-of-type { border-right:1px solid #dde9fd; }
 .tableBasic.type--vertical td:first-of-type { border-left:1px solid #dde9fd; }
 
-.inputBasic { height:52px; padding:0 23px; border:1px solid #b1bfd5; border-radius:2px; }
+.inputBasic { width:100%; height:52px; padding:0 23px; border:1px solid #b1bfd5; border-radius:2px; font-size:17px; }
+.inputBasic:disabled { background:#ededed; }
 
 .btnBasic { width:110px; height:38px; display:inline-block; background:#5899ff; border-radius:2px; color:#fff; line-height:38px; text-align:center; font-size:17px; }
+.btnGray { width:135px; height:38px; border-radius:5px; border:1px solid #999; background:#f5f7ff; font-size:17px; color:#000; }
+
+.selectBasic { position:relative; border:1px solid #b1bfd5; }
+.selectBasic:after { content:''; width:14px; height:9px; position:absolute; right:18px; top:50%; margin-top:-4px; background:url('../images/iconSelectDis.png') no-repeat; background-size:100% auto; }
+.selectBasic select { width:100%; height:52px; padding:0 20px; border:0; font-size:17px; }
+.selectBasic select:disabled { background:#ededed; color:#000; }
+
+.inputOption { position:relative; }
+.inputOption input[type="text"] { padding-right:40px; }
+.inputOption span { position:absolute; right:18px; top:50%; transform:translateY(-50%); }
 
 a.type--link { font-size:17px; color:#2750f2; }
 a.type--link+a.type--link { margin-left:80px; }
+a.type--link+button { margin-left:40px; }
 
 .boxBtn { position:relative; margin:70px 0; text-align:center; }
 .boxBtn button { width:110px; height:52px; border-radius:2px; font-size:17px; background:#273444; color:#fff; }
@@ -192,3 +214,21 @@ a.type--link+a.type--link { margin-left:80px; }
 
 .tabArea { display:none; }
 .tabArea.active { display:block; }
+
+input[type="radio"] { position:absolute; left:-99999px; top:0; opacity:0; }
+input[type="radio"] + label { padding-left:30px; position:relative; cursor:pointer; }
+input[type="radio"] + label:before { content:''; width:20px; height:20px; position:absolute; left:0; top:50%; margin-top:-10px; border:1px solid #2750f2; background:#fff; border-radius:50%; z-index:1; }
+input[type="radio"]:checked + label:after { content:''; width:12px; height:12px; position:absolute; left:5px; top:50%; margin-top:-5px; background:#2750f2; border-radius:50%; z-index:2; }
+
+input[type="checkbox"] { position:absolute; left:-99999px; top:0; opacity:0; }
+input[type="checkbox"] + label { padding-left:30px; position:relative; cursor:pointer; }
+input[type="checkbox"] + label:before { content:''; width:20px; height:20px; position:absolute; left:0; top:50%; margin-top:-10px; border:1px solid #b1bfd5; background:#fff; border-radius:2px; z-index:1; }
+input[type="checkbox"]:checked + label:after { content:''; width:12px; height:12px; position:absolute; left:5px; top:50%; margin-top:-5px; background:#b1bfd5; border-radius:2px; z-index:2; }
+
+label+input+label { margin-left:30px; }
+
+.row { display:flex; position:relative; align-items:center; }
+.row.is--division input { width:100%; margin-right:118px; }
+.row.is--division button { position:absolute; right:0; top:0; }
+.row.is--division button.btnBasic { width:110px; height:52px; background:#2750f2; }
+.row.is--half > * { width:50%; }
