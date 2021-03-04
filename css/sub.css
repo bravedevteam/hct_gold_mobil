@@ -12,6 +12,7 @@ h3.title--large { padding:30px 0 16px; font-size:17px; font-weight:700; }
 h3.title--large span { font-weight:400; }
 h3.title--ing { color:#2750f2; }
 h3.title--end { color:#999; }
+h3.title--application { color:#4fd884; }
 h4.title { margin-bottom:15px; font-size:12px; font-weight:400; text-align:left; }
 h4.title--medium { margin-bottom:11px; font-size:15px; font-weight:700; }
 h4.title--large { font-size:18px; font-weight:700; }
@@ -50,7 +51,7 @@ h4.title span { font-size:12px; }
 
 
 /* Input */
-.inputBasic { width:100%; height:50px; padding:0 15px; position:relative; background:#fff; border:1px solid #d5d5d5; border-radius:5px; color:#000; font-size:15px; z-index:1; }
+.inputBasic { width:100%; height:50px; padding:0 15px; position:relative; background:#fff; border:1px solid #d5d5d5; border-radius:5px; color:#000; font-size:15px; z-index:1; font-family:"SFProDisplay", 'Sans-serif'; }
 .inputBasic::placeholder { color:#ccc; }
 input[type="password"].inputBasic { padding-right:50px; }
 .inputPassword { position:relative; }
@@ -70,7 +71,7 @@ input[type="number"]:disabled { border:1px solid #d5d5d5; background:#f2f4f6; co
 .inputUnit.value--max input { padding-right:50px; }
 .inputUnit > span { width:70px; height:50px; padding-left:20px; position:absolute; left:0; top:0; font-family:"SFProDisplay", 'Sans-serif'; line-height:50px; z-index:2; }
 .inputUnit > span:after { content:''; width:1px; height:18px; position:absolute; right:0; top:50%; margin-top:-9px; background:#d5d5d5; }
-.inputUnit > span .btnInfo { width:14px; height:14px; margin-left:5px; display:inline-block; background:url('../images/common/iconMarkSmallGray.png') no-repeat; background-size:14px auto; font-size:0; text-indent:-99999px; vertical-align:middle; }
+.inputUnit > span .btnInfo { width:14px; height:14px; margin-top:-4px; margin-left:5px; display:inline-block; background:url('../images/common/iconMarkSmallGray.png') no-repeat; background-size:14px auto; font-size:0; text-indent:-99999px; vertical-align:middle; }
 .inputUnit .max { height:50px; display:none; position:absolute; right:20px; top:0; z-index:2; line-height:50px; color:#2750f2; font-size:12px; }
 .inputUnit.value--max .max { display:block; }
 .inputUnit.icon--trade { margin-top:34px; }
@@ -82,7 +83,19 @@ input[type="number"]:disabled { border:1px solid #d5d5d5; background:#f2f4f6; co
 .inputUnit.type--select select { width:115px; height:50px; position:absolute; left:0; top:0; opacity:0; z-index:5; }
 .inputUnit.type--select input { padding:0 18px 0 120px; text-align:right; }
 .inputUnit.type--blue input { padding:0 20px 0 120px; text-align:right; color:#2750f2; }
-.inputUnit.type--blue > span { width:115px; padding-left:25px; text-align:center; color:#2750f2; }
+.inputUnit.type--blue > span { width:115px; padding-left:25px; text-align:center; color:#2750f2; font-size:15px; }
+.inputUnit.type--blue.icon--arw > span { background:url('../images/common/iconDigital-ARW.png') 16px center no-repeat; background-size:17px auto; }
+.inputUnit.type--blue .textLayer { top:10px; left:15px; right:15px; }
+.inputUnit.type--limit {  }
+.inputUnit.type--limit input { padding:0 70px 0 20px; }
+.inputUnit.type--limit input:disabled { color:#000; }
+.inputUnit.type--limit > span { width:auto; padding:0 20px 0 0; left:auto; right:0; font-size:15px; }
+.inputUnit.type--limit > span:after { display:none; }
+.inputUnit.type--voucher {  }
+.inputUnit.type--voucher input { padding:0 20px 0 170px; text-align:right; }
+.inputUnit.type--voucher input:disabled { color:#000; background:#f8f9fa; }
+.inputUnit.type--voucher > span { width:160px; padding:0; text-align:center; font-size:15px; }
+
 .inputAddress { position:relative; }
 .inputAddress input { padding-right:60px; position:relative; z-index:1; }
 .inputAddress .btnQRcode { width:50px; height:50px; position:absolute; right:0; top:0; background:url('../images/common/iconQRcode.png') center center no-repeat; background-size:20px auto; font-size:0; text-indent:-99999px; z-index:2; }
@@ -151,6 +164,7 @@ h1 .tokenSelect { margin:0 auto; }
 .guide-text.type--line:before { content:'-'; position:absolute; left:0; top:0; }
 .guide-text.type--line+.guide-text { margin-top:5px; }
 .guide-text.boxGray { padding:8px; background:#f2f4f6; text-align:center; border-radius:5px; }
+.guide-text.bigDanger { padding:16px; color:#f22727; font-size:15px; }
 .guide-text ul li { padding-left:10px; position:relative; text-align:left; }
 .guide-text ul li:after { content:'·'; position:absolute; left:2px; top:0; }
 .guide-text ul li+li { margin-top:2px; }
@@ -171,6 +185,7 @@ h1 .tokenSelect { margin:0 auto; }
 
 /* Complate */
 .boxComplate { padding:130px 35px; }
+.boxComplate.is--header { padding:50px 35px; }
 .boxComplate .cont.icon--join { padding-top:48px; background:url('../images/common/iconJoinComplate.png') left top no-repeat; background-size:auto 34px; }
 .boxComplate .cont.icon--complate { padding-top:48px; background:url('../images/common/iconCheckBlack.png') left top no-repeat; background-size:auto 35px; }
 .boxComplate .cont.icon--judge { padding-top:52px; background:url('../images/common/iconJoinJudge.png') left top no-repeat; background-size:auto 38px; }
@@ -230,8 +245,8 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop .priceWrap .bottomPrice.small { margin-top:5px; text-align:center; color:#c6e9ff; }
 .boxWalletTop .listPrice { margin:0 18px; padding:15px 0; background:#2241be; border-radius:5px; text-align:center; }
 .boxWalletTop .listPrice dl { display:inline-block; overflow:hidden; color:#fff; font-size:15px; }
-.boxWalletTop .listPrice dt { width:100px; float:left; text-align:center; }
-.boxWalletTop .listPrice dd { margin-left:100px; padding:0 20px; font-size:14px; }
+.boxWalletTop .listPrice dt { width:80px; float:left; text-align:left; }
+.boxWalletTop .listPrice dd { margin-left:100px; padding:0 0 0 10px; font-size:14px; text-align:right; }
 .boxWalletTop .listPrice dd span { font-size:15px; }
 .boxWalletTop .btn { display:flex; border:1px solid #5273f5; border-radius:10px; overflow:hidden; }
 .boxWalletTop .btn button { flex:1; height:50px; position:relative; font-size:15px; color:#fff; }
@@ -258,6 +273,12 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop.type--arw2 .top .etc { color:#fff; }
 .boxWalletTop.type--arw2 .priceWrap { margin:0 0 20px; }
 .boxWalletTop.type--arw2 .priceWrap .title { color:#fff; }
+.boxWalletTop.type--arw2 .priceWrap .bottomPriceGroup .subTitle { width:140px; color:#c6e9ff; }
+.boxWalletTop.type--arw2 .priceWrap .bottomPriceGroup .usePrice { margin-left:145px; color:#fff; font-size:15px; }
+.boxWalletTop.type--arw2 .btn { background:#fff; border:1px solid #153edd; }
+.boxWalletTop.type--arw2 .btn button { color:#000; }
+.boxWalletTop.type--arw2 .btn button:hover { color:#a25203; }
+.boxWalletTop.type--arw2 .btn button+button:after { height:20px; margin-top:-10px; background:#2750f2; }
 
 .boxWalletTop.type--btc { padding:20px 18px 25px; border-radius:13px; background:#29c1cf; box-shadow: 0 7px 5px 0 rgba(41, 130, 207, 0.09); }
 .boxWalletTop.type--btc .top .typeMark img { width:10px; }
@@ -274,19 +295,19 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop.type--btc .btn button+button:after { background:#5facdd; }
 
 .boxWalletTop.type--voucher { padding:0; }
-.boxWalletTop.type--voucher .cont { position:relative; margin-bottom:20px; padding:20px 20px 30px; border-radius:20px; background:linear-gradient(117deg, #0b255f 46%, #031748 97%); box-shadow:0 5px 6px 0 rgba(0, 0, 0, 0.33); }
+.boxWalletTop.type--voucher .cont { position:relative; margin-bottom:20px; padding:20px 20px 30px; border-radius:20px; background:#5739ff; box-shadow:0 5px 6px 0 rgba(0, 0, 0, 0.33); }
 .boxWalletTop.type--voucher .top .typeMark { width:auto; height:auto; position:absolute; left:18px; top:27px; background:none; }
-.boxWalletTop.type--voucher .top .typeMark img { width:137px; }
+.boxWalletTop.type--voucher .top .typeMark img { width:131px; }
 .boxWalletTop.type--voucher .top .etc { color:#fff; }
-.boxWalletTop.type--voucher .priceWrap { margin:65px 0 0; text-align:right; }
+.boxWalletTop.type--voucher .priceWrap { margin:52px 0 0; text-align:right; }
 .boxWalletTop.type--voucher .priceWrap > .price { font-size:36px; }
 .boxWalletTop.type--voucher .priceWrap > .price span.small { font-size:20px; }
 .boxWalletTop.type--voucher .priceWrap .bottomPrice--guide { font-size:15px; color:#c9a247; }
 .boxWalletTop.type--voucher .priceWrap .bottomPrice--guide span.small { font-size:12px; }
-.boxWalletTop.type--voucher .btn { border:1px solid #c9a247; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
+.boxWalletTop.type--voucher .btn { border:1px solid #072c84; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
 .boxWalletTop.type--voucher .btn button { color:#000; }
-.boxWalletTop.type--voucher .btn button+button:after { background:#c9a247; }
-.boxWalletTop.type--voucher .btn button:hover { color:#a25203; }
+.boxWalletTop.type--voucher .btn button+button:after { background:#5739ff; }
+.boxWalletTop.type--voucher .btn button:hover { color:#5739ff; }
 
 .boxInfoARW { margin:40px 12px 0 0; position:relative; background:url('../images/content/imgInfo_arw.png') right top no-repeat; background-size:132px auto; }
 .boxInfoARW .title { margin-bottom:15px; font-size:28px; font-weight:100; }
@@ -334,6 +355,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxDepositDetail .top { margin-bottom:30px; position:relative; display:flex; }
 .boxDepositDetail .top.line { padding-bottom:10px; margin-bottom:10px; border-bottom:1px solid #f2f4f6; }
 .boxDepositDetail .top .bedge { width:48px; height:20px; margin:2px 8px 0 0; float:left; background:rgba(39, 80, 242, 0.1); border-radius:5px; font-size:10px; color:#2750f2; line-height:20px; text-align:center; }
+.boxDepositDetail .top .bedge.is--deposit { background:rgba(255, 223, 49, 0.34); color:#d0af00; }
 .boxDepositDetail .top .cont { margin-right:70px; }
 .boxDepositDetail .top .title { font-weight:700; font-size:15px; word-break:keep-all; }
 .boxDepositDetail .top .title span { font-size:17px; }
@@ -397,6 +419,18 @@ h1 .tokenSelect { margin:0 auto; }
 .boxAccountList.voucher .cont .title .status { color:#ffdf31; }
 .boxAccountList.voucher .cont .title .status.ing { color:#4fd884 }
 
+.boxAccountList.type--digital {  }
+.boxAccountList.type--digital .date { width:30px; float:left; color:#999; font-family:"SFProDisplay", 'Sans-serif'; }
+.boxAccountList.type--digital .trade { flex:1; display:flex; align-items:center; }
+.boxAccountList.type--digital .trade .box { display:flex; padding-left:20px; flex:1; flex-direction:column; }
+.boxAccountList.type--digital .trade .betweenTrade { width:30px; height:106px; background:url('../images/common/iconTradeHorizontal.png') left center no-repeat; background-size:15px auto; }
+.boxAccountList.type--digital .trade .box .name { background-repeat:no-repeat; background-position:left center; }
+.boxAccountList.type--digital .trade .box.icon--gold .name { padding-left:25px; background-image:url('../images/common/iconTradeList-gold.png'); background-size:20px auto; }
+.boxAccountList.type--digital .trade .box.icon--btc .name { padding-left:14px; background-image:url('../images/common/iconTradeList-btc.png'); background-size:9px auto; }
+.boxAccountList.type--digital .trade .box.icon--arw .name { padding-left:18px; background-image:url('../images/common/iconTradeList-arw.png'); background-size:13px auto; }
+.boxAccountList.type--digital .trade .box .price { font-size:15px; font-weight:500; font-family:"SFProDisplay", 'Sans-serif'; }
+.boxAccountList.type--digital .trade .box.box--after .price { color:#2750f2; }
+
 .title--top { position:relative; }
 .title--top .opt { position:absolute; right:0; bottom:0; }
 .title--top .opt.vct { bottom:50%; transform:translateY(50%); }
@@ -415,6 +449,10 @@ h1 .tokenSelect { margin:0 auto; }
 .popAccount .detail { height:88px; margin-bottom:30px; display:flex; align-items:center; justify-content:center; flex-direction:column; background:#f2f4f6; border-radius:5px; }
 .popAccount .detail .usePrice { font-size:19px; font-weight:700; font-family:"SFProDisplay", 'Sans-serif'; }
 .popAccount .detail .price { font-size:15px; color:#999; }
+.popAccount .detail.type--trade { flex-direction:row; }
+.popAccount .detail.type--trade .price { flex:1; text-align:center; font-size:17px; font-family:"SFProDisplay", 'Sans-serif'; font-weight:500; color:#000; }
+.popAccount .detail.type--trade .price.price--after { color:#2750f2; }
+.popAccount .detail.type--trade .betweenTrade { width:26px; height:88px; background:url('../images/common/iconDigitalTrade.png') center center no-repeat; background-size:26px auto; }
 
 .listDetail li { overflow:hidden; }
 .listDetail li+li { margin-top:10px; }
@@ -589,7 +627,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxDepositLength .ps { color:#fff; }
 
 .selGoldWeight { padding:0 0 12px; overflow:hidden; }
-.selGoldWeight button { width:23.5%; height:40px; margin-left:2%; float:left; border:1px solid #d4d8db; border-radius:5px; font-size:12px; }
+.selGoldWeight button { width:23.5%; height:40px; margin-left:2%; float:left; border:1px solid #d4d8db; border-radius:5px; font-size:12px; font-family:"AppleSDGothicNeo", sans-serif; letter-spacing:-.07em; }
 .selGoldWeight button:nth-child(1), .selGoldWeight button:nth-child(5) { margin-left:0; }
 .selGoldWeight button:nth-child(1),
 .selGoldWeight button:nth-child(2),
@@ -859,14 +897,24 @@ h1 .tokenSelect { margin:0 auto; }
 .boxTradeUse .cont .price { margin-bottom:4px; font-size:18px; font-weight:700; color:#Fff; }
 .boxTradeUse .cont .bottomPrice { color:#0c646c; }
 
-.boxVoucherCard { padding:0 33px 55px; background:linear-gradient(139deg, #0b255f 48%, #031748 96%); }
-.boxVoucherCard .imgCard { position:relative; }
+.boxVoucherCard { padding:22px 33px 55px; background:#5739ff; }
+.boxVoucherCard .imgCard { margin-bottom:46px; position:relative; }
 .boxVoucherCard .imgCard .opt { position:absolute; right:6%; bottom:14%; text-align:right; font-family:'Cinzel'; font-weight:700; }
 .boxVoucherCard .imgCard .opt .gram { padding-right:18px; background:url('../images/content/bgGram.png') right 22px no-repeat; background-size:12px auto; font-size:33px; letter-spacing:-1px; }
 .boxVoucherCard .listDetail .title { color:#c9a247; }
 .boxVoucherCard .listDetail .cont { color:#fff; }
 
 .iconTradeDigital { height:15px; margin:30px 0 12px; background:url('../images/common/iconTradeDigital.png') center center no-repeat; background-size:auto 15px; }
+
+.boxDigitalResult {  }
+.boxDigitalResult .cont { display:flex; }
+.boxDigitalResult .cont .box { height:200px; display:flex; flex:1; border-radius:20px; align-items:center; justify-content:center; flex-direction:column; }
+.boxDigitalResult .cont .box.box--before { background:#dfe0e1; }
+.boxDigitalResult .cont .box.box--after { background:#2750f2; color:#fff; }
+.boxDigitalResult .cont .box i { width:23px; margin-bottom:16px; }
+.boxDigitalResult .cont .box .price { font-size:17px; font-family:"SFProDisplay", 'Sans-serif'; font-weight:500; }
+.boxDigitalResult .cont .betweenTrade { width:42px; background:url('../images/common/iconDigitalTrade.png') center center no-repeat; background-size:26px auto; }
+.boxDigitalResult .listDetail { margin-top:40px; padding:0 18px; }
 
 
 /* Splash */
@@ -924,3 +972,33 @@ h1 .tokenSelect { margin:0 auto; }
 .boxSplashLast { width:100%; height:100%; display:none; position:fixed; left:0; top:0; z-index:10; background:rgba(255,255,255,0); }
 .boxSplashLast .btn { padding:0 0 35px; background:#fff; }
 .boxSplashLast .btn a { width:254px; height:65px; display:block; margin:0 auto; background:#2750f2; border-radius:100px; text-align:center; line-height:65px; color:#fff; font-size:18px; }
+
+
+/* Alarm */
+.listAlarm { margin-bottom:50px; }
+.listAlarm li a { position:relative; padding:15px 25px; display:block; }
+.listAlarm li a:hover { background:#f7f9ff; }
+.listAlarm li a:after { content:''; width:8px; height:14px; position:absolute; right:25px; bottom:40px; background:url('../images/common/iconArrow.png') no-repeat; background-size:100% auto; }
+.listAlarm li a .title { margin-bottom:10px; font-size:17px; font-weight:700; }
+.listAlarm li a .cont { margin-bottom:5px; font-size:15px; }
+.listAlarm li a .data { color:rgba(0,0,0,.4) }
+
+
+/* Digital Pawn */
+.section.mainDigitalPawn { padding:50px 0 60px; background:#29c1cf; }
+.section.mainDigitalPawn .top { position:relative; margin-bottom:58px; padding:0 170px 0 15px; color:#fff; font-size:17px; line-height:26px; }
+.section.mainDigitalPawn .top:after { content:''; width:130px; height:108px; position:absolute; right:33px; top:-5px; background:url('../images/content/bgDigitalPawn.png') no-repeat; background-size:100% auto; }
+.boxDigitalPawn { padding:0 15px; }
+.boxDigitalPawn li { position:relative; background:#fff; border:1px solid #5facdd; border-radius:10px; box-shadow: 0 5px 6px 0 rgba(131, 131, 131, 0.22); overflow:hidden; font-family:"AppleSDGothicNeo", sans-serif; font-weight:500; }
+.boxDigitalPawn li+li { margin-top:30px; }
+.boxDigitalPawn li .cont { padding:36px 20px; position:relative; }
+.boxDigitalPawn li .cont > .title { margin-bottom:15px; font-size:19px; font-weight:700; }
+.boxDigitalPawn li .subject { margin-bottom:4px; font-size:15px; color:#999; }
+.boxDigitalPawn li .opt { position:absolute; right:20px; top:38px; color:#2750f2; }
+.boxDigitalPawn li .opt.won { color:#ffbd27; }
+.boxDigitalPawn li .itemList { display:flex; margin-top:35px; }
+.boxDigitalPawn li .itemList .item { flex:1; text-align:center; }
+.boxDigitalPawn li .itemList .item i { width:34px; margin-bottom:10px; }
+.boxDigitalPawn li .itemList .item .title { font-size:15px; font-weight:700; line-height:19px; }
+.boxDigitalPawn li a { height:56px; display:block; background:#2750f2; text-align:center; line-height:56px; color:#fff; font-size:17px; font-weight:700; }
+.boxDigitalPawn li a:after { content:''; width:13px; height:16px; margin-top:-2px; margin-left:6px; display:inline-block; background:url('../images/main/iconDetailPen.png') no-repeat; background-size:100% auto; vertical-align:middle; }

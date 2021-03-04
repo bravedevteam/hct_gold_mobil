@@ -91,6 +91,31 @@
     url('../font/Cinzel-Bold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    font-weight: 400;
+    src: local('AppleSDGothicNeoR'),
+    url('../font/AppleSDGothicNeoR.woff2') format('woff2'),
+    url('../font/AppleSDGothicNeoR.woff') format('woff'),
+    url('../font/AppleSDGothicNeoR.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    font-weight: 500;
+    src: local('AppleSDGothicNeoM'),
+    url('../font/AppleSDGothicNeoM.woff2') format('woff2'),
+    url('../font/AppleSDGothicNeoM.woff') format('woff'),
+    url('../font/AppleSDGothicNeoM.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'AppleSDGothicNeo';
+    font-weight: 700;
+    src: local('AppleSDGothicNeoB'),
+    url('../font/AppleSDGothicNeoB.woff2') format('woff2'),
+    url('../font/AppleSDGothicNeoB.woff') format('woff'),
+    url('../font/AppleSDGothicNeoB.ttf') format('truetype');
+}
+
 
 
 /* common */
@@ -190,11 +215,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 hr.section--space { height:8px; background:#f2f4f6; }
 
 span.en { font-family:"SFProDisplay", 'Sans-serif'; }
+.fApple { font-family:"AppleSDGothicNeo", "Sans-serif"; }
 
 /* LAYOUT */
 #header { padding:20px 15px 6px; position:relative; background:#fff; }
-#header h1 { width:104px; height:36px; background:url('../images/common/logo.png') no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
-#header .btnMypage { width:38px; height:36px; position:absolute; right:15px; top:20px; background:url('../images/common/btmMypage.png') center center no-repeat; background-size:18px auto; font-size:0; text-indent:-99999px; }
+#header h1 { width:105px; height:33px; background:url('../images/common/logo.png') no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+#header .btnMypage { width:30px; height:36px; position:absolute; right:45px; top:20px; background:url('../images/common/btmMypage.png') center center no-repeat; background-size:18px auto; font-size:0; text-indent:-99999px; }
+#header .btnAlarm { width:30px; height:36px; position:absolute; right:15px; top:20px; background:url('../images/common/btnAlarm.png') center center no-repeat; background-size:18px auto; font-size:0; text-indent:-99999px; }
+#header .btnAlarm.check:after { content:''; width:6px; height:6px; position:absolute; right:7px; top:9px; border-radius:50%; background:#ff7474; }
 
 #container {  }
 #container.main { padding:0 0 8px; background:#f2f4f6; }
@@ -202,12 +230,13 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 #container.wallet { padding:0; background:#2750f2; }
 #container.wallet h1 { color:#fff; }
 #container.account { padding:0 8px; }
-#container.voucher { background:#0b255f; }
+#container.voucher { background:#5739ff; }
 #container.voucher h1 { color:#fff; }
 
 .box { position:relative; }
 .box.bgWhite { padding:22px 20px; background:#fff; }
 .box.bgGray { padding:22px 20px; border-radius:5px; background:#f2f4f6; border-radius:5px; }
+.box.bgMint { padding:35px 38px; background:#f0f9ff; }
 
 .section { padding:55px 0; margin-bottom:8px; background:#fff; }
 .section:last-child { margin-bottom:0; }
@@ -259,7 +288,7 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 .btnBasic.blueLine { background:#fff; border:1px solid #2750f2; border-radius:5px; color:#2750f2; }
 .btnBasic.grayLine { background:#fff; border:1px solid #d5d5d5; border-radius:5px; color:#a1a4a7; }
 .btnBasic.blackLine { background:#fff; border:1px solid #000; border-radius:5px; color:#000; }
-.btnBasic.bgBlue { background:#2750f2; border-radius:5px; color:#fff; }
+.btnBasic.bgBlue { background:#2750f2 !important; border-radius:5px; color:#fff; }
 .btnBasic.bgYellow { background:#ffdf31; color:#000; }
 .btnBasic.bgLightGray { background:#f2f4f6; border:1px solid #d4d8db; color:#000; }
 .btnBasic.bgWhite { background:#fff; border:1px solid #000; color:#000; }
@@ -289,7 +318,7 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 
 #footer { padding:22px 15px; position:relative; }
 #footer:after { content:''; display:block; clear:both; visibility:visible; }
-#footer h2 { width:84px; height:42px; margin-bottom:26px; float:left; background:url('../images/common/logo_f.png') no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+#footer h2 { width:79px; height:33px; margin-bottom:30px; float:left; background:url('../images/common/logo_f.png') no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 #footer ul.privacy { float:right; }
 #footer ul.privacy li { float:left; position:relative; }
 #footer ul.privacy li+li:after { content:''; width:1px; height:12px; position:absolute; left:0; top:50%; margin-top:-6px; background:#999; }
