@@ -20,28 +20,46 @@
       <div class="boxGoldOut">
         <div class="cont">
           <div>
-            <div class="title">사용가능 자산</div>
-            <div class="price">100,000 ARW</div>
-          </div>
-          <div>
             <div class="title">인출가능 금</div>
             <div class="price">200g (24K)</div>
           </div>
         </div>
-        <div class="subject">현재 시세 <span class="en">1 ARW = 110 KRW</span></div>
+        <div class="subject">현재 시세 <span class="en">1g = 65,320원</span></div>
       </div>
-      <h4 class="title title--medium">인출할 금 중량</h4>
-      <div class="inputUnit">
-        <input type="text" value="" class="inputBasic" />
-        <span>ARW</span>
+      <div class="boxOutVoucher">
+        <div class="title">더 많은 실물 금 인출을 원하시나요?</div>
+        <a href="#">GOLD 바우처 교환</a>
       </div>
-      <div class="inputUnit icon--trade value--max"><!-- input의 값이 최대일 때 value--max 추가 -->
+      <div class="title--top">
+        <h4 class="title title--medium">인출할 금 중량</h4>
+        <div class="opt">
+          <div class="boxWeightRadio">
+            <input type="radio" id="chk_w1" data-role="radioTab1" />
+            <label for="chk_w1">중량입력</label>
+            <input type="radio" id="chk_w2" data-role="radioTab2" />
+            <label for="chk_w2">중량선택</label>
+          </div>
+        </div>
+      </div>
+      <div id="radioTab1" class="wr_tab inputUnit value--max"><!-- input의 값이 최대일 때 value--max 추가 -->
         <input type="text" value="" class="inputBasic" />
         <span>GOLD</span>
         <div class="max">최대</div>
       </div>
-      <div class="guide-text danger mb30">최소 인출단위(10g) 이하 금액은 자동 절사됩니다.</div>
-      <div class="guide-text type--dot">ARW는 인출 신청시 시세를 기준으로 한컴 금거래소의 인출 수수료와 부가가치세 10%가 포함되어 계산된 수량입니다.</div>
+      <div id="radioTab2" class="wr_tab selGoldWeight">
+        <button type="button">1돈(3.75g)</button>
+        <button type="button">2돈(7.5g)</button>
+        <button type="button">3돈(11.25g)</button>
+        <button type="button">5돈(18.75g)</button>
+        <button type="button">7돈(26.25g)</button>
+        <button type="button">10돈(37.5g)</button>
+        <button type="button">30돈(112.5g)</button>
+        <button type="button">50돈(187.5g)</button>
+      </div>
+      <div class="guide-text boxGray mt10 mb20">인출수수료  0.2g  /  부가가치세 (10%)  5g</div>
+      <div class="guide-text type--dot">실물 금을 인출 하고자 하는 경우 신청수량 기준 인출 수수료와 부가가치세
+        10%가 부과됩니다.</div>
+      <div class="guide-text type--dot">인출수수료와 부가가치세는 보유한 GOLD 바우처에서 차감됩니다.</div>
       <div class="guide-text type--dot">최대 인출가능 중량 초과 인출이 필요하거나 당일 수령을 원하실 경우 고객센터(1544-0000) 문의 바랍니다.</div>
     </div>
     <hr class="section--space mtb40" />
@@ -83,5 +101,23 @@
 			<button type="button" class="btnBasic active">인출 신청</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
 		</div>
   </div>
+  <script type="text/javascript">
+  $(function(){
+    $(".wr_tab").hide();
+    $("#radioTab1").show();
+    $(".boxWeightRadio input").click(function(){
+      var target = $(this).index();
+      if(target == 2){
+        $(".boxWeightRadio").addClass("type2");
+        $(".wr_tab").hide();
+        $("#radioTab2").show();
+      }else{
+        $(".boxWeightRadio").removeClass("type2");
+        $(".wr_tab").hide();
+        $("#radioTab1").show();
+      }
+    });
+  });
+  </script>
 </body>
 </html>
