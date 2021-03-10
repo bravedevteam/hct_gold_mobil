@@ -724,7 +724,7 @@ h1 .tokenSelect { margin:0 auto; }
 .btnSecretLevel span { color:#2750f2; }
 .btnSecretLevel:after { content:''; width:11px; height:11px; position:absolute; right:27px; top:50%; background:url('../images/common/iconArrow.png') right center no-repeat; background-size:auto 100%; transform:translateY(-50%); }
 .mypageGuide { padding:0 17px 20px; position:relative; }
-.mypageGuide:after { content:''; width:138px; height:113px; position:absolute; right:17px; top:0; background:url('../images/content/bgMypageGuide.png') no-repeat; background-size:100% auto; z-index:1; }
+.mypageGuide:after { content:''; width:138px; height:104px; position:absolute; right:17px; top:0; background:url('../images/content/bgMybusinessGuide.png') no-repeat; background-size:100% auto; z-index:1; }
 .mypageGuide .title { margin-bottom:10px; position:relative; font-size:22px; line-height:29px; font-weight:700; z-index:2; }
 .mypageGuide .subject { position:relative; font-size:14px; color:#999; z-index:2; }
 
@@ -742,13 +742,13 @@ h1 .tokenSelect { margin:0 auto; }
 
 .boxMypageTop.type--business .title { background-image:url('../images/common/iconJoinBusiness.png'); background-position:5px 1px; }
 
-.boxMypageVoucher { margin-top:40px; }
-.boxMypageVoucher .guide { margin-bottom:10px; font-size:18px; line-height:1.55em; }
-.boxMypageVoucher .boxCustomerLink a { padding-left:35px; color:#000; }
-.boxMypageVoucher .boxCustomerLink a:first-child { border-top:0; }
-.boxMypageVoucher .boxCustomerLink a.myBank { background:url('../images/content/iconMyQuick3.png') left center no-repeat; background-size:20px auto; }
-.boxMypageVoucher .boxCustomerLink a.tradeVoucher { background:url('../images/content/iconMyQuick4.png') left center no-repeat; background-size:23px auto; }
-.boxMypageVoucher .boxCustomerLink a.sign { padding-left:30px; background:url('../images/content/iconMyQuick5.png') left center no-repeat; background-size:15px auto; }
+.boxMypageVoucher { position:relative; margin-top:40px; overflow:hidden; }
+.boxMypageVoucher .guide { float:left; font-size:18px; line-height:1.55em; }
+.boxMypageVoucher .link { position:absolute; right:0; top:0; }
+.boxMypageVoucher .link > div { text-align:right; }
+.boxMypageVoucher .link > div+div { margin-top:9px; }
+.boxMypageVoucher .link a { display:inline-block; text-decoration: underline; color:#999; font-size:15px; }
+.boxMypageVoucher .link a.sign { margin-top:32px; }
 
 .myBusinessGuide { padding:0 18px; position:relative; }
 .myBusinessGuide:after { content:''; width:135px; height:100px; position:absolute; right:17px; top:0; background:url('../images/content/bgMybusinessGuide.png'); background-size:100% auto; z-index:1; }
@@ -837,6 +837,7 @@ h1 .tokenSelect { margin:0 auto; }
 
 /* Customer */
 .listCustomer {  }
+.listCustomer h3.title { padding:25px 11px 10px; border-bottom:1px solid #f0f0f0; font-weight:700; }
 .listCustomer li { position:relative; }
 .listCustomer li .top { min-height:74px; padding:15px 40px 15px 20px; position:relative; display:flex; border-bottom:1px solid #f0f0f0; flex-direction:column; justify-content: center; }
 .listCustomer li .top:after { content:''; width:9px; height:6px; position:absolute; right:15px; top:50%; margin-top:-3px; background:url('../images/common/iconArrowSort.png') no-repeat; background-size:100% auto; transition:all .3s; }
@@ -845,6 +846,13 @@ h1 .tokenSelect { margin:0 auto; }
 .listCustomer li .title:after { content:'·'; position:absolute; left:-10px; top:0; }
 .listCustomer li .date { color:#d5d5d5; }
 .listCustomer li .cont { padding:24px 18px; background:rgba(240,240,240,0.2); border-bottom:1px solid #f0f0f0; font-size:15px; line-height:1.74 }
+
+.boxFaqCategory {  }
+.boxFaqCategory h3.title { padding:20px 0 10px; }
+.boxFaqCategory ul li { width:50%; float:left; padding:5px; }
+.boxFaqCategory ul li:nth-child(2n+1){ padding-left:0; }
+.boxFaqCategory ul li:nth-child(2n+2){ padding-right:0; }
+.boxFaqCategory ul li a { height:50px; display:block; border-radius:5px; border:1px solid #ccc; line-height:50px; text-align:center; font-size:15px; }
 
 .listNotice {  }
 .listNotice li { position:relative; }
@@ -859,6 +867,17 @@ h1 .tokenSelect { margin:0 auto; }
 .listNotice .listBtn a.next { transform:rotate(180deg); }
 .listNotice .listBtn a:hover { background-image:url('../images/common/btnPageArrowOn.png'); }
 .listNotice .listBtn .num { display:inline-block; vertical-align:middle; font-family:"SFProDisplay", 'Sans-serif'; font-size:15px; }
+
+.boxNotice { padding-bottom:50px; }
+.boxNotice .top { padding:15px 20px; }
+.boxNotice .top .title { margin-bottom:8px; font-size:17px; font-weight:700; }
+.boxNotice .top .data { color:#d5d5d5; }
+.boxNotice .cont { padding:24px 18px 10px; background:rgba(240,240,240,.2); border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0; }
+.boxNotice .cont p { display:block; font-size:15px; line-height:26px; }
+.boxNotice .cont .btn { margin:20px 0; display:flex; }
+.boxNotice .cont .btn button { height:48px; border-radius:5px; font-size:12px; font-weight:400; }
+.boxNotice .cont .btn button:first-child { margin-right:5px; }
+.boxNotice .cont .btn button:last-child { margin-left:5px; }
 
 .boxCustomerLink { margin-bottom:40px; }
 .boxCustomerLink a { height:58px; display:block; position:relative; border-bottom:1px solid #f2f4f6; color:#999999; line-height:58px; font-size:15px; }
