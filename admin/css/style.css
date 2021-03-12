@@ -86,7 +86,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 #header .topInfo .btnLogout { width:90px; height:100px; float:left; position:relative; border-left:1px solid #040507; font-size:0; text-indent:-99999px; }
 #header .topInfo .btnLogout:after { content:''; width:40px; height:40px; margin:-20px 0 0 -20px; position:absolute; left:50%; top:50%; background:url('../images/split.png') 0 -80px no-repeat; }
 
-#nav { margin-left:200px; }
+#nav { margin:0 215px 0 200px; }
 #nav li { float:left; }
 #nav li a { height:100px; padding:0 22px 0 30px; display:block; color:#fff; line-height:100px; color:#c1c1c1; font-size:18px; }
 #nav li a:before { content:''; width:38px; height:38px; margin-right:10px; display:inline-block; border-radius:2px; background:url('../images/split.png') #344050 no-repeat; background-position-y:-2px; vertical-align:middle; }
@@ -220,14 +220,16 @@ a.type--link+button { margin-left:40px; }
 .boxBtn .opt { position:absolute; right:0; top:0; }
 
 .pageBasic { margin-top:30px; text-align:center; }
-.pageBasic > a { width:30px; height:30px; display:inline-block; border:1px solid #ccc; border-radius:2px; vertical-align:middle; line-height:28px; }
-.pageBasic > a.first, .pageBasic > a.prev,
-.pageBasic > a.next, .pageBasic > a.last { font-size:0; text-indent:-99999px; }
-.pageBasic ul { display:inline-block; overflow:hidden; vertical-align:middle; }
+.pageBasic > a { width:38px; height:38px; display:inline-block; position:relative; background:#b1bfd5; border-radius:2px; vertical-align:middle; line-height:38px; font-size:0; text-indent:-99999px; }
+.pageBasic > a:hover { background:#253a5d; }
+.pageBasic > a:after { content:''; width:6px; height:10px; position:absolute; left:50%; top:50%; margin:-5px 0 0 -3px; background:url('../images/btnPage.png') no-repeat; }
+.pageBasic > a.prev, .pageBasic > a.next, { font-size:0; text-indent:-99999px; }
+.pageBasic > a.next:after { transform:rotate(180deg); }
+.pageBasic ul { margin:0 35px; display:inline-block; overflow:hidden; vertical-align:middle; }
 .pageBasic ul li { float:left; }
-.pageBasic ul li+li { margin-left:2px; }
-.pageBasic ul li a { width:30px; height:30px; display:block; border:1px solid #ccc; border-radius:2px; line-height:28px; font-size:15px; }
-.pageBasic ul li.on a { border:1px solid #5899FF; color:#5899FF; font-weight:700; }
+.pageBasic ul li+li { margin-left:20px; }
+.pageBasic ul li a { display:inline-block; font-size:18px; color:#c1c1c1; }
+.pageBasic ul li.on a { color:#273444; text-decoration:underline; }
 
 .topArea_tab { padding:30px 24px; margin-bottom:30px; background:#fff; border:1px solid #ebedef; overflow:hidden; }
 .topArea_tab a { float:left; padding:5px; font-size:16px; font-weight:700; }
