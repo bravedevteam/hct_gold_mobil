@@ -593,7 +593,7 @@ h1 .tokenSelect { margin:0 auto; }
 
 
 .boxMap .mapArea { margin-bottom:15px; }
-.boxMap .mapArea img { width:100%; }
+.boxMap .mapArea iframe { width:100%; }
 .boxMap .mapAddress { font-size:15px; }
 
 
