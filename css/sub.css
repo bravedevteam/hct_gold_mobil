@@ -237,7 +237,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop .priceWrap .bottomPrice { color:#ffdf31; }
 .boxWalletTop .priceWrap .bottomPrice > div { display:inline-block; }
 .boxWalletTop .priceWrap .bottomPrice .subTitle { font-size:15px; }
-.boxWalletTop .priceWrap .bottomPrice .usePrice { margin-left:25px; font-size:14px; }
+.boxWalletTop .priceWrap .bottomPrice .usePrice { margin-left:25px; font-size:14px; text-align:right; }
 .boxWalletTop .priceWrap .bottomPrice .usePrice span { font-size:15px; }
 .boxWalletTop .priceWrap .bottomPriceGroup { margin:10px auto; display:inline-block; text-align:left; }
 .boxWalletTop .priceWrap .bottomPriceGroup .subTitle { width:95px; float:left; }
@@ -274,7 +274,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop.type--arw2 .priceWrap { margin:0 0 20px; }
 .boxWalletTop.type--arw2 .priceWrap .title { color:#fff; }
 .boxWalletTop.type--arw2 .priceWrap .bottomPriceGroup .subTitle { width:140px; color:#c6e9ff; }
-.boxWalletTop.type--arw2 .priceWrap .bottomPriceGroup .usePrice { margin-left:145px; color:#fff; font-size:15px; }
+.boxWalletTop.type--arw2 .priceWrap .bottomPriceGroup .usePrice { margin-left:145px; color:#fff; font-size:15px; text-align:right; }
 .boxWalletTop.type--arw2 .btn { background:#fff; border:1px solid #153edd; }
 .boxWalletTop.type--arw2 .btn button { color:#000; }
 .boxWalletTop.type--arw2 .btn button:hover { color:#a25203; }
@@ -505,7 +505,7 @@ h1 .tokenSelect { margin:0 auto; }
 /* Date */
 .dateBasic { height:40px; position:relative; display:flex; border:1px solid #d5d5d5; border-radius:5px; }
 .dateBasic:after { content:''; width:6px; height:1px; position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); background:#000; }
-.dateBasic .datepicker { flex:1; display:flex; align-items:center; justify-content:center; background:url('../images/common/iconDatepicker.png') 15px center no-repeat; background-size:14px auto; font-size:13px; border:0; text-align:center; }
+.dateBasic .datepicker { width:100%; flex:1; display:flex; align-items:center; justify-content:center; background:url('../images/common/iconDatepicker.png') 15px center no-repeat; background-size:14px auto; font-size:13px; border:0; text-align:center; }
 .dateBasic a { flex:1; display:flex; align-items:center; justify-content:center; font-size:13px; }
 .dateBasic a:before { content:''; width:14px; height:15px; margin-right:12px; display:inline-block; background:url('../images/common/iconDatepicker.png') center center no-repeat; background-size:100% auto; }
 
