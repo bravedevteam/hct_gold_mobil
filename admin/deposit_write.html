@@ -71,41 +71,41 @@
 							<td>
 								<div class="row is--division">
 									<input type="text" class="inputBasic" />
-									<button type="button" class="btnBasic">조회</button>
+									<button type="button" id="btnSubmit" class="btnBasic">조회</button>
 								</div>
 							</td>
 							<th>아이디</th>
-							<td>-</td>
+							<td><span class="toggleHidden">hanagold@naver.com</span></td>
 						</tr>
 						<tr>
 							<th>사업자 유형</th>
-							<td>-</td>
+							<td><span class="toggleHidden">개인사업자</span></td>
 							<th>사업자 등록번호</th>
-							<td>-</td>
+							<td><span class="toggleHidden">1234656-789456</span></td>
 						</tr>
 						<tr>
 							<th>대표자명</th>
-							<td>-</td>
+							<td><span class="toggleHidden">김한컴</span></td>
 							<th>휴대폰번호</th>
-							<td>-</td>
+							<td><span class="toggleHidden">010-1234-4567</span></td>
 						</tr>
 						<tr>
 							<th>사업장 주소</th>
-							<td>-</td>
+							<td><span class="toggleHidden">서울 종로구 558-45</span></td>
 							<th>직원수</th>
-							<td>-</td>
+							<td><span class="toggleHidden">5명</span></td>
 						</tr>
 						<tr>
 							<th>담당자명</th>
-							<td>-</td>
+							<td><span class="toggleHidden">김골드</span></td>
 							<th>담당자 휴대폰번호</th>
-							<td>-</td>
+							<td><span class="toggleHidden">010-9876-5432</span></td>
 						</tr>
 						<tr>
 							<th>현재 보유량</th>
-							<td>-</td>
+							<td><span class="toggleHidden">500g</span></td>
 							<th>최근 예치일</th>
-							<td>-</td>
+							<td><span class="toggleHidden">2010-03-15</span></td>
 						</tr>
 					</table>
 				</div>
@@ -223,5 +223,17 @@
 			</div>
 		</div>
 	</section>
+
+	<style>
+		.toggleHidden { display:none; }
+	</style>
+
+	<script type="text/javascript">
+	$(function(){
+		$("#btnSubmit").click(function(){
+			$(".toggleHidden").show();
+		});
+	});
+	</script>
 </body>
 </html>
