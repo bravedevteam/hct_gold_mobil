@@ -51,7 +51,7 @@ h4.title span { font-size:12px; }
 
 
 /* Input */
-.inputBasic { width:100%; height:50px; padding:0 15px; position:relative; background:#fff; border:1px solid #d5d5d5; border-radius:5px; color:#000; font-size:15px; z-index:1; font-family:"SFProDisplay", 'Sans-serif'; }
+.inputBasic { width:100%; height:50px; padding:0 15px; position:relative; background:#fff; border:1px solid #d5d5d5; border-radius:5px; color:#000; font-size:15px; z-index:1; }
 .inputBasic::placeholder { color:#ccc; }
 input[type="password"].inputBasic { padding-right:50px; }
 .inputPassword { position:relative; }
@@ -206,6 +206,7 @@ h1 .tokenSelect { margin:0 auto; }
 .filebox .uploadName::placeholder { color:rgba(0, 0, 0, 0.35); }
 .filebox label { width:95px; height:50px; position:absolute; right:0; top:0; border:1px solid #2750f2; border-radius:5px; text-align:center; line-height:50px; color:#2750f2; font-size:17px; }
 .filebox .uploadHidden { position:absolute; left:-99999px; top:0; opacity:0; }
+.filebox.boxBlue label { background:#2750f2; color:#fff; }
 
 
 /* Wallet */
@@ -784,6 +785,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxIdentityStep li .identityThumb { width:275px; height:155px; display:flex; margin:0 auto; border:1px solid #d4d4d4; border-radius:11px; overflow:hidden; }
 .boxIdentityStep li .identityThumb.with--face { background:url('../images/content/bgIdentityFace.png') center bottom no-repeat; background-size:142px auto; }
 .boxIdentityStep li .identityThumb.with--identity { background:url('../images/content/bgIdentity.png') center center no-repeat; background-size:181px auto; }
+.boxIdentityStep li .identityThumb.with--driver { background:url('../images/content/bgDriver.png') center center no-repeat; background-size:181px auto; }
 .boxIdentityStep li .identityThumb a { flex:1; display:flex; align-items:center; justify-content:center; font-size:15px; }
 .boxIdentityStep li .identityThumb a:before { content:''; width:17px; height:17px; margin-right:4px; display:inline-block; background:url('../images/common/iconPlus.png') no-repeat; background-size:100% auto; vertical-align:middle; }
 .boxIdentityStep .guide-text { margin-top:8px; text-align:center; }
