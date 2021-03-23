@@ -373,7 +373,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxDepositDetail .boxInvestDetail .priceDetail { display:flex; }
 .boxDepositDetail .boxInvestDetail .priceDetail > div { display:flex; align-items:center; flex-direction:column; text-align:center; justify-content:center; }
 .boxDepositDetail .boxInvestDetail .priceDetail > div:nth-child(1) { flex:1; }
-.boxDepositDetail .boxInvestDetail .priceDetail > div:nth-child(2) { flex:2; }
+.boxDepositDetail .boxInvestDetail .priceDetail > div:nth-child(2) { flex:1.5; }
 .boxDepositDetail .boxInvestDetail .priceDetail > div:nth-child(3) { flex:1; }
 .boxDepositDetail .boxInvestDetail .priceDetail > div .title { color:#000; font-size:13px; }
 .boxDepositDetail .boxInvestDetail .priceDetail > div .cont { font-size:14px; color:#29c1cf; font-family:"SFProDisplay", 'Sans-serif'; font-weight:700; }
