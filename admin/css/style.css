@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 @font-face {
 	font-family: 'SpoqaHanSansNeo';
 	font-weight: 100;
@@ -146,9 +146,20 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 #wrap { min-height:100%; padding-top:100px; position:relative; background:#f5f7ff; }
 #wrap:before { content:''; width:240px; position:absolute; left:0; top:100px; bottom:0; background:#2750f2; }
 #wrap:after { content:''; display:block; clear:both; }
+#wrap.page--login { padding:0; display:flex; align-items:center; justify-content:center; }
 #wrap.page--login:before { display:none; }
 
-.boxLogin { width:300px; margin:0 auto; }
+.boxLogin { width:358px; margin:0 auto; padding-bottom:50px; }
+.boxLogin h1 { margin-bottom:80px; text-align:center; font-family: 'Poppins', sans-serif; font-weight:700; font-size:50px; line-height:1; color:#273444; }
+.boxLogin h1 span { display:block; font-size:30px; }
+.boxLoginInput .title { margin-bottom:6px; color:#273444; font-size:17px; }
+.boxLoginInput .input input { width:100%; height:52px; padding:0 16px; border:1px solid #b1bfd5; background:#fff; border-radius:2px; font-size:15px; }
+.boxLoginInput .input + .title { margin-top:30px; }
+.boxLoginInput .checkSave { margin:20px 0 50px; text-align:center; }
+.boxLoginInput .checkSave label { font-size:17px; color:#273444; }
+.boxLoginInput input[type="checkbox"]:checked + label:after { content: '\2713'; width:22px; height:22px; left:0; margin-top:-11px; color:#fff; line-height:20px; font-weight:700; }
+.boxLoginInput .btn button { width:100%; height:74px; background:#2750f2; color:#fff; font-size:17px; font-weight:500; }
+
 
 #lnb { width:240px; float:left; position:relative; z-index:2; }
 #lnb h2 { height:162px; padding:87px 0 0; position:relative; background:#2249e2; text-align:center; color:#fff; font-size:20px; }
@@ -261,7 +272,10 @@ a.type--link+button { margin-left:40px; }
 .pageBasic > a { width:38px; height:38px; display:inline-block; position:relative; background:#b1bfd5; border-radius:2px; vertical-align:middle; line-height:38px; font-size:0; text-indent:-99999px; }
 .pageBasic > a:hover { background:#253a5d; }
 .pageBasic > a:after { content:''; width:6px; height:10px; position:absolute; left:50%; top:50%; margin:-5px 0 0 -3px; background:url('../images/btnPage.png') no-repeat; }
-.pageBasic > a.prev, .pageBasic > a.next, { font-size:0; text-indent:-99999px; }
+.pageBasic > a.prev, .pageBasic > a.next,
+.pageBasic > a.first, .pageBasic > a.last, { font-size:0; text-indent:-99999px; }
+.pageBasic > a.first:after { width:12px; margin-left:-6px; background-repeat:repeat-x; }
+.pageBasic > a.last:after { width:12px; margin-left:-6px; background-repeat:repeat-x; transform:rotate(180deg); }
 .pageBasic > a.next:after { transform:rotate(180deg); }
 .pageBasic ul { margin:0 35px; display:inline-block; overflow:hidden; vertical-align:middle; }
 .pageBasic ul li { float:left; }
@@ -310,3 +324,21 @@ label+input+label { margin-left:30px; }
 .boxDashboard .item .cont ul li+li { margin-top:10px; }
 .boxDashboard .item .cont ul li .title { float:left; }
 .boxDashboard .item .cont ul li .data { float:right; }
+
+.popupBasic { width:748px; height:420px; display:none; position:fixed; left:50%; top:50%; border-radius:5px; background:#fff; overflow:hidden; box-shadow: 5px 5px 34px 0 rgba(0, 0, 0, 0.19); transform:translate(-50%, -50%); z-index:15; }
+.popupBasic .topArea { height:74px; padding:0 30px; background:#b1bfd5; line-height:74px; color:#fff; font-size:23px; font-weight:700; }
+.popupBasic .contArea { min-height:246px; padding:20px 35px 10px; display:flex; align-items:center; justify-content:center; flex-direction:column; }
+.popupBasic .contArea .txt { font-size:20px; font-weight:700; line-height:1; }
+.popupBasic .contArea .txt span { display:block; margin-top:10px; font-size:17px; color:#2750f2; font-weight:400; }
+.popupBasic .contArea textarea { width:494px; height:92px; margin-top:30px; padding:18px; border:1px solid #b1bfd5; border-radius:2px; font-size:17px; font-family:inherit; }
+.popupBasic .contArea textarea::placeholder { color:#b1bfd5; }
+.popupBasic .btn { padding:10px 0 20px; text-align:center; }
+.popupBasic .btn button { width:112px; height:52px; display:inline-block; background:#2750f2; border-radius:2px; color:#fff; font-size:17px ;font-weight:600; }
+.popupBasic .btn button.btnCancel { background:#273444; }
+.popupBasic .btn button+button { margin-left:10px; }
+.popupBasic .tableBasic.type--vertical tr th,
+.popupBasic .tableBasic.type--vertical tr td { padding:15px 10px; }
+.popupBasic .tableBasic.type--vertical tr td a { display:inline-block; margin-left:30px; text-decoration:underline; color:#2750f2; }
+
+
+#dim { width:100%; height:100%; display:none; position:fixed; left:0; top:0; background:rgba(0,0,0,0.4); z-index:10; }
