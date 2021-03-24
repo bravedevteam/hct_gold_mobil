@@ -112,9 +112,9 @@
 									<td>1</td>
 									<td>승인대기</td>
 									<td>
-                    <a href="#" class="btnBasic">승인</a>
-                    <a href="#" class="btnBasic">취소</a>
-                    <a href="#" class="btnBasic">내역보기</a>
+                    <a href="#" onClick="popSubmit();" class="btnBasic">승인</a>
+                    <a href="#" onClick="popCancel();" class="btnBasic">취소</a>
+                    <a href="#" onClick="popList();" class="btnBasic">내역보기</a>
                   </td>
 								</tr>
 								<tr>
@@ -128,9 +128,9 @@
 									<td>0.0001</td>
 									<td>승인대기</td>
 									<td>
-                    <a href="#" class="btnBasic">승인</a>
-                    <a href="#" class="btnBasic">취소</a>
-                    <a href="#" class="btnBasic">내역보기</a>
+                    <a href="#" onClick="popSubmit();" class="btnBasic">승인</a>
+                    <a href="#" onClick="popCancel();" class="btnBasic">취소</a>
+                    <a href="#" onClick="popList();" class="btnBasic">내역보기</a>
                   </td>
 								</tr>
 								<tr>
@@ -196,12 +196,96 @@
 			</div>
 		</div>
 	</section>
+	<div id="popSubmit" class="popupBasic">
+		<div class="topArea">
+			<div class="title">확인</div>
+		</div>
+		<div class="contArea">
+			<div class="txt">
+				출금요청을 승인 하시겠습니까?
+				<span>(승인 시, 출금이 정상적으로 진행됩니다.)</span>
+			</div>
+		</div>
+		<div class="btn">
+			<button type="button" class="btnCancel close">취소</button>
+			<button type="button">확인</button>
+		</div>
+	</div>
+
+	<div id="popCancel" class="popupBasic">
+		<div class="topArea">
+			<div class="title">확인</div>
+		</div>
+		<div class="contArea">
+			<div class="txt">
+				출금요청을 취소 하시겠습니까?
+				<span>(승인 시, 출금 요청건이 취소됩니다.)</span>
+			</div>
+			<textarea placeholder="사유입력"></textarea>
+		</div>
+		<div class="btn">
+			<button type="button" class="btnCancel close">취소</button>
+			<button type="button">확인</button>
+		</div>
+	</div>
+
+	<div id="popList" class="popupBasic">
+		<div class="topArea">
+			<div class="title">출금내역</div>
+		</div>
+		<div class="contArea">
+			<table class="tableBasic type--vertical">
+				<colgroup>
+					<col width="174" />
+					<col width="500" />
+				</colgroup>
+				<tr>
+					<th>상태</th>
+					<td>승인대기</td>
+				</tr>
+				<tr>
+					<th>받는 지갑주소</th>
+					<td>0x018dbD3B308B468CCFE83b890B32 <a href="#">복사</a></td>
+				</tr>
+				<tr>
+					<th>TXID</th>
+					<td>-</td>
+				</tr>
+			</table>
+		</div>
+		<div class="btn">
+			<button type="button" class="close">닫기</button>
+		</div>
+	</div>
+
+	<div id="dim"></div>
 	<script>
 	$( function() {
 		$( ".datepicker" ).datepicker({
 			dateFormat : "yy.mm.dd"
 		});
-	} );
+
+		$(".popupBasic .btn button.close").click(function(){
+			$(this).parents(".popupBasic").fadeOut(300);
+			dimClose();
+		});
+	});
+
+	function popSubmit(){
+		$("#popSubmit").fadeIn(300);
+		dimOpen();
+	}
+	function popCancel(){
+		$("#popCancel").fadeIn(300);
+		dimOpen();
+	}
+	function popList(){
+		$("#popList").fadeIn(300);
+		dimOpen();
+	}
+
+	function dimOpen(){ $("#dim").fadeIn(300); }
+	function dimClose(){ $("#dim").fadeOut(300); }
 	</script>
 </body>
 </html>
