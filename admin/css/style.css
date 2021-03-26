@@ -68,15 +68,20 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 
 
 /* Text Align */
-.ta-l { text-align:left !important; }
+.ta-l { text-align:left !important;}
 .ta-c { text-align:center !important; }
 .ta-r { text-align:right !important; }
 
 .color--red { color:#c10000; }
 .color--blue { color:#2750f2; }
 
+.wpx150 { width:150px !important; }
+.w50 { width:50% !important; }
 .w100 { width:100%; }
 
+.dis--inBlock { display:inline-block !important; }
+
+.ml50 { margin-left:50px !important; }
 .ml100 { margin-left:100px !important; }
 
 #header { width:100%; height:100px; padding:0 45px; position:absolute; left:0; top:0; background:#273444; overflow:hidden; }
@@ -308,6 +313,7 @@ label+input+label { margin-left:30px; }
 .row.is--division button { position:absolute; right:0; top:0; }
 .row.is--division button.btnBasic { width:110px; height:52px; background:#2750f2; }
 .row.is--half > * { width:50%; }
+.row.is--flex > * { flex:1; }
 
 #wrap.page--dashboard:before { display:none; }
 #wrap.page--dashboard #container { margin:0; }
