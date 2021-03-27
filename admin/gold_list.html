@@ -56,7 +56,7 @@
 						<div>한컴 78,750 원/g ( 마진율 5% )</div>
 					</div>
 					<div class="btn">
-						<a href="#" class="btnSearch">마진율 설정</a>
+						<a href="#" onClick="popSetup();" class="btnSearch">마진율 설정</a>
 					</div>
 				</div>
 				<div class="boxCont">
@@ -115,12 +115,57 @@
 			</div>
 		</div>
 	</section>
+
+	<div id="popSetup" class="popupBasic">
+		<div class="topArea">
+			<div class="title">마진율 설정</div>
+		</div>
+		<div class="contArea">
+			<table class="tableBasic type--vertical">
+				<colgroup>
+					<col width="174" />
+					<col width="500" />
+				</colgroup>
+				<tr>
+					<th>자산구분</th>
+					<td>금(24K)</td>
+				</tr>
+				<tr>
+					<th>삼성금거래소 시세</th>
+					<td>75,000 원/g</td>
+				</tr>
+				<tr>
+					<th>적용 마진율</th>
+					<td><input type="text" class="inputBasic" value="5%" /></td>
+				</tr>
+				<tr>
+					<th>적용 시세</th>
+					<td>78,750 원/g</td>
+				</tr>
+			</table>
+		</div>
+		<div class="btn">
+			<button type="button" class="btnCancel close">취소</button>
+			<button type="button">확인</button>
+		</div>
+	</div>
+
+	<div id="dim"></div>
+
 	<script>
 	$( function() {
-		$( ".datepicker" ).datepicker({
-			dateFormat : "yy.mm.dd"
+		$(".popupBasic .btn button.close").click(function(){
+			$(this).parents(".popupBasic").fadeOut(300);
+			dimClose();
 		});
-	} );
+	});
+	function popSetup(){
+		$("#popSetup").fadeIn(300);
+		dimOpen();
+	}
+
+	function dimOpen(){ $("#dim").fadeIn(300); }
+	function dimClose(){ $("#dim").fadeOut(300); }
 	</script>
 </body>
 </html>
