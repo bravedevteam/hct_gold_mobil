@@ -280,7 +280,7 @@ h4.title { padding:0 20px; margin-bottom:28px; font-size:20px; font-weight:700; 
 .pageBasic > a:hover { background:#253a5d; }
 .pageBasic > a:after { content:''; width:6px; height:10px; position:absolute; left:50%; top:50%; margin:-5px 0 0 -3px; background:url('../images/btnPage.png') no-repeat; }
 .pageBasic > a.prev, .pageBasic > a.next,
-.pageBasic > a.first, .pageBasic > a.last, { font-size:0; text-indent:-99999px; }
+.pageBasic > a.first, .pageBasic > a.last { font-size:0; text-indent:-99999px; }
 .pageBasic > a.first:after { width:12px; margin-left:-6px; background-repeat:repeat-x; }
 .pageBasic > a.last:after { width:12px; margin-left:-6px; background-repeat:repeat-x; transform:rotate(180deg); }
 .pageBasic > a.next:after { transform:rotate(180deg); }
