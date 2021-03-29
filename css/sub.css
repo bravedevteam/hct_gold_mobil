@@ -421,6 +421,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxAccountList .cont .info .total { color:#999; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxAccountList.voucher .cont .title .status { color:#ffdf31; }
 .boxAccountList.voucher .cont .title .status.ing { color:#4fd884 }
+.boxAccountList .noData { padding:100px 10px; font-size:17px; text-align:center; }
 
 .boxAccountList.type--digital {  }
 .boxAccountList.type--digital .date { width:30px; float:left; color:#999; font-family:"SFProDisplay", 'Sans-serif'; }
