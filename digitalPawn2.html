@@ -14,32 +14,37 @@
 	<div id="container" class="sub">
     <div class="headerArea">
       <a href="#" class="btnPageClose">닫기</a>
-      <h1 class="title">금(GOLD) 담보 가상자산 대출</h1>
+      <h1 class="title">디지털 금 담보대출</h1>
     </div>
     <div class="section">
       <h4 class="title title--medium">대출 가능한도</h4>
       <div class="inputUnit type--limit mb30">
         <input type="text" value="123,456,789" disabled="disabled" class="inputBasic">
-        <span>ARW</span>
+        <span>원</span>
       </div>
       <h4 class="title title--medium">대출 신청금액</h4>
       <div class="row division mb20">
-        <input type="text" class="inputBasic" placeholder="최소 123,456 ARW 이상" />
+        <input type="text" class="inputBasic" placeholder="최소 123,456 원" />
         <button type="button" class="btnBasic blueLine">최대</button>
       </div>
       <div class="title--top">
-        <h4 class="title title--medium">담보 GOLD 바우처</h4>
-        <div class="opt fApple color-000">금 시세 : 1g = 123,45 ARW</div>
+        <h4 class="title title--medium">담보 디지털 금</h4>
+        <div class="opt fApple color-000">금 시세 : 1g = 123,45 원</div>
       </div>
       <div class="inputUnit type--voucher mb30">
         <input type="text" value="150.25g" disabled="disabled" class="inputBasic">
-        <span>보유 바우처 320.45g</span>
+        <span>보유 디지털 금 320.45g</span>
       </div>
       <h4 class="title title--medium">대출 기간</h4>
-      <div class="tabBasic">
+      <div class="tabBasic mb30">
         <button type="button">30일</button>
         <button type="button">60일</button>
         <button type="button">180일</button>
+      </div>
+      <h4 class="title title--medium">대출 받을 계좌번호</h4>
+      <div class="row">
+        <button type="button" class="btnSelect mb10 layer--open" data-pop="bankSelect">은행 선택</button>
+        <input type="text" placeholder="계좌번호 입력" class="inputBasic" />
       </div>
     </div>
     <hr class="section--space mtb50" />
@@ -66,10 +71,9 @@
         </ul>
         <div class="guide-text mt40">
           <ul>
-            <li>대출 신청 후 1:1 대출 상담이 진행되며, 상담이 완료되지 않을 경우 대출 금이 지급되지 않습니다.</li>
+            <li>대출 신청 후 1:1 대출 상담이 진행되며, 상담이 완료되지 않을 경우 대출금이 지급되지 않습니다.</li>
             <li>실 대출금은 선취 이자를 제외한 대출금이 지급됩니다.</li>
             <li>대출금은 중도상환 및 부분상환이 불가하며 대출 상환일에 일시만 가능 합니다.</li>
-            <li>대출 상환일에 대출금 미 상환시 담보로 설정된 GOLD 바우처는 만기일 24:00시에 자동 청산 됩니다.</li>
           </ul>
         </div>
       </div>
@@ -78,5 +82,36 @@
 			<button type="button" class="btnBasic active">다음</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
 		</div>
   </div>
+
+  <div id="bankSelect" class="bottomLayer popAccount">
+    <div class="top--btn layer--close"><button type="button">close</button></div>
+    <div class="inner">
+      <div class="section">
+        <div class="layerTop mb30">
+          <div class="title">은행을 선택하세요</div>
+        </div>
+        <div class="popBankSelect">
+          <div class="search">
+            <input type="text" placeholder="은행 검색" class="inputBasic" />
+          </div>
+          <ul class="listBank">
+            <li><a href="#" class="icon--bank1">국민은행</a></li>
+            <li><a href="#" class="icon--bank2">기업은행</a></li>
+            <li><a href="#" class="icon--bank3">농협은행</a></li>
+            <li><a href="#" class="icon--bank4">신한은행</a></li>
+            <li><a href="#" class="icon--bank5">산업은행</a></li>
+            <li><a href="#" class="icon--bank6">우리은행</a></li>
+            <li><a href="#" class="icon--bank7">한국씨티은행</a></li>
+            <li><a href="#" class="icon--bank8">하나은행</a></li>
+            <li><a href="#" class="icon--bank9">SC제일은행</a></li>
+            <li><a href="#" class="icon--bank10">경남은행</a></li>
+            <li><a href="#" class="icon--bank11">광주은행</a></li>
+            <li><a href="#" class="icon--bank12">대구은행</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="dim"></div>
 </body>
 </html>

@@ -18,22 +18,17 @@
     </div>
     <div class="section">
       <div class="title--top">
-        <h4 class="title--medium mb20">교환할 GOLD 바우처</h4>
+        <h3 class="title--large mb20 pt0 pb0">구매할 디지털 금 바우처</h3>
         <div class="opt vct">
           <div class="boxWeightRadio">
             <input type="radio" id="chk_w1" data-role="radioTab1" />
-            <label for="chk_w1">중량입력</label>
+            <label for="chk_w1">중량선택</label>
             <input type="radio" id="chk_w2" data-role="radioTab2" />
-            <label for="chk_w2">중량선택</label>
+            <label for="chk_w2">중량입력</label>
           </div>
         </div>
       </div>
-      <div id="radioTab1" class="wr_tab inputUnit value--max"><!-- input의 값이 최대일 때 value--max 추가 -->
-        <input type="text" value="" class="inputBasic" />
-        <span>GOLD</span>
-        <div class="max">최대</div>
-      </div>
-      <div id="radioTab2" class="wr_tab selGoldWeight pb0">
+      <div id="radioTab1" class="wr_tab selGoldWeight pb0">
         <button type="button">1돈(3.75g)</button>
         <button type="button">2돈(7.5g)</button>
         <button type="button">3돈(11.25g)</button>
@@ -43,46 +38,62 @@
         <button type="button">30돈(112.5g)</button>
         <button type="button">50돈(187.5g)</button>
       </div>
-      <div class="guide-text ta-r color-000 mt5 mb40">금 시세 : 1g = 68,541원</div>
-      <h4 class="title--medium">구매 수단 선택</h4>
-      <div class="boxTradeUse">
-        <div class="tokenSelect type--white icon--bgx">
-          <label>ARW</label>
-          <select>
-            <option>BTC</option>
-            <option selected="selected"><img src="./images/common/iconSelect-HGX.png" alt="" />ARW</option>
-            <option>ETH</option>
-            <option>USTD</option>
-          </select>
-        </div>
-        <div class="cont">
-          <div class="price">113.77809 ARW <span>(141,015 원)</span></div>
-          <div class="bottomPrice">사용가능 자산 1,456,471 ARW</div>
-        </div>
+      <div id="radioTab2" class="wr_tab inputUnit value--max"><!-- input의 값이 최대일 때 value--max 추가 -->
+        <input type="text" value="" class="inputBasic" />
+        <span>금</span>
+        <div class="max">최대</div>
       </div>
-      <div class="row division_half mb10">
-        <div class="guide-text danger">사용 가능한 수량을 초과하였습니다.</div>
-        <div class="guide-text ta-r color-000">현재 시세 : 1 ARW = 768,904원</div>
+      <div class="row division_half">
+        <div class="guide-text color-000 mt5 mb40">금 시세 : 1g = 68,541원</div>
+        <div class="guide-text ta-r"><a href="#" class="underLink">금 시세 조회</a></div>
       </div>
-      <div class="guide-text boxGray">1g(24K) = 65,145 ARW</div>
+      <h3 class="title--large mb20 pt0 pb0">구매 수단 선택</h3>
 
       <div class="boxTradeHidden">
-        <div class="hiddenBox type--hancom">
-          <div class="item">
-            <div class="top">
-              <input type="radio" name="tokkenUse" id="chk_tk1" />
-              <label for="chk_tk1">
+        <input type="radio" name="tokkenUse" id="chk_tk1" checked="checked" />
+        <label for="chk_tk1">
+          <div class="hiddenBox type--hancom">
+            <div class="item">
+              <div class="top">
                 <div class="title">HANCOM PAY</div>
                 <div class="subject">한컴페이로 구매</div>
-              </label>
+              </div>
+              <div class="price">구매금액 <span class="en">3,464,062 원</span></div>
             </div>
-            <div class="price">구매금액 <span>3,464,062 원</span></div>
           </div>
-          <div class="guide-text type--dot">한컴페이 또는 다른 구매 수단으로 바우처 구매 시 페이 결제 한도 및 고객님의 카드/계좌이체 한도에 따라  구매할 바우처 중량만큼 구매가 불가 할 수 있습니다.</div>
-        </div>
-        <div class="hiddenBox type--arowana">
+          <div class="guide-text type--dot">한컴페이로 구매 시 본인 결제 한도에 따라 원하는 디지털 금 중량 구매가 불가 할 수 있습니다.</div>
+        </label>
+        
+        <input type="radio" name="tokkenUse" id="chk_tk2" />
+        <label for="chk_tk2">
+          <div class="hiddenBox type--arowana">
+            <div class="item">
+              <div class="top">
+                <div class="title">Arowana</div>
+                <div class="subject">가상화폐로 구매</div>
+              </div>
 
-        </div>
+              <div class="tokenSelect type--white icon--arw">
+                <label>ARW</label>
+                <select>
+                  <option>BTC</option>
+                  <option selected="selected">ARW</option>
+                  <option>ETH</option>
+                  <option>USTD</option>
+                </select>
+              </div>
+              <div class="cont">
+                <div class="price">113.77809 ARW <span>(141,015 원)</span></div>
+                <div class="bottomPrice">사용가능 자산 1,456,471 ARW</div>
+              </div>
+            </div>
+            <div class="row division_half mb10">
+              <div class="guide-text danger">사용 가능한 수량을 초과하였습니다.</div>
+              <div class="guide-text ta-r color-000">현재 시세 : 1 ARW = 768,904원</div>
+            </div>
+            <div class="guide-text boxGray">1g(24K) = 65,145 ARW</div>
+          </div>
+        </label>
       </div>
       
     </div>
