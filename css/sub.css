@@ -69,7 +69,7 @@ input[type="number"]:disabled { border:1px solid #d5d5d5; background:#f2f4f6; co
 .inputUnit { position:relative; }
 .inputUnit input { padding:0 20px 0 90px; z-index:1; }
 .inputUnit.value--max input { padding-right:50px; }
-.inputUnit > span { width:70px; height:50px; padding-left:20px; position:absolute; left:0; top:0; font-family:"SFProDisplay", 'Sans-serif'; line-height:50px; z-index:2; }
+.inputUnit > span { width:70px; height:50px; position:absolute; left:0; top:0; font-family:"SFProDisplay", 'Sans-serif'; text-align:center; line-height:50px; z-index:2; }
 .inputUnit > span:after { content:''; width:1px; height:18px; position:absolute; right:0; top:50%; margin-top:-9px; background:#d5d5d5; }
 .inputUnit > span .btnInfo { width:14px; height:14px; margin-top:-4px; margin-left:5px; display:inline-block; background:url('../images/common/iconMarkSmallGray.png') no-repeat; background-size:14px auto; font-size:0; text-indent:-99999px; vertical-align:middle; }
 .inputUnit .max { height:50px; display:none; position:absolute; right:20px; top:0; z-index:2; line-height:50px; color:#2750f2; font-size:12px; }
@@ -92,9 +92,9 @@ input[type="number"]:disabled { border:1px solid #d5d5d5; background:#f2f4f6; co
 .inputUnit.type--limit > span { width:auto; padding:0 20px 0 0; left:auto; right:0; font-size:15px; }
 .inputUnit.type--limit > span:after { display:none; }
 .inputUnit.type--voucher {  }
-.inputUnit.type--voucher input { padding:0 20px 0 170px; text-align:right; }
+.inputUnit.type--voucher input { padding:0 20px 0 180px; text-align:right; font-weight:500; font-family:"SFProDisplay", 'Sans-serif'; }
 .inputUnit.type--voucher input:disabled { color:#000; background:#f8f9fa; }
-.inputUnit.type--voucher > span { width:160px; padding:0; text-align:center; font-size:15px; }
+.inputUnit.type--voucher > span { width:170px; padding:0; text-align:center; font-size:15px; }
 
 .inputAddress { position:relative; }
 .inputAddress input { padding-right:60px; position:relative; z-index:1; }
@@ -151,10 +151,13 @@ input[type="number"]:disabled { border:1px solid #d5d5d5; background:#f2f4f6; co
 .tokenSelect select { height:24px; padding:0 26px 0 0; border:0; background:transparent; font-weight:700; font-size:17px; z-index:2; text-align-last:center; }
 .tokenSelect.type--white { width:92px; position:relative; background:url('../images/common/iconSelectRoundWhite.png') right center no-repeat; background-size:24px auto; }
 .tokenSelect.type--white:after { display:none; }
-.tokenSelect.type--white label { width:92px; height:24px; padding:0 24px 0 22px; position:absolute; left:0; top:0; background-repeat:no-repeat; background-size:18px auto; background-position:left center; color:#fff; font-size:17px; }
-.tokenSelect.icon--bgx label { background-image:url('../images/common/iconSelect-HGX.png'); }
+.tokenSelect.type--white label { width:92px; height:24px; padding:0 24px 0 22px; position:absolute; left:0; top:0; background-repeat:no-repeat; background-size:19px auto; background-position:left center; color:#fff; font-size:17px; }
+.tokenSelect.icon--arw label { background-image:url('../images/common/iconSelect-ARW.png'); }
 .tokenSelect.type--white select { width:92px; opacity:0; }
 h1 .tokenSelect { margin:0 auto; }
+
+.btnSelect { width:100%; height:50px; position:relative; padding:0 17px; border:1px solid #d5d5d5; border-radius:5px; text-align:left; }
+.btnSelect:after { content:''; width:11px; height:6px; position:absolute; right:13px; top:50%; margin-top:-3px; background:url('../images/common/iconSelect.png') center center no-repeat; background-size:100% auto; }
 
 /* Guide Text */
 .guide-text { display:block; margin-top:4px; color:#999; word-break:keep-all; }
@@ -195,7 +198,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxComplate .cont.icon--withdrawal { padding-top:50px; background:url('../images/common/iconJoinWithdrawal.png') left top no-repeat; background-size:auto 39px; }
 .boxComplate .cont .title { margin-bottom:20px; font-size:25px; font-weight:700; }
 .boxComplate .cont .subject { margin-bottom:25px; font-size:17px; color:#2750f2; font-weight:700; }
-.boxComplate .cont .explanation { margin-bottom:23px; font-size:17px; line-height:1.65; letter-spacing:-.085em; word-break:keep-all; }
+.boxComplate .cont .explanation { margin-bottom:23px; font-size:15px; line-height:1.65; letter-spacing:-.085em; word-break:keep-all; }
 .boxComplate .cont .explanation ul li { position:relative; }
 .boxComplate .cont .explanation ul li:before { content:'·'; position:absolute; left:-9px; top:0; font-size:17px; }
 .boxComplate .cont .explanation .etc { font-size:15px; color:#999; font-weight:300; }
@@ -213,14 +216,15 @@ h1 .tokenSelect { margin:0 auto; }
 
 /* Wallet */
 .boxWalletTop { position:relative; padding:0 15px 24px; }
-.boxWalletTop .walletTab { height:45px; display:flex; position:relative; margin:0 auto; background:#264ce3; border-radius:20px; }
-.boxWalletTop .walletTab:after { content:''; width:33.3%; height:45px; position:absolute; top:0; background:#1ed6e6; box-shadow: 3px 6px 10px 0 rgba(0, 22, 108, 0.37); border-radius:5px; z-index:2; transition:left .5s; }
+.boxWalletTop .walletTab { height:44px; display:flex; position:relative; margin:0 auto; background:#93a8fa; border-radius:15px; }
+.boxWalletTop .walletTab:after { content:''; width:33.3%; height:51px; position:absolute; top:-4px; background:#fdfeff; box-shadow: 3px 6px 16px 0 rgba(0, 22, 108, 0.45); border-radius:15px; z-index:2; transition:left .5s; }
 .boxWalletTop .walletTab.tab1:after { left:0; }
 .boxWalletTop .walletTab.tab2:after { left:33.3%; }
 .boxWalletTop .walletTab.tab3:after { left:66.6%; }
-.boxWalletTop .walletTab button { width:33.3%; height:45px; position:relative; text-align:center; color:rgba(255,255,255,.5); z-index:5; font-size:15px; }
-.boxWalletTop .walletTab button.active { color:#fff; }
-.boxWalletTop .walletTab button+button:after { content:''; width:1px; height:15px; position:absolute; left:-1px; top:50%; background:rgba(255,255,255,.5); transform:translateY(-50%); z-index:1; opacity:.4; }
+.boxWalletTop .walletTab button { width:33.3%; height:44px; position:relative; text-align:center; color:#092159; z-index:5; font-size:15px; }
+.boxWalletTop .walletTab button.active { color:#2750f2; font-weight:700; }
+.boxWalletTop .walletTab button+button:after { content:''; width:1px; height:15px; position:absolute; left:0; top:50%; background:#000; transform:translateY(-50%); z-index:1; opacity:.4; }
+.boxWalletTop .walletTab button.active:after { display:none; }
 
 .boxWalletTop .top { overflow:hidden; }
 .boxWalletTop .top .title { float:left; position:relative; color:#fff; line-height:26px; }
@@ -231,7 +235,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop .priceWrap { margin:35px 0; text-align:center; }
 .boxWalletTop .priceWrap .title { font-size:19px; color:#fff; }
 .boxWalletTop .priceWrap > .price { display:block; position:relative; font-size:25px; font-weight:700; color:#fff; }
-.boxWalletTop .priceWrap > .price.with--info { padding-right:24px; }
+.boxWalletTop .priceWrap > .price.with--info { display:inline-block; padding-right:24px; }
 .boxWalletTop .priceWrap > .price span { font-size:30px; }
 .boxWalletTop .priceWrap .btnInfo { width:14px; height:14px; position:absolute; right:0; top:50%; margin-top:-5px; background:url('../images/common/iconMarkSmall.png') center center no-repeat; background-size:14px auto; font-size:0; text-indent:-99999px; }
 .boxWalletTop .priceWrap .percent { font-size:15px; color:#fff; }
@@ -246,11 +250,15 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop .priceWrap .bottomPriceGroup .subTitle { width:95px; float:left; }
 .boxWalletTop .priceWrap .bottomPriceGroup .usePrice { margin-left:95px; display:block; }
 .boxWalletTop .priceWrap .bottomPrice.small { margin-top:5px; text-align:center; color:#c6e9ff; }
-.boxWalletTop .listPrice { margin:0 18px; padding:15px 0; background:#2241be; border-radius:5px; text-align:center; }
-.boxWalletTop .listPrice dl { display:inline-block; overflow:hidden; color:#fff; font-size:15px; }
-.boxWalletTop .listPrice dt { width:80px; float:left; text-align:left; }
-.boxWalletTop .listPrice dd { margin-left:100px; padding:0 0 0 10px; font-size:14px; text-align:right; }
-.boxWalletTop .listPrice dd span { font-size:15px; }
+.boxWalletTop .listPrice { padding:15px 35px; border-radius:15px; border:1px solid rgba(255,255,255,.3); text-align:center; }
+.boxWalletTop .listPrice dl { overflow:hidden; color:#fff; font-size:17px; }
+.boxWalletTop .listPrice dt { width:100px; float:left; margin-top:6px; text-align:left; }
+.boxWalletTop .listPrice dd { margin-top:6px; margin-left:120px; text-align:right; }
+.boxWalletTop .listPrice dt:first-of-type,
+.boxWalletTop .listPrice dd:first-of-type { margin-top:0; }
+.boxWalletTop .listPrice dd span { font-size:16px; }
+.boxWalletTop .listPrice dl strong { color:#ffdf31; }
+.boxWalletTop .listPrice dl dt strong { font-weight:700; }
 .boxWalletTop .btn { display:flex; border:1px solid #5273f5; border-radius:10px; overflow:hidden; }
 .boxWalletTop .btn button { flex:1; height:50px; position:relative; font-size:15px; color:#fff; }
 .boxWalletTop .btn button+button:after { content:''; width:1px; height:15px; position:absolute; left:0; top:50%; margin-top:-7px; background:#5273f5; }
@@ -272,15 +280,16 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop.type--arw2 { padding:20px 18px 25px; border-radius:13px; background:#2750f2; box-shadow: 0 7px 5px 0 rgba(41, 193, 207, 0.11); }
 .boxWalletTop.type--arw2 .top .btnTransList { margin-top:7px; }
 .boxWalletTop.type--arw2 .top .btnTransList:before { content:''; width:12px; height:12px; margin-right:4px; display:inline-block; background:url('../images/common/iconTransWhite.png') center center no-repeat; background-size:100% auto; }
-.boxWalletTop.type--arw2 .top .typeMark img { width:17px; }
+.boxWalletTop.type--arw2 .top .typeMark img { width:15px; }
 .boxWalletTop.type--arw2 .top .etc { color:#fff; }
 .boxWalletTop.type--arw2 .priceWrap { margin:0 0 20px; }
 .boxWalletTop.type--arw2 .priceWrap .title { color:#fff; }
 .boxWalletTop.type--arw2 .priceWrap .bottomPriceGroup .subTitle { width:140px; color:#c6e9ff; }
 .boxWalletTop.type--arw2 .priceWrap .bottomPriceGroup .usePrice { margin-left:145px; color:#fff; font-size:15px; text-align:right; }
 .boxWalletTop.type--arw2 .btn { background:#fff; border:1px solid #153edd; }
-.boxWalletTop.type--arw2 .btn button { color:#000; }
-.boxWalletTop.type--arw2 .btn button:hover { color:#a25203; }
+.boxWalletTop.type--arw2 .btn button { width:30%; color:#000; flex:none; }
+.boxWalletTop.type--arw2 .btn button:first-child { width:40%; }
+.boxWalletTop.type--arw2 .btn button:hover { color:#2750f2; }
 .boxWalletTop.type--arw2 .btn button+button:after { height:20px; margin-top:-10px; background:#2750f2; }
 
 .boxWalletTop.type--btc { padding:20px 18px 25px; border-radius:13px; background:#29c1cf; box-shadow: 0 7px 5px 0 rgba(41, 130, 207, 0.09); }
@@ -298,19 +307,22 @@ h1 .tokenSelect { margin:0 auto; }
 .boxWalletTop.type--btc .btn button+button:after { background:#5facdd; }
 
 .boxWalletTop.type--voucher { padding:0; }
-.boxWalletTop.type--voucher .cont { position:relative; margin-bottom:20px; padding:20px 20px 30px; border-radius:20px; background:#5739ff; box-shadow:0 5px 6px 0 rgba(0, 0, 0, 0.33); }
-.boxWalletTop.type--voucher .top .typeMark { width:auto; height:auto; position:absolute; left:18px; top:27px; background:none; }
-.boxWalletTop.type--voucher .top .typeMark img { width:131px; }
-.boxWalletTop.type--voucher .top .etc { color:#fff; }
-.boxWalletTop.type--voucher .priceWrap { margin:52px 0 0; text-align:right; }
-.boxWalletTop.type--voucher .priceWrap > .price { font-size:36px; }
+.boxWalletTop.type--voucher .cont { position:relative; margin-bottom:20px; padding:20px 20px 30px; border-radius:20px; box-shadow:0 5px 6px 0 rgba(0, 0, 0, 0.33);
+  background: rgb(202,165,66);
+  background: linear-gradient(90deg, rgba(202,165,66,1) 0%, rgba(251,236,121,1) 40%, rgba(191,149,54,1) 100%);
+}
+.boxWalletTop.type--voucher .top .typeMark { width:auto; height:auto; position:absolute; left:4px; top:20px; background:none; }
+.boxWalletTop.type--voucher .top .typeMark img { width:146px; }
+.boxWalletTop.type--voucher .top .etc { margin-top:0; color:#5f5f5f; }
+.boxWalletTop.type--voucher .priceWrap { margin:60px 0 0; text-align:right; }
+.boxWalletTop.type--voucher .priceWrap > .price { font-size:36px; color:#000; }
 .boxWalletTop.type--voucher .priceWrap > .price span.small { font-size:20px; }
-.boxWalletTop.type--voucher .priceWrap .bottomPrice--guide { font-size:15px; color:#c9a247; }
+.boxWalletTop.type--voucher .priceWrap .bottomPrice--guide { font-size:15px; color:#5f5f5f; }
 .boxWalletTop.type--voucher .priceWrap .bottomPrice--guide span.small { font-size:12px; }
-.boxWalletTop.type--voucher .btn { border:1px solid #072c84; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
+.boxWalletTop.type--voucher .btn { border:1px solid #847000; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16); }
 .boxWalletTop.type--voucher .btn button { color:#000; }
-.boxWalletTop.type--voucher .btn button+button:after { background:#5739ff; }
-.boxWalletTop.type--voucher .btn button:hover { color:#5739ff; }
+.boxWalletTop.type--voucher .btn button+button:after { background:#847000; }
+.boxWalletTop.type--voucher .btn button:hover { color:#847000; }
 
 .boxInfoARW { margin:40px 12px 0 0; position:relative; background:url('../images/content/imgInfo_arw.png') right top no-repeat; background-size:132px auto; }
 .boxInfoARW .title { margin-bottom:15px; font-size:28px; font-weight:100; }
@@ -329,12 +341,21 @@ h1 .tokenSelect { margin:0 auto; }
 
 .boxWalletDigital { margin-bottom:0; padding-top:25px; padding-bottom:50px; border-top-left-radius:20px; border-top-right-radius:20px; }
 
-.boxGoldNow { height:88px; position:relative; padding:0 38px 0 18px; display:flex; align-items:center; border-radius:13px; background:#ffdf0b; }
+.boxGoldNow { height:88px; position:relative; padding:0 38px 0 18px; display:flex; align-items:center; border-radius:13px; box-shadow: 0 5px 13px 0 rgba(201, 162, 71, 0.71);
+  background: rgb(202,165,66);
+  background: linear-gradient(90deg, rgba(202,165,66,1) 0%, rgba(251,236,121,1) 40%, rgba(191,149,54,1) 100%);
+}
 .boxGoldNow:after { content:''; width:8px; height:14px; position:absolute; right:18px; top:50%; margin-top:-7px; background:url('../images/common/iconArrowYellow.png') center center no-repeat; background-size:100% auto; }
-.boxGoldNow .title { padding:5px 0 5px 30px; flex:1; background:url('../images/main/iconGoldVoucher.png') left center no-repeat; background-size:25px auto; font-size:15px; font-weight:700; }
+.boxGoldNow .title { padding:5px 0 5px 78px; position:relative; flex:1; font-size:15px; font-weight:700; }
+.boxGoldNow .title:after { content:''; width:97px; height:76px; position:absolute; left:-18px; top:-16px; background:url('../images/main/iconGoldVoucher.png') no-repeat; background-size:100% auto; }
 .boxGoldNow .assets { flex:1; text-align:right; }
 .boxGoldNow .assets .price { font-family:"SFProDisplay", 'Sans-serif'; font-size:15px; font-weight:700; }
 .boxGoldNow .assets .info { margin-top:3px; font-family:"SFProDisplay", 'Sans-serif'; }
+
+.boxWalletPrivacy { padding:40px 0; position:relative; }
+.boxWalletPrivacy:after { content:''; width:86px; height:112px; position:absolute; right:10px; top:38px; background:url('../images/content/imgWalletPrivacy.png') no-repeat; background-size:100% auto; }
+.boxWalletPrivacy .title { margin-bottom:12px; font-size:22px; font-weight:700; }
+.boxWalletPrivacy .subject { margin-bottom:40px; font-size:17px; color:#999; line-height:22px; }
 
 .boxAssetList { padding-bottom:60px; }
 .boxAssetList li+li { margin-top:10px; }
@@ -379,6 +400,14 @@ h1 .tokenSelect { margin:0 auto; }
 .boxDepositDetail .boxInvestDetail .priceDetail > div:nth-child(3) { flex:1; }
 .boxDepositDetail .boxInvestDetail .priceDetail > div .title { color:#000; font-size:13px; white-space:nowrap; }
 .boxDepositDetail .boxInvestDetail .priceDetail > div .cont { font-size:14px; color:#29c1cf; font-family:"SFProDisplay", 'Sans-serif'; font-weight:700; }
+
+.boxDepositDetail .boxInvestDetail .priceAccount { margin-top:20px; padding-top:20px; border-top:1px solid #d4d8db; }
+.boxDepositDetail .boxInvestDetail .priceAccount .title { margin-bottom:10px; font-size:15px; font-weight:700; }
+.boxDepositDetail .boxInvestDetail .priceAccount .cont { font-size:13px; line-height:23px; }
+.boxDepositDetail .boxInvestDetail .priceAccount .cont dl { overflow:hidden; }
+.boxDepositDetail .boxInvestDetail .priceAccount .cont dt { float:left; color:#999; font-size:13px; }
+.boxDepositDetail .boxInvestDetail .priceAccount .cont dd { margin:0 0 0 50px; text-align:right; }
+.boxDepositDetail .boxInvestDetail .priceAccount .cont span { margin-left:14px; font-weight:700; color:#29c1cf; font-size:14px; }
 
 .boxDepositDetail .boxInvestDetail .priceReward {  }
 .boxDepositDetail .boxInvestDetail .priceReward ul li { overflow:hidden; line-height:24px; }
@@ -429,9 +458,10 @@ h1 .tokenSelect { margin:0 auto; }
 .boxAccountList.type--digital .trade .box { display:flex; padding-left:20px; flex:1; flex-direction:column; }
 .boxAccountList.type--digital .trade .betweenTrade { width:30px; height:106px; background:url('../images/common/iconTradeHorizontal.png') left center no-repeat; background-size:15px auto; }
 .boxAccountList.type--digital .trade .box .name { background-repeat:no-repeat; background-position:left center; }
-.boxAccountList.type--digital .trade .box.icon--gold .name { padding-left:25px; background-image:url('../images/common/iconTradeList-gold.png'); background-size:20px auto; }
+.boxAccountList.type--digital .trade .box.icon--gold .name { height:20px; padding-left:30px; background-image:url('../images/common/iconTradeList-gold.png'); background-size:26px auto; line-height:20px; }
 .boxAccountList.type--digital .trade .box.icon--btc .name { padding-left:14px; background-image:url('../images/common/iconTradeList-btc.png'); background-size:9px auto; }
-.boxAccountList.type--digital .trade .box.icon--arw .name { padding-left:18px; background-image:url('../images/common/iconTradeList-arw.png'); background-size:13px auto; }
+.boxAccountList.type--digital .trade .box.icon--arw .name { padding-left:22px; background-image:url('../images/common/iconTradeList-arw.png'); background-size:17px auto; }
+.boxAccountList.type--digital .trade .box.status.ing .name { font-size:10px; color:#4fd884; }
 .boxAccountList.type--digital .trade .box .price { font-size:15px; font-weight:500; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxAccountList.type--digital .trade .box.box--after .price { color:#2750f2; }
 
@@ -620,7 +650,7 @@ h1 .tokenSelect { margin:0 auto; }
 .boxOutVoucher a { float:right; text-decoration:underline; color:#999; }
 
 .boxWeightRadio { width:136px; position:relative; border-radius:5px; background:#d5d5d5; }
-.boxWeightRadio:before { content:''; width:70px; height:27px; position:absolute; left:-1px; top:0; background:#29c1cf; box-shadow: 4px 0 6px 0 rgba(0, 0, 0, 0.16); border-radius:5px; z-index:1; transition:left .5s; }
+.boxWeightRadio:before { content:''; width:70px; height:27px; position:absolute; left:-1px; top:0; background:#2750f2; box-shadow: 4px 0 6px 0 rgba(0, 0, 0, 0.16); border-radius:5px; z-index:1; transition:left .5s; }
 .boxWeightRadio.type2:before { left:67px; }
 .boxWeightRadio:after { content:''; display:block; clear:both; }
 .boxWeightRadio input { position:absolute; left:-99999px; top:0; opacity:0; }
@@ -738,11 +768,15 @@ h1 .tokenSelect { margin:0 auto; }
 .boxDepositInfo > div { flex:1; position:relative; text-align:center; }
 .boxDepositInfo > div+div:after { content:''; width:1px; height:50px; position:absolute; left:0; top:50%; margin-top:-25px; background:rgba(255,255,255,.4); }
 .boxDepositInfo > div .title { font-size:15px; }
-.boxDepositInfo > div .price { margin-top:8px; font-size:20px; line-height:1; }
+.boxDepositInfo > div .price { margin-top:8px; font-size:15px; line-height:1; }
 .boxDepositInfo > div .price span:first-child { font-size:17px; font-weight:700; }
 .boxDepositInfo > div .price span.small { font-size:15px; }
 .boxDepositInfo > div .price.price--two { height:45px; margin-top:5px; display:flex; flex-direction: column; line-height:20px; justify-content:center; }
 .boxDepositInfo > div .price .price2 { font-size:15px; font-family:"SFProDisplay", 'Sans-serif'; }
+.boxDepositInfo.type--business { box-shadow: 0 5px 13px 0 rgba(201, 162, 71, 0.71); color:#000;
+  background: rgb(202,165,66);
+  background: linear-gradient(90deg, rgba(202,165,66,1) 0%, rgba(251,236,121,1) 40%, rgba(191,149,54,1) 100%);
+}
 
 .boxMypageTop.type--business .title { background-image:url('../images/common/iconJoinBusiness.png'); background-position:5px 1px; }
 
@@ -944,17 +978,42 @@ h1 .tokenSelect { margin:0 auto; }
 
 
 /* Trade Voucher */
+.boxTradeHidden input { position:absolute; left:-99999px; top:0; opacity:0; }
+.boxTradeHidden label { max-height:90px; padding-bottom:30px; display:block; position:relative; transition:all .3s ease; overflow:hidden; }
+.boxTradeHidden label:last-of-type { padding-bottom:0; }
+.boxTradeHidden label:before { content:''; width:20px; height:20px; position:absolute; left:20px; top:28px; border-radius:20px; border:1px solid #2750f2; background:#fff; z-index:10; }
+.boxTradeHidden input[type="radio"]:checked + label { max-height:500px; }
+.boxTradeHidden input[type="radio"]:checked + label:after { content:''; width:12px; height:12px; position:absolute; left:25px; top:33px; border-radius:12px; background:#2750f2; z-index:11; }
+.boxTradeHidden label .guide-text { max-height:0; overflow:hidden; transition:max-height .3s ease; }
+.boxTradeHidden input[type="radio"]:checked + label .guide-text { max-height:500px; }
+.boxTradeHidden .hiddenBox .item { height:75px; padding:0 26px; margin-bottom:10px; position:relative; display:block; border-radius:20px; overflow:hidden; transition:all .3s ease; box-shadow: 0 7px 5px 0 rgba(48, 68, 160, 0.44); }
+.boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--hancom .item { height:152px; }
+.boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--arowana .item { height:180px; }
+.boxTradeHidden .hiddenBox.type--hancom .item { background:#092159; }
+.boxTradeHidden .hiddenBox.type--arowana .item { background:#2750f2; }
+.boxTradeHidden .hiddenBox .item .top { height:75px; padding:0 8px 0 36px; overflow:hidden; line-height:75px; }
+.boxTradeHidden .hiddenBox.type--arowana .item .top { position:absolute; left:26px; right:26px; background:#2750f2; z-index:2; }
+.boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--arowana .item .top { display:none; }
+.boxTradeHidden .hiddenBox .item .top .title { float:left; color:#fff; font-size:20px; }
+.boxTradeHidden .hiddenBox.type--hancom .item .top .title { width:129px; height:100%; background:url('../images/content/imgVoucherHancom.png') left center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+.boxTradeHidden .hiddenBox.type--arowana .item .top .title { padding-left:26px; background:url('../images/content/iconVoucherARW.png') left center no-repeat; background-size:18px auto; font-weight:700; }
+.boxTradeHidden .hiddenBox .item .top .subject { float:right; text-align:right; color:#fff; font-size:15px; }
 .boxTradeUse { margin-bottom:8px; padding:24px 26px 32px; background:#29c1cf; border-radius:20px; box-shadow: 0 7px 5px 0 rgba(41, 193, 207, 0.2); text-align:center; }
-.boxTradeUse .cont { padding-top:30px; border-top:1px solid rgba(12,100,108,.5); }
-.boxTradeUse .cont .price { margin-bottom:4px; font-size:18px; font-weight:700; color:#Fff; word-break:keep-all; }
-.boxTradeUse .cont .bottomPrice { color:#0c646c; }
+.boxTradeHidden .hiddenBox .item .price { height:75px; display:flex; border-top:1px solid #464b64; text-align:center; color:#fff; align-items:center; justify-content:center; font-size:15px; font-weight:700; }
+.boxTradeHidden .hiddenBox .item .price span { margin-left:3px; font-size:20px; }
 
-.boxVoucherCard { padding:22px 33px 55px; background:#5739ff; }
-.boxVoucherCard .imgCard { margin-bottom:46px; position:relative; }
-.boxVoucherCard .imgCard .opt { position:absolute; right:6%; bottom:14%; text-align:right; font-family:'Cinzel'; font-weight:700; }
-.boxVoucherCard .imgCard .opt .gram { padding-right:18px; background:url('../images/content/bgGram.png') right 22px no-repeat; background-size:12px auto; font-size:33px; letter-spacing:-1px; }
-.boxVoucherCard .listDetail .title { color:#c9a247; }
-.boxVoucherCard .listDetail .cont { color:#fff; }
+.boxTradeHidden .hiddenBox.type--arowana .item .tokenSelect { display:block; margin:24px auto 20px; }
+.boxTradeHidden .hiddenBox.type--arowana .item .cont { padding-top:30px; border-top:1px solid #464b64; text-align:center; }
+.boxTradeHidden .hiddenBox.type--arowana .item .cont .price { height:auto; margin-bottom:4px; border-top:0; font-size:18px; word-break:keep-all; }
+.boxTradeHidden .hiddenBox.type--arowana .item .cont .bottomPrice { color:rgba(255,255,255,.6); }
+
+.boxVoucherCard { padding:14px 18px 36px; background:#ffdf31; }
+.boxVoucherCard .imgCard { margin-bottom:16px; position:relative; }
+.boxVoucherCard .imgCard .opt { position:absolute; right:9%; bottom:20%; text-align:right; font-family:'Cinzel'; font-weight:700; }
+.boxVoucherCard .imgCard .opt .gram { padding-right:20px; background:url('../images/content/bgGram.png') right 40px no-repeat; background-size:17px auto; font-size:51px; letter-spacing:-1px; }
+.boxVoucherCard .listDetail .title { color:#000; }
+.boxVoucherCard .listDetail .cont { color:#000; }
+.boxVoucherCard .listDetail li:last-child { font-weight:700; }
 
 .iconTradeDigital { height:15px; margin:30px 0 12px; background:url('../images/common/iconTradeDigital.png') center center no-repeat; background-size:auto 15px; }
 
@@ -1051,6 +1110,47 @@ h1 .tokenSelect { margin:0 auto; }
 .boxDigitalPawn li .itemList { display:flex; margin-top:35px; }
 .boxDigitalPawn li .itemList .item { flex:1; text-align:center; }
 .boxDigitalPawn li .itemList .item i { width:34px; margin-bottom:10px; }
-.boxDigitalPawn li .itemList .item .title { font-size:15px; font-weight:700; line-height:19px; }
+.boxDigitalPawn li .itemList .item .title { font-size:15px; font-weight:700; line-height:19px; white-space:nowrap; }
 .boxDigitalPawn li a { height:56px; display:block; background:#2750f2; text-align:center; line-height:56px; color:#fff; font-size:17px; font-weight:700; }
 .boxDigitalPawn li a:after { content:''; width:13px; height:16px; margin-top:-2px; margin-left:6px; display:inline-block; background:url('../images/main/iconDetailPen.png') no-repeat; background-size:100% auto; vertical-align:middle; }
+
+
+/* Web Certify */
+#container.pageWeb #header { padding:34px 15px; }
+#container.pageWeb #wrap { padding:0 15px 30px; }
+#container.pageWeb .boxContents { min-height:500px; display:flex; align-items:center; justify-content:center; flex-direction:column; border-top:1px solid #000; }
+#container.pageWeb .boxContents .title { width:100%; margin-bottom:50px; text-align:center; font-size:20px; font-weight:700; }
+#container.pageWeb .boxContents .title.type--user { padding-top:70px; background:url('../images/content/imgWebUser.png') center top no-repeat; background-size:auto 37px; }
+#container.pageWeb .boxContents .title.type--gold { padding-top:70px; background:url('../images/content/imgWebGold.png') center top no-repeat; background-size:auto 37px; }
+#container.pageWeb .boxContents .title.type--agree { padding-top:75px; background:url('../images/content/imgWebAgree.png') center top no-repeat; background-size:auto 54px; }
+#container.pageWeb .boxContents .subject { margin-bottom:40px; font-size:15px; line-height:22px; }
+#container.pageWeb .boxContents .boxInfoUser { width:100%; margin-bottom:10px; }
+#container.pageWeb .boxContents .boxInfoUser > div { height:50px; margin:0 18px; background:#f2f4f6; border-radius:5px; text-align:center; line-height:46px; font-size:17px; }
+#container.pageWeb .boxContents .goldTable dl { width:304px; margin:0 auto; overflow:hidden; }
+#container.pageWeb .boxContents .goldTable dl dt { width:108px; height:50px; margin-top:6px; padding-left:22px; float:left; background:#d4d8db; border-top-left-radius:5px; border-bottom-left-radius:5px; line-height:50px; font-weight:500; font-size:17px; }
+#container.pageWeb .boxContents .goldTable dl dd { margin-left:108px; margin-top:6px; height:50px; padding-left:25px; background:#f2f4f6; border-top-right-radius:5px; border-bottom-right-radius:5px; line-height:50px; font-size:17px; }
+#container.pageWeb .boxContents .goldTable dl dt:first-of-type,
+#container.pageWeb .boxContents .goldTable dl dd:first-of-type { margin-top:0; }
+
+
+/* Popup Bank Select */
+.popBankSelect .search { margin-bottom:24px; }
+.popBankSelect .search input.inputBasic { padding-left:40px; background:url('../images/common/iconSearchBlack.png') 18px center no-repeat; background-size:15px auto; }
+
+.popBankSelect .listBank { overflow:hidden; }
+.popBankSelect .listBank li { width:50%; padding:8px 0; float:left; }
+.popBankSelect .listBank li:nth-child(2n+1) { padding-right:8px; }
+.popBankSelect .listBank li:nth-child(2n+2) { padding-left:8px; }
+.popBankSelect .listBank li a { height:50px; display:block; padding-left:48px; background-repeat:no-repeat; background-size:23px auto; background-position:19px center; background-color:#f8f9fa; line-height:50px; }
+.popBankSelect .listBank li a.icon--bank1 { background-image:url('../images/content/iconBank1.png'); }
+.popBankSelect .listBank li a.icon--bank2 { background-image:url('../images/content/iconBank2.png'); }
+.popBankSelect .listBank li a.icon--bank3 { background-image:url('../images/content/iconBank3.png'); }
+.popBankSelect .listBank li a.icon--bank4 { background-image:url('../images/content/iconBank4.png'); }
+.popBankSelect .listBank li a.icon--bank5 { background-image:url('../images/content/iconBank5.png'); }
+.popBankSelect .listBank li a.icon--bank6 { background-image:url('../images/content/iconBank6.png'); }
+.popBankSelect .listBank li a.icon--bank7 { background-image:url('../images/content/iconBank7.png'); }
+.popBankSelect .listBank li a.icon--bank8 { background-image:url('../images/content/iconBank8.png'); }
+.popBankSelect .listBank li a.icon--bank9 { background-image:url('../images/content/iconBank9.png'); }
+.popBankSelect .listBank li a.icon--bank10 { background-image:url('../images/content/iconBank10.png'); }
+.popBankSelect .listBank li a.icon--bank11 { background-image:url('../images/content/iconBank11.png'); }
+.popBankSelect .listBank li a.icon--bank12 { background-image:url('../images/content/iconBank12.png'); }
