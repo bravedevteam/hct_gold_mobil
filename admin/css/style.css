@@ -81,6 +81,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 
 .dis--inBlock { display:inline-block !important; }
 
+.mb20 { margin-bottom:20px !important; }
+
 .ml50 { margin-left:50px !important; }
 .ml100 { margin-left:100px !important; }
 
