@@ -19,11 +19,11 @@
 				<ul>
 					<li><a href="#" class="icon1">대시보드</a></li>
 					<li><a href="#" class="icon2">회원관리</a></li>
-					<li><a href="#" class="icon3">금 예치/인출</a></li>
+					<li><a href="#" class="icon3">금 보관/인출</a></li>
 					<li><a href="#" class="icon4">상품관리</a></li>
 					<li><a href="#" class="icon5">디지털전당포</a></li>
-					<li><a href="#" class="icon6">자산교환</a></li>
-					<li class="on"><a href="#" class="icon7">지갑관리</a></li>
+					<li><a href="#" class="icon6">바우처판매</a></li>
+					<li class="on"><a href="#" class="icon7">입출금관리</a></li>
 					<li><a href="#" class="icon8">운영관리</a></li>
 					<li><a href="#" class="icon9">시스템관리</a></li>
 					<li><a href="#" class="icon10">정산관리</a></li>
@@ -35,17 +35,18 @@
 			</div>
 		</header>
 		<div id="lnb">
-			<h2 class="icon7">지갑 관리</h2>
+			<h2 class="icon7">입출금 관리</h2>
 			<ul>
-				<li><a href="#"><span>입출금 관리</span></a></li>
-				<li class="on"><a href="#"><span>대금 입지급관리</span></a></li>
+				<li><a href="#"><span>자산현황</span></a></li>
+				<li class="on"><a href="#"><span>코인 입출금</span></a></li>
+				<li><a href="#"><span>대금 입지급관리</span></a></li>
 				<li><a href="#"><span>수수료/한도 관리</span></a></li>
 			</ul>
 		</div>
 		<div id="container">
 			<div class="titCont">
-				<div class="title">대금 입지급관리</div>
-				<div class="info">메인 > <a href="#">지갑관리</a> > <a href="#">대금 입지급관리</a></div>
+				<div class="title">입출금 관리</div>
+				<div class="info">메인 > <a href="#">지갑관리</a> > <a href="#">입출금 관리</a></div>
 			</div>
 			<div class="wrapCont">
 				<div class="boxSearch">
@@ -56,11 +57,19 @@
 					<div class="inputPicker">
 						<input type="text" class="datepicker" placeholder="종료일">
 					</div>
-					<input type="text" placeholder="보내는 기업" class="searchText" />
-          <input type="text" placeholder="받는 기업" class="searchText" />
+					<select>
+						<option>입출금 구분</option>
+					</select>
+					<select>
+						<option>자산구분</option>
+					</select>
+					<select>
+						<option>회원구분</option>
+					</select>
+					<input type="text" placeholder="아이디 / 회원명" class="searchText" />
 					<div class="btn">
 						<a href="#" class="btnReset">초기화</a>
-						<a href="#" class="btnSearch">조회</a>
+						<a href="#" class="btnSearch">검색</a>
 					</div>
 				</div>
 				<div class="boxCont">
@@ -75,66 +84,94 @@
 								<col width="100" />
 								<col width="100" />
 								<col width="100" />
+								<col width="100" />
+								<col width="400" />
 							</colgroup>
 							<thead>
 								<tr>
-									<th>신청일시</th>
-									<th>지급구분</th>
+									<th>입출금 구분</th>
 									<th>자산구분</th>
-									<th>지급수량</th>
-									<th>보내는 기업</th>
-									<th>받는 기업</th>
+									<th>신청일시</th>
+									<th>회원구분</th>
+									<th>아이디(이메일)</th>
+									<th>회원명</th>
+									<th>신청수량</th>
+									<th>수수료</th>
 									<th>상태</th>
-									<th>상태</th>
+									<th>관리</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
+									<td>출금</td>
+									<td>ARW</td>
 									<td>2020-01-01<br />10:00:00</td>
-									<td>대금지급</td>
-									<td>금바우처</td>
+                  <td>개인</td>
+                  <td>jason@xtock.io</td>
+                  <td>홍길동</td>
                   <td>100,000</td>
-                  <td>기업 1</td>
-                  <td>기업 2</td>
-                  <td>완료</td>
+									<td>10</td>
+									<td>승인대기</td>
 									<td>
-                    <a href="#" class="btnBasic">내역보기</a>
+										<a href="#" class="btnBasic open--popup" data-pop="popSubmit">승인</a>
+										<a href="#" class="btnBasic open--popup" data-pop="popCancel">취소</a>
+                    <a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
                   </td>
 								</tr>
 								<tr>
+									<td>출금</td>
+									<td>ARW</td>
 									<td>2020-01-01<br />10:00:00</td>
-									<td>대금지급</td>
-									<td>금바우처</td>
-                  <td>100</td>
-                  <td>기업 1</td>
-                  <td>기업 2</td>
-                  <td>완료</td>
+                  <td>개인</td>
+                  <td>jason@xtock.io</td>
+                  <td>홍길동</td>
+                  <td>100,000</td>
+									<td>10</td>
+									<td>처리중</td>
 									<td>
-                    <a href="#" class="btnBasic">내역보기</a>
+                    <a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
                   </td>
 								</tr>
 								<tr>
+									<td>출금</td>
+									<td>ARW</td>
 									<td>2020-01-01<br />10:00:00</td>
-									<td>대금지급</td>
-									<td>금바우처</td>
-                  <td>100</td>
+                  <td>기업</td>
+                  <td>jason@xtock.io</td>
                   <td>기업 1</td>
-                  <td>기업 2</td>
-                  <td>완료</td>
+                  <td>100,000</td>
+									<td>10</td>
+									<td>출금완료</td>
 									<td>
-                    <a href="#" class="btnBasic">내역보기</a>
+                    <a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
                   </td>
 								</tr>
 								<tr>
+									<td>출금</td>
+									<td>ARW</td>
 									<td>2020-01-01<br />10:00:00</td>
-									<td>대금지급</td>
-									<td>금바우처</td>
-                  <td>100</td>
+                  <td>기업</td>
+                  <td>jason@xtock.io</td>
                   <td>기업 1</td>
-                  <td>기업 2</td>
-                  <td>완료</td>
+                  <td>100,000</td>
+									<td>-</td>
+									<td>출금취소</td>
 									<td>
-                    <a href="#" class="btnBasic">내역보기</a>
+                    <a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+                  </td>
+								</tr>
+								<tr>
+									<td>출금</td>
+									<td>ARW</td>
+									<td>2020-01-01<br />10:00:00</td>
+                  <td>기업</td>
+                  <td>jason@xtock.io</td>
+                  <td>기업 1</td>
+                  <td>100,000</td>
+									<td>-</td>
+									<td>입금완료</td>
+									<td>
+                    <a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
                   </td>
 								</tr>
 							</tbody>
@@ -144,6 +181,71 @@
 			</div>
 		</div>
 	</section>
+
+	<div id="popSubmit" class="popupBasic">
+		<div class="topArea">
+			<div class="title">확인</div>
+		</div>
+		<div class="contArea">
+			<div class="txt">
+				출금요청을 승인 하시겠습니까?
+				<span>(승인 시, 출금이 정상적으로 진행됩니다.)</span>
+			</div>
+		</div>
+		<div class="btn">
+			<button type="button" class="btnCancel close">취소</button>
+			<button type="button">확인</button>
+		</div>
+	</div>
+
+	<div id="popCancel" class="popupBasic">
+		<div class="topArea">
+			<div class="title">확인</div>
+		</div>
+		<div class="contArea">
+			<div class="txt">
+				출금요청을 취소 하시겠습니까?
+				<span>(승인 시, 출금 요청건이 취소됩니다.)</span>
+			</div>
+			<textarea placeholder="사유입력"></textarea>
+		</div>
+		<div class="btn">
+			<button type="button" class="btnCancel close">취소</button>
+			<button type="button">확인</button>
+		</div>
+	</div>
+
+	<div id="popList" class="popupBasic">
+		<div class="topArea">
+			<div class="title">출금내역</div>
+		</div>
+		<div class="contArea">
+			<table class="tableBasic type--vertical">
+				<colgroup>
+					<col width="174" />
+					<col width="500" />
+				</colgroup>
+				<tr>
+					<th>상태</th>
+					<td>승인대기</td>
+				</tr>
+				<tr>
+					<th>받는 지갑주소</th>
+					<td>0x018dbD3B308B468CCFE83b890B32 <a href="#">복사</a></td>
+				</tr>
+				<tr>
+					<th>TXID</th>
+					<td>-</td>
+				</tr>
+			</table>
+		</div>
+		<div class="btn">
+			<button type="button" class="close">닫기</button>
+		</div>
+	</div>
+
+	<div id="dim"></div>
+	
 	<script>
 	$( function() {
 		$( ".datepicker" ).datepicker({

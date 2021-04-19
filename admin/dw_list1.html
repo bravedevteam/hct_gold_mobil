@@ -19,11 +19,11 @@
 				<ul>
 					<li><a href="#" class="icon1">대시보드</a></li>
 					<li><a href="#" class="icon2">회원관리</a></li>
-					<li><a href="#" class="icon3">금 예치/인출</a></li>
+					<li><a href="#" class="icon3">금 보관/인출</a></li>
 					<li><a href="#" class="icon4">상품관리</a></li>
 					<li><a href="#" class="icon5">디지털전당포</a></li>
-					<li><a href="#" class="icon6">자산교환</a></li>
-					<li class="on"><a href="#" class="icon7">지갑관리</a></li>
+					<li><a href="#" class="icon6">바우처판매</a></li>
+					<li class="on"><a href="#" class="icon7">입출금관리</a></li>
 					<li><a href="#" class="icon8">운영관리</a></li>
 					<li><a href="#" class="icon9">시스템관리</a></li>
 					<li><a href="#" class="icon10">정산관리</a></li>
@@ -35,193 +35,651 @@
 			</div>
 		</header>
 		<div id="lnb">
-			<h2 class="icon7">지갑 관리</h2>
+			<h2 class="icon7">입출금 관리</h2>
 			<ul>
-				<li class="on"><a href="#"><span>입출금 관리</span></a></li>
+				<li class="on"><a href="#"><span>자산현황</span></a></li>
+				<li><a href="#"><span>코인 입출금</span></a></li>
 				<li><a href="#"><span>대금 입지급관리</span></a></li>
 				<li><a href="#"><span>수수료/한도 관리</span></a></li>
 			</ul>
 		</div>
 		<div id="container">
 			<div class="titCont">
-				<div class="title">입출금 관리</div>
-				<div class="info">메인 > <a href="#">지갑관리</a> > <a href="#">입출금관리</a></div>
+				<div class="title">자산현황</div>
+				<div class="info">메인 > <a href="#">지갑관리</a> > <a href="#">자산현황</a></div>
 			</div>
 			<div class="wrapCont">
-				<div class="boxSearch">
-					<div class="inputPicker">
-						<input type="text" class="datepicker" placeholder="시작일">
+				<div class="topArea_tab">
+          <a href="#" data-role="tab1" class="active">아로와나</a>
+          <a href="#" data-role="tab2">한컴금거래소</a>
+          <a href="#" data-role="tab3">한컴대부</a>
+        </div>
+				<div id="tab1" class="tabArea active">
+					<div class="boxTopInfo">
+						<div class="innerInfo">
+							<div>총 보유량</div>
+							<div>2,000,000 원</div>
+							<div>회사분</div>
+							<div>2,000,000 원</div>
+							<div>회원분</div>
+							<div>2,000,000 원</div>
+						</div>
+						<div class="btn">
+							<a href="#" class="btnReset open--popup" data-pop="popDeposit">입금</a>
+							<a href="#" class="btnSearch open--popup" data-pop="popWithdraw">출금</a>
+						</div>
 					</div>
-					<span class="hyp">~</span>
-					<div class="inputPicker">
-						<input type="text" class="datepicker" placeholder="종료일">
+					<div class="boxCont mb20">
+						<div class="cont">
+							<table class="tableBasic">
+								<colgroup>
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th>자산구분</th>
+										<th>회사분</th>
+										<th>회원분</th>
+										<th>총 보유량</th>
+										<th>실질 잔고</th>
+										<th>예치율</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>금 바우처(g)</td>
+										<td>10,000 g<br />(650,000,000 원)</td>
+										<td>10,000 g<br />(650,000,000 원)</td>
+										<td>20,000 g<br />(1,300,000,000 원)</td>
+										<td>20,000 g<br />(1,300,000,000 원)</td>
+										<td>100%</td>
+									</tr>
+									<tr>
+										<td>아로와나(ARW)</td>
+										<td>50,000,000<br />(5,000,000,000 원)</td>
+										<td>50,000,000<br />(5,000,000,000 원)</td>
+										<td>100,000,000<br />(10,000,000,000 원)</td>
+										<td>50,000,000<br />(5,000,000,000 원)</td>
+										<td>50%</td>
+									</tr>
+									<tr>
+										<td>비트코인(BTC)</td>
+										<td>10<br />(600,000,000 원)</td>
+										<td>10<br />(600,000,000 원)</td>
+										<td>20<br />(1,200,000,000 원)</td>
+										<td>10<br />(600,000,000 원)</td>
+										<td>50%</td>
+									</tr>
+									<tr>
+										<td>이더리움(ETH)</td>
+										<td>1,000<br />(1,800,000,000 원)</td>
+										<td>1,000<br />(1,800,000,000 원)</td>
+										<td>2,000<br />(3,600,000,000 원)</td>
+										<td>1,000<br />(1,800,000,000 원)</td>
+										<td>50%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
-					<select>
-						<option>입출금 구분</option>
-					</select>
-          <select>
-						<option>자산구분</option>
-					</select>
-          <select>
-						<option>회원구분</option>
-					</select>
-					<input type="text" placeholder="아이디 / 회원명" class="searchText" />
-					<div class="btn">
-						<a href="#" class="btnReset">초기화</a>
-						<a href="#" class="btnSearch">조회</a>
+					<div class="boxSearch">
+						<div class="inputPicker">
+							<input type="text" class="datepicker hasDatepicker" placeholder="시작일" id="dp1618808303786">
+						</div>
+						<span class="hyp">~</span>
+						<div class="inputPicker">
+							<input type="text" class="datepicker hasDatepicker" placeholder="종료일" id="dp1618808303787">
+						</div>
+						<input type="text" placeholder="거래ID" class="searchText">
+						<div class="btn">
+							<a href="#" class="btnSearch">조회</a>
+						</div>
+					</div>
+					<div class="boxCont">
+						<div class="cont">
+							<table class="tableBasic">
+								<colgroup>
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="200" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th>일시</th>
+										<th>거래구분</th>
+										<th>자산유형</th>
+										<th>거래수량</th>
+										<th>거래ID</th>
+										<th>상태</th>
+										<th>처리자</th>
+										<th>상세</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>입금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>입금완료</td>
+										<td>-</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>금바우처</td>
+										<td>1,000</td>
+										<td></td>
+										<td>출금중</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>출금완료</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>출금완료</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>출금완료</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>출금완료</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
-				<div class="boxCont">
-					<div class="cont">
-						<table class="tableBasic">
-							<colgroup>
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-                <col width="400" />
-							</colgroup>
-							<thead>
-								<tr>
-									<th>입출금 구분</th>
-									<th>자산구분</th>
-									<th>신청일시</th>
-									<th>회원구분</th>
-									<th>아이디(이메일)</th>
-									<th>회원명</th>
-									<th>신청수량</th>
-									<th>수수료</th>
-									<th>상태</th>
-                  <th>상세</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>출금</td>
-									<td>HGX</td>
-									<td>2020-01-01<br />10:00:00</td>
-                  <td>개인</td>
-                  <td>jason@xtock.io</td>
-                  <td>홍길동</td>
-                  <td>100,000</td>
-									<td>1</td>
-									<td>승인대기</td>
-									<td>
-                    <a href="#" onClick="popSubmit();" class="btnBasic">승인</a>
-                    <a href="#" onClick="popCancel();" class="btnBasic">취소</a>
-                    <a href="#" onClick="popList();" class="btnBasic">내역보기</a>
-                  </td>
-								</tr>
-								<tr>
-									<td>출금</td>
-									<td>BTC</td>
-									<td>2020-01-01<br />10:00:00</td>
-                  <td>개인</td>
-                  <td>jason@xtock.io</td>
-                  <td>홍길동</td>
-                  <td>100</td>
-									<td>0.0001</td>
-									<td>승인대기</td>
-									<td>
-                    <a href="#" onClick="popSubmit();" class="btnBasic">승인</a>
-                    <a href="#" onClick="popCancel();" class="btnBasic">취소</a>
-                    <a href="#" onClick="popList();" class="btnBasic">내역보기</a>
-                  </td>
-								</tr>
-								<tr>
-									<td>출금</td>
-									<td>ETH</td>
-									<td>2020-01-01<br />10:00:00</td>
-                  <td>개인</td>
-                  <td>jason@xtock.io</td>
-                  <td>홍길동</td>
-                  <td>100</td>
-									<td>0.001</td>
-									<td>처리중</td>
-									<td>
-                    <a href="#" class="btnBasic">내역보기</a>
-                  </td>
-								</tr>
-								<tr>
-									<td>출금</td>
-									<td>USDT</td>
-									<td>2020-01-01<br />10:00:00</td>
-                  <td>기업</td>
-                  <td>jason@xtock.io</td>
-                  <td>기업 1</td>
-                  <td>100</td>
-									<td>1</td>
-									<td>출금완료</td>
-									<td>
-                    <a href="#" class="btnBasic">내역보기</a>
-                  </td>
-								</tr>
-								<tr>
-									<td>출금</td>
-									<td>CUST</td>
-									<td>2020-01-01<br />10:00:00</td>
-                  <td>기업</td>
-                  <td>jason@xtock.io</td>
-                  <td>기업 1</td>
-                  <td>100,000</td>
-									<td>100</td>
-									<td>출금취소</td>
-									<td>
-                    <a href="#" class="btnBasic">내역보기</a>
-                  </td>
-								</tr>
-								<tr>
-									<td>입금</td>
-									<td>BTC</td>
-									<td>2020-01-01<br />10:00:00</td>
-                  <td>개인</td>
-                  <td>jason@xtock.io</td>
-                  <td>홍길동</td>
-                  <td>100,000</td>
-									<td></td>
-									<td>입금완료</td>
-									<td>
-                    <a href="#" class="btnBasic">내역보기</a>
-                  </td>
-								</tr>
-							</tbody>
-						</table>
+				<div id="tab2" class="tabArea">
+					<div class="boxCont mb20">
+						<div class="cont">
+							<table class="tableBasic">
+								<colgroup>
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th>자산구분</th>
+										<th>총 발행량</th>
+										<th>현재 보유량</th>
+										<th>누적 보관수량</th>
+										<th>누적 인출 수량</th>
+										<th>누적 판매수량</th>
+										<th>대출 청산수량</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>금 바우처(g)</td>
+										<td>100,000 g<br />(6,500,000,000 원)</td>
+										<td>10,000 g<br />(650,000,000 원)</td>
+										<td>-10,000 g<br />(650,000,000 원)</td>
+										<td>+10,000 g<br />(650,000,000 원)</td>
+										<td>-10,000 g<br />(650,000,000 원)</td>
+										<td>-10,000 g<br />(650,000,000 원)</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="boxSearch">
+						<div class="inputPicker">
+							<input type="text" class="datepicker hasDatepicker" placeholder="시작일" id="dp1618808303786">
+						</div>
+						<span class="hyp">~</span>
+						<div class="inputPicker">
+							<input type="text" class="datepicker hasDatepicker" placeholder="종료일" id="dp1618808303787">
+						</div>
+						<input type="text" placeholder="거래ID" class="searchText">
+						<div class="btn">
+							<a href="#" class="btnSearch">조회</a>
+						</div>
+					</div>
+					<div class="boxCont">
+						<div class="cont">
+							<table class="tableBasic">
+								<colgroup>
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="200" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th>일시</th>
+										<th>거래구분</th>
+										<th>자산유형</th>
+										<th>거래수량</th>
+										<th>거래ID</th>
+										<th>상태</th>
+										<th>처리자</th>
+										<th>상세</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>입금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>입금완료</td>
+										<td>-</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>금바우처</td>
+										<td>1,000</td>
+										<td></td>
+										<td>출금중</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>출금완료</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>출금완료</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>출금완료</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>출금완료</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div id="tab3" class="tabArea">
+					<div class="boxTopInfo">
+						<div class="innerInfo">
+							<div>총 보유량</div>
+							<div>2,000,000 원</div>
+							<div>사용가능</div>
+							<div>2,000,000 원</div>
+							<div>락업</div>
+							<div>2,000,000 원</div>
+						</div>
+						<div class="btn">
+							<a href="#" class="btnReset open--popup" data-pop="popDeposit">입금</a>
+							<a href="#" class="btnSearch open--popup" data-pop="popWithdraw">출금</a>
+						</div>
+					</div>
+					<div class="boxCont mb20">
+						<div class="cont">
+							<table class="tableBasic">
+								<colgroup>
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th>자산구분</th>
+										<th>사용가능</th>
+										<th>락업</th>
+										<th>총 보유량</th>
+										<th>실질 잔고</th>
+										<th>예치율</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>금 바우처(g)</td>
+										<td>10,000 g<br />(650,000,000 원)</td>
+										<td>10,000 g<br />(650,000,000 원)</td>
+										<td>20,000 g<br />(1,300,000,000 원)</td>
+										<td>20,000 g<br />(1,300,000,000 원)</td>
+										<td>100%</td>
+									</tr>
+									<tr>
+										<td>아로와나(ARW)</td>
+										<td>50,000,000<br />(5,000,000,000 원)</td>
+										<td>0<br />(0 원)</td>
+										<td>50,000,000<br />(5,000,000,000 원)</td>
+										<td>50,000,000<br />(5,000,000,000 원)</td>
+										<td>100%</td>
+									</tr>
+									<tr>
+										<td>비트코인(BTC)</td>
+										<td>0<br />(0 원)</td>
+										<td>0<br />(0 원)</td>
+										<td>0<br />(0 원)</td>
+										<td>0<br />(0 원)</td>
+										<td>0%</td>
+									</tr>
+									<tr>
+										<td>이더리움(ETH)</td>
+										<td>0<br />(0 원)</td>
+										<td>0<br />(0 원)</td>
+										<td>0<br />(0 원)</td>
+										<td>0<br />(0 원)</td>
+										<td>0%</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="boxSearch">
+						<div class="inputPicker">
+							<input type="text" class="datepicker hasDatepicker" placeholder="시작일" id="dp1618808303786">
+						</div>
+						<span class="hyp">~</span>
+						<div class="inputPicker">
+							<input type="text" class="datepicker hasDatepicker" placeholder="종료일" id="dp1618808303787">
+						</div>
+						<input type="text" placeholder="거래ID" class="searchText">
+						<div class="btn">
+							<a href="#" class="btnSearch">조회</a>
+						</div>
+					</div>
+					<div class="boxCont">
+						<div class="cont">
+							<table class="tableBasic">
+								<colgroup>
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="200" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th>일시</th>
+										<th>거래구분</th>
+										<th>자산유형</th>
+										<th>거래수량</th>
+										<th>거래ID</th>
+										<th>상태</th>
+										<th>처리자</th>
+										<th>상세</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>입금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>입금완료</td>
+										<td>-</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>금바우처</td>
+										<td>1,000</td>
+										<td></td>
+										<td>출금중</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>출금완료</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>출금완료</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>출금완료</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>출금</td>
+										<td>ARW</td>
+										<td>1,000</td>
+										<td>akdfkadkflakdfjalkfalkfjasdfjasklfja</td>
+										<td>출금완료</td>
+										<td>관리자 1</td>
+										<td>
+											<a href="#" class="btnBasic open--popup" data-pop="popList">내역보기</a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<div id="popSubmit" class="popupBasic">
+
+	<div id="popDeposit" class="popupBasic">
 		<div class="topArea">
-			<div class="title">확인</div>
+			<div class="title">입금하기</div>
 		</div>
 		<div class="contArea">
-			<div class="txt">
-				출금요청을 승인 하시겠습니까?
-				<span>(승인 시, 출금이 정상적으로 진행됩니다.)</span>
-			</div>
+			<table class="tableBasic type--vertical">
+				<colgroup>
+					<col width="174" />
+					<col width="500" />
+				</colgroup>
+				<tr>
+					<th>자산유형</th>
+					<td>
+						<div class="selectBasic">
+							<select>
+								<option>선택</option>
+								<option>금바우처</option>
+								<option>ARW</option>
+								<option>BTC</option>
+								<option>ETH</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>받는 지갑주소</th>
+					<td>0x018dbD3B308B468CCFE83b890B32 <a href="#">복사</a></td>
+				</tr>
+				<tr>
+					<th>QR 코드<br />(받는 주소)</th>
+					<td></td>
+				</tr>
+			</table>
 		</div>
 		<div class="btn">
-			<button type="button" class="btnCancel close">취소</button>
-			<button type="button">확인</button>
+			<button type="button" class="close">닫기</button>
 		</div>
 	</div>
 
-	<div id="popCancel" class="popupBasic">
+	<div id="popWithdraw" class="popupBasic">
 		<div class="topArea">
-			<div class="title">확인</div>
+			<div class="title">출금하기</div>
 		</div>
 		<div class="contArea">
-			<div class="txt">
-				출금요청을 취소 하시겠습니까?
-				<span>(승인 시, 출금 요청건이 취소됩니다.)</span>
-			</div>
-			<textarea placeholder="사유입력"></textarea>
+			<table class="tableBasic type--vertical">
+				<colgroup>
+					<col width="174" />
+					<col width="500" />
+				</colgroup>
+				<tr>
+					<th>자산유형</th>
+					<td>
+						<div class="selectBasic">
+							<select>
+								<option>선택</option>
+								<option>금바우처</option>
+								<option>ARW</option>
+								<option>BTC</option>
+								<option>ETH</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th>보내는 주소</th>
+					<td>ajlsdkfnavnoakdjflaskjdflaskjdflasjflasjdflskfjasdljkfalsk</td>
+				</tr>
+				<tr>
+					<th>지갑 잔고</th>
+					<td>10,000,000</td>
+				</tr>
+				<tr>
+					<th>출금수량</th>
+					<td>
+						<input type="text" value="1,000,000" class="inputBasic" />
+					</td>
+				</tr>
+				<tr>
+					<th>받는 주소</th>
+					<td>
+						<input type="text" value="ajlsdkfnavnoakdjflaskjdflaskjdflasjflasjdflskfjasdljkfalsk" class="inputBasic" />
+					</td>
+				</tr>
+				<tr>
+					<th>OTP 코드</th>
+					<td>
+						<input type="text" value="123456" class="inputBasic" />
+					</td>
+				</tr>
+			</table>
 		</div>
 		<div class="btn">
 			<button type="button" class="btnCancel close">취소</button>
@@ -241,7 +699,11 @@
 				</colgroup>
 				<tr>
 					<th>상태</th>
-					<td>승인대기</td>
+					<td>출금취소</td>
+				</tr>
+				<tr>
+					<th>보내는 지갑주소</th>
+					<td>0x018dbD3B308B468CCFE83b890B32 <a href="#">복사</a></td>
 				</tr>
 				<tr>
 					<th>받는 지갑주소</th>
@@ -249,7 +711,7 @@
 				</tr>
 				<tr>
 					<th>TXID</th>
-					<td>-</td>
+					<td>0x018dbD3B308B468CCFE83b890B32 <a href="#">복사</a></td>
 				</tr>
 			</table>
 		</div>
@@ -264,28 +726,7 @@
 		$( ".datepicker" ).datepicker({
 			dateFormat : "yy.mm.dd"
 		});
-
-		$(".popupBasic .btn button.close").click(function(){
-			$(this).parents(".popupBasic").fadeOut(300);
-			dimClose();
-		});
 	});
-
-	function popSubmit(){
-		$("#popSubmit").fadeIn(300);
-		dimOpen();
-	}
-	function popCancel(){
-		$("#popCancel").fadeIn(300);
-		dimOpen();
-	}
-	function popList(){
-		$("#popList").fadeIn(300);
-		dimOpen();
-	}
-
-	function dimOpen(){ $("#dim").fadeIn(300); }
-	function dimClose(){ $("#dim").fadeOut(300); }
 	</script>
 </body>
 </html>
