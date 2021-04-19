@@ -195,6 +195,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .mb45 { margin-bottom:45px !important; }
 .mb50 { margin-bottom:50px !important; }
 .mb60 { margin-bottom:60px !important; }
+.mb70 { margin-bottom:70px !important; }
 
 .mt0 { margin-top:0px !important; }
 .mt5 { margin-top:5px !important; }
@@ -251,7 +252,7 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 .bgRed { background:#f00 !important; }
 .bgBlue { background:#00f !important; }
 
-.ft15 { font-size:15px !important; }
+.ft15 { font-size:15px !important; line-height:1.8em !important; }
 
 .top--btn { width:100%; position:absolute; left:0; top:0; }
 .top--btn button { width:100%; height:35px; position:absolute; left:0; top:0; font-size:0; text-indent:-99999px; }
@@ -386,3 +387,9 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .boxCheckBlue input { position:absolute; left:-99999px; top:0; opacity:0; }
 .boxCheckBlue label { padding-left:26px; float:left; background:url('../images/common/iconCheckBlue.png') left center no-repeat; background-size:21px auto; font-size:15px; line-height:20px; }
 .boxCheckBlue input:checked + label { background-image:url('../images/common/iconCheckBlue_on.png'); }
+
+.basicPopup { padding:30px 20px; position:fixed; left:23px; right:23px; top:50%; display:none; border-radius:10px; background:#fff; transform:translateY(-50%); z-index:25; }
+.basicPopup .cont { text-align:center; font-size:17px; font-weight:700; }
+.basicPopup .cont.icon--complete { margin-bottom:30px; padding-top:82px; background:url('../images/common/iconExMarkBlack.png') center 10px no-repeat; background-size:36px; }
+.basicPopup .boxBtn button:first-child { margin-right:4px; }
+.basicPopup .boxBtn button:last-child { margin-left:4px; }

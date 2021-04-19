@@ -724,6 +724,14 @@ h1 .tokenSelect { margin:0 auto; }
 .boxCheckLogin label { padding-left:26px; float:left; background:url('../images/common/iconCheckBlue.png') left center no-repeat; background-size:21px auto; font-size:15px; line-height:20px; }
 .boxCheckLogin input:checked + label { background-image:url('../images/common/iconCheckBlue_on.png'); }
 .boxCheckLogin .btnLostPass { line-height:20px; color:#6c6c6c; font-size:15px; }
+.boxCheckLogin .btnLostPass+.btnLostPass { margin-left:28px; position:relative; }
+.boxCheckLogin .btnLostPass+.btnLostPass:before { content:''; width:1px; height:15px; position:absolute; left:-14px; top:50%; margin-top:-7px; background:#6c6c6c; }
+
+.btnOtherLogin { width:100%; height:50px; padding-left:64px; margin-top:8px; position:relative; background-color:#f2f4f6; background-position:18px center; background-size:29px auto; background-repeat:no-repeat; border-radius:5px; font-size:15px; line-height:15px; color:#000; text-align:left; }
+.btnOtherLogin.type--touch { background-image:url('../images/common/iconLogin1.png'); }
+.btnOtherLogin.type--password { background-image:url('../images/common/iconLogin2.png'); }
+.btnOtherLogin.type--security { background-image:url('../images/common/iconLogin3.png'); }
+.btnOtherLogin:after { content:''; width:10px; height:10px; position:absolute; right:18px; top:50%; margin-top:-5px; background:url('../images/common/iconArrow.png') center center no-repeat; background-size:100% auto; }
 
 .selectAttach { border:1px solid #f2f4f6; border-radius:5px; }
 .selectAttach > .title { height:65px; position:relative; padding:0 20px; line-height:65px; font-size:17px; }
@@ -979,23 +987,30 @@ h1 .tokenSelect { margin:0 auto; }
 
 /* Trade Voucher */
 .boxTradeHidden input { position:absolute; left:-99999px; top:0; opacity:0; }
-.boxTradeHidden label { max-height:90px; padding-bottom:30px; display:block; position:relative; transition:all .3s ease; overflow:hidden; }
+.boxTradeHidden label { max-height:85px; padding-bottom:10px; display:block; position:relative; transition:all .3s ease; overflow:hidden; }
 .boxTradeHidden label:last-of-type { padding-bottom:0; }
 .boxTradeHidden label:before { content:''; width:20px; height:20px; position:absolute; left:20px; top:28px; border-radius:20px; border:1px solid #2750f2; background:#fff; z-index:10; }
 .boxTradeHidden input[type="radio"]:checked + label { max-height:500px; }
 .boxTradeHidden input[type="radio"]:checked + label:after { content:''; width:12px; height:12px; position:absolute; left:25px; top:33px; border-radius:12px; background:#2750f2; z-index:11; }
 .boxTradeHidden label .guide-text { max-height:0; overflow:hidden; transition:max-height .3s ease; }
 .boxTradeHidden input[type="radio"]:checked + label .guide-text { max-height:500px; }
-.boxTradeHidden .hiddenBox .item { height:75px; padding:0 26px; margin-bottom:10px; position:relative; display:block; border-radius:20px; overflow:hidden; transition:all .3s ease; box-shadow: 0 7px 5px 0 rgba(48, 68, 160, 0.44); }
-.boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--hancom .item { height:152px; }
-.boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--arowana .item { height:180px; }
+.boxTradeHidden .hiddenBox .item { height:75px; padding:0 26px; margin-bottom:10px; position:relative; display:block; border-radius:20px; overflow:hidden; transition:all .3s ease; }
+.boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--hancom .item { height:152px; box-shadow: 0 7px 5px 0 rgba(48, 68, 160, 0.44); }
+.boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--account .item { height:250px; box-shadow: 0 7px 5px 0 rgba(39, 80, 242, 0.47); }
+.boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--arowana .item { height:180px; box-shadow: 0 7px 5px 0 rgba(39, 80, 242, 0.47); }
 .boxTradeHidden .hiddenBox.type--hancom .item { background:#092159; }
+.boxTradeHidden .hiddenBox.type--account .item,
 .boxTradeHidden .hiddenBox.type--arowana .item { background:#2750f2; }
 .boxTradeHidden .hiddenBox .item .top { height:75px; padding:0 8px 0 36px; overflow:hidden; line-height:75px; }
 .boxTradeHidden .hiddenBox.type--arowana .item .top { position:absolute; left:26px; right:26px; background:#2750f2; z-index:2; }
 .boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--arowana .item .top { display:none; }
 .boxTradeHidden .hiddenBox .item .top .title { float:left; color:#fff; font-size:20px; }
 .boxTradeHidden .hiddenBox.type--hancom .item .top .title { width:129px; height:100%; background:url('../images/content/imgVoucherHancom.png') left center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+.boxTradeHidden .hiddenBox.type--account .item > .cont { padding-top:20px; border-top:1px solid #1735aa; }
+.boxTradeHidden .hiddenBox.type--account .item .listDetail li .title,
+.boxTradeHidden .hiddenBox.type--account .item .listDetail li .cont { font-size:15px; color:#fff; }
+.boxTradeHidden .hiddenBox.type--account .item .listDetail li:first-child .title { color:#ffd800; font-weight:700; }
+.boxTradeHidden .hiddenBox.type--account .item .listDetail li:first-child .cont { color:#ffd800; font-weight:700; font-size:20px; }
 .boxTradeHidden .hiddenBox.type--arowana .item .top .title { padding-left:26px; background:url('../images/content/iconVoucherARW.png') left center no-repeat; background-size:18px auto; font-weight:700; }
 .boxTradeHidden .hiddenBox .item .top .subject { float:right; text-align:right; color:#fff; font-size:15px; }
 .boxTradeUse { margin-bottom:8px; padding:24px 26px 32px; background:#29c1cf; border-radius:20px; box-shadow: 0 7px 5px 0 rgba(41, 193, 207, 0.2); text-align:center; }
@@ -1154,3 +1169,16 @@ h1 .tokenSelect { margin:0 auto; }
 .popBankSelect .listBank li a.icon--bank10 { background-image:url('../images/content/iconBank10.png'); }
 .popBankSelect .listBank li a.icon--bank11 { background-image:url('../images/content/iconBank11.png'); }
 .popBankSelect .listBank li a.icon--bank12 { background-image:url('../images/content/iconBank12.png'); }
+
+
+.boxTouch { width:100%; margin:100px 0; padding-top:110px; background:url('../images/common/iconTouch.png') center top no-repeat; background-size:68px auto; text-align:center; }
+.boxTouch .title { margin-bottom:28px; font-size:20px; font-weight:700; }
+.boxTouch .subject { font-size:17px; }
+
+.boxPassword { padding:70px 0; text-align:center; }
+.boxPassword > .title { margin-bottom:90px; font-size:20px; font-weight:700; color:#000; }
+.inputPass { width:276px; margin:0 auto 18px; overflow:hidden; }
+.inputPass .title { margin-bottom:20px; font-size:17px; color:#000; }
+.inputPass span { float:left; position:relative; }
+.inputPass span:before { content:''; width:12px; height:12px; margin:-2px 0 0 -7px; position:absolute; left:50%; top:50%; border-radius:50%; background:#d4d8db; z-index:1; }
+.inputPass input { width:46px; height:46px; position:relative; border:0; background:transparent; text-align:center; font-size:46px; color:#2750f2; z-index:2; }
