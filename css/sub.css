@@ -1022,6 +1022,17 @@ h1 .tokenSelect { margin:0 auto; }
 .boxTradeHidden .hiddenBox.type--arowana .item .cont .price { height:auto; margin-bottom:4px; border-top:0; font-size:18px; word-break:keep-all; }
 .boxTradeHidden .hiddenBox.type--arowana .item .cont .bottomPrice { color:rgba(255,255,255,.6); }
 
+.boxCustomer { margin-top:40px; padding:30px 26px; background:#f2f4f6; border-radius:5px; }
+.boxCustomer .top { padding-right:2px; }
+.boxCustomer .top:after { content:''; display:block; clear:both; }
+.boxCustomer .top .title { float:left; font-size:17px; font-weight:700; color:#000; }
+.boxCustomer .top .tel { text-align:right; }
+.boxCustomer .top .tel span { display:block; color:#999; font-size:13px; }
+.boxCustomer .top .tel span:first-child { font-size:20px; font-weight:700; color:#2750f2; }
+.boxCustomer .top .tel span:first-child:before { content:''; width:18px; height:18px; margin:-4px 4px 0 0; display:inline-block; background:url('../images/content/iconTel.png') no-repeat; background-size:18px auto; vertical-align:middle; }
+.boxCustomer > .cont { margin-top:16px; padding-top:10px; border-top:1px solid #999; }
+.boxCustomer .listDetail .cont { color:#2c2c2c; }
+
 .boxVoucherCard { padding:14px 18px 36px; background:#ffdf31; }
 .boxVoucherCard .imgCard { margin-bottom:16px; position:relative; }
 .boxVoucherCard .imgCard .opt { position:absolute; right:9%; bottom:20%; text-align:right; font-family:'Cinzel'; font-weight:700; }
