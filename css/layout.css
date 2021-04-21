@@ -372,7 +372,7 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 
 .bottomLayer.with--footer .inner { padding-bottom:80px; }
 
-.fullLayer { width:100%; height:100%; display:; position:fixed; left:0; top:0; background:#fff; z-index:21; }
+.fullLayer { width:100%; height:100%; display:none; position:fixed; left:0; top:0; background:#fff; z-index:21; }
 .fullLayer .topArea { height:86px; position:absolute; left:15px; top:0; right:15px; line-height:86px; }
 .fullLayer .topArea .btnClose { width:32px; height:32px; position:absolute; left:-10px; top:50%; background:url('../images/common/iconCloseBlack.png') center center no-repeat; background-size:16px auto; font-size:0; text-indent:-99999px; transform:translateY(-50%); }
 .fullLayer .topArea .title { margin:0; font-size:15px; text-align:center; font-size:17px; font-weight:700; }
