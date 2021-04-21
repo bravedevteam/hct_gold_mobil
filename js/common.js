@@ -83,11 +83,13 @@ $(function(){
 	$(".layer--open").click(function(e){
 		e.preventDefault();
 		var target = $(this).attr("data-pop");
-
-		$("#"+target).addClass("active");
-
-		if(!$(this).hasClass("noDim")){
+		if($("#"+target).hasClass("fullLayer")){
+			$("#"+target).fadeIn(500);
+		}else if($("#"+target).hasClass("bottomLayer")){
+			$("#"+target).addClass("active");
 			dim_open();
+		}else{
+			$("#"+target).addClass("active");
 		}
 	});
 
@@ -106,6 +108,7 @@ $(function(){
 	}
 	function dim_close(){
 		$("body").css("overflow", "auto");
+		$(".fullLayer").fadeOut(500);
 		$(".bottomLayer").removeClass("active");
 		$(".textLayer").removeClass("active");
 		$("#dim").fadeOut(500);
