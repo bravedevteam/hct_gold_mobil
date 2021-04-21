@@ -19,14 +19,13 @@
 				<ul>
 					<li><a href="#" class="icon1">대시보드</a></li>
 					<li><a href="#" class="icon2">회원관리</a></li>
-					<li class="on"><a href="#" class="icon3">금 예치/인출</a></li>
+					<li class="on"><a href="#" class="icon3">금 보관/인출</a></li>
 					<li><a href="#" class="icon4">상품관리</a></li>
 					<li><a href="#" class="icon5">디지털전당포</a></li>
-					<li><a href="#" class="icon6">자산교환</a></li>
-					<li><a href="#" class="icon7">지갑관리</a></li>
+					<li><a href="#" class="icon6">바우처판매</a></li>
+					<li><a href="#" class="icon7">입출금관리</a></li>
 					<li><a href="#" class="icon8">운영관리</a></li>
 					<li><a href="#" class="icon9">시스템관리</a></li>
-					<li><a href="#" class="icon10">정산관리</a></li>
 				</ul>
 			</div>
 			<div class="topInfo">
@@ -35,18 +34,18 @@
 			</div>
 		</header>
 		<div id="lnb">
-			<h2 class="icon3">금 예치/인출</h2>
+			<h2 class="icon3">금 보관/인출</h2>
 			<ul>
-				<li class="on"><a href="#"><span>예치관리</span></a></li>
-				<li><a href="#"><span>인출관리</span></a></li>
+				<li class="on"><a href="#"><span>금 보관</span></a></li>
+				<li><a href="#"><span>금 인출</span></a></li>
 				<li><a href="#"><span>수수료/한도 관리</span></a></li>
         <li><a href="#"><span>금시세관리</span></a></li>
 			</ul>
 		</div>
 		<div id="container">
 			<div class="titCont">
-				<div class="title">예치 등록</div>
-				<div class="info">메인 > <a href="#">예치/인출 관리</a> > <a href="#">금 예치관리</a> > <a href="#">예치 등록</a></div>
+				<div class="title">금보관 등록</div>
+				<div class="info">메인 > <a href="#">금 보관/인출</a> > <a href="#">금 보관</a> > <a href="#">금보관 등록</a></div>
 			</div>
 			<div class="wrapCont">
 				<div class="boxCont">
@@ -111,7 +110,7 @@
 					</table>
 				</div>
 				<div class="boxCont">
-					<h4 class="title">예치 정보</h4>
+					<h4 class="title">보관 정보</h4>
 					<table class="tableBasic type--vertical">
 						<colgroup>
 							<col width="100" />
@@ -136,6 +135,10 @@
 							<td>
 								<div class="row is--half">
 									<input type="text" class="inputBasic" value="010-1234-5678" />
+									<div class="ta-l ml10">
+										<a href="#" class="btnBasic">동의서 전송</a>
+										<a href="#" class="btnBasic">동의 저장</a>
+									</div>
 								</div>
 							</td>
 						</tr>
@@ -194,6 +197,15 @@
 							<th>예치 평가금액</th>
 							<td>6,573,600 원</td>
 						</tr>
+						<tr>
+							<th>금 감정 동의</th>
+							<td>
+								<input type="checkbox" id="chk_agree" />
+								<label for="chk_agree">동의함. (2021.04.21 11:23)</label>
+							</td>
+							<th></th>
+							<td></td>
+						</tr>
 					</table>
 				</div>
 				<div class="boxCont">
@@ -204,16 +216,12 @@
 							<col width="700" />
 						</colgroup>
 						<tr>
-							<th>예치계약서</th>
+							<th>보관계약서</th>
 							<td class="ta-l"><button type="button" class="btnGray">출력하기</button></td>
 						</tr>
 						<tr>
-							<th>상품 예치확인서</th>
+							<th>상품 보관확인서</th>
 							<td class="ta-l"><button type="button" class="btnGray">출력하기</button></td>
-						</tr>
-						<tr>
-							<th>상품 이미지</th>
-							<td class="ta-l"><button type="button" class="btnGray">업로드</button></td>
 						</tr>
 					</table>
 				</div>
