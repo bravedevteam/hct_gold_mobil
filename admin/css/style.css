@@ -81,6 +81,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 
 .dis--inBlock { display:inline-block !important; }
 
+.mt20 { margin-top:20px !important; }
+
 .mb20 { margin-bottom:20px !important; }
 
 .ml10 { margin-left:10px !important; }
@@ -368,3 +370,7 @@ label+input+label { margin-left:30px; }
 .boxStamp .date { font-size:12px; color:#999; }
 .boxStamp .name { position:relative; font-size:20px; font-weight:500; z-index:2; }
 .boxStamp .imgStamp { position:absolute; left:-40px; top:0; z-index:1; }
+
+.guide-text { width:100%; margin-top:10px; font-size:15px; }
+.guide-text.imp ul li { position:relative; padding-left:10px; }
+.guide-text.imp ul li:before { content:'*'; position:absolute; left:0; top:0; }
