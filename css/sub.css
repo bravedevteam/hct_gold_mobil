@@ -1211,6 +1211,6 @@ h1 .tokenSelect { margin:0 auto; }
 .boxGoldList table tr td span.color-red { color:#f72c1f !important; }
 .boxGoldList table tr td span.color-blue { color:#1f5de3 !important; }
 .boxGoldList table tr td span i { font-size:10px; font-style: normal; }
-.boxGoldList .btn { margin-top:40px; }
+.boxGoldList .btn { margin:40px 0; }
 .boxGoldList .btn .btnMore { height:58px; display:block; border-radius:5px; background:#f2f4f6; text-align:center; line-height:58px; font-size:15px; }
 .boxGoldList .btn .btnMore:after { content:''; width:11px; height:7px; margin-left:8px; display:inline-block; background:url('../images/common/iconArrowMore.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }

@@ -376,7 +376,7 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .fullLayer .topArea { height:86px; position:absolute; left:15px; top:0; right:15px; line-height:86px; }
 .fullLayer .topArea .btnClose { width:32px; height:32px; position:absolute; left:-10px; top:50%; background:url('../images/common/iconCloseBlack.png') center center no-repeat; background-size:16px auto; font-size:0; text-indent:-99999px; transform:translateY(-50%); }
 .fullLayer .topArea .title { margin:0; font-size:15px; text-align:center; font-size:17px; font-weight:700; }
-.fullLayer .inner { height:100%; padding:0 15px; margin-top:86px; overflow:auto; }
+.fullLayer .inner { height:calc(100% - 86px); padding:0 15px; margin-top:86px; overflow:auto; }
 
 .textLayer { display:none; padding:36px 25px 28px; position:absolute; left:30px; top:0; right:30px; background:#fff; border-radius:5px; border:1px solid #999; z-index:21; }
 .textLayer.active { display:block; }
