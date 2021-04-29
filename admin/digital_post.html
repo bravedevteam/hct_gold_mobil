@@ -19,14 +19,13 @@
 				<ul>
 					<li><a href="#" class="icon1">대시보드</a></li>
 					<li><a href="#" class="icon2">회원관리</a></li>
-					<li><a href="#" class="icon3">금 예치/인출</a></li>
+					<li><a href="#" class="icon3">금 보관/인출</a></li>
 					<li><a href="#" class="icon4">상품관리</a></li>
 					<li class="on"><a href="#" class="icon5">디지털전당포</a></li>
-					<li><a href="#" class="icon6">자산교환</a></li>
-					<li><a href="#" class="icon7">지갑관리</a></li>
+					<li><a href="#" class="icon6">바우처판매</a></li>
+					<li><a href="#" class="icon7">입출금관리</a></li>
 					<li><a href="#" class="icon8">운영관리</a></li>
 					<li><a href="#" class="icon9">시스템관리</a></li>
-					<li><a href="#" class="icon10">정산관리</a></li>
 				</ul>
 			</div>
 			<div class="topInfo">
@@ -40,6 +39,7 @@
 				<li><a href="#"><span>상품 등록/수정</span></a></li>
 				<li><a href="#"><span>대출현황</span></a></li>
 				<li class="on"><a href="#"><span>대출실행요청</span></a></li>
+				<li><a href="#"><span>상환/청산 설정</span></a></li>
 			</ul>
 		</div>
 		<div id="container">
@@ -51,91 +51,96 @@
 				<div class="info">메인 > <a href="#">디지털전당포</a> > <a href="#">대출실행 요청</a></div>
 			</div>
 			<div class="wrapCont">
-				<div class="boxSearch">
-					<select>
-						<option>회원구분</option>
-					</select>
-					<select>
-						<option>대출자산</option>
-					</select>
-					<select>
-						<option>상태</option>
-					</select>
-					<input type="text" placeholder="거래번호 / 아이디 / 회원명" class="searchText" />
-					<div class="btn">
-						<a href="#" class="btnReset">초기화</a>
-						<a href="#" class="btnSearch">검색</a>
+				<div class="topArea_tab">
+          <a href="#" data-role="tab1" class="active">원화 대출</a>
+          <a href="#" data-role="tab2">가상자산 대출</a>
+        </div>
+				<div id="tab1" class="tabArea active">
+					<div class="boxSearch">
+						<select>
+							<option>회원구분</option>
+						</select>
+						<input type="text" placeholder="거래번호 / 아이디 / 회원명" class="searchText" />
+						<div class="btn">
+							<a href="#" class="btnReset">초기화</a>
+							<a href="#" class="btnSearch">검색</a>
+						</div>
+					</div>
+					<div class="boxCont">
+						<div class="top">
+							<div class="title">목록</div>
+						</div>
+						<div class="cont">
+							<table class="tableBasic">
+								<colgroup>
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th>거래번호</th>
+										<th>아이디</th>
+										<th>회원명</th>
+										<th>회원구분</th>
+										<th>담보수량</th>
+										<th>대출금액</th>
+										<th>대출기간</th>
+										<th>상환방식</th>
+										<th>신청일</th>
+										<th>대출실행일</th>
+										<th>상환일</th>
+										<th>상태</th>
+										<th>관리</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>100001</td>
+										<td>abc@email.com</td>
+										<td>홍길동</td>
+										<td>개인</td>
+										<td>100g</td>
+										<td>100,000 원</td>
+										<td>60일</td>
+										<td>만기일시상환</td>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>2021-01-01</td>
+										<td>실행대기</td>
+										<td><a href="#" class="btnBasic">상세</a></td>
+									</tr>
+									<tr>
+										<td>100001</td>
+										<td>abc@email.com</td>
+										<td>홍길동</td>
+										<td>개인</td>
+										<td>100g</td>
+										<td>100,000 원</td>
+										<td>60일</td>
+										<td>만기일시상환</td>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>2021-01-01<br />00:00:00</td>
+										<td>2021-01-01</td>
+										<td>실행대기</td>
+										<td><a href="#" class="btnBasic">상세</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
-				<div class="boxCont">
-					<div class="top">
-						<div class="title">목록</div>
-					</div>
-					<div class="cont">
-						<table class="tableBasic">
-							<colgroup>
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-							</colgroup>
-							<thead>
-								<tr>
-									<th>거래번호</th>
-									<th>아이디</th>
-									<th>회원명</th>
-									<th>회원구분</th>
-									<th>담보수량</th>
-									<th>대출수량</th>
-									<th>대출기간</th>
-									<th>상환방식</th>
-									<th>신청일</th>
-                  <th>대출실행일</th>
-                  <th>상태</th>
-                  <th>관리</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>100001</td>
-									<td>abc@email.com</td>
-									<td>홍길동</td>
-									<td>개인</td>
-									<td>100g</td>
-									<td>100,000 ARW</td>
-									<td>1개월</td>
-                  <td>만기일시상환</td>
-                  <td>2021-01-01<br />00:00:00</td>
-                  <td></td>
-                  <td>실행대기</td>
-									<td><a href="#" class="btnBasic">상세</a></td>
-								</tr>
-								<tr>
-									<td>100001</td>
-									<td>abc@email.com</td>
-									<td>홍길동</td>
-									<td>기업</td>
-									<td>100g</td>
-									<td>100,000 ARW</td>
-									<td>1개월</td>
-                  <td>만기일시상환</td>
-                  <td>2021-01-01<br />00:00:00</td>
-                  <td></td>
-                  <td>실행대기</td>
-									<td><a href="#" class="btnBasic">상세</a></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
+				<div id="tab2" class="tabArea"></div>
 			</div>
 		</div>
 	</section>

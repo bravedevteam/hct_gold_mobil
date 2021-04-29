@@ -89,6 +89,9 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .ml50 { margin-left:50px !important; }
 .ml100 { margin-left:100px !important; }
 
+.pr10 { padding-right:10px !important; }
+.pr20 { padding-right:20px !important; }
+
 .inputBasic { width:100%; height:52px; padding:0 23px; border:1px solid #b1bfd5; border-radius:2px; font-size:17px; }
 .inputBasic:disabled { background:#ededed; }
 
@@ -366,10 +369,13 @@ label+input+label { margin-left:30px; }
 .boxPrint p { font-size:13px; }
 .boxPrint table+p,
 .boxPrint p+p { margin-top:20px; }
+.boxPrint .boxList { padding:20px; border:1px solid #b1bfd5; font-size:14px; line-height:2; }
+.boxPrint .boxList .inStamp { margin-left:200px; }
 .boxStamp { display:inline-block; margin-top:50px; position:relative; vertical-align:middle; }
 .boxStamp .date { font-size:12px; color:#999; }
 .boxStamp .name { position:relative; font-size:20px; font-weight:500; z-index:2; }
 .boxStamp .imgStamp { position:absolute; left:-40px; top:0; z-index:1; }
+
 
 .guide-text { width:100%; margin-top:10px; font-size:15px; }
 .guide-text.imp ul li { position:relative; padding-left:10px; }

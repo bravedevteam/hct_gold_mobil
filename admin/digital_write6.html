@@ -19,14 +19,13 @@
 				<ul>
 					<li><a href="#" class="icon1">대시보드</a></li>
 					<li><a href="#" class="icon2">회원관리</a></li>
-					<li><a href="#" class="icon3">금 예치/인출</a></li>
+					<li><a href="#" class="icon3">금 보관/인출</a></li>
 					<li><a href="#" class="icon4">상품관리</a></li>
 					<li class="on"><a href="#" class="icon5">디지털전당포</a></li>
-					<li><a href="#" class="icon6">자산교환</a></li>
-					<li><a href="#" class="icon7">지갑관리</a></li>
+					<li><a href="#" class="icon6">바우처판매</a></li>
+					<li><a href="#" class="icon7">입출금관리</a></li>
 					<li><a href="#" class="icon8">운영관리</a></li>
 					<li><a href="#" class="icon9">시스템관리</a></li>
-					<li><a href="#" class="icon10">정산관리</a></li>
 				</ul>
 			</div>
 			<div class="topInfo">
@@ -68,7 +67,7 @@
 							<th>담보수량</th>
 							<td>100g (금바우처)</td>
 							<th>대출수량</th>
-							<td>100,000 (ARW)</td>
+							<td>100,000 원</td>
 						</tr>
 						<tr>
 							<th>대출기간 / 이자율(일)</th>
@@ -82,10 +81,16 @@
 							<th>대출상태</th>
 							<td><span class="color--red">상환대기</span></td>
 						</tr>
+						<tr>
+							<th>은행명</th>
+							<td>신한은행</td>
+							<th>계좌번호</th>
+							<td>894751984751341</td>
+						</tr>
 					</table>
 				</div>
 				<div class="boxCont">
-					<h4 class="title">예상 상환정보</h4>
+					<h4 class="title">상환정보</h4>
 					<table class="tableBasic type--vertical">
 						<colgroup>
 							<col width="100" />
@@ -95,37 +100,15 @@
 						</colgroup>
 						<tr>
 							<th>대출이자</th>
-							<td>2,000 ARW</td>
-							<th>대출실행수량</th>
-							<td>98,000 ARW</td>
+							<td>2,000 원</td>
+							<th>대출지급금액</th>
+							<td>98,000 원</td>
 						</tr>
 						<tr>
-							<th>총 상환수량</th>
-							<td>100,000 ARW</td>
+							<th>총 대출금액</th>
+							<td>100,000 원</td>
 							<th>적용 시세</th>
-							<td>
-								<span>1 ARW = 100원</span>
-								<span class="ml50">1 GVC(g) = 65,000원</span>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<div class="boxCont">
-					<h4 class="title">계약서</h4>
-					<table class="tableBasic type--vertical">
-						<colgroup>
-							<col width="100" />
-							<col width="300" />
-							<col width="100" />
-							<col width="300" />
-						</colgroup>
-						<tr>
-							<th>계약번호</th>
-							<td>202101011010100001</td>
-							<th>최종 계약서</th>
-							<td class="ta-l">
-								<a href="#" class="type--link">최종 계약서.jpg</a>
-							</td>
+							<td>65,000원/g</td>
 						</tr>
 					</table>
 				</div>
@@ -151,14 +134,20 @@
 									</div>
 								</div>
 							</td>
-							<th>처리자</th>
-							<td>관리자 1</td>
+							<th></th>
+							<td></td>
 						</tr>
 						<tr>
-							<th>현재 LTV</th>
-							<td>52%</td>
+							<th>처리자</th>
+							<td>관리자 1</td>
 							<th>처리일시</th>
 							<td>2021-01-01 12:00:00</td>
+						</tr>
+						<tr>
+							<th>대출시작일</th>
+							<td>2021-02-01</td>
+							<th>대출상환일</th>
+							<td>2021-02-01</td>
 						</tr>
 						<tr>
 							<th>처리사유</th>
@@ -176,8 +165,8 @@
 							<col width="300" />
 						</colgroup>
 						<tr>
-							<th>실 대출 실행수량</th>
-							<td>98,000 ARW</td>
+							<th>실 대출지급금액</th>
+							<td>98,000 원</td>
 							<th>처리자</th>
 							<td>관리자 1</td>
 						</tr>
@@ -209,21 +198,41 @@
 							<col width="300" />
 						</colgroup>
 						<tr>
-							<th>실 상환수량</th>
-							<td>0</td>
+							<th>실 대출상환금액</th>
+							<td>100,000 원</td>
 							<th>실 담보 반환수량</th>
-							<td>0</td>
+							<td>100 g</td>
 						</tr>
 						<tr>
-							<th>청산 가격</th>
-							<td>-</td>
-							<th>만기일시</th>
+							<th>청산 예정일</th>
+							<td>2021-02-01</td>
+							<th>대출상환일</th>
 							<td>2021-02-01 ( <span class="color--blue">D-0</span> )</td>
+						</tr>
+					</table>
+				</div>
+				<div class="boxCont">
+					<h4 class="title">계약서</h4>
+					<table class="tableBasic type--vertical">
+						<colgroup>
+							<col width="100" />
+							<col width="300" />
+							<col width="100" />
+							<col width="300" />
+						</colgroup>
+						<tr>
+							<th>계약번호</th>
+							<td>202101011010100001</td>
+							<th>최종 계약서</th>
+							<td class="ta-l">
+								<a href="#" class="type--link">최종 계약서.jpg</a>
+							</td>
 						</tr>
 					</table>
 				</div>
 				<div class="boxBtn">
 					<button type="button">닫기</button>
+					<button type="button" class="submit">상환</button>
 				</div>
 			</div>
 		</div>

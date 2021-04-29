@@ -19,14 +19,13 @@
 				<ul>
 					<li><a href="#" class="icon1">대시보드</a></li>
 					<li><a href="#" class="icon2">회원관리</a></li>
-					<li><a href="#" class="icon3">금 예치/인출</a></li>
+					<li><a href="#" class="icon3">금 보관/인출</a></li>
 					<li><a href="#" class="icon4">상품관리</a></li>
 					<li class="on"><a href="#" class="icon5">디지털전당포</a></li>
-					<li><a href="#" class="icon6">자산교환</a></li>
-					<li><a href="#" class="icon7">지갑관리</a></li>
+					<li><a href="#" class="icon6">바우처판매</a></li>
+					<li><a href="#" class="icon7">입출금관리</a></li>
 					<li><a href="#" class="icon8">운영관리</a></li>
 					<li><a href="#" class="icon9">시스템관리</a></li>
-					<li><a href="#" class="icon10">정산관리</a></li>
 				</ul>
 			</div>
 			<div class="topInfo">
@@ -45,7 +44,7 @@
 		</div>
 		<div id="container">
 			<div class="titCont">
-				<div class="title">신규 등록</div>
+				<div class="title">상환/청산 설정</div>
 				<div class="info">메인 > <a href="#">디지털전당포</a> > <a href="#">상환/청산 설정</a></div>
 			</div>
 			<div class="wrapCont">
@@ -102,16 +101,7 @@
               </td>
 						</tr>
 						<tr>
-							<th>최대 연체 일수</th>
-							<td>
-                <div class="row is--half">
-									<div class="ta-l"><input type="text" class="inputBasic"></div>
-                  <div class="ta-r">*최대 연체 일수 경과 시, 담보자산 강제청산함.</div>
-								</div>
-              </td>
-						</tr>
-						<tr>
-							<th>청산설정</th>
+							<th>청산적용 설정</th>
 							<td>
                 <div class="row is--half">
 									<div class="ta-l">
@@ -120,7 +110,7 @@
                     <input type="radio" id="chk3_2" name="chk3">
                     <label for="chk3_2" class="ml100">적용안함</label>
 									</div>
-                  <div class="ta-r">*청산 적용 여부 설정</div>
+                  <div class="ta-r">*자동청산 적용여부 설정</div>
 								</div>
               </td>
 						</tr>
@@ -128,8 +118,27 @@
 							<th>청산 수수료율</th>
 							<td>
                 <div class="row is--half">
-									<div class="ta-l"><input type="text" class="inputBasic"></div>
+									<div class="row is--flex ta-l">
+										<span class="ta-r pr20">원화대출</span>
+										<input type="text" class="inputBasic">
+										<span class="ta-r pr20">가상자산대출</span>
+										<input type="text" class="inputBasic">
+									</div>
                   <div class="ta-r">*청산 수수료율 = (담보청산수량)대출수량 X 청산 수수료율</div>
+								</div>
+              </td>
+						</tr>
+						<tr>
+							<th>청산 유예기간</th>
+							<td>
+                <div class="row is--half">
+									<div class="row is--flex">
+										<span class="ta-r pr20">원화대출</span>
+										<input type="text" class="inputBasic">
+										<span class="ta-r pr20">가상자산대출</span>
+										<input type="text" class="inputBasic">
+									</div>
+                  <div class="ta-r">*대출 상환일로부터 + 일자 계산하여 자동 청산</div>
 								</div>
               </td>
 						</tr>

@@ -19,14 +19,13 @@
 				<ul>
 					<li><a href="#" class="icon1">대시보드</a></li>
 					<li><a href="#" class="icon2">회원관리</a></li>
-					<li><a href="#" class="icon3">금 예치/인출</a></li>
+					<li><a href="#" class="icon3">금 보관/인출</a></li>
 					<li><a href="#" class="icon4">상품관리</a></li>
 					<li class="on"><a href="#" class="icon5">디지털전당포</a></li>
-					<li><a href="#" class="icon6">자산교환</a></li>
-					<li><a href="#" class="icon7">지갑관리</a></li>
+					<li><a href="#" class="icon6">바우처판매</a></li>
+					<li><a href="#" class="icon7">입출금관리</a></li>
 					<li><a href="#" class="icon8">운영관리</a></li>
 					<li><a href="#" class="icon9">시스템관리</a></li>
-					<li><a href="#" class="icon10">정산관리</a></li>
 				</ul>
 			</div>
 			<div class="topInfo">
@@ -40,6 +39,7 @@
 				<li class="on"><a href="#"><span>상품 등록/수정</span></a></li>
 				<li><a href="#"><span>대출현황</span></a></li>
 				<li><a href="#"><span>대출실행요청</span></a></li>
+				<li><a href="#"><span>상환/청산 설정</span></a></li>
 			</ul>
 		</div>
 		<div id="container">
@@ -48,80 +48,81 @@
 				<div class="info">메인 > <a href="#">디지털전당포</a> > <a href="#">상품 목록</a></div>
 			</div>
 			<div class="wrapCont">
-				<div class="boxSearch">
-					<select>
-						<option>적용대상</option>
-					</select>
-					<select>
-						<option>금바우처</option>
-					</select>
-          <select>
-						<option>대출자산</option>
-					</select>
-          <select>
-						<option>전시상태</option>
-					</select>
-					<div class="btn">
-						<a href="#" class="btnReset">초기화</a>
-						<a href="#" class="btnSearch">검색</a>
-					</div>
-				</div>
-				<div class="boxCont">
-					<div class="top">
-						<div class="title">목록</div>
+				<div class="topArea_tab">
+          <a href="#" data-role="tab1" class="active">원화 대출</a>
+          <a href="#" data-role="tab2">가상자산 대출</a>
+        </div>
+				<div id="tab1" class="tabArea active">
+					<div class="boxSearch">
+						<select>
+							<option>적용대상</option>
+						</select>
+						<select>
+							<option>금바우처</option>
+						</select>
+						<select>
+							<option>전시상태</option>
+						</select>
 						<div class="btn">
-							<a href="#" class="btnBasic">신규 등록</a>
+							<a href="#" class="btnReset">초기화</a>
+							<a href="#" class="btnSearch">검색</a>
 						</div>
 					</div>
-					<div class="cont">
-						<table class="tableBasic">
-							<colgroup>
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="120" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-								<col width="100" />
-							</colgroup>
-							<thead>
-								<tr>
-									<th>상품코드</th>
-									<th>상품명</th>
-									<th>적용대상</th>
-									<th>담보자산</th>
-									<th>대출자산</th>
-									<th>전시순서</th>
-									<th>전시상태</th>
-									<th>상세</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>100001</td>
-									<td>디지털 금 담보대출</td>
-									<td>개인담보</td>
-									<td>금 바우처</td>
-									<td>KRW</td>
-									<td>1</td>
-									<td>전시중</td>
-									<td><a href="#" class="btnBasic">상세보기</a></td>
-								</tr>
-                <tr>
-									<td>100002</td>
-									<td>디지털 금 담보대출</td>
-									<td>전체회원</td>
-									<td>금 바우처</td>
-									<td>ARW</td>
-									<td>2</td>
-									<td>전시중지</td>
-									<td><a href="#" class="btnBasic">상세보기</a></td>
-								</tr>
-							</tbody>
-						</table>
+					<div class="boxCont">
+						<div class="top ta-r">
+							<a href="#" class="btnBasic">신규 등록</a>
+						</div>
+						<div class="cont">
+							<table class="tableBasic">
+								<colgroup>
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="120" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+									<col width="100" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th>상품코드</th>
+										<th>상품명</th>
+										<th>적용대상</th>
+										<th>담보자산</th>
+										<th>대출자산</th>
+										<th>전시순서</th>
+										<th>전시상태</th>
+										<th>상세</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>100001</td>
+										<td>디지털 금 담보대출</td>
+										<td>개인담보</td>
+										<td>디지털 금</td>
+										<td>원화</td>
+										<td>1</td>
+										<td>전시중</td>
+										<td><a href="#" class="btnBasic">상세보기</a></td>
+									</tr>
+									<tr>
+										<td>100002</td>
+										<td>디지털 금 담보대출</td>
+										<td>전체회원</td>
+										<td>디지털 금</td>
+										<td>원화</td>
+										<td>2</td>
+										<td>전시중지</td>
+										<td><a href="#" class="btnBasic">상세보기</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
+				<div id="tab2" class="tabArea"></div>
 			</div>
 		</div>
 	</section>

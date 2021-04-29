@@ -49,7 +49,6 @@
 			<div class="wrapCont">
         <div class="topArea_tab">
           <a href="#" data-role="tab1" class="active">회원정보</a>
-          <a href="#" data-role="tab2">자산</a>
         </div>
         <div id="tab1" class="tabArea active">
           <div class="boxCont">
@@ -84,7 +83,17 @@
               </tr>
               <tr>
                 <th>상태</th>
-                <td>정상</td>
+                <td>
+                  <div class="row is--half">
+                    <div class="selectBasic">
+                      <select>
+                        <option>정상</option>
+                        <option>계정잠금</option>
+                        <option>회원탈퇴</option>
+                      </select>
+                    </div>
+                  </div>
+                </td>
                 <th>최근 접속일시</th>
                 <td>2021-01-01 12:00:00</td>
               </tr>
@@ -101,30 +110,66 @@
               </colgroup>
               <tr>
                 <th>인증방법</th>
-                <td>여권</td>
+                <td>
+                  <div class="row is--half">
+                    <div class="selectBasic">
+                      <select>
+                        <option>여권</option>
+                        <option>주민등록증</option>
+                        <option>운전자면허증</option>
+                      </select>
+                    </div>
+                  </div>
+                </td>
                 <th>제출자료</th>
                 <td>
                   <a href="#" class="type--link">여권.jpg</a>
                   <a href="#" class="type--link ml100">본인사진.jpg</a>
+                  <button type="button" class="btnGray">업로드</button>
                 </td>
               </tr>
               <tr>
                 <th>이름</th>
-                <td>GIDONG HONG</td>
+                <td><input type="text" class="inputBasic" value="홍길동" /></td>
                 <th>국적</th>
-                <td>대한민국</td>
+                <td>
+                  <div class="row is--half">
+                    <div class="selectBasic">
+                      <select>
+                        <option>대한민국</option>
+                      </select>
+                    </div>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th>생일</th>
-                <td>1990-01-01</td>
+                <td class="ta-l">
+                  <div class="inputPicker">
+                    <input type="text" class="datepicker" placeholder="2021-01-01">
+                  </div>
+                </td>
                 <th>성별</th>
-                <td>남</td>
+                <td>
+                  <div class="row is--half">
+                    <div class="selectBasic">
+                      <select>
+                        <option>남</option>
+                        <option>여</option>
+                      </select>
+                    </div>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th>여권번호</th>
-                <td>M72068179</td>
+                <td><input type="text" class="inputBasic" value="M72068179" /></td>
                 <th>여권 만료일</th>
-                <td>2026-07-01</td>
+                <td class="ta-l">
+                  <div class="inputPicker">
+                    <input type="text" class="datepicker" placeholder="2021-01-01">
+                  </div>
+                </td>
               </tr>
             </table>
           </div>
@@ -143,9 +188,9 @@
                 <tr>
                   <th>신청일시</th>
                   <th>구분</th>
+                  <th>상태</th>
                   <th>처리일시</th>
                   <th>처리자</th>
-                  <th>처리상태</th>
                   <th>사유</th>
                 </tr>
               </thead>
@@ -153,175 +198,37 @@
                 <tr>
                   <td>2020-01-01 10:00:00</td>
                   <td>회원가입</td>
-                  <td>-</td>
-                  <td>-</td>
                   <td>완료</td>
+                  <td>-</td>
+                  <td>-</td>
                   <td>-</td>
                 </tr>
                 <tr>
                   <td>2020-01-01 10:00:00</td>
                   <td>비밀번호 변경</td>
-                  <td>-</td>
-                  <td>-</td>
                   <td>완료</td>
+                  <td>-</td>
+                  <td>-</td>
                   <td>-</td>
                 </tr>
                 <tr>
                   <td>2020-01-01 10:00:00</td>
                   <td>휴대폰번호 변경</td>
-                  <td>-</td>
-                  <td>-</td>
                   <td>완료</td>
                   <td>-</td>
-                </tr>
-                <tr>
-                  <td>2020-01-01 10:00:00</td>
-                  <td>OTP 설정</td>
                   <td>-</td>
                   <td>-</td>
-                  <td>완료</td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>2020-01-01 10:00:00</td>
-                  <td>OTP 초기화</td>
-                  <td>2020-01-01 10:00:00</td>
-                  <td>관리자 1</td>
-                  <td>완료</td>
-                  <td>휴대폰 분실</td>
-                </tr>
-                <tr>
-                  <td>2020-01-01 10:00:00</td>
-                  <td>본인인증</td>
-                  <td>-</td>
-                  <td>-</td>
-                  <td>승인대기</td>
-                  <td>-</td>
-                </tr>
-                <tr>
-                  <td>2020-01-01 10:00:00</td>
-                  <td>계정잠금</td>
-                  <td>2020-01-01 10:00:00</td>
-                  <td>관리자 1</td>
-                  <td>완료</td>
-                  <td>이상거래 탐지</td>
-                </tr>
-                <tr>
-                  <td>2020-01-01 10:00:00</td>
-                  <td>잠금해제</td>
-                  <td>2020-01-01 10:00:00</td>
-                  <td>관리자 1</td>
-                  <td>완료</td>
-                  <td>증거자료 심사 완료</td>
-                </tr>
-                <tr>
-                  <td>2020-01-01 10:00:00</td>
-                  <td>회원탈퇴</td>
-                  <td>2020-01-01 10:00:00</td>
-                  <td>관리자 1</td>
-                  <td>완료</td>
-                  <td>탈퇴신청</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div class="boxBtn">
-            <button type="button">돌아가기</button>
-            <div class="opt">
-              <button type="button" class="modify">정보변경</button>
-            </div>
-          </div>
-        </div>
-        <div id="tab2" class="tabArea">
           <div class="boxCont">
-            <div class="top">
-              <h4 class="title">자산목록</h4>
-              <div class="btn">
-                <input type="checkbox" id="chk" name="chk" />
-                <label for="chk">보유자산만 표시</label>
-              </div>
-            </div>
-            <table class="tableBasic">
-              <colgroup>
-                <col width="100" />
-                <col width="100" />
-                <col width="100" />
-                <col width="100" />
-                <col width="100" />
-                <col width="100" />
-                <col width="200" />
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>자산</th>
-                  <th>총 수량</th>
-                  <th>사용가능 수량</th>
-                  <th>락업중 수량( 거래중 포함)</th>
-                  <th>평가금액(원)</th>
-                  <th>상태</th>
-                  <th>지갑주소</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>금</td>
-                  <td>200 g</td>
-                  <td>200 g</td>
-                  <td>0</td>
-                  <td>12,000,000 원</td>
-                  <td>정상</td>
-                  <td>0x018dbD3B308B468CCFE83b890B32 <a href="#" class="type--link">복사</a></td>
-                </tr>
-                <tr>
-                  <td>HGX</td>
-                  <td>100,000</td>
-                  <td>20,000</td>
-                  <td>30,000</td>
-                  <td>2,000,000 원</td>
-                  <td>전체 잠금</td>
-                  <td>0x018dbD3B308B468CCFE83b890B32 <a href="#" class="type--link">복사</a></td>
-                </tr>
-                <tr>
-                  <td>BTC</td>
-                  <td>1,200</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>48,000,000,000 원</td>
-                  <td>출금 잠금</td>
-                  <td>0x018dbD3B308B468CCFE83b890B32 <a href="#" class="type--link">복사</a></td>
-                </tr>
-                <tr>
-                  <td>ETH</td>
-                  <td>12,000</td>
-                  <td>4,000</td>
-                  <td>4,000</td>
-                  <td>18,000,000,000 원</td>
-                  <td>정상</td>
-                  <td>0x018dbD3B308B468CCFE83b890B32 <a href="#" class="type--link">복사</a></td>
-                </tr>
-                <tr>
-                  <td>USDT</td>
-                  <td>120,000</td>
-                  <td>40,000</td>
-                  <td>40,000</td>
-                  <td>132,000,000 원</td>
-                  <td>정상</td>
-                  <td>0x018dbD3B308B468CCFE83b890B32 <a href="#" class="type--link">복사</a></td>
-                </tr>
-                <tr>
-                  <td>CUST</td>
-                  <td>12,000,000</td>
-                  <td>4,000,000</td>
-                  <td>4,000,000</td>
-                  <td>12,000,000 원</td>
-                  <td>정상</td>
-                  <td>0x018dbD3B308B468CCFE83b890B32 <a href="#" class="type--link">복사</a></td>
-                </tr>
-              </tbody>
-            </table>
+            <h4 class="title">변경 사유</h4>
+            <textarea placeholder="변경 사유 입력"></textarea>
           </div>
           <div class="boxBtn">
-            <button type="button">돌아가기</button>
+            <button type="button">취소</button>
+            <button type="button" class="submit">저장</button>
           </div>
         </div>
 			</div>
@@ -335,6 +242,10 @@
       $(this).addClass("active").siblings().removeClass("active");
       $(".tabArea").removeClass("active");
       $("#"+tab).addClass("active");
+    });
+
+    $( ".datepicker" ).datepicker({
+      dateFormat : "yy.mm.dd"
     });
   });
   </script>
