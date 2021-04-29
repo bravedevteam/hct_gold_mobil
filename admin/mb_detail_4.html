@@ -49,7 +49,6 @@
 			<div class="wrapCont">
         <div class="topArea_tab">
           <a href="#" data-role="tab1" class="active">회원정보</a>
-          <a href="#" data-role="tab2">자산</a>
         </div>
         <div id="tab1" class="tabArea active">
           <div class="boxCont">
@@ -84,7 +83,17 @@
               </tr>
               <tr>
                 <th>상태</th>
-                <td>가입완료</td>
+                <td>
+                  <div class="row is--half">
+                    <div class="selectBasic">
+                      <select>
+                        <option>가입완료</option>
+                        <option>계정잠금</option>
+                        <option>회원탈퇴</option>
+                      </select>
+                    </div>
+                  </div>
+                </td>
                 <th>최근 접속일시</th>
                 <td>2021-01-01 12:00:00</td>
               </tr>
@@ -101,33 +110,53 @@
               </colgroup>
               <tr>
                 <th>사업자명</th>
-                <td>기업 1</td>
+                <td><input type="text" class="inputBasic" value="기업 1" /></td>
                 <th>사업자 구분</th>
-                <td>법인 사업자</td>
+                <td>
+                  <div class="row is--half">
+                    <div class="selectBasic">
+                      <select>
+                        <option>법인사업자</option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </td>
               </tr>
               <tr>
                 <th>대표자명</th>
-                <td>김한컴</td>
+                <td><input type="text" class="inputBasic" value="김한컴" /></td>
                 <th>사업자 등록번호</th>
-                <td>000-00-00000</td>
+                <td><input type="text" class="inputBasic" value="000-00-000000" /></td>
               </tr>
               <tr>
                 <th>법인등록번호</th>
-                <td>00000-000000</td>
+                <td><input type="text" class="inputBasic" value="00000-000000" /></td>
                 <th>사업장 주소</th>
-                <td>서울특별시 종로구 돈의동 돈화문로5가길 1. 3층</td>
+                <td><input type="text" class="inputBasic" value="서울특별시 종로구 돈의동 돈화문로5가길 1. 3층" /></td>
               </tr>
               <tr>
                 <th>업종</th>
-                <td>도소매업</td>
+                <td>
+                  <div class="row is--half">
+                    <div class="selectBasic">
+                      <select>
+                        <option>전자상거래</option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </td>
                 <th>직원수</th>
-                <td>12 명</td>
+                <td><input type="text" class="inputBasic" value="12명" /></td>
               </tr>
               <tr>
                 <th>담당자명</th>
-                <td>홍길동</td>
+                <td><input type="text" class="inputBasic" value="홍길동" /></td>
                 <th>담당자 휴대폰번호</th>
-                <td>010-1234-5678</td>
+                <td><input type="text" class="inputBasic" value="010-1234-5678" /></td>
               </tr>
             </table>
           </div>
@@ -140,26 +169,39 @@
               </colgroup>
               <tr>
                 <th><span class="color--red">*</span>사업자등록증</th>
-                <td class="ta-l"><a href="#" class="type--link">사업자등록증.jpg</a></td>
+                <td class="ta-l">
+                  <a href="#" class="type--link">사업자등록증.jpg</a>
+                  <button type="button" class="btnGray">업로드</button>
+                </td>
               </tr>
               <tr>
                 <th><span class="color--red">*</span>대표자 신분증</th>
                 <td class="ta-l">
                   <a href="#" class="type--link">주민등록증 앞면.jpg</a>
                   <a href="#" class="type--link">주민등록증 뒤면.jpg</a>
+                  <button type="button" class="btnGray">업로드</button>
                 </td>
               </tr>
               <tr>
                 <th><span class="color--red">*</span>재무제표</th>
-                <td class="ta-l"><a href="#" class="type--link">재무제표.pdf</a></td>
+                <td class="ta-l">
+                  <a href="#" class="type--link">재무제표.pdf</a>
+                  <button type="button" class="btnGray">업로드</button>
+                </td>
               </tr>
               <tr>
                 <th><span class="color--red">*</span>법인등기부등본</th>
-                <td class="ta-l"><a href="#" class="type--link">법인등기부등본.jpg</a></td>
+                <td class="ta-l">
+                  <a href="#" class="type--link">법인등기부등본.jpg</a>
+                  <button type="button" class="btnGray">업로드</button>
+                </td>
               </tr>
               <tr>
                 <th><span class="color--red">*</span>법인인감증명서</th>
-                <td class="ta-l"><a href="#" class="type--link">법인인감증명서.jpg</a></td>
+                <td class="ta-l">
+                  <a href="#" class="type--link">법인인감증명서.jpg</a>
+                  <button type="button" class="btnGray">업로드</button>
+                </td>
               </tr>
             </table>
           </div>
@@ -172,12 +214,14 @@
                 <col width="100" />
                 <col width="100" />
                 <col width="100" />
+                <col width="100" />
               </colgroup>
               <thead>
                 <tr>
-                  <th>처리일시</th>
-                  <th>처리항목</th>
+                  <th>신청일시</th>
+                  <th>구분</th>
                   <th>상태</th>
+                  <th>처리일시</th>
                   <th>처리자</th>
                   <th>사유</th>
                 </tr>
@@ -185,8 +229,9 @@
               <tbody>
                 <tr>
                   <td>2020-01-01 10:00:00</td>
-                  <td>가입완료</td>
+                  <td>회원가입</td>
                   <td><span class="color-blue">완료</span></td>
+                  <td>2020-01-01 00:00:00</td>
                   <td>관리자 1</td>
                   <td></td>
                 </tr>
@@ -194,6 +239,7 @@
                   <td>2020-01-01 10:00:00</td>
                   <td>OTP 설정</td>
                   <td><span class="color-blue">완료</span></td>
+                  <td>2020-01-01 00:00:00</td>
                   <td>관리자 1</td>
                   <td></td>
                 </tr>
@@ -201,6 +247,7 @@
                   <td>2020-01-01 10:00:00</td>
                   <td>비밀번호 변경</td>
                   <td><span class="color-blue">완료</span></td>
+                  <td>2020-01-01 00:00:00</td>
                   <td>관리자 1</td>
                   <td></td>
                 </tr>
@@ -208,109 +255,20 @@
                   <td>2020-01-01 10:00:00</td>
                   <td>기업정보 변경</td>
                   <td><span class="color-blue">완료</span></td>
+                  <td>2020-01-01 00:00:00</td>
                   <td>관리자 1</td>
                   <td>담당자 정보 변경</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div class="boxBtn">
-            <button type="button">돌아가기</button>
-            <div class="opt">
-              <button type="button" class="modify">정보변경</button>
-            </div>
-          </div>
-        </div>
-        <div id="tab2" class="tabArea">
           <div class="boxCont">
-            <div class="top">
-              <h4 class="title">자산목록</h4>
-              <div class="btn">
-                <input type="checkbox" id="chk" name="chk" />
-                <label for="chk">보유자산만 표시</label>
-              </div>
-            </div>
-            <table class="tableBasic">
-              <colgroup>
-                <col width="100" />
-                <col width="100" />
-                <col width="100" />
-                <col width="100" />
-                <col width="100" />
-                <col width="100" />
-                <col width="200" />
-              </colgroup>
-              <thead>
-                <tr>
-                  <th>자산</th>
-                  <th>총 수량</th>
-                  <th>사용가능 수량</th>
-                  <th>락업중 수량( 거래중 포함)</th>
-                  <th>평가금액(원)</th>
-                  <th>상태</th>
-                  <th>지갑주소</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>GVC(바우처)</td>
-                  <td>200g</td>
-                  <td>200g</td>
-                  <td>0</td>
-                  <td>12,000,000 원</td>
-                  <td>정상</td>
-                  <td>0x018dbD3B308B468CCFE83b890B32 <a href="#" class="type--link">복사</a></td>
-                </tr>
-                <tr>
-                  <td>HGX</td>
-                  <td>100,000</td>
-                  <td>20,000</td>
-                  <td>30,000</td>
-                  <td>2,000,000 원</td>
-                  <td>전체 잠금</td>
-                  <td>0x018dbD3B308B468CCFE83b890B32 <a href="#" class="type--link">복사</a></td>
-                </tr>
-                <tr>
-                  <td>BTC</td>
-                  <td>1,200</td>
-                  <td>400</td>
-                  <td>400</td>
-                  <td>48,000,000,000 원</td>
-                  <td>출금 잠금</td>
-                  <td>0x018dbD3B308B468CCFE83b890B32 <a href="#" class="type--link">복사</a></td>
-                </tr>
-                <tr>
-                  <td>ETH</td>
-                  <td>12,000</td>
-                  <td>4,000</td>
-                  <td>4,000</td>
-                  <td>18,000,000,000 원</td>
-                  <td>정상</td>
-                  <td>0x018dbD3B308B468CCFE83b890B32 <a href="#" class="type--link">복사</a></td>
-                </tr>
-                <tr>
-                  <td>USDT</td>
-                  <td>120,000</td>
-                  <td>40,000</td>
-                  <td>40,000</td>
-                  <td>132,000,000 원</td>
-                  <td>정상</td>
-                  <td>0x018dbD3B308B468CCFE83b890B32 <a href="#" class="type--link">복사</a></td>
-                </tr>
-                <tr>
-                  <td>CUST</td>
-                  <td>12,000,000</td>
-                  <td>4,000,000</td>
-                  <td>4,000,000</td>
-                  <td>12,000,000 원</td>
-                  <td>정상</td>
-                  <td>0x018dbD3B308B468CCFE83b890B32 <a href="#" class="type--link">복사</a></td>
-                </tr>
-              </tbody>
-            </table>
+            <h4 class="title">변경 사유</h4>
+            <textarea placeholder="변경 사유 입력"></textarea>
           </div>
           <div class="boxBtn">
-            <button type="button">돌아가기</button>
+            <button type="button">취소</button>
+            <button type="button" class="submit">저장</button>
           </div>
         </div>
 			</div>
