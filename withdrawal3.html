@@ -13,30 +13,49 @@
 <body>
 	<div id="container" class="sub">
     <div class="headerArea">
-      <a href="#" class="btnPagePrev black">이전</a>
+      <a href="#" class="btnPageClose">닫기</a>
       <h1 class="title">회원탈퇴</h1>
     </div>
     <div class="section mt20">
-      <h4 class="title title--large">회원탈퇴 동의</h4>
+      <h4 class="title title--large">회원탈퇴 처리 동의</h4>
       <div class="boxBasicAgree mt30">
 				<div class="areaCheck with--detail">
 					<div class="item">
 						<input type="checkbox" id="agree1_1">
-						<label for="agree1_1">가입 신청시 입력한 모든 정보가 삭제 됩니다.</label>
+						<label for="agree1_1" class="color-red">디지털 금 환매 수수료 미만의 잔고가 소멸됨에 동의합니다.</label>
 					</div>
 					<div class="item">
 						<input type="checkbox" id="agree1_2">
-						<label for="agree1_2">약관에 따라 입출금내역, 투자내역, 사고내역은 수집 시점으로부터 5년간 보관하고 파기합니다.</label>
-					</div>
-					<div class="item">
-						<input type="checkbox" id="agree1_3">
-						<label for="agree1_3">회원 탈퇴 신청 이후 발생할 수 있는 가상자산에 대한 추가 수량(이벤트 보상코인, 투자 상품의 이자 등)에 대한 권리를 포기합니다. 회원 탈퇴 시 최소 출금금액 미만의 잔고는 소멸됩니다.</label>
+						<label for="agree1_2">가입 신청시 입력한 모든 정보가 삭제 됩니다.</label>
 					</div>
 				</div>
 			</div>
     </div>
+		<hr class="section--space mb40" />
+		<div class="section">
+      <div class="title--top">
+				<h3 class="title pl0">휴대폰 인증<button type="button" class="btnBasic small ml10">번호변경</button></h3>
+			</div>
+			<div class="row division">
+				<input type="number" class="inputBasic" placeholder="인증코드 6자리" value="01012345678" disabled="disabled" />
+				<button type="button" class="btnBasic blueLine">인증요청</button><!-- 번호 입력 시 클래스 변경 grayLine > blueLine -->
+			</div>
+    </div>
+		<div class="section mt30">
+      <div class="title--top">
+				<h3 class="title pl0">휴대폰 인증</h3>
+				<div class="opt"><span>유효시간 : 2:58</span></div>
+			</div>
+			<div class="row division">
+				<input type="number" class="inputBasic" placeholder="인증코드 6자리" />
+				<button type="button" class="btnBasic grayLine">인증하기</button><!-- 번호 입력 시 클래스 변경 grayLine > blueLine -->
+			</div>
+			<p class="guide-text danger">* 유효하지 않은 인증번호 입니다.</p>
+			<div class="guide-text type--dot">회원 탈퇴 시 회원님의 개인정보는 모두 삭제, 폐기 처리되어 복구되지 않으며 연결된 모든 서비스 및 가치는 탈퇴 즉시 소멸 됩니다.</div>
+			<div class="guide-text type--dot">이미 탈퇴한 계정으로 오입금 되는 자산은 회수가 불가 할 수 있으니 각별히 유의 바랍니다.</div>
+    </div>
     <div class="footer--btn">
-			<button type="button" class="btnBasic">본인 인증</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
+			<button type="button" class="btnBasic active">탈퇴신청</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
 		</div>
   </div>
 </body>

@@ -15,20 +15,7 @@
     <div class="headerArea">
       <a href="#" class="btnPagePrev black">이전</a>
       <h1 class="title">정보 변경</h1>
-      <a href="#" class="btnPageHome black">처음으로</a>
     </div>
-		<div class="section">
-      <div class="title--top">
-        <h3 class="title">법인등록번호</h3>
-        <div class="opt">
-          <div class="boxCheckBlue">
-            <input type="checkbox" id="inputModify" />
-            <label for="inputModify">변경</label>
-          </div>
-        </div>
-      </div>
-			<input type="text" value="123-45678-78978" class="inputBasic" maxlength="13" placeholder="-없이 13자리" disabled="disabled" />
-		</div>
 		<div class="section">
 			<h3 class="title">사업장 주소</h3>
 			<div class="row division">
@@ -66,45 +53,40 @@
     </div>
     <div class="section pb40">
       <h3 class="title">담당자 휴대폰 번호</h3>
-      
       <div class="row">
         <input type="number" class="inputBasic" placeholder="-없이 번호 입력" />
       </div>
     </div>
-    <hr class="section--space" />
+    <div class="boxBusinessModify">
+      <div class="title">기업회원 변경 안내</div>
+      <div class="subject">사업자 등록번호, 대표자명 등<br />주요 정보는 앱에서 변경이<br />불가능 합니다. 담당자 이메일로<br />보내주시기 바랍니다.</div>
+    </div>
     <div class="section">
-      <h2 class="title">필수 서류 제출</h2>
       <div class="row">
-        <div class="filebox">
-          <input type="text" placeholder="사업자 등록증" class="uploadName" />
-          <label for="upload_1">파일등록</label>
-          <input type="file" id="upload_1" class="uploadHidden" />
+        <h4 class="title title--large">변경신청항목</h4>
+        <div class="boxBusinessModList">
+          <div>사업자등록번호</div>
+          <div>대표자명</div>
+          <div>사업자명</div>
         </div>
       </div>
-      <div class="row">
-        <div class="filebox">
-          <input type="text" placeholder="대표자 신분증" class="uploadName" />
-          <label for="upload_2">파일등록</label>
-          <input type="file" id="upload_2" class="uploadHidden" />
-        </div>
+      <div class="row mt40">
+        <h4 class="title title--large">제출서류</h4>
+        <div class="guide-text type--line">사업자등록증 사본</div>
+        <div class="guide-text type--line">대표자 신분증 사본 (주민등록번호 뒷자리 가림)</div>
       </div>
-      <div class="row">
-        <div class="filebox">
-          <input type="text" placeholder="재무제표" class="uploadName" />
-          <label for="upload_3">파일등록</label>
-          <input type="file" id="upload_3" class="uploadHidden" />
-        </div>
+      <div class="row mt40">
+        <h4 class="title title--large">추가제출서류</h4>
+        <div class="guide-text type--line">법인인 경우 법인인감증명서</div>
+        <div class="guide-text type--line">법인등록번호 변경시 법인인감증명서, 법인등기부등본 추가</div>
       </div>
-      <div class="row">
-        <div class="filebox">
-          <input type="text" placeholder="임대차 계약서(선택)" class="uploadName" />
-          <label for="upload_4">파일등록</label>
-          <input type="file" id="upload_4" class="uploadHidden" />
-        </div>
-			</div>
+      <div class="row mt40">
+        <h4 class="title title--large">고객센터</h4>
+        <a href="#" class="btnLink">contact@arowana.finance</a>
+      </div>
     </div>
 		<div class="footer--btn">
-			<button type="button" class="btnBasic">정보변경 신청</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
+			<button type="button" class="btnBasic active">회원 정보변경</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
 		</div>
 	</div>
 </body>
