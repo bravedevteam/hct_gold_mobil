@@ -151,6 +151,10 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 
 
 /* Padding */
+.pl0 { padding-left:0 !important; }
+
+.pr0 { padding-right:0 !important; }
+
 .pt0 { padding-top:0 !important; }
 .pt10 { padding-top:10px !important; }
 .pt15 { padding-top:15px !important; }
@@ -169,12 +173,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .pb50 { padding-bottom:50px !important; }
 .pb100 { padding-bottom:100px !important; }
 
+.prl0 { padding:0 0px !important; }
 .prl10 { padding:0 10px !important; }
 .prl15 { padding:0 15px !important; }
 .prl20 { padding:0 20px !important; }
 
 
 /* Margin */
+.ml10 { margin-left:10px !important; }
+
 .mtb0 { margin:0px 0 !important; }
 .mtb10 { margin:10px 0 !important; }
 .mtb15 { margin:15px 0 !important; }
@@ -251,6 +258,7 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 .color-2c { color:#2c2c2c !important; }
 .color-blue { color:#2750f2 !important; }
 .color-red { color:#ff6363 !important; }
+.color-green { color:#4fd884 !important; }
 
 .bgRed { background:#f00 !important; }
 .bgBlue { background:#00f !important; }
@@ -308,6 +316,8 @@ textarea.textBasic::placeholder { color:#ccc; }
 .btnBasic.blueLine.iconUser i { width:11px; height:15px; margin-top:-2px; margin-right:5px; display:inline-block; background:url('../images/common/iconJoinUserBlue.png') no-repeat; background-size:100% auto; vertical-align:middle; }
 .btnBasic.blueLine.icon--file { width:230px; height:50px; position:relative; font-size:15px; font-weight:400; }
 .btnBasic.blueLine.icon--file:after { content:''; width:12px; height:15px; position:absolute; right:17px; top:17px; background:url('../images/common/iconDownBlue.png') no-repeat; background-size:100% auto; }
+.btnBasic.noGray { border:0; background:none; font-size:14px; font-weight:400; color:#999; }
+.btnBasic.small { width:auto; height:27px; padding:0 10px; background:#fff; border-radius:5px; border:1px solid #d5d5d5; line-height:25px; font-size:12px; color:#000; font-weight:400; vertical-align:middle; }
 
 .btnJoinGeneral { height:90px; padding-top:55px; background:url('../images/common/iconJoinGeneral.png') center 20px no-repeat; background-size:19px auto; font-size:15px; }
 .btnJoinBusiness { height:90px; padding-top:55px; background:url('../images/common/iconJoinBusiness.png') center 20px no-repeat; background-size:19px auto; font-size:15px; }
@@ -401,5 +411,6 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .basicPopup { padding:30px 20px; position:fixed; left:23px; right:23px; top:50%; display:none; border-radius:10px; background:#fff; transform:translateY(-50%); z-index:25; }
 .basicPopup .cont { text-align:center; font-size:17px; font-weight:700; }
 .basicPopup .cont.icon--complete { margin-bottom:30px; padding-top:82px; background:url('../images/common/iconExMarkBlack.png') center 10px no-repeat; background-size:36px; }
+.basicPopup .cont .subject { margin-top:8px; font-weight:400; font-size:15px; }
 .basicPopup .boxBtn button:first-child { margin-right:4px; }
 .basicPopup .boxBtn button:last-child { margin-left:4px; }
