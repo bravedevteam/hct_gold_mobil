@@ -36,7 +36,7 @@
         <button type="button">26.25g(7돈)</button>
         <button type="button">37.5g(10돈)</button>
         <button type="button">112.5g(30돈)</button>
-        <button type="button">187.5g(50돈)</button>
+        <button type="button" class="layer--open" data-pop="popBuyLimit">187.5g(50돈)</button>
       </div>
       <div id="radioTab2" class="wr_tab inputUnit value--max"><!-- input의 값이 최대일 때 value--max 추가 -->
         <input type="text" value="" class="inputBasic" />
@@ -214,6 +214,20 @@
           <a href="#" class="btnMore">더보기</a>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div id="popBuyLimit" class="basicPopup">
+    <div class="cont icon--complete">
+      <div>구매 한도 초과 안내</div>
+      <div class="subject">디지털 금 구매는<br />1인당 월 100만원 한도 내 구매 가능합니다.</div>
+      <div class="box bgGray">
+        2021년 4월 구매 가능 한도<br />
+        <strong>500,000 원</strong>
+      </div>
+    </div>
+    <div class="boxBtn btn--full">
+      <button type="button" class="btnBasic bgBlue layer--close">확인</button>
     </div>
   </div>
   <div id="dim"></div>
