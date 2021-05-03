@@ -85,7 +85,7 @@ $(function(){
 		var target = $(this).attr("data-pop");
 		if($("#"+target).hasClass("fullLayer")){
 			$("#"+target).fadeIn(500);
-		}else if($("#"+target).hasClass("bottomLayer")){
+		}else if($("#"+target).hasClass("bottomLayer") || $("#"+target).hasClass("basicPopup")){
 			$("#"+target).addClass("active");
 			dim_open();
 		}else{
@@ -110,6 +110,7 @@ $(function(){
 		$("body").css("overflow", "auto");
 		$(".fullLayer").fadeOut(500);
 		$(".bottomLayer").removeClass("active");
+		$(".basicPopup").removeClass("active");
 		$(".textLayer").removeClass("active");
 		$("#dim").fadeOut(500);
 	}
