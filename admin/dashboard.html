@@ -12,7 +12,7 @@
 </head>
 
 <body>
-	<section id="wrap" class="page--dashboard">
+	<section id="wrap">
 		<header id="header">
 			<h1 class="logo">AROWANA GOLD FINANCE</h1>
 			<div id="nav">
@@ -34,14 +34,85 @@
 				<a href="#" class="btnLogout">로그아웃</a>
 			</div>
 		</header>
-		<div id="container">
+		<div id="lnb">
+			<h2 class="icon1">대시보드</h2>
+		</div>
+		<div id="container" class="type--dashboard">
 			<div class="titCont">
 				<div class="title">금 시세관리</div>
-				<div class="info">2021년 1월 28일, 목요일</div>
+				<div class="info">
+          <div class="price">63,456원</div>
+          <div class="date">2021년 1월 28일, 목요일</div>
+          <button type="button">마진율 설정</button>
+        </div>
 			</div>
 			<div class="wrapCont">
-        <div class="boxCont mb20">
+        <div class="boxCont">
 					<h4 class="title">디지털 금 현황</h4>
+					<table class="tableBasic type--vertical">
+						<colgroup>
+							<col width="100">
+							<col width="500">
+						</colgroup>
+            <tr>
+              <th>금 인출신청</th>
+              <td>
+                <div class="itemGroup">
+                  <div class="item">
+                    <div class="left">인출승인 <span class="color--red">10</span> 건</div>
+                    <div class="right">5,234 g</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>회원</th>
+              <td>
+                <div class="itemGroup">
+                  <div class="item">
+                    <div class="left">가입승인 <span class="color--red">10</span> 건</div>
+                  </div>
+                  <div class="item">
+                    <div class="left">인증심사 <span class="color--red">10</span> 건</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>바우처(디지털 금)</th>
+              <td>
+                <div class="itemGroup">
+                  <div class="item">
+                    <div class="left">인출승인 <span class="color--red">10</span> 건</div>
+                    <div class="right">5,234 g</div>
+                  </div>
+                  <div class="item">
+                    <div class="left">인출승인 <span class="color--red">10</span> 건</div>
+                    <div class="right">5,234 g</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>디지털전당포</th>
+              <td>
+                <div class="itemGroup">
+                  <div class="item">
+                    <div class="left">대출승인 <span class="color--red">10</span> 건</div>
+                    <div class="right">9,123,456,789 원</div>
+                  </div>
+                  <div class="item">
+                    <div class="left">대출승인 <span class="color--red">10</span> 건</div>
+                    <div class="right">9,123,456,789 원</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </table>
+				</div>
+
+        <div class="boxCont">
+					<h4 class="title">바우처 현황</h4>
 					<table class="tableBasic">
 						<colgroup>
 							<col width="100">
@@ -50,124 +121,182 @@
 							<col width="100">
 						</colgroup>
             <thead>
-              <th>총 발행량</th>
-              <th>현재 보유량</th>
-              <th>누적 지급량</th>
-              <th>누적 입금량</th>
+              <tr>
+                <th>총 발행량</th>
+                <th>현재 보유량</th>
+                <th>누적 판매량</th>
+                <th>누적 구매량</th>
+              </tr>
             </thead>
 						<tbody>
-              <td>DAP 총 발행량</td>
-              <td>총 발행량 - 누적 지급량</td>
-              <td>바우처 구매로 차감된 량</td>
-              <td>-</td>
+              <tr>
+                <td>430,000</td>
+                <td>15,345</td>
+                <td>15,345</td>
+                <td>15,345</td>
+              </tr>
             </tbody>
           </table>
 				</div>
 
-				<div class="boxDashboard">
-          <div class="item">
-            <div class="top">
-              <div class="title">회원</div>
-              <div class="opt">2,000 명</div>
+				<div class="boxCont">
+          <h4 class="title">주요서비스 현황</h4>
+          <div class="boxDashTab">
+            <div class="topArea_tab">
+              <a href="#" data-role="tab1" class="active">금 보관/인출</a>
+              <a href="#" data-role="tab2">디지털 전당포</a>
+              <a href="#" data-role="tab3">바우처판매/환매</a>
+              <a href="#" data-role="tab4">바우처거래</a>
+              <a href="#" data-role="tab5">회원가입</a>
             </div>
-            <div class="cont">
-              <ul>
-                <li>
-                  <div class="title">개인회원</div>
-                  <div class="data"><span class="color--red">신규 100</span> 명 / 총 1,000 명</div>
-                </li>
-                <li>
-                  <div class="title">기업회원</div>
-                  <div class="data"><span class="color--red">신규 100</span> 명 / 총 1,000 명</div>
-                </li>
-                <li>
-                  <div class="title">기업가입 심사</div>
-                  <div class="data"><span class="color--red">승인대기 10</span> 건</div>
-                </li>
-                <li>
-                  <div class="title">본인인증 심사</div>
-                  <div class="data"><span class="color--red">승인대기 10</span> 건</div>
-                </li>
-              </ul>
+            <div id="tab1" class="tabArea active">
+              <div class="boxSearch">
+                <div class="inputPicker">
+                  <input type="text" class="datepicker hasDatepicker" placeholder="시작일" id="dp1620797974651">
+                </div>
+                <span class="hyp">~</span>
+                <div class="inputPicker">
+                  <input type="text" class="datepicker hasDatepicker" placeholder="종료일" id="dp1620797974652">
+                </div>
+                <select>
+                  <option>거래구분</option>
+                </select>
+                <div class="btn">
+                  <a href="#" class="btnSearch">검색</a>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="top">
-              <div class="title">금 예치/인출</div>
-              <div class="opt"><span class="color--red">+ 1,000 g</span></div>
-            </div>
-            <div class="cont">
-              <ul>
-                <li>
-                  <div class="title">금 예치 건수</div>
-                  <div class="data"><span class="color--red">신규 7 건</span> / 총 298 건</div>
-                </li>
-                <li>
-                  <div class="title">금 예치 중량</div>
-                  <div class="data">오늘 1,230 g / 총 18,940 g</div>
-                </li>
-                <li>
-                  <div class="title">금 인출 건수</div>
-                  <div class="data"><span class="color--red">수령대기 10 건</span> / 수령완료 총 10 건</div>
-                </li>
-                <li>
-                  <div class="title">금 인출 중량</div>
-                  <div class="data">수령대기 230 g / 수령완료 총 18,940 g</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="item">
-            <div class="top">
-              <div class="title">디지털 전당포</div>
-            </div>
-            <div class="cont">
-              <ul>
-                <li>
-                  <div class="title">승인대기</div>
-                  <div class="data"><span class="color--red">3</span> 건</div>
-                </li>
-                <li>
-                  <div class="title">실행대기</div>
-                  <div class="data"><span class="color--red">5</span> 건</div>
-                </li>
-                <li>
-                  <div class="title">상환대기</div>
-                  <div class="data"><span class="color--red">5</span> 건</div>
-                </li>
-                <li>
-                  <div class="title">완료</div>
-                  <div class="data"><span class="color--red">오늘 5</span> 건 / 총 50 건</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="item">
-            <div class="top">
-              <div class="title">입출금/자산교환</div>
-            </div>
-            <div class="cont">
-              <ul>
-                <li>
-                  <div class="title">입금</div>
-                  <div class="data"><span class="color--red">신규 7 건</span> / 총 298 건</div>
-                </li>
-                <li>
-                  <div class="title">출금</div>
-                  <div class="data"><span class="color--red">승인대기 67 건</span> / 완료 298 건</div>
-                </li>
-                <li>
-                  <div class="title">대금 입지급</div>
-                  <div class="data"><span class="color--red">신규 320 건</span> / 완료 120 건</div>
-                </li>
-                <li>
-                  <div class="title">자산교환</div>
-                  <div class="data"><span class="color--red">신규 132 건</span> / 총 234 건</div>
-                </li>
-              </ul>
-            </div>
+            <div id="tab2" class="tabArea">2</div>
+            <div id="tab3" class="tabArea">3</div>
+            <div id="tab4" class="tabArea">4</div>
+            <div id="tab5" class="tabArea">5</div>
           </div>
         </div>
+
+        <div class="boxCont">
+          <div class="top">
+            <h4 class="title">검색결과 <span class="color--blue">5</span>건</h4>
+            <div class="btn ex">
+              <a href="#" class="btnBasic type--excel">엑셀 다운로드</a>
+            </div>
+          </div>
+					<table class="tableBasic mb40">
+						<colgroup>
+							<col width="100">
+							<col width="100">
+							<col width="100">
+							<col width="100">
+							<col width="100">
+							<col width="100">
+							<col width="100">
+							<col width="100">
+						</colgroup>
+            <thead>
+              <tr>
+                <th colspan="2">보관</th>
+                <th colspan="4">인출</th>
+                <th colspan="2">인출취소</th>
+              </tr>
+            </thead>
+						<tbody>
+              <tr>
+                <th>건수</th>
+                <th>수량(g)</th>
+                <th>건수</th>
+                <th>수량</th>
+                <th>수수료(원)</th>
+                <th>부가가치세(원)</th>
+                <th>건수</th>
+                <th>취소수수료(원)</th>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>40</td>
+                <td>20</td>
+                <td><span class="color--red">-25</span></td>
+                <td>10,000</td>
+                <td>100,000</td>
+                <td>5</td>
+                <td>20,000</td>
+              </tr>
+              <tr class="total">
+                <td colspan="2">기간 판매량</td>
+                <td colspan="2">15g</td>
+                <td colspan="2">수수료 수익</td>
+                <td colspan="2">30,000 원</td>
+              </tr>
+            </tbody>
+          </table>
+					<table class="tableBasic">
+						<colgroup>
+							<col width="100">
+							<col width="100">
+							<col width="100">
+							<col width="100">
+							<col width="100">
+							<col width="100">
+							<col width="100">
+						</colgroup>
+            <thead>
+              <tr>
+                <th>일자</th>
+                <th>거래 건수</th>
+                <th>거래 수량(g)</th>
+                <th>수수료(원)</th>
+                <th>부가가치세(원)</th>
+                <th>취소수수료(원)</th>
+                <th>거래구분</th>
+              </tr>
+            </thead>
+						<tbody>
+              <tr>
+                <td>2021.05.10</td>
+                <td>10</td>
+                <td>20</td>
+                <td>0</td>
+                <td>-</td>
+                <td>-</td>
+                <td>보관</td>
+              </tr>
+              <tr>
+                <td>2021.05.10</td>
+                <td>10</td>
+                <td>15</td>
+                <td>5,000</td>
+                <td>50,000</td>
+                <td>-</td>
+                <td>인출</td>
+              </tr>
+              <tr>
+                <td>2021.05.08</td>
+                <td>10</td>
+                <td>15</td>
+                <td>5,000</td>
+                <td>50,000</td>
+                <td>-</td>
+                <td>보관</td>
+              </tr>
+              <tr>
+                <td>2021.05.07</td>
+                <td>5</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>20,000</td>
+                <td>인출취소</td>
+              </tr>
+              <tr>
+                <td>2021.05.06</td>
+                <td>10</td>
+                <td>10</td>
+                <td>5,000</td>
+                <td>50,000</td>
+                <td>-</td>
+                <td>인출</td>
+              </tr>
+            </tbody>
+          </table>
+				</div>
 			</div>
 		</div>
 	</section>
