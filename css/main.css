@@ -194,7 +194,7 @@ h3.title { margin-bottom:16px; padding:0 15px; font-size:17px; color:#000; font-
 @media screen and (max-width:320px){
   .boxAssets .boxVoucher { min-height:80px; padding:10px 0 0 110px; }
   .boxAssets .boxVoucher:after { width:132px; height:96px; }
-  .boxAssets .boxVoucher .priceGold { font-size:28px; }
-  .boxAssets .boxVoucher .priceGold span { font-size:16px; }
+  .boxAssets .boxVoucher .priceGold { font-size:25px; }
+  .boxAssets .boxVoucher .priceGold span { font-size:15px; }
   .boxAssets .boxVoucher .priceWon { font-size:12px; }
 }
