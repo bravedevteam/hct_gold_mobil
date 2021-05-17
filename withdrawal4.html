@@ -14,38 +14,32 @@
 	<div id="container" class="sub">
     <div class="headerArea">
       <a href="#" class="btnPagePrev black">이전</a>
-      <h1 class="title">회원탈퇴</h1>
+      <h1 class="title">휴대폰 인증</h1>
     </div>
     <div class="section">
-      <h3 class="title">휴대폰 번호</h3>
+      <div class="title--top">
+				<h3 class="title pl0">휴대폰 인증<button type="button" class="btnBasic small ml10">번호변경</button></h3>
+			</div>
       <div class="row division">
-        <div class="select number">
-          <select>
-            <option>+82</option>
-            <option>-</option>
-            <option>-</option>
-            <option>-</option>
-          </select>
-        </div>
         <div>
-          <input type="text" class="inputBasic" value="12345678" placeholder="-없이 입력하세요." />
+          <input type="text" class="inputBasic" value="01012345678" placeholder="-없이 입력하세요." disabled="disabled" />
         </div>
         <button type="button" class="btnBasic blueLine">인증요청</button>
       </div>
     </div>
     <div class="section">
       <div class="title--top">
-        <h3 class="title">휴대폰 인증</h3>
+        <h3 class="title pl0">휴대폰 인증</h3>
         <div class="opt"><span>유효시간 : 2:58</span></div>
       </div>
       <div class="row division">
         <input type="text" class="inputBasic" placeholder="인증코드 6자리" />
         <button type="button" class="btnBasic grayLine">인증하기</button>
       </div>
-			<p class="guide-text danger prl15">유효하지 않은 인증번호 입니다.</p>
+			<p class="guide-text danger">* 유효하지 않은 인증번호 입니다.</p>
     </div>
     <div class="footer--btn">
-			<button type="button" class="btnBasic active">확인</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
+			<button type="button" class="btnBasic">확인</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
 		</div>
   </div>
 </body>
