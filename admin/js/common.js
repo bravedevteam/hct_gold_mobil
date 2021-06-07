@@ -5,6 +5,7 @@ $(function(){
     $(this).addClass("active").siblings().removeClass("active");
     $(".tabArea").removeClass("active");
     $("#"+tab).addClass("active");
+    $("#"+tab+"_cont").addClass("active");
   });
 
   $(".open--popup").click(function(e){
