@@ -74,6 +74,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxNewAssets .top .opt .btnInfo { width:72px; height:24px; display:block; border-radius:12px; background:#2c2c2c; color:#fff; font-size:13px; text-align:center; line-height:24px; }
 .boxNewAssets .box { position:relative; }
 .boxNewAssets .box .bg { position:relative; z-index:1; }
+.boxNewAssets .box .bg img { width:100%; }
 .boxNewAssets .box .boxVoucher { position:absolute; right:15px; top:40%; text-align:right; z-index:5; line-height:1.4; }
 .boxNewAssets .box .boxVoucher .priceGold { font-size:30px; color:#000; font-family:"AppleSDGothicNeo", sans-serif; font-weight:700; line-height:36px; }
 .boxNewAssets .box .boxVoucher .priceGold span { font-size:26px; }
