@@ -18,7 +18,7 @@
     </div>
     <div class="section">
       <div class="title--top">
-        <h3 class="title--large mb20 pt0 pb0">구매할 디지털 금</h3>
+        <h3 class="title--large mb20 pt0 pb0">구매할 금 중량</h3>
         <div class="opt vct">
           <div class="boxWeightRadio">
             <input type="radio" id="chk_w1" data-role="radioTab1" />
@@ -36,7 +36,7 @@
         <button type="button">26.25g(7돈)</button>
         <button type="button">37.5g(10돈)</button>
         <button type="button">112.5g(30돈)</button>
-        <button type="button" class="layer--open" data-pop="popBuyLimit">187.5g(50돈)</button>
+        <button type="button" class="layer--open" data-pop="popBuyLimit">50돈(187.5g)</button>
       </div>
       <div id="radioTab2" class="wr_tab inputUnit value--max"><!-- input의 값이 최대일 때 value--max 추가 -->
         <input type="text" value="" class="inputBasic" />
@@ -61,11 +61,12 @@
               <div class="price">구매금액 <span class="en">3,464,062 원</span></div>
             </div>
           </div>
+
+          <div class="guide-text type--dot mb10">한컴페이로 구매 시 본인 결제 한도에 따라 원하는 디지털 금 중량 구매가 불가 할 수 있습니다.</div>
         </label>
-        <div class="guide-text type--dot mb40 mt0">한컴페이로 구매 시 본인 결제 한도에 따라 원하는 디지털 금 중량 구매가 불가 할 수 있습니다.</div>
         
         <input type="radio" name="tokkenUse" id="chk_tk2" />
-        <label for="chk_tk2">
+        <label for="chk_tk2" class="chk_arowana">
           <div class="hiddenBox type--arowana">
             <div class="item">
               <div class="top">
@@ -83,21 +84,22 @@
                 </select>
               </div>
               <div class="cont">
-                <div class="price">113.77809 ARW <span>(141,015 원)</span></div>
-                <div class="bottomPrice">사용가능 자산 1,456,471 ARW</div>
+                <div class="title">입금해야할 골드 바우처</div>
+                <div class="price">113.77809 ARW (141,015 원)</div>
+                <div class="bottomPrice">
+                  현재 시세 : 1 ARW = 1,117원<br />
+                  1g(24K)=34,494,999 ARW
+                </div>
               </div>
             </div>
-            <div class="row division_half mb10">
-              <div class="guide-text danger">사용 가능한 수량을 초과하였습니다.</div>
-              <div class="guide-text ta-r color-000">현재 시세 : 1 ARW = 768,904원</div>
-            </div>
-            <div class="guide-text boxGray">1g(24K) = 65,145 ARW</div>
           </div>
         </label>
+        <div class="etc">ARW 결제가능시간 : 09:00 ~ 17:00</div>
       </div>
+
       <div class="boxCustomer">
         <div class="top">
-          <div class="title">계좌로 구매 안내</div>
+          <div class="title">법인계좌 이체로<br />구매 안내</div>
           <div class="tel">
             <span>1588-0000</span>
             <span>·상담시간 평일 10:00 ~ 18:00</span>
@@ -120,16 +122,6 @@
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-    </div>
-    <hr class="section--space mtb50" />
-    <div class="section">
-      <div class="inner">
-        <div class="boxBuyGuide">
-          <div class="title">방문 구매 안내</div>
-          <div class="subject">보유하신 실물 금으로<br />디지털 금을 구매하세요.</div>
-          <a href="#">구매방법 안내 +</a>
         </div>
       </div>
     </div>

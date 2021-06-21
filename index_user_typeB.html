@@ -5,32 +5,76 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 	<title>AROWANA GOLD FINANCE</title>
 	<link rel="stylesheet" href="css/layout.css" />
-	<link rel="stylesheet" href="css/sub.css" />
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/main.css" />
 	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.easypiechart.min.js"></script>
 	<script src="js/common.js"></script>
 </head>
 
 <body>
-	<div id="container">
-    <div class="headerArea">
-      <a href="#" class="btnPagePrev black">이전</a>
-      <h1 class="title">디지털 금 통장</h1>
-    </div>
-    <div class="section mt40">
-      <div class="boxWalletTop type--voucher">
-        <div class="cont">
-          <div class="opt layer--open" data-pop="voucherMore"><a href="#">자세히보기</a></div>
-          <div class="priceWrap">
-            <div class="price"><span class="en">400g <span class="small">(24K)</span></span></div>
-            <div class="bottomPrice--guide">사용가능 디지털 금 <span class="en">350g</span></div>
-          </div>
-        </div>
+	<header id="header">
+		<h1>HANCOM PRIME</h1>
+		<a href="#" class="btnMypage">My Page</a>
+		<a href="#" class="btnAlarm">Alarm</a>
+	</header>
+	<div id="container" class="main typeB">
+		<div class="mainTop">
+			<div class="boxAssets">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+            <div class="swiper-slide">
+							<div class="box type--detail">
+                <div class="top">
+                  <div class="title"><span>hancom@gmail.com</span>님의 골드바우처</div>
+                  <div class="opt layer--open" data-pop="voucherMore"><a href="#">자세히보기</a></div>
+                </div>
+                <div class="boxVoucher">
+									<div class="priceGold en">400g <span>(24K)</span></div>
+									<div class="priceWon">사용가능 골드바우처 350g <span>(24K)</span></div>
+								</div>
+                <div class="btn">
+                  <button type="button">골드바우처 받기</button>
+                  <button type="button">골드바우처 보내기</button>
+                </div>
+              </div>
+						</div>
+						<!-- <div class="swiper-slide">
+							<div class="box">
+                <div class="top">
+                  <div class="title"><span>hancom@gmail.com</span>님의 자산현황</div>
+                </div>
+                <div class="price"><span class="en">8,000,000</span> 원</div>
+                <div class="bottomPrice">전일대비 <i class="icon"></i> 300,000 원 <span class="unit small">(+1.3%)</span></span></div>
+                <div class="btn">
+                  <button type="button">디지털 금고</button>
+                  <button type="button">금 보관</button>
+                </div>
+              </div>
+            </div> -->
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
 
-        <div class="bg"><img src="./images/content/bgAccountVoucher.png" alt="" /></div>
-      </div>
-    </div>
+			<div class="boxQuickVoucher">
+				<a href="#" class="link1">
+					<div class="title">골드바우처 교환하기</div>
+					<div class="cont">실물금을 안전한 골드바우처로<br />교환해 보세요!</div>
+					<div class="link">교환하기</div>
+				</a>
+				<a href="#" class="link2">
+					<div class="title">골드바우처 구매하기</div>
+					<div class="cont">한컴페이 또는 ARW를 이용해<br />골드바우처를 구매해 보세요!</div>
+					<div class="link">구매하기</div>
+				</a>
+			</div>			
+		</div>
 
-    <div class="section section--small mt50">
+    <div class="section section--small">
       <div class="boxAccountList voucher">
         <div class="listTop--title">
           <h3 class="title title--large">거래내역</h3>
@@ -61,10 +105,10 @@
             <li>
               <a href="#" class="layer--open" data-pop="account_detail_2"><!-- 상세 거래내역 2 참조 -->
                 <div class="title">
-                  <div class="status error">구매오류 환급주소입력</div>
                   <div class="use">골드바우처 구매(ARW)</div>
                   <div class="date">05.11</div>
                   <div class="time">11:46</div>
+                  <div class="status error">구매오류 환급주소입력</div>
                 </div>
                 <div class="info">
                   <div class="price out">-150g (24K)</div>
@@ -74,10 +118,10 @@
             <li>
               <a href="#" class="layer--open" data-pop="account_detail_1"><!-- 상세 거래내역 1 참조 -->
                 <div class="title">
-                  <div class="status ing">처리중</div>
                   <div class="use">대금지급</div>
                   <div class="date">05.11</div>
                   <div class="time">11:46</div>
+                  <div class="status ing">처리중</div>
                 </div>
                 <div class="info">
                   <div class="price out">-150g (24K)</div>
@@ -92,10 +136,10 @@
             <li>
               <a href="#" class="layer--open" data-pop="account_detail_2"><!-- 상세 거래내역 2 참조 -->
                 <div class="title">
-                  <div class="status error">구매실패</div>
                   <div class="use">금인출</div>
                   <div class="date">05.11</div>
                   <div class="time">11:46</div>
+                  <div class="status error">구매실패</div>
                 </div>
                 <div class="info">
                   <div class="price out">-150g (24K)</div>
@@ -105,10 +149,10 @@
             <li>
               <a href="#" class="layer--open" data-pop="account_detail_1"><!-- 상세 거래내역 1 참조 -->
                 <div class="title">
-                  <div class="status ing">신청중</div>
                   <div class="use">금인출</div>
                   <div class="date">05.11</div>
                   <div class="time">11:46</div>
+                  <div class="status ing">신청중</div>
                 </div>
                 <div class="info">
                   <div class="price out">-150g (24K)</div>
@@ -119,7 +163,7 @@
         </div>
       </div>
     </div>
-  </div>
+	</div>
   <div id="voucherMore" class="basicPopup popMore">
     <div class="inBox">
       <a href="#">금 인출</a>
@@ -281,5 +325,35 @@
     </div>
 	</div>
 	<div id="dim"></div>
+
+	<script type="text/javascript">
+		var swiper = new Swiper('.boxAssets .swiper-container', {
+      slidesPerView: "auto",
+      spaceBetween: 0,
+      centeredSlides: true,
+			pagination: {
+				el: '.boxAssets .swiper-pagination',
+				clickable: true
+      },
+    });
+
+		var swiper = new Swiper('.boxInvestItem .swiper-container', {
+      pagination: {
+				el: '.boxInvestItem .swiper-pagination',
+				clickable: true
+      },
+    });
+
+		var swiper = new Swiper('.boxEventBanner .swiper-container', {
+			slidesPerView: "auto",
+			centeredSlides: true,
+			loop: true,
+			spaceBetween: 10,
+      pagination: {
+				el: '.boxEventBanner .swiper-pagination',
+				clickable: true
+      },
+    });
+	</script>
 </body>
 </html>
