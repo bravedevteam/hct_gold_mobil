@@ -8,8 +8,8 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .section--small { padding:0 8px; }
 
 /* Assets */
-.boxAssets { padding-bottom:66px; overflow:hidden; }
-.boxAssets .box { height:300px; position:relative; margin:0 15px; padding:24px 17px 72px; border-radius:20px; background:#2750f2; color:#fff; box-shadow: 0 7px 5px 0 rgba(0, 37, 181, 0.2); }
+.boxAssets { padding-top:25px; padding-bottom:66px; overflow:hidden; }
+.boxAssets .box { height:300px; position:relative; margin:0 15px; padding:24px 17px 72px; border-radius:20px; background:#2750f2; color:#fff; box-shadow: 0 5px 13px 0 rgba(0, 37, 181, 0.46); }
 .boxAssets .top { margin-bottom:50px; position:relative; }
 .boxAssets .top:after { content:''; display:block; clear:both; visibility:visible; }
 .boxAssets .title { height:26px; float:left; font-size:15px; line-height:26px; }
@@ -197,16 +197,20 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxVoucherGuide .list .item .cont { margin-bottom:23px; margin-left:75px; font-size:15px; color:#2c2c2c; letter-spacing:-0.06em; }
 .boxVoucherGuide .list .item .link { height:48px; display:block; background:#2750f2; border-radius:10px; text-align:center; color:#fff; font-size:17px; letter-spacing:-.08em; line-height:48px; }
 .boxVoucherGuide .list .item .link:after { content:''; width:7px; height:10px; margin-left:20px; display:inline-block; background:url('../images/common/iconArrowWhiteSmall.png') center center no-repeat; background-size:7px auto; vertical-align:middle; }
+.boxVoucherGuide .list .item .link.wait { background:#999; }
+.boxVoucherGuide .list .item .link.wait:after { display:none; }
 
 .boxVoucherUse { padding-bottom:0; }
 .boxVoucherUse .list { margin:0 15px; border:1px solid #ddd; border-radius:10px; overflow:hidden; }
-.boxVoucherUse .list a { display:block; padding:33px 25px 23px 87px; margin-left:17px; position:relative; border-top:1px solid #ddd; }
+.boxVoucherUse .list a { display:block; padding:33px 25px 23px 87px; margin-left:17px; position:relative; border-top:1px solid #ddd; letter-spacing:-.08em; }
 .boxVoucherUse .list a:before { content:''; width:36px; height:36px; position:absolute; left:24px; top:40px; background-repeat:no-repeat; background-size:100% auto; background-position:center center; }
 .boxVoucherUse .list a:nth-child(1):before { border-top:0; background-image:url('../images/main/iconVoucherUse1.png'); }
 .boxVoucherUse .list a:nth-child(2):before { background-image:url('../images/main/iconVoucherUse2.png'); }
 .boxVoucherUse .list a:nth-child(3):before { background-image:url('../images/main/iconVoucherUse3.png'); }
 .boxVoucherUse .list .linkTit { margin-bottom:8px; font-size:17px; color:#000; line-height:25px; }
 .boxVoucherUse .list .linkTit:after { content:''; width:7px; height:11px; margin-left:7px; margin-top:-2px; display:inline-block; background:url('../images/common/iconArrowBlackSmall.png') center center no-repeat; background-size:100% auto; vertical-align:middle; }
+.boxVoucherUse .list .linkTit.wait span { color:#4fd884; }
+.boxVoucherUse .list .linkTit.wait:after { display:none; }
 .boxVoucherUse .list .linkCont { font-size:14px; color:#999; letter-spacing:-.08em; }
 
 
