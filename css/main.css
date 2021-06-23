@@ -290,8 +290,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxDigitalPawn li a.type--wait:after { display:none; }
 
 .boxDigitalGold { padding:0 0 76px; overflow:hidden; }
-.boxDigitalGold .title { margin:0 15px 11px; font-size:18px; color:#2c2c2c; font-weight:100; }
-.boxDigitalGold .title span { font-weight:600; }
+.boxDigitalGold .title { margin:0 15px 11px; font-size:18px; color:#2c2c2c; font-weight:600; }
 .boxDigitalGold .swiper-container { overflow:visible; }
 .boxDigitalGold .swiper-slide { padding:0 15px; }
 .boxDigitalGold .swiper-slide a { display:block; box-shadow: 0 4px 7px 0 #ebebeb; border-radius:10px; overflow:hidden; }
