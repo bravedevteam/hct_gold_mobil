@@ -1,4 +1,4 @@
-.mainTop { padding:20px 0 0; background:#fff; }
+.mainTop { background:#fff; }
 
 h3.title { margin-bottom:16px; padding:0 15px; font-size:17px; color:#000; font-weight:700; }
 h3.title.inTit { padding:0 23px; font-size:18px; font-weight:500; }
@@ -68,20 +68,21 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxAssets .swiper-pagination-fraction { bottom:-38px; }
 
 .boxNewAssets { padding-top:28px; margin:0 15px 15px; position:relative; }
-.boxNewAssets .top { position:relative; margin-bottom:17px; }
-.boxNewAssets .top .title { font-size:13px; color:#2c2c2c; }
+.boxNewAssets .top { position:relative; margin-bottom:20px; }
+.boxNewAssets .top .title { font-size:15px; color:#2c2c2c; }
+.boxNewAssets .top .title span { font-weight:700; }
 .boxNewAssets .top .opt { position:absolute; right:0; top:50%; transform:translateY(-50%); }
-.boxNewAssets .top .opt .btnInfo { width:72px; height:24px; display:block; border-radius:12px; background:#2c2c2c; color:#fff; font-size:13px; text-align:center; line-height:24px; }
-.boxNewAssets .box { position:relative; }
+.boxNewAssets .top .opt .btnInfo { width:74px; height:26px; display:block; border-radius:13px; background:#2c2c2c; color:#fff; font-size:15px; text-align:center; line-height:26px; }
+.boxNewAssets .box { position:relative; box-shadow: }
 .boxNewAssets .box .bg { position:relative; z-index:1; }
 .boxNewAssets .box .bg img { width:100%; }
-.boxNewAssets .box .boxVoucher { position:absolute; right:15px; top:40%; text-align:right; z-index:5; line-height:1.4; }
-.boxNewAssets .box .boxVoucher .priceGold { font-size:30px; color:#000; font-family:"AppleSDGothicNeo", sans-serif; font-weight:700; line-height:36px; }
-.boxNewAssets .box .boxVoucher .priceGold span { font-size:26px; }
-.boxNewAssets .box .boxVoucher .priceWon { font-size:16px; color:#967c2d; }
-.boxNewAssets .box .btn { width:100%; height:20%; position:absolute; left:0; bottom:0; display:flex; justify-content: center; z-index:5; }
-.boxNewAssets .box .btn button { flex:1; position:relative; font-size:16px; font-family:"AppleSDGothicNeo", sans-serif; color:#2c2c2c; font-weight:700; }
-.boxNewAssets .box .btn button+button:after { content:''; width:2px; height:16px; position:absolute; left:-1px; top:50%; margin-top:-8px; background:#977e2e; }
+.boxNewAssets .box .boxVoucher { position:absolute; right:15px; top:38%; text-align:right; z-index:5; line-height:1.4; }
+.boxNewAssets .box .boxVoucher .priceGold { font-size:30px; color:#000; font-family:"SFProDisplay", 'Sans-serif'; font-weight:700; line-height:36px; }
+.boxNewAssets .box .boxVoucher .priceGold span { font-size:26px; font-weight:500; }
+.boxNewAssets .box .boxVoucher .priceWon { font-size:16px; color:#936b07; }
+.boxNewAssets .box .btn { height:20%; position:absolute; left:15px; right:15px; bottom:13px; display:flex; justify-content: center; z-index:5; background:rgba(255,232,159,0.7); border-radius:5px; }
+.boxNewAssets .box .btn button { flex:1; position:relative; font-size:16px; font-family:"AppleSDGothicNeo", sans-serif; color:#2c2c2c; font-weight:600; }
+.boxNewAssets .box .btn button+button:after { content:''; width:2px; height:16px; position:absolute; left:0; top:50%; margin-top:-8px; background:#977e2e; opacity:0.45; }
 .boxNewAssets .box .btn button .icon { width:9px; }
 
 
@@ -131,12 +132,16 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxQuickVoucher ul li { flex:1; padding:0 8px; }
 .boxQuickVoucher ul li:first-child { padding-left:0; }
 .boxQuickVoucher ul li:last-child { padding-right:0; }
-.boxQuickVoucher ul li a { display:block; padding:28px 0 25px; border-radius:10px; text-align:center; box-shadow: 0 3px 15px 0 rgba(131, 131, 131, 0.24); }
+.boxQuickVoucher ul li a { position:relative; display:block; padding:28px 0 58px; border-radius:10px; text-align:center; box-shadow: 0 3px 15px 0 rgba(131, 131, 131, 0.24); }
 .boxQuickVoucher ul li a.link1 { background:#1a1a1a; color:#fff; }
 .boxQuickVoucher ul li a.link2 { background:#ffdf34; color:#2c2c2c; }
+.boxQuickVoucher ul li a:after { content:''; width:18px; height:18px; position:absolute; left:50%; bottom:22px; margin-left:-9px; background-position:center center; background-repeat:no-repeat; background-size:100% auto; }
+.boxQuickVoucher ul li a.link1:after { background-image:url('../images/main/iconQuickArrow_white.png'); }
+.boxQuickVoucher ul li a.link2:after { background-image:url('../images/main/iconQuickArrow_black.png'); }
 .boxQuickVoucher ul li a .icon { width:80px; height:80px; margin:0 auto 20px; background:#fff; border-radius:50%; overflow:hidden; }
 .boxQuickVoucher ul li a .title { margin-bottom:8px; font-size:16px; font-weight:700; font-family:"AppleSDGothicNeo", sans-serif; }
 .boxQuickVoucher ul li a .cont { padding:0 5px; color:#999; font-size:13px; font-weight:700; font-family:"AppleSDGothicNeo", sans-serif; }
+.boxQuickVoucher ul li a.link2 .cont { color:#5f5f5f; }
 
 /* Quick */
 .boxQuick { margin:0 15px 54px; }

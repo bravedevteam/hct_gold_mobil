@@ -246,10 +246,10 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 .fApple { font-family:"AppleSDGothicNeo", "Sans-serif"; }
 
 /* LAYOUT */
-#header { padding:20px 15px 6px; position:relative; background:#fff; }
+#header { padding:20px 15px; position:relative; background:#fff; border-bottom:1px solid #ddd; }
 #header h1 { width:114px; height:24px; background:url('../images/common/logo.png') no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
-#header .btnMypage { width:30px; height:36px; position:absolute; right:45px; top:20px; background:url('../images/common/btmMypage.png') center center no-repeat; background-size:22px auto; font-size:0; text-indent:-99999px; }
-#header .btnAlarm { width:30px; height:36px; position:absolute; right:15px; top:20px; background:url('../images/common/btnAlarm.png') center center no-repeat; background-size:22px auto; font-size:0; text-indent:-99999px; }
+#header .btnMypage { width:30px; height:36px; position:absolute; right:45px; top:16px; background:url('../images/common/btmMypage.png') center center no-repeat; background-size:22px auto; font-size:0; text-indent:-99999px; }
+#header .btnAlarm { width:30px; height:36px; position:absolute; right:15px; top:16px; background:url('../images/common/btnAlarm.png') center center no-repeat; background-size:22px auto; font-size:0; text-indent:-99999px; }
 #header .btnAlarm.check:after { content:''; width:8px; height:8px; position:absolute; right:6px; top:10px; border-radius:50%; background:#ff7474; }
 
 #container {  }
