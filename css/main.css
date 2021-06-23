@@ -73,7 +73,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxNewAssets .top .title span { font-weight:700; }
 .boxNewAssets .top .opt { position:absolute; right:0; top:50%; transform:translateY(-50%); }
 .boxNewAssets .top .opt .btnInfo { width:74px; height:26px; display:block; border-radius:13px; background:#2c2c2c; color:#fff; font-size:15px; text-align:center; line-height:26px; }
-.boxNewAssets .box { position:relative; box-shadow: }
+.boxNewAssets .box { position:relative; box-shadow:0 3px 10px rgba(131,131,131,.31); border-radius:10px; overflow:hidden; }
 .boxNewAssets .box .bg { position:relative; z-index:1; }
 .boxNewAssets .box .bg img { width:100%; }
 .boxNewAssets .box .boxVoucher { position:absolute; right:15px; top:38%; text-align:right; z-index:5; line-height:1.4; }
@@ -118,7 +118,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxAccountList .cont .title .time { float:left; position:relative; padding-left:8px; margin-left:8px; font-size:13px; color:#999; line-height:22px; }
 .boxAccountList .cont .title .time:before { content:''; width:1px; height:8px; position:absolute; left:0; top:50%; margin-top:-4px; background:#f2f4f6; }
 .boxAccountList .cont .title .status { position:absolute; left:0; top:-20px; color:#4fd884; font-size:10px; }
-.boxAccountList .cont .info { float:1; text-align:right; }
+.boxAccountList .cont .info { flex:1; text-align:right; }
 .boxAccountList .cont .info .price { font-size:17px; font-weight:700; color:#2750f2; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxAccountList .cont .info .price.out { color:#000; }
 .boxAccountList .cont .info .total { font-size:15px; color:#999; font-family:"SFProDisplay", 'Sans-serif'; }
