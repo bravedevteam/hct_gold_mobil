@@ -750,8 +750,19 @@ h4.title span { font-size:12px; }
 
 
 /* Yak */
-.boxYak { padding:30px 18px; border-bottom:1px solid #f0f0f0; line-height:2.1; white-space:pre-wrap; }
+.boxYak { padding:30px 18px; border-bottom:1px solid #f0f0f0; line-height:2; }
+.boxYak h3 { text-align:center; font-weight:700; font-size:14px; }
 .boxYak .title { font-weight:700; }
+.boxYak .cont+h3 { margin:20px 0 10px; }
+.boxYak .cont+.title { margin-top:20px; }
+
+.boxYak table { width:100%; margin-top:10px; border-top:1px solid #cdced2; }
+.boxYak table tr th { padding:6px 10px; background:#fafafa; border:1px solid #ececec; color:#000; font-weight:400; }
+.boxYak table tr td { padding:8px; border:1px solid #ececec; text-align:center; }
+.boxYak table tr th:first-child { border-left:0; }
+.boxYak table tr th:last-child { border-right:0; }
+.boxYak table tr td:first-child { border-left:0; color:#999; }
+.boxYak table tr td:last-child { border-right:0; }
 
 
 /* Customer */
