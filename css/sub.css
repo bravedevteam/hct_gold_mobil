@@ -913,7 +913,7 @@ h4.title span { font-size:12px; }
 .boxCustomer .listDetail .cont { color:#2c2c2c; }
 
 .boxVoucherCard { padding:14px 33px 36px; background:#ffdf31; }
-.boxVoucherCard .imgCard { margin-bottom:42px; position:relative; }
+.boxVoucherCard .imgCard { margin-bottom:42px; position:relative; border-radius:10px; overflow:hidden; box-shadow:0 3px 10px #d3b700; }
 .boxVoucherCard .imgCard .opt { position:absolute; right:4.5%; bottom:14%; text-align:right; font-family:'Cinzel'; font-weight:700; }
 .boxVoucherCard .imgCard .opt .gram { padding-right:24px; background:url('../images/content/bgGram.png') right 28px no-repeat; background-size:17px auto; font-size:41px; letter-spacing:-1px; }
 .boxVoucherCard .listDetail .title { color:#000; }
