@@ -751,7 +751,7 @@ h4.title span { font-size:12px; }
 
 /* Yak */
 .boxYak { padding:30px 18px; border-bottom:1px solid #f0f0f0; line-height:2; }
-.boxYak h3 { text-align:center; font-weight:700; font-size:14px; }
+.boxYak h3 { margin-bottom:10px; text-align:center; font-weight:700; font-size:14px; }
 .boxYak .title { font-weight:700; }
 .boxYak .cont+h3 { margin:20px 0 10px; }
 .boxYak .cont+.title { margin-top:20px; }
@@ -925,6 +925,7 @@ h4.title span { font-size:12px; }
 
 .boxVoucherCard { padding:14px 33px 36px; background:#ffdf31; }
 .boxVoucherCard .imgCard { margin-bottom:42px; position:relative; border-radius:10px; overflow:hidden; box-shadow:0 3px 10px #d3b700; }
+.boxVoucherCard .imgCard img { width:100%; }
 .boxVoucherCard .imgCard .opt { position:absolute; right:4.5%; bottom:14%; text-align:right; font-family:'Cinzel'; font-weight:700; }
 .boxVoucherCard .imgCard .opt .gram { padding-right:24px; background:url('../images/content/bgGram.png') right 28px no-repeat; background-size:17px auto; font-size:41px; letter-spacing:-1px; }
 .boxVoucherCard .listDetail .title { color:#000; }
