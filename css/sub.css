@@ -755,6 +755,7 @@ h4.title span { font-size:12px; }
 .boxYak .title { font-weight:700; }
 .boxYak .cont+h3 { margin:20px 0 10px; }
 .boxYak .cont+.title { margin-top:20px; }
+.boxYak .cont+.cont { margin-top:20px; }
 
 .boxYak table { width:100%; margin-top:10px; border-top:1px solid #cdced2; }
 .boxYak table tr th { padding:6px 10px; background:#fafafa; border:1px solid #ececec; color:#000; font-weight:400; }
