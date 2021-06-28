@@ -129,15 +129,15 @@ a.type--link+button { margin-left:40px; }
 .inputPicker input { height:52px; padding:0 17px;  position:relative; z-index:2; background:transparent; }
 .inputPicker:after { content:''; width:40px; height:40px; position:absolute; right:5px; top:6px; background:url('../images/split.png') -40px -80px no-repeat; }
 
-#header { width:100%; height:100px; padding:0 0 0 30px; position:absolute; left:0; top:0; background:#273444; overflow:hidden; }
-#header h1.logo { width:139px; height:100px; float:left; background:url('../images/logo.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+#header { width:100%; height:100px; padding:0 0 0 47px; position:absolute; left:0; top:0; background:#273444; overflow:hidden; }
+#header h1.logo { width:120px; height:100px; float:left; background:url('../images/logo.png') center center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 #header .topInfo { position:absolute; right:0; top:0; }
 #header .topInfo .name { height:100px; padding:0 50px; float:left; border-left:1px solid #040507; border-right:1px solid #040507; line-height:100px; color:#fff; font-size:15px; }
 #header .topInfo .btnLogout { width:90px; height:100px; float:left; position:relative; border-left:1px solid #040507; font-size:0; text-indent:-99999px; }
 #header .topInfo .btnLogout:after { content:''; width:40px; height:40px; margin:-20px 0 0 -20px; position:absolute; left:50%; top:50%; background:url('../images/split.png') 0 -80px no-repeat; }
 
-#nav { height:100px; margin:0 215px 0 188px; overflow-x:auto; overflow-y:hidden; }
-#nav ul { width:870px; height:100%; overflow:hidden; }
+#nav { height:100px; margin:0 248px 0 168px; overflow-x:auto; overflow-y:hidden; }
+#nav ul { width:814px; height:100%; overflow:hidden; }
 #nav li { height:100%; float:left; }
 #nav li a { height:100%; padding:0 16px; display:flex; align-items:center; justify-content:center; color:#c1c1c1; font-size:14px; }
 #nav li a:hover, #nav li.on a { background-color:#202e3f; color:#4880ff; }
