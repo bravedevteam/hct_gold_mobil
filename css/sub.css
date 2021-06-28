@@ -892,7 +892,7 @@ h4.title span { font-size:12px; }
 .boxTradeHidden .hiddenBox.type--arowana .item .top { position:absolute; left:26px; right:26px; background:#999; z-index:2; }
 .boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--arowana .item .top { display:none; }
 .boxTradeHidden .hiddenBox .item .top .title { float:left; color:#fff; font-size:20px; }
-.boxTradeHidden .hiddenBox.type--hancom .item .top .title { width:149px; height:100%; background:url('../images/content/imgVoucherHancom.png') left center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
+.boxTradeHidden .hiddenBox.type--hancom .item .top .title { width:143px; height:100%; background:url('../images/content/imgVoucherHancom.png') left center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 .boxTradeHidden .hiddenBox.type--account .item > .cont { padding-top:20px; border-top:1px solid #1735aa; }
 .boxTradeHidden .hiddenBox.type--account .item .listDetail li .title,
 .boxTradeHidden .hiddenBox.type--account .item .listDetail li .cont { font-size:15px; color:#fff; }
