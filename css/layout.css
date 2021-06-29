@@ -338,8 +338,8 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 
 .basicPopup.popEvent { padding:0; }
 .basicPopup.popEvent .footer { height:60px; padding:0 20px; line-height:60px; }
-.basicPopup.popEvent .footer .inputCheckbox { padding:20px 0; float:left; margin-bottom:0; }
-.basicPopup.popEvent .footer .inputCheckbox label { padding-left:26px; background-size:20px auto; line-height:20px; font-size:14px; }
+.basicPopup.popEvent .footer .boxCheckBlue { padding:20px 0; float:left; margin-bottom:0; }
+.basicPopup.popEvent .footer .boxCheckBlue label { padding-left:26px; background-size:20px auto; line-height:20px; font-size:14px; }
 .basicPopup.popEvent .footer .close { float:right; padding:20px 10px; font-size:14px; color:#7700ff; }
 
 /* Tab */
