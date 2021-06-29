@@ -50,7 +50,7 @@ i {display: inline-block;}
 em {font-style: normal; letter-spacing: -1px;}
 input {box-sizing: border-box; border: 1px solid #ddd; background-color: #fff; border-radius: 0; -webkit-appearance: none; -moz-appearance: none; appearance: none; font-family:inherit; }
 input[type=text]::-ms-clear {display:none;}
-button {box-sizing: border-box; border: 0; background-color: transparent; cursor: pointer; color:inherit; font-family: 'SpoqaHanSansNeo', 'Sans-serif'; }
+button {box-sizing: border-box; border: 0; background-color: transparent; cursor: pointer; color:inherit; font-family: 'SpoqaHanSansNeo', 'Sans-serif'; font-weight:300; }
 textarea {box-sizing: border-box; resize: none;}
 select {-webkit-border-radius: 0; -webkit-appearance: none; -moz-appearance: none; -webkit-appearance: none; appearance: none; box-sizing: border-box; cursor: pointer; font-family: inherit; }
 select::-ms-expand {display: none;}
@@ -327,7 +327,7 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .boxCheckBlue label { padding-left:26px; float:left; background:url('../images/common/iconCheckBlue.png') left center no-repeat; background-size:21px auto; font-size:15px; line-height:20px; }
 .boxCheckBlue input:checked + label { background-image:url('../images/common/iconCheckBlue_on.png'); }
 
-.basicPopup { padding:30px 20px; position:fixed; left:23px; right:23px; top:50%; display:none; border-radius:10px; background:#fff; transform:translateY(-50%); z-index:25; }
+.basicPopup { padding:30px 20px; position:fixed; left:23px; right:23px; top:50%; display:none; border-radius:10px; background:#fff; transform:translateY(-50%); z-index:25; overflow:hidden; }
 .basicPopup.active { display:block; }
 .basicPopup .cont { text-align:center; font-size:17px; font-weight:500; }
 .basicPopup .cont.icon--complete { margin-bottom:30px; padding-top:82px; background:url('../images/common/iconExMarkBlack.png') center 10px no-repeat; background-size:36px; }
@@ -335,6 +335,12 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .basicPopup .boxBtn button:first-child { margin-right:4px; }
 .basicPopup .boxBtn button:last-child { margin-left:4px; }
 .basicPopup .box { margin-top:20px; font-weight:300; }
+
+.basicPopup.popEvent { padding:0; }
+.basicPopup.popEvent .footer { height:60px; padding:0 20px; line-height:60px; }
+.basicPopup.popEvent .footer .inputCheckbox { padding:20px 0; float:left; margin-bottom:0; }
+.basicPopup.popEvent .footer .inputCheckbox label { padding-left:26px; background-size:20px auto; line-height:20px; font-size:14px; }
+.basicPopup.popEvent .footer .close { float:right; padding:20px 10px; font-size:14px; color:#7700ff; }
 
 /* Tab */
 .tabBasic { margin-top:10px; display:flex; }
