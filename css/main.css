@@ -1,8 +1,8 @@
 .mainTop { background:#fff; }
 
-h3.title { margin-bottom:16px; padding:0 15px; font-size:17px; color:#000; font-weight:700; }
+h3.title { margin-bottom:16px; padding:0 15px; font-size:17px; color:#000; font-weight:500; }
 h3.title.inTit { padding:0 23px; font-size:18px; font-weight:500; }
-h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
+h4.title { margin-bottom:15px; font-size:15px; font-weight:300; color:#2c2c2c; }
 
 .section { margin:0; }
 .section--small { padding:0 8px; }
@@ -19,7 +19,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxAssets .trade { width:80px; height:26px; float:right; border:1px solid #fff; border-radius:13px; text-align:center; line-height:26px; font-size:12px; }
 .boxAssets .trade i { width:11px; margin-right:2px; display:inline-block; vertical-align:middle; }
 .boxAssets .box .opt { position:absolute; right:0; top:5px; color:#5f5f5f; text-decoration:underline; }
-.boxAssets .price { font-size:30px; font-weight:700; text-align:center; }
+.boxAssets .price { font-size:30px; font-weight:500; text-align:center; }
 .boxAssets .price span.unit { font-weight:500; font-size:15px; }
 .boxAssets .price span.unit2 { font-size:22px; }
 .boxAssets .price span.icon { margin:0 5px; padding-left:10px; background-size:7px auto; background-repeat:no-repeat; background-position:left center; font-size:11px; font-family:"SFProDisplay", 'Sans-serif'; }
@@ -52,7 +52,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 
 .boxAssets .boxVoucher { min-height:100px; padding:16px 0 0 128px; position:relative; text-align:right; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxAssets .boxVoucher:after { content:''; width:153px; height:110px; position:absolute; left:-12px; top:-8px; background:url('../images/main/imgVoucher.png') no-repeat; background-size:100% auto; }
-.boxAssets .boxVoucher .priceGold { font-size:32px; font-weight:700; letter-spacing:-0.07em; }
+.boxAssets .boxVoucher .priceGold { font-size:32px; font-weight:500; letter-spacing:-0.07em; }
 .boxAssets .boxVoucher .priceGold span { margin-left:3px; font-size:18px; }
 .boxAssets .boxVoucher .priceWon { font-size:15px; color:#5f5f5f; }
 .boxAssets .boxVoucher .priceWon span { font-size:12px; }
@@ -70,18 +70,18 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxNewAssets { padding-top:28px; margin:0 15px 15px; position:relative; }
 .boxNewAssets .top { position:relative; margin-bottom:20px; }
 .boxNewAssets .top .title { font-size:15px; color:#2c2c2c; }
-.boxNewAssets .top .title span { font-weight:700; }
+.boxNewAssets .top .title span { font-weight:500; }
 .boxNewAssets .top .opt { position:absolute; right:0; top:50%; transform:translateY(-50%); }
 .boxNewAssets .top .opt .btnInfo { width:74px; height:26px; display:block; border-radius:13px; background:#2c2c2c; color:#fff; font-size:15px; text-align:center; line-height:26px; }
 .boxNewAssets .box { position:relative; box-shadow:0 3px 10px rgba(131,131,131,.31); border-radius:10px; overflow:hidden; }
 .boxNewAssets .box .bg { position:relative; z-index:1; }
 .boxNewAssets .box .bg img { width:100%; }
 .boxNewAssets .box .boxVoucher { position:absolute; right:15px; top:38%; text-align:right; z-index:5; line-height:1.4; }
-.boxNewAssets .box .boxVoucher .priceGold { font-size:30px; color:#000; font-family:"SFProDisplay", 'Sans-serif'; font-weight:700; line-height:36px; }
-.boxNewAssets .box .boxVoucher .priceGold span { font-size:26px; font-weight:500; }
+.boxNewAssets .box .boxVoucher .priceGold { font-size:30px; color:#000; font-family:"SFProDisplay", 'Sans-serif'; font-weight:500; line-height:36px; }
+.boxNewAssets .box .boxVoucher .priceGold span { font-size:26px; }
 .boxNewAssets .box .boxVoucher .priceWon { font-size:16px; color:#936b07; }
 .boxNewAssets .box .btn { height:20%; position:absolute; left:15px; right:15px; bottom:13px; display:flex; justify-content: center; z-index:5; background:rgba(255,232,159,0.7); border-radius:5px; }
-.boxNewAssets .box .btn button { flex:1; position:relative; font-size:16px; font-family:"AppleSDGothicNeo", sans-serif; color:#2c2c2c; font-weight:600; }
+.boxNewAssets .box .btn button { flex:1; position:relative; font-size:16px; color:#2c2c2c; font-weight:500; }
 .boxNewAssets .box .btn button+button:after { content:''; width:2px; height:16px; position:absolute; left:0; top:50%; margin-top:-8px; background:#977e2e; opacity:0.45; }
 .boxNewAssets .box .btn button .icon { width:9px; }
 
@@ -119,7 +119,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxAccountList .cont .title .time:before { content:''; width:1px; height:8px; position:absolute; left:0; top:50%; margin-top:-4px; background:#f2f4f6; }
 .boxAccountList .cont .title .status { position:absolute; left:0; top:-20px; color:#4fd884; font-size:10px; }
 .boxAccountList .cont .info { flex:1; text-align:right; }
-.boxAccountList .cont .info .price { font-size:17px; font-weight:700; color:#2750f2; font-family:"SFProDisplay", 'Sans-serif'; }
+.boxAccountList .cont .info .price { font-size:17px; font-weight:500; color:#2750f2; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxAccountList .cont .info .price.out { color:#000; }
 .boxAccountList .cont .info .total { font-size:15px; color:#999; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxAccountList.voucher .cont .title .status { color:#ffdf31; }
@@ -139,8 +139,8 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxQuickVoucher ul li a.link1:after { background-image:url('../images/main/iconQuickArrow_white.png'); }
 .boxQuickVoucher ul li a.link2:after { background-image:url('../images/main/iconQuickArrow_black.png'); }
 .boxQuickVoucher ul li a .icon { width:80px; height:80px; margin:0 auto 20px; background:#fff; border-radius:50%; overflow:hidden; }
-.boxQuickVoucher ul li a .title { margin-bottom:8px; font-size:16px; font-weight:700; font-family:"AppleSDGothicNeo", sans-serif; }
-.boxQuickVoucher ul li a .cont { padding:0 5px; color:#999; font-size:13px; font-weight:700; font-family:"AppleSDGothicNeo", sans-serif; }
+.boxQuickVoucher ul li a .title { margin-bottom:8px; font-size:16px; font-weight:500; }
+.boxQuickVoucher ul li a .cont { padding:0 5px; color:#999; font-size:13px; font-weight:500; }
 .boxQuickVoucher ul li a.link2 .cont { color:#5f5f5f; }
 
 /* Quick */
@@ -162,8 +162,8 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 /* Guide */
 .boxDepositGuide { margin:0 15px 0; padding:0 6px 60px; position:relative; }
 .boxDepositGuide:after { content:''; width:91px; height:140px; position:absolute; right:5px; bottom:49px; background:url('../images/main/bgDeposit.png') no-repeat; background-size:100% auto; z-index:1; }
-.boxDepositGuide .subject { margin-bottom:8px; font-size:15px; font-weight:700; color:#2750f2; }
-.boxDepositGuide .title { margin-bottom:10px; font-size:20px; font-weight:700; }
+.boxDepositGuide .subject { margin-bottom:8px; font-size:15px; font-weight:500; color:#2750f2; }
+.boxDepositGuide .title { margin-bottom:10px; font-size:20px; font-weight:500; }
 .boxDepositGuide .title span { position:relative; z-index:1; }
 .boxDepositGuide .title span:after { content:''; width:100%; height:7px; position:absolute; left:0; bottom:2px; background:#ffdf31; z-index:-1; }
 .boxDepositGuide .cont { margin-bottom:22px; font-size:15px; color:#999; line-height:1.53; }
@@ -225,15 +225,15 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxInvestItem .year_per > span { display:inline-block; line-height:1.2; }
 .boxInvestItem .thumb { border-top-left-radius:13px; border-top-right-radius:13px; overflow:hidden; }
 .boxInvestItem .inner { padding:30px 17px 58px; position:relative; overflow:hidden; border-bottom-left-radius:13px; border-bottom-right-radius:13px; }
-.boxInvestItem .title { margin-bottom:9px; font-size:19px; font-weight:700; }
-.boxInvestItem .date { margin-bottom:30px; overflow:hidden; font-size:15px; color:#999; font-family:"AppleSDGothicNeo", sans-serif; }
+.boxInvestItem .title { margin-bottom:9px; font-size:19px; font-weight:500; }
+.boxInvestItem .date { margin-bottom:30px; overflow:hidden; font-size:15px; color:#999; }
 .boxInvestItem .total { margin-bottom:4px; font-size:15px; color:#999; overflow:hidden; }
 .boxInvestItem .total span { float:left; line-height:24px; }
-.boxInvestItem .total span.price { float:none; display:block; margin-left:80px; font-size:20px; color:#2750f2; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; line-height:24px; }
+.boxInvestItem .total span.price { float:none; display:block; margin-left:80px; font-size:20px; color:#2750f2; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; line-height:24px; }
 .boxInvestItem .graph { width:90px; height:90px; position:absolute; right:18px; top:22px; }
 .boxInvestItem .graph .percent { position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); font-family:"SFProDisplay", 'Sans-serif'; font-size:16px; }
 .boxInvestItem .graph canvas { width:100% !important; height:100% !important; }
-.boxInvestItem .detail { width:100%; height:58px; display:block; position:absolute; left:0; bottom:0; background:#2750f2; color:#fff; line-height:58px; font-weight:700; font-size:17px; text-align:center; }
+.boxInvestItem .detail { width:100%; height:58px; display:block; position:absolute; left:0; bottom:0; background:#2750f2; color:#fff; line-height:58px; font-weight:500; font-size:17px; text-align:center; }
 .boxInvestItem .detail:after { content:''; width:15px; height:15px; margin-top:-4px; margin-left:6px; display:inline-block; background:url('../images/common/iconDetailWhite.png') right center no-repeat; background-size:auto 100%; vertical-align:middle; }
 .boxInvestItem .more { margin-top:76px; text-align:center; }
 .boxInvestItem .more a { display:inline-block; color:#000; font-size:15px; }
@@ -253,14 +253,14 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxPrimeItem .box { margin-left:15px; border:1px solid #f2f4f6; border-radius:13px; box-shadow: 0 3px 3px 0 rgba(173, 173, 173, 0.16); }
 .boxPrimeItem .thumb { border-top-left-radius:13px; border-top-right-radius:13px; overflow:hidden; }
 .boxPrimeItem .cont { padding:32px 18px 37px; }
-.boxPrimeItem .title { padding:0 5px; font-size:19px; font-weight:700; }
-.boxPrimeItem .percent { margin-bottom:16px; padding:0 5px; color:#29c1cf; font-size:15px; font-weight:700; }
+.boxPrimeItem .title { padding:0 5px; font-size:19px; font-weight:500; }
+.boxPrimeItem .percent { margin-bottom:16px; padding:0 5px; color:#29c1cf; font-size:15px; font-weight:500; }
 .boxPrimeItem .percent span { font-size:16px; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxPrimeItem .auction { margin-bottom:4px; padding:0 5px; font-size:14px; }
 .boxPrimeItem .date { padding:0 5px; margin-bottom:23px; overflow:hidden; }
-.boxPrimeItem .period { float:left; font-family:"SFProDisplay", 'Sans-serif'; font-size:16px; color:#020202; font-weight:700; }
-.boxPrimeItem .date .day { float:right; padding-left:24px; background:url('../images/main/iconDayClock.png') left center no-repeat; background-size:auto 16px; font-size:16px; font-weight:700; font-family:"SFProDisplay", 'Sans-serif'; }
-.boxPrimeItem a.btnItemLink { height:52px; display:block; background:#29c1cf; border-radius:5px; text-align:center; color:#fff; font-size:17px; font-weight:700; line-height:52px; }
+.boxPrimeItem .period { float:left; font-family:"SFProDisplay", 'Sans-serif'; font-size:16px; color:#020202; font-weight:500; }
+.boxPrimeItem .date .day { float:right; padding-left:24px; background:url('../images/main/iconDayClock.png') left center no-repeat; background-size:auto 16px; font-size:16px; font-weight:500; font-family:"SFProDisplay", 'Sans-serif'; }
+.boxPrimeItem a.btnItemLink { height:52px; display:block; background:#29c1cf; border-radius:5px; text-align:center; color:#fff; font-size:17px; font-weight:500; line-height:52px; }
 .boxPrimeItem .more { margin-top:76px; text-align:center; }
 .boxPrimeItem .more a { display:inline-block; color:#999; font-size:15px; }
 .boxPrimeItem .more a:after { content:''; width:9px; height:9px; display:inline-block; margin-left:5px; background:url('../images/common/iconArrow.png') right center no-repeat; background-size:auto 100%; }
@@ -274,7 +274,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 /* Digital Pawn */
 .mainDigitalPawn {  background:#f2f5f9; }
 .boxDigitalPawn { padding:0 15px; margin-bottom:35px; }
-.boxDigitalPawn li { position:relative; background:#202c69; border-radius:10px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.23); overflow:hidden; font-family:"AppleSDGothicNeo", sans-serif; font-weight:700; }
+.boxDigitalPawn li { position:relative; background:#202c69; border-radius:10px; box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.23); overflow:hidden; font-weight:500; }
 .boxDigitalPawn li+li { margin-top:30px; }
 .boxDigitalPawn li .cont { padding:35px 20px 30px; position:relative; text-align:center; }
 .boxDigitalPawn li .cont .bedge { width:120px; height:40px; margin:0 auto 10px; background:#ffdf0b; border-radius:20px; font-size:15px; color:#202c69; text-align:center; line-height:40px; }
@@ -285,8 +285,8 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxDigitalPawn li .itemList { display:flex; margin-top:35px; }
 .boxDigitalPawn li .itemList .item { flex:1; text-align:center; }
 .boxDigitalPawn li .itemList .item i { width:34px; margin-bottom:10px; }
-.boxDigitalPawn li .itemList .item .title { font-size:15px; font-weight:700; line-height:19px; white-space:nowrap; }
-.boxDigitalPawn li a { height:56px; display:block; background:#021058; text-align:center; line-height:56px; color:#fff; font-size:17px; font-weight:700; }
+.boxDigitalPawn li .itemList .item .title { font-size:15px; font-weight:500; line-height:19px; white-space:nowrap; }
+.boxDigitalPawn li a { height:56px; display:block; background:#021058; text-align:center; line-height:56px; color:#fff; font-size:17px; font-weight:500; }
 .boxDigitalPawn li a:after { content:''; width:13px; height:16px; margin-top:-2px; margin-left:6px; display:inline-block; background:url('../images/main/iconDetailPen.png') no-repeat; background-size:100% auto; vertical-align:middle; }
 .boxDigitalPawn li a.none { color:#999; }
 .boxDigitalPawn li a.none:after { display:none; }
@@ -294,7 +294,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:400; color:#2c2c2c; }
 .boxDigitalPawn li a.type--wait:after { display:none; }
 
 .boxDigitalGold { padding:0 0 76px; overflow:hidden; }
-.boxDigitalGold .title { margin:0 15px 11px; font-size:18px; color:#2c2c2c; font-weight:600; }
+.boxDigitalGold .title { margin:0 15px 11px; font-size:18px; color:#2c2c2c; font-weight:500; }
 .boxDigitalGold .swiper-container { overflow:visible; }
 .boxDigitalGold .swiper-slide { padding:0 15px; }
 .boxDigitalGold .swiper-slide a { display:block; box-shadow: 0 4px 7px 0 #ebebeb; border-radius:10px; overflow:hidden; }
