@@ -336,7 +336,7 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .basicPopup .boxBtn button:last-child { margin-left:4px; }
 .basicPopup .box { margin-top:20px; font-weight:300; }
 
-.basicPopup.popEvent { padding:0; }
+.basicPopup.popEvent { width:90%; max-width:300px; left:50%; right:auto; padding:0; transform:translate(-50%, -50%); }
 .basicPopup.popEvent .cont img { width:100%; }
 .basicPopup.popEvent .footer { height:60px; padding:0 20px; line-height:60px; }
 .basicPopup.popEvent .footer .boxCheckBlue { padding:20px 0; float:left; margin-bottom:0; }
