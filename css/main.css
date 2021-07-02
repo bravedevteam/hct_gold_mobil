@@ -305,6 +305,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:300; color:#2c2c2c; }
 .boxDigitalGold .swiper-container { overflow:visible; }
 .boxDigitalGold .swiper-slide { padding:0 15px; }
 .boxDigitalGold .swiper-slide a { display:block; box-shadow: 0 4px 7px 0 #ebebeb; border-radius:10px; overflow:hidden; }
+.boxDigitalGold .swiper-slide img { width:100%; }
 .boxDigitalGold .swiper-pagination-bullet { width:6px; height:6px; background:#e1e1e1; opacity:1; }
 .boxDigitalGold .swiper-pagination-bullet-active { background:#2750f2; }
 .boxDigitalGold .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet { margin:0 2px; }
@@ -318,6 +319,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:300; color:#2c2c2c; }
 .boxEventBanner a { display:block; }
 .boxEventBanner .swiper-container { overflow:visible; }
 .boxEventBanner .swiper-slide { padding:0 15px; }
+.boxEventBanner .swiper-slide img { width:100%; }
 .boxEventBanner .swiper-pagination-bullet { width:6px; height:6px; background:#e1e1e1; opacity:1; }
 .boxEventBanner .swiper-pagination-bullet-active { background:#2750f2; }
 .boxEventBanner .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet { margin:0 2px; }
