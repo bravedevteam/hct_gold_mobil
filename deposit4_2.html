@@ -4,9 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
 	<title>AROWANA GOLD FINANCE</title>
+  <link rel="stylesheet" href="css/jquery-ui.css" />
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="css/sub.css" />
 	<script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
 	<script src="js/common.js"></script>
 </head>
 
@@ -61,9 +63,8 @@
     <hr class="section--space mtb40" />
     <div class="section">
       <h4 class="title title--medium">수령 희망일</h4>
-      <div class="inputCalendar mb35">
-        <input type="text" value="2020.12.22" class="inputBasic" />
-        <button type="button" class="btnCalendar">달력</button>
+      <div class="dateBasic type--single mb35">
+        <input type="text" class="datepicker ta-l" />
       </div>
       <h4 class="title title--medium">수령 방법</h4>
       <div class="inputCheckbox">
