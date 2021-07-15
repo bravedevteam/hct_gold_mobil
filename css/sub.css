@@ -1043,6 +1043,7 @@ h4.title span { font-size:12px; }
 #container.pageWeb .boxContents .title.type--user { padding-top:70px; background:url('../images/content/imgWebUser.png') center top no-repeat; background-size:auto 37px; }
 #container.pageWeb .boxContents .title.type--gold { padding-top:70px; background:url('../images/content/imgWebGold.png') center top no-repeat; background-size:auto 37px; }
 #container.pageWeb .boxContents .title.type--agree { padding-top:75px; background:url('../images/content/imgWebAgree.png') center top no-repeat; background-size:auto 54px; }
+#container.pageWeb .boxContents .title.type--find { margin-bottom:15px; padding-top:66px; background:url('../images/content/iconFind_id.png') center top no-repeat; background-size:47px auto; }
 #container.pageWeb .boxContents .subject { margin-bottom:40px; font-size:15px; line-height:22px; }
 #container.pageWeb .boxContents .boxInfoUser { width:100%; padding:0 18px; margin-bottom:10px; }
 #container.pageWeb .boxContents .boxInfoUser input { width:100%; height:50px; background:#f2f4f6; border:0; border-radius:5px; text-align:center; line-height:46px; font-size:17px; }
@@ -1051,6 +1052,11 @@ h4.title span { font-size:12px; }
 #container.pageWeb .boxContents .goldTable dl dd { margin-left:108px; margin-top:6px; height:50px; padding-left:25px; background:#f2f4f6; border-top-right-radius:5px; border-bottom-right-radius:5px; line-height:50px; font-size:17px; }
 #container.pageWeb .boxContents .goldTable dl dt:first-of-type,
 #container.pageWeb .boxContents .goldTable dl dd:first-of-type { margin-top:0; }
+
+#container.pageWeb .boxContents .goldTable.type--fs dl dt,
+#container.pageWeb .boxContents .goldTable.type--fs dl dd { font-size:15px; }
+
+#container.pageWeb.sub .boxContents { border-top:0; }
 
 
 /* Popup Bank Select */
