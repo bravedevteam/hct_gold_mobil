@@ -254,7 +254,7 @@ a.type--link+button { margin-left:40px; }
 #container .wrapCont .boxCont { padding:48px 28px 60px 24px; background:#fff; border:1px solid #ebedef; }
 #container .wrapCont .boxCont+.boxCont { margin-top:30px; }
 #container .wrapCont .boxCont .top { margin-bottom:20px; position:relative; }
-#container .wrapCont .boxCont .top .title { height:38px; padding:0 20px; font-size:14 px; line-height:38px; font-weight:700; }
+#container .wrapCont .boxCont .top .title { height:38px; padding:0 20px; font-size:14px; line-height:38px; font-weight:700; }
 #container .wrapCont .boxCont .top .btn { position:absolute; right:32px; top:0; }
 #container .wrapCont .boxCont .top .btn a+a { margin-left:10px; }
 #container .wrapCont .boxCont .top .btn.ex { right:0; }
@@ -286,8 +286,12 @@ h4.title { padding:0 20px; margin-bottom:28px; font-size:17px; font-weight:700; 
 .tableBasic.type--vertical th { border-bottom:1px solid #dde9fd; }
 .tableBasic.type--vertical tr:first-child th,
 .tableBasic.type--vertical tr:first-child td { border-top:1px solid #b1bfd5; }
+.tableBasic.type--vertical tr th.last,
+.tableBasic.type--vertical tr:last-child th { border-bottom:0; }
 .tableBasic.type--vertical th:last-of-type { border-right:1px solid #dde9fd; }
 .tableBasic.type--vertical td:first-of-type { border-left:1px solid #dde9fd; }
+
+.tableBasic .btnSearch { width:180px; height:38px; line-height:38px; font-size:15px; color:#fff; background:#2750f2; display:inline-block; vertical-align:top; border-radius:2px; }
 
 .itemGroup { overflow:hidden; }
 .itemGroup .item { width:272px; height:52px; float:left; border-radius:26px; background:#f2f2f2; }

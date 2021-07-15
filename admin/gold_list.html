@@ -49,20 +49,40 @@
 				<div class="info">메인 > <a href="#">예치/인출 관리</a> > <a href="#">금시세 관리</a></div>
 			</div>
 			<div class="wrapCont">
-				<div class="boxTopInfo">
-					<div class="innerInfo">
-						<div>2021.01.01</div>
-						<div>삼성 75,000 원/g</div>
-						<div>한컴 78,750 원/g ( 마진율 5% )</div>
-					</div>
-					<div class="btn">
-						<a href="#" onClick="popSetup();" class="btnSearch">마진율 설정</a>
-					</div>
+				<div class="boxCont">
+					<table class="tableBasic type--vertical">
+						<colgroup>
+							<col width="100" />
+							<col width="100" />
+							<col width="100" />
+							<col width="100" />
+							<col width="100" />
+						</colgroup>
+						<tr>
+							<th colspan="2">최근 수정 관리자</th>
+							<td>김골드</td>
+							<th>최근 수정일</th>
+							<td>2021-07-05 13:00:00</td>
+						</tr>
+						<tr>
+							<th rowspan="2" class="last">설정 마진율</th>
+							<th>고객이 살 때</th>
+							<td>5.4%</td>
+							<td colspan="2">
+								<a href="#" onClick="popSetup1();" class="btnSearch">살 때 마진율 설정</a>
+							</td>
+						</tr>
+						<tr>
+							<th>고객이 팔 때</th>
+							<td>3.0%</td>
+							<td colspan="2">
+								<a href="#" onClick="popSetup2();" class="btnSearch">팔 때 마진율 설정</a>
+							</td>
+						</tr>
+					</table>
 				</div>
 				<div class="boxCont">
-					<div class="top">
-						<div class="title">내역</div>
-					</div>
+					<h4 class="title">금 시세 내역</h4>
 					<div class="cont">
 						<table class="tableBasic">
 							<colgroup>
@@ -72,41 +92,50 @@
 								<col width="100" />
 								<col width="100" />
 								<col width="100" />
+								<col width="100" />
 							</colgroup>
 							<thead>
 								<tr>
-									<th>등록일시</th>
-									<th>자산구분</th>
-									<th>삼성금거래소 시세</th>
-									<th>마진율</th>
-									<th>한컴금거래소 시세</th>
-									<th>등록자</th>
+									<th rowspan="2">등록일시</th>
+									<th rowspan="2">자산구분</th>
+									<th rowspan="2">삼성금거래소 시세</th>
+									<th colspan="2">마진율</th>
+									<th colspan="2">아로와나 금거래소 시세</th>
+								</tr>
+								<tr class="line">
+									<th>살 때</th>
+									<th>팔 때</th>
+									<th>살 때</th>
+									<th>팔 때</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>2020-01-01<br />10:00:00</td>
-									<td>금(24K)</td>
-									<td>75,000 원/g</td>
-									<td>5 %</td>
-									<td>78,750 원/g</td>
-									<td>관리자 1</td>
+									<td>디지털 금</td>
+									<td>66,186 원/g</td>
+									<td>5.4 %</td>
+									<td>3.0%</td>
+									<td>69,760 원/g</td>
+									<td>68,172 원/g</td>
 								</tr>
 								<tr>
 									<td>2020-01-01<br />10:00:00</td>
-									<td>금(24K)</td>
-									<td>75,000 원/g</td>
-									<td>5 %</td>
-									<td>78,750 원/g</td>
-									<td>관리자 1</td>
+									<td>디지털 금</td>
+									<td>66,186 원/g</td>
+									<td>5.4 %</td>
+									<td>3.0%</td>
+									<td>69,760 원/g</td>
+									<td>68,172 원/g</td>
 								</tr>
 								<tr>
 									<td>2020-01-01<br />10:00:00</td>
-									<td>금(24K)</td>
-									<td>75,000 원/g</td>
-									<td>5 %</td>
-									<td>78,750 원/g</td>
-									<td>관리자 1</td>
+									<td>디지털 금</td>
+									<td>66,186 원/g</td>
+									<td>5.4 %</td>
+									<td>3.0%</td>
+									<td>69,760 원/g</td>
+									<td>68,172 원/g</td>
 								</tr>
 							</tbody>
 						</table>
@@ -116,33 +145,53 @@
 		</div>
 	</section>
 
-	<div id="popSetup" class="popupBasic">
+	<div id="popSetup1" class="popupBasic">
 		<div class="topArea">
-			<div class="title">마진율 설정</div>
+			<div class="title">살 때 마진율 설정</div>
 		</div>
 		<div class="contArea">
 			<table class="tableBasic type--vertical">
 				<colgroup>
-					<col width="174" />
-					<col width="500" />
+					<col width="100" />
+					<col width="200" />
 				</colgroup>
 				<tr>
 					<th>자산구분</th>
-					<td>금(24K)</td>
+					<td>디지털 금</td>
 				</tr>
 				<tr>
-					<th>삼성금거래소 시세</th>
-					<td>75,000 원/g</td>
-				</tr>
-				<tr>
-					<th>적용 마진율</th>
-					<td><input type="text" class="inputBasic" value="5%" /></td>
-				</tr>
-				<tr>
-					<th>적용 시세</th>
-					<td>78,750 원/g</td>
+					<th>살 때<br />적용 마진율</th>
+					<td><input type="text" class="inputBasic" value="5.4%" /></td>
 				</tr>
 			</table>
+			<div class="guide-text color--red">※ 살 때 마진율 기준은 고객입장입니다.</div>
+		</div>
+		<div class="btn">
+			<button type="button" class="btnCancel close">취소</button>
+			<button type="button">확인</button>
+		</div>
+	</div>
+
+	<div id="popSetup2" class="popupBasic">
+		<div class="topArea">
+			<div class="title">팔 때 마진율 설정</div>
+		</div>
+		<div class="contArea">
+			<table class="tableBasic type--vertical">
+				<colgroup>
+					<col width="100" />
+					<col width="200" />
+				</colgroup>
+				<tr>
+					<th>자산구분</th>
+					<td>디지털 금</td>
+				</tr>
+				<tr>
+					<th>팔 때<br />적용 마진율</th>
+					<td><input type="text" class="inputBasic" value="3.0%" /></td>
+				</tr>
+			</table>
+			<div class="guide-text color--red">※ 팔 때 마진율 기준은 고객입장입니다.</div>
 		</div>
 		<div class="btn">
 			<button type="button" class="btnCancel close">취소</button>
@@ -159,8 +208,12 @@
 			dimClose();
 		});
 	});
-	function popSetup(){
-		$("#popSetup").fadeIn(300);
+	function popSetup1(){
+		$("#popSetup1").fadeIn(300);
+		dimOpen();
+	}
+	function popSetup2(){
+		$("#popSetup2").fadeIn(300);
 		dimOpen();
 	}
 
