@@ -1105,10 +1105,10 @@ h4.title span { font-size:12px; }
 .boxGoldList table { width:100%; border-top:1px solid #cdced2; }
 .boxGoldList table tr th { padding:16px 10px; background:#fafafa; border:1px solid #ececec; font-size:15px; color:#000; font-weight:300; }
 .boxGoldList table tr td { padding:8px; border:1px solid #ececec; text-align:center; font-size:15px; }
-.boxGoldList table tr th:first-child { border-left:0; }
-.boxGoldList table tr th:last-child { border-right:0; }
-.boxGoldList table tr td:first-child { border-left:0; color:#999; }
-.boxGoldList table tr td:last-child { border-right:0; }
+.boxGoldList table tr.row th:first-child { border-left:0; }
+.boxGoldList table tr.row th:last-child { border-right:0; }
+.boxGoldList table tr.row td:first-child { border-left:0; color:#999; }
+.boxGoldList table tr.row td:last-child { border-right:0; }
 .boxGoldList table tr td span.color-red { color:#f72c1f !important; }
 .boxGoldList table tr td span.color-blue { color:#1f5de3 !important; }
 .boxGoldList table tr td span i { font-size:10px; font-style: normal; }
