@@ -1105,7 +1105,7 @@ h4.title span { font-size:12px; }
 .boxGoldList table { width:100%; border-top:1px solid #cdced2; }
 .boxGoldList table tr th { padding:5px 10px; background:#fafafa; border:1px solid #ececec; font-size:15px; color:#000; font-weight:300; }
 .boxGoldList table tr td { padding:5px 8px; border:1px solid #ececec; text-align:center; font-size:15px; }
-.boxGoldList table tr.row th:first-child { border-left:0; }
+.boxGoldList table tr th:first-child { border-left:0; }
 .boxGoldList table tr th:last-child { border-right:0; }
 .boxGoldList table tr.row td:first-child { border-left:0; color:#999; }
 .boxGoldList table tr td:last-child { border-right:0; }
