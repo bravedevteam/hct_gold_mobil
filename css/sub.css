@@ -1137,6 +1137,8 @@ h4.title span { font-size:12px; }
 .boxBusinessModList div:nth-child(3n+1) { width:calc(33.3% - 6px); margin-left:0; }
 .boxBusinessModList div:nth-child(3n+3) { width:calc(33.3% - 6px); margin-right:0; }
 
+.boxTokenTop { padding:23px 0 17px; text-align:center; background:#3b0080; border-radius:5px; position:relative; }
+.boxTokenTop:before { content:''; width:85px; height:78px; position:absolute; left:50%; top:-54px; background:url('../images/content/imgTokenTop.png') center top no-repeat; background-size:100% auto; }
 
 @media screen and (max-width: 360px){
   .listSecurity li > a .opt .name { float:none; }

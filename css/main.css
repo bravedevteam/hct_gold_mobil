@@ -8,7 +8,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:300; color:#2c2c2c; }
 .section--small { padding:0 8px; }
 
 /* Assets */
-.boxAssets { padding-top:25px; padding-bottom:66px; overflow:hidden; }
+.boxAssets { padding-top:25px; padding-bottom:30px; overflow:hidden; }
 .boxAssets .box { height:300px; position:relative; margin:0 15px; padding:24px 17px 72px; border-radius:20px; background:#2750f2; color:#fff; box-shadow: 0 5px 13px 0 rgba(0, 37, 181, 0.46); }
 .boxAssets .top { margin-bottom:50px; position:relative; }
 .boxAssets .top:after { content:''; display:block; clear:both; visibility:visible; }
@@ -128,7 +128,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:300; color:#2c2c2c; }
 .boxAccountList.voucher .cont .title .status.error { color:#ff6363 }
 .boxAccountList .noData { padding:100px 10px; font-size:17px; text-align:center; }
 
-.boxQuickVoucher { padding:0 15px 60px; }
+.boxQuickVoucher { padding:0 15px 30px; }
 .boxQuickVoucher ul { width:100%; display:flex; }
 .boxQuickVoucher ul li { flex:1; padding:0 8px; }
 .boxQuickVoucher ul li:first-child { padding-left:0; }
@@ -315,7 +315,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:300; color:#2c2c2c; }
 
 
 /* Event Banner */
-.boxEventBanner { overflow:hidden; padding-bottom:82px; }
+.boxEventBanner { overflow:hidden; padding-bottom:40px; }
 .boxEventBanner a { display:block; }
 .boxEventBanner .swiper-container { overflow:visible; }
 .boxEventBanner .swiper-slide { padding:0 15px; }

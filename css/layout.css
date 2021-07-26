@@ -525,6 +525,7 @@ h1 .tokenSelect { margin:0 auto; }
 .guide-text.type--line:before { content:'-'; position:absolute; left:0; top:0; }
 .guide-text.type--line+.guide-text { margin-top:5px; }
 .guide-text.boxGray { padding:8px; background:#f2f4f6; text-align:center; border-radius:5px; }
+.guide-text.boxPurple { background:#edeffa; }
 .guide-text.bigDanger { padding:16px; color:#f22727; font-size:15px; font-weight:300; }
 .guide-text ul li { padding-left:10px; position:relative; text-align:left; }
 .guide-text ul li:after { content:'·'; position:absolute; left:2px; top:0; }
