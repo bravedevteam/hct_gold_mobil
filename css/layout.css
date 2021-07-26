@@ -140,6 +140,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 
 .bd0 { border:0 !important; }
 
+.lh2 { line-height:2em !important; }
+
 hr.section--space { height:8px; background:#f2f4f6; }
 
 span.en { font-family:"SFProDisplay", 'Sans-serif'; }
@@ -343,6 +345,9 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .basicPopup.popEvent .footer .boxCheckBlue label { padding-left:26px; background-size:20px auto; line-height:20px; font-size:14px; }
 .basicPopup.popEvent .footer .close { float:right; padding:20px 10px; font-size:14px; color:#7700ff; }
 
+.basicPopup.size--full { width:100%; max-height:100%; padding:0; left:0; right:auto; overflow:auto; border-radius:0; }
+.basicPopup.size--full img { width:100%; }
+
 /* Tab */
 .tabBasic { margin-top:10px; display:flex; }
 .tabBasic button { height:40px; flex:1; background:#f2f4f6; border-left:1px solid #d5d5d5; border-top:1px solid #d5d5d5; border-bottom:1px solid #d5d5d5; font-family:"SFProDisplay", 'Sans-serif'; color:#999; font-size:13px; }
@@ -518,14 +523,18 @@ h1 .tokenSelect { margin:0 auto; }
 /* Guide Text */
 .guide-text { display:block; margin-top:4px; color:#999; word-break:keep-all; font-weight:300; }
 .guide-text.danger { color:#f22727; }
+.guide-text.sizeA { font-size:14px; font-weight:500; line-height:2;}
+.guide-text.sizeB { font-size:15px; color:#000; }
 .guide-text.type--dot { padding:0 13px 0 6px; position:relative; }
 .guide-text.type--dot:before { content:'·'; position:absolute; left:0; top:0; }
 .guide-text.type--dot+.guide-text { margin-top:10px; }
+.guide-text.type--dot.sizeA { padding-left:10px; }
 .guide-text.type--line { padding:0 0 0 10px; position:relative; font-size:15px; color:#000; letter-spacing:-.075em; }
 .guide-text.type--line:before { content:'-'; position:absolute; left:0; top:0; }
 .guide-text.type--line+.guide-text { margin-top:5px; }
 .guide-text.boxGray { padding:8px; background:#f2f4f6; text-align:center; border-radius:5px; }
-.guide-text.boxPurple { background:#edeffa; }
+.guide-text.boxPurple { padding:23px 18px 18px; background:#edeffa; font-size:15px; line-height:28px; border-radius:5px; color:#2c2c2c; font-weight:500; }
+.guide-text.boxPurple span { color:#2750f2; }
 .guide-text.bigDanger { padding:16px; color:#f22727; font-size:15px; font-weight:300; }
 .guide-text ul li { padding-left:10px; position:relative; text-align:left; }
 .guide-text ul li:after { content:'·'; position:absolute; left:2px; top:0; }

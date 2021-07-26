@@ -28,6 +28,8 @@ h4.title span { font-size:12px; }
 .headerArea .btnPageHome.black { background-image:url('../images/common/iconHomeBlack.png'); }
 .headerArea .btnInOut { position:absolute; right:0; top:40px; color:#f2f4f6; }
 
+.headerArea.without--title { height:82px; }
+
 .topStep { position:absolute; right:0; top:37px; overflow:hidden; }
 .topStep li { width:20px; height:20px; position:relative; float:left; border:1px solid #bebebe; border-radius:50%; text-align:center; line-height:18px; color:#bebebe; font-family:"SFProDisplay", 'Sans-serif'; }
 .topStep li+li { margin-left:4px; }
@@ -1137,7 +1139,7 @@ h4.title span { font-size:12px; }
 .boxBusinessModList div:nth-child(3n+1) { width:calc(33.3% - 6px); margin-left:0; }
 .boxBusinessModList div:nth-child(3n+3) { width:calc(33.3% - 6px); margin-right:0; }
 
-.boxTokenTop { padding:23px 0 17px; text-align:center; background:#3b0080; border-radius:5px; position:relative; }
+.boxTokenTop { margin-top:30px; padding:23px 0 17px; text-align:center; background:#3b0080; border-radius:5px; position:relative; color:#ffcc24; font-size:19px; font-weight:500; }
 .boxTokenTop:before { content:''; width:85px; height:78px; position:absolute; left:50%; top:-54px; background:url('../images/content/imgTokenTop.png') center top no-repeat; background-size:100% auto; }
 
 @media screen and (max-width: 360px){
