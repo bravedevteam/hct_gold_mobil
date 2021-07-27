@@ -161,6 +161,7 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 #container.wallet h1 { color:#fff; }
 #container.account { padding:0 8px; }
 #container.voucher { background:#ffdf31; }
+#container.notice img { width:100%; }
 
 #container.main.typeB { padding:0; }
 
