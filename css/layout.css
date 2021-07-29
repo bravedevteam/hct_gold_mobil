@@ -37,7 +37,7 @@
 /* common */
 * {margin:0; padding:0; box-sizing: border-box; list-style:none; text-decoration:none;
     outline: none; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: transparent; }
-html, body { width: 100%; position: relative; font-size:12px; font-family: 'SpoqaHanSansNeo', 'Sans-serif'; letter-spacing: -0.05em; line-height:1.4; font-weight:300; color:#000; }
+html, body { width: 100%; height:100%; position: relative; font-size:12px; font-family: 'SpoqaHanSansNeo', 'Sans-serif'; letter-spacing: -0.05em; line-height:1.4; font-weight:300; color:#000; }
 ul>li>a { text-decoration:none; }
 a {color: inherit;}
 table { border-collapse: collapse; }
@@ -162,6 +162,7 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 #container.account { padding:0 8px; }
 #container.voucher { background:#ffdf31; }
 #container.notice img { width:100%; }
+#container.notice--full { height:100%; background:#2750f2; }
 
 #container.main.typeB { padding:0; }
 
