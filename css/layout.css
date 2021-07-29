@@ -163,6 +163,7 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 #container.voucher { background:#ffdf31; }
 #container.notice img { width:100%; }
 #container.notice--full { height:100%; background:#2750f2; }
+#container.notice--full img { width:100%; }
 
 #container.main.typeB { padding:0; }
 
