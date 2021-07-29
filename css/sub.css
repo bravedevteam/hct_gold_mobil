@@ -810,6 +810,8 @@ h4.title span { font-size:12px; }
 .boxNotice .cont { padding:24px 18px 10px; background:rgba(240,240,240,.2); border-top:1px solid #f0f0f0; border-bottom:1px solid #f0f0f0; }
 .boxNotice .cont p { display:block; font-size:15px; line-height:26px; }
 .boxNotice .cont img { width:100%; }
+.boxNotice .cont p.inLogo { text-align:center; padding:30px 0; }
+.boxNotice .cont p.inLogo img { width:109px; }
 .boxNotice .cont .btn { margin:20px 0; display:flex; }
 .boxNotice .cont .btn button { height:48px; border-radius:5px; font-size:12px; font-weight:300; }
 .boxNotice .cont .btn button:first-child { margin-right:5px; }
