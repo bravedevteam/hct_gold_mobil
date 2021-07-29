@@ -325,7 +325,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:300; color:#2c2c2c; }
 .boxEventBanner .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet { margin:0 2px; }
 .boxEventBanner .swiper-container-horizontal>.swiper-pagination-bullets,
 .boxEventBanner .swiper-pagination-custom,
-.boxEventBanner .swiper-pagination-fraction { bottom:-36px; }
+.boxEventBanner .swiper-pagination-fraction { bottom:-20px; }
 
 
 /* Customer Link */
