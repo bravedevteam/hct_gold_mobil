@@ -167,7 +167,10 @@
 		var swiper = new Swiper('.boxEventBanner .swiper-container', {
 			slidesPerView: "auto",
 			centeredSlides: true,
-			loop: false,
+			loop: true,
+			autoplay:{
+				delay: 3000,
+			},
 			spaceBetween: 10,
       pagination: {
 				el: '.boxEventBanner .swiper-pagination',
