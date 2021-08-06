@@ -95,11 +95,14 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .pr10 { padding-right:10px !important; }
 .pr20 { padding-right:20px !important; }
 
+.f14 { font-size:14px !important; }
+
 .inputBasic { width:100%; height:52px; padding:0 23px; border:1px solid #b1bfd5; border-radius:2px; font-size:17px; }
 .inputBasic:disabled { background:#ededed; }
 
 .btnBasic { width:110px; height:38px; display:inline-block; background:#5899ff; border-radius:2px; color:#fff; line-height:38px; text-align:center; font-size:17px; }
 .btnBasic.modify { background:#c10000; }
+.btnBasic.cancel { background:#999; }
 .btnGray { width:135px; height:38px; border-radius:5px; border:1px solid #999; background:#f5f7ff; font-size:17px; color:#000; }
 .btnBasic.s-auto { width:auto; padding:0 20px; }
 .btnBasic.type--excel { width:124px; background:#17834a; font-size:15px; }
@@ -219,7 +222,7 @@ a.type--link+button { margin-left:40px; }
 #lnb ul li.on a { color:#ffd202; }
 #lnb ul li.on a span { border-bottom:2px solid #ffd202; }
 
-#container { margin-left:240px; }
+#container { margin-left:140px; }
 #container .titCont { margin:55px 29px 0; position:relative; overflow:hidden; }
 #container .titCont .title { padding:28px 0 0 24px; float:left; font-size:23px; font-weight:700; }
 #container .titCont .status { padding:32px 0 0 30px; float:left; font-size:17px; }
@@ -255,7 +258,7 @@ a.type--link+button { margin-left:40px; }
 #container .wrapCont .boxCont+.boxCont { margin-top:30px; }
 #container .wrapCont .boxCont .top { margin-bottom:20px; position:relative; }
 #container .wrapCont .boxCont .top .title { height:38px; padding:0 20px; font-size:14px; line-height:38px; font-weight:700; }
-#container .wrapCont .boxCont .top .btn { position:absolute; right:32px; top:0; }
+#container .wrapCont .boxCont .top .btn { position:absolute; right:0; top:0; }
 #container .wrapCont .boxCont .top .btn a+a { margin-left:10px; }
 #container .wrapCont .boxCont .top .btn.ex { right:0; }
 

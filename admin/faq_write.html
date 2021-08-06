@@ -38,7 +38,7 @@
 			<h2 class="icon8">운영관리</h2>
 			<ul>
 				<li><a href="#"><span>공지사항</span></a></li>
-				<li class="on"><a href="#"><span>FAQ</span></a></li>
+				<li class="on"><a href="#"><span>자주묻는 질문</span></a></li>
         <li><a href="#"><span>설정 관리</span></a></li>
         <li><a href="#"><span>약관 관리</span></a></li>
         <li><a href="#"><span>이벤트 관리</span></a></li>
@@ -46,8 +46,8 @@
 		</div>
 		<div id="container">
 			<div class="titCont">
-				<div class="title">FAQ 등록</div>
-				<div class="info">메인 > <a href="#">운영관리</a> > <a href="#">FAQ</a> > <a href="#">FAQ등록</a></div>
+				<div class="title">자주묻는 질문 신규 등록</div>
+				<div class="info">메인 > <a href="#">운영관리</a> > <a href="#">자주묻는 질문</a> > <a href="#">신규 등록</a></div>
 			</div>
 			<div class="wrapCont">
 				<div class="boxCont">
@@ -57,16 +57,14 @@
 							<col width="700" />
 						</colgroup>
 						<tr>
-							<th>유형</th>
+							<th>항목구분</th>
 							<td>
                 <div class="selectBasic">
                   <select>
-                    <option>회원가입 및 탈퇴</option>
-                    <option>보안설정</option>
-                    <option>금 예치/인출</option>
-                    <option>디지털전당포</option>
-                    <option>입출금</option>
-                    <option>기타</option>
+                    <option>회원가입</option>
+                    <option>보안/인증</option>
+                    <option>디지털 금 거래</option>
+                    <option>금 인출</option>
                   </select>
                 </div>
               </td>
@@ -80,20 +78,15 @@
 							<td><textarea></textarea></td>
 						</tr>
             <tr>
-							<th>노출 구분</th>
+							<th>게시여부</th>
 							<td>
-                <div class="row">
-                  <div class="selectBasic wpx150">
-                    <select>
-                      <option>선택</option>
-                      <option>노출</option>
-                      <option>비노출</option>
-                    </select>
-                  </div>
-                  <input type="text" class="inputBasic wpx150 ml50" value="" placeholder="노출순위 입력">
-                  <input type="checkbox" id="chk1_1" name="chk1">
-                  <label for="chk1_1" class="ml100">상단 고정</label>
-                </div>
+								<div class="selectBasic wpx150">
+									<select>
+										<option>선택</option>
+										<option>게시</option>
+										<option>미게시</option>
+									</select>
+								</div>
               </td>
 						</tr>
 					</table>

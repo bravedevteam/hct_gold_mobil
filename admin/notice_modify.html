@@ -54,27 +54,57 @@
 					<table class="tableBasic type--vertical">
 						<colgroup>
 							<col width="100" />
-							<col width="700" />
+							<col width="300" />
+							<col width="100" />
+							<col width="300" />
 						</colgroup>
 						<tr>
-							<th>구분</th>
+							<th>공지 구분</th>
 							<td>
                 <div class="selectBasic wpx150">
                   <select>
                     <option>선택</option>
-                    <option selected>공지사항</option>
+                    <option>공지</option>
+										<option selected>안내</option>
                     <option>이벤트</option>
+                  </select>
+                </div>
+              </td>
+							<th>게시여부</th>
+							<td>
+                <div class="selectBasic wpx150">
+                  <select>
+                    <option>선택</option>
+                    <option selected>게시</option>
+                    <option>미게시</option>
                   </select>
                 </div>
               </td>
 						</tr>
 						<tr>
+							<th>게시일</th>
+							<td colspan="3" class="ta-l">
+								<input type="radio" id="chk1_1" name="chk1">
+								<label for="chk1_1" class="ml10">상시</label>
+								<input type="radio" id="chk1_2" name="chk1" checked="checked">
+								<label for="chk1_2" class="ml100">기간 설정</label>
+
+								<div class="inputPicker ml100">
+									<input type="text" class="datepicker" placeholder="시작일">
+								</div>
+								<span class="hyp">~</span>
+								<div class="inputPicker">
+									<input type="text" class="datepicker" placeholder="종료일">
+								</div>
+							</td>
+						</tr>
+						<tr>
 							<th>제목</th>
-							<td><input type="text" class="inputBasic" value="한컴프라임 베타 오픈 공시"></td>
+							<td colspan="3"><input type="text" class="inputBasic" value="이벤트 제목"></td>
 						</tr>
             <tr>
 							<th>내용</th>
-							<td>
+							<td colspan="3">
                 <textarea>
 안녕하세요.
 
@@ -85,27 +115,12 @@
                 </textarea>
               </td>
 						</tr>
-            <tr>
-							<th>노출 구분</th>
-							<td>
-                <div class="row">
-                  <div class="selectBasic wpx150">
-                    <select>
-                      <option>선택</option>
-                      <option selected>노출</option>
-                      <option>비노출</option>
-                    </select>
-                  </div>
-                  <input type="checkbox" id="chk1_1" name="chk1" checked="checked">
-                  <label for="chk1_1" class="ml100">상단 고정</label>
-                </div>
-              </td>
-						</tr>
 					</table>
 				</div>
 				<div class="boxBtn">
 					<button type="button">취소</button>
 					<button type="button" class="submit">저장</button>
+					<button type="button" class="modify">삭제</button>
 					<div class="opt">
 						<button type="button" class="submit">미리보기</button>
 					</div>
