@@ -95,11 +95,40 @@
 					<button type="button">취소</button>
 					<button type="button" class="submit">등록</button>
 					<div class="opt">
-						<button type="button" class="submit">미리보기</button>
+						<button type="button" class="submit open--popup" data-pop="popFaqView">미리보기</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<div id="popFaqView" class="popupBasic type--preview">
+		<div class="contPreview">
+			<div class="headerArea">
+				<a href="#" class="btnPagePrev black close--popup">이전</a>
+				<h1 class="title">고객센터</h1>
+			</div>
+			<div class="tabText">
+				<button type="button">공지사항</button>
+				<button type="button" class="active">자주묻는 질문</button>
+			</div>
+			<div class="section">
+				<div class="listCustomer">
+					<h3 class="title">회원가입</h3>
+					<ul>
+						<li class="active">
+							<div class="top">
+								<div class="title">[개인] 미성년자도 가입 및 이용이 가능한가요?</div>
+							</div>
+							<div class="cont">
+								미성년자 회원님은 아로와나골드모어 서비스 이용이 불가능합니다. 만 19세 이상 내국인/외국인만 전체 서비스 이용이 가능합니다.
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="dim"></div>
 </body>
 </html>
