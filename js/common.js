@@ -88,12 +88,20 @@ $(function(){
 		}else if($("#"+target).hasClass("bottomLayer") || $("#"+target).hasClass("basicPopup")){
 			$("#"+target).addClass("active");
 			dim_open();
+		}else if($("#"+target).hasClass("voucherMore")){
+			$(window).scrollTop(0);
+			$("#"+target).addClass("active");
+			dim_open();
 		}else{
 			$("#"+target).addClass("active");
 		}
 	});
 
 	$(".layer--close").click(function(){
+		dim_close();
+	});
+
+	$(".popMore a").click(function(){
 		dim_close();
 	});
 
@@ -133,6 +141,13 @@ $(function(){
 			$(this).addClass("active");
 			$(".selectAttach .cont").slideDown(300);
 		}
+	});
+
+	$(".select.type--yak select").change(function(){
+		var _val = $(this).val();
+
+		$(".boxYak .innerBox").removeClass("active");
+		$(".boxYak .innerBox[data-value='"+_val+"']").addClass("active");
 	});
 
 
