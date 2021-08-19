@@ -753,6 +753,8 @@ h4.title span { font-size:12px; }
 
 /* Yak */
 .boxYak { padding:30px 18px; border-bottom:1px solid #f0f0f0; line-height:2; }
+.boxYak .innerBox { display:none; }
+.boxYak .innerBox.active { display:block; }
 .boxYak h3 { margin-bottom:10px; text-align:center; font-weight:500; font-size:14px; }
 .boxYak .title { font-weight:500; }
 .boxYak .cont+h3 { margin:20px 0 10px; }
