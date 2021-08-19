@@ -14,6 +14,7 @@ h3.title--ing { color:#2750f2; }
 h3.title--end { color:#999; }
 h3.title--application { color:#4fd884; }
 h4.title { margin-bottom:15px; font-size:12px; font-weight:300; text-align:left; }
+h4.title--small { margin-bottom:8px; font-size:13px; font-weight:500; }
 h4.title--medium { margin-bottom:11px; font-size:15px; font-weight:500; }
 h4.title--large { font-size:18px; font-weight:500; }
 h4.title span { font-size:12px; }

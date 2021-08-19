@@ -409,6 +409,9 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .listDetail.type--gray li .title { width:110px; float:left; color:#999; }
 .listDetail.type--gray li .cont { margin-left:115px; float:none; color:#000; text-align:left; }
 
+.listDetail.type--small li .title { width:40%; font-size:13px; }
+.listDetail.type--small li .cont { width:60%; font-size:13px; }
+
 .listDetail li.imp .title { color:#ff6363; }
 
 .listTable dt { display:block; margin-bottom:5px; font-size:15px; }
