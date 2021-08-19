@@ -544,8 +544,11 @@ h1 .tokenSelect { margin:0 auto; }
 .guide-text.boxPurple { padding:23px 18px 18px; background:#edeffa; font-size:15px; line-height:28px; border-radius:5px; color:#2c2c2c; font-weight:500; }
 .guide-text.boxPurple span { color:#2750f2; }
 .guide-text.bigDanger { padding:16px; color:#f22727; font-size:15px; font-weight:300; }
-.guide-text ul li { padding-left:10px; position:relative; text-align:left; }
-.guide-text ul li:after { content:'·'; position:absolute; left:2px; top:0; }
-.guide-text ul li+li { margin-top:2px; }
+.guide-text > ul li { padding-left:10px; position:relative; text-align:left; }
+.guide-text > ul li:after { content:'·'; position:absolute; left:2px; top:0; }
+.guide-text > ul li+li { margin-top:2px; }
+.guide-text .listDetail { color:#000; }
+.guide-text .listDetail .title { text-align:left; }
+.guide-text .listDetail .cont strong { color:#000; }
 
 .clear { clear:both; }
