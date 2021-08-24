@@ -4,7 +4,7 @@
 .section--large { padding:0 24px; }
 .section+.section { margin-top:10px; }
 
-h1.title { padding:34px 25px 25px; text-align:center; font-size:17px; font-weight:500; }
+h1.title { padding:21px 25px; text-align:center; font-size:17px; font-weight:500; }
 h2.title { padding:30px 10px; font-size:17px; font-weight:300; text-align:center; }
 h2.title.icon--exmark { margin-bottom:20px; padding:42px 0 0; background:url('../images/common/iconExMark.png') center 6px no-repeat; background-size:20px auto; }
 h3.title { padding:5px 11px; font-size:15px; font-weight:300; }
@@ -22,10 +22,10 @@ h4.title span { font-size:12px; }
 .btnLink { font-size:15px; color:#2750f2; }
 
 .headerArea { margin:0 15px; position:relative; }
-.headerArea .btnPagePrev { width:41px; height:49px; position:absolute; left:-15px; top:20px; background-image:url('../images/common/iconArrowWhite.png'); background-position:center center; background-repeat:no-repeat; background-size:12px auto; font-size:0; text-indent:-99999px; }
+.headerArea .btnPagePrev { width:41px; height:49px; position:absolute; left:-15px; top:7px; background-image:url('../images/common/iconArrowWhite.png'); background-position:center center; background-repeat:no-repeat; background-size:12px auto; font-size:0; text-indent:-99999px; }
 .headerArea .btnPagePrev.black { background-image:url('../images/common/iconArrowBlack.png'); }
-.headerArea .btnPageClose { width:40px; height:40px; position:absolute; left:-8px; top:26px; background:url('../images/common/iconCloseBlack.png') center center no-repeat; background-size:20px auto; font-size:0; text-indent:-99999px; }
-.headerArea .btnPageHome { width:52px; height:50px; position:absolute; right:-15px; top:20px; background:url('../images/common/iconHome.png') center center no-repeat; background-size:22px auto; font-size:0; text-indent:-99999px; }
+.headerArea .btnPageClose { width:40px; height:40px; position:absolute; left:-8px; top:13px; background:url('../images/common/iconCloseBlack.png') center center no-repeat; background-size:20px auto; font-size:0; text-indent:-99999px; }
+.headerArea .btnPageHome { width:52px; height:50px; position:absolute; right:-15px; top:7px; background:url('../images/common/iconHome.png') center center no-repeat; background-size:22px auto; font-size:0; text-indent:-99999px; }
 .headerArea .btnPageHome.black { background-image:url('../images/common/iconHomeBlack.png'); }
 .headerArea .btnInOut { position:absolute; right:0; top:40px; color:#f2f4f6; }
 
