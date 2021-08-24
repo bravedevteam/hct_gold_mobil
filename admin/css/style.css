@@ -434,7 +434,7 @@ label+input+label { margin-left:30px; }
 .contPreview .listCustomer li .cont { padding:24px 18px; background:rgba(240,240,240,0.2); border-bottom:1px solid #f0f0f0; font-size:15px; line-height:1.74 }
 
 .contPreview .select { position:relative; }
-.contPreview .select:after { content:''; width:11px; height:6px; position:absolute; right:13px; top:50%; margin-top:-3px; background:url('../images/common/iconSelect.png') center center no-repeat; background-size:100% auto; }
+.contPreview .select:after { content:''; width:11px; height:6px; position:absolute; right:13px; top:50%; margin-top:-3px; background:url('../images/iconSelect.png') center center no-repeat; background-size:100% auto; }
 .contPreview .select select { width:100%; height:50px; position:relative; padding:0 15px; border:1px solid #d5d5d5; border-radius:5px; background:transparent; font-size:15px; z-index:3; }
 .contPreview .select select option { padding:0 15px; }
 
