@@ -19,6 +19,11 @@ $(function(){
     $(this).parents(".popupBasic").fadeOut(300);
     dimClose();
   });
+
+  $(".close--popup").click(function(){
+    $(this).parents(".popupBasic").fadeOut(300);
+    dimClose();
+  });
 });
 
 function dimOpen(){ $("#dim").fadeIn(300); }
