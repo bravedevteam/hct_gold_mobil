@@ -825,6 +825,7 @@ h4.title span { font-size:12px; }
 .boxNotice table { width:100%; margin-bottom:20px; }
 .boxNotice table th { text-align:left; border:1px solid #d5d5d5; background:#f2f4f6; padding:5px 10px; font-size:15px; font-weight:300; }
 .boxNotice table td { border:1px solid #d5d5d5; padding:5px 10px; font-size:15px; }
+.boxNotice hr { margin:30px 0 20px; border:1px solid #333; }
 
 .boxCustomerLink { margin-bottom:40px; }
 .boxCustomerLink a { height:58px; display:block; position:relative; border-bottom:1px solid #f2f4f6; color:#999999; line-height:58px; font-size:15px; }
