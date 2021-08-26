@@ -77,7 +77,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:300; color:#2c2c2c; }
 .boxNewAssets .box { position:relative; box-shadow:0 3px 10px rgba(131,131,131,.31); border-radius:10px; overflow:hidden; }
 .boxNewAssets .box .bg { position:relative; z-index:1; }
 .boxNewAssets .box .bg img { width:100%; }
-.boxNewAssets .box .boxVoucher { position:absolute; right:15px; top:38%; text-align:right; z-index:5; line-height:1.4; }
+.boxNewAssets .box .boxVoucher { position:absolute; right:15px; top:30%; text-align:right; z-index:5; line-height:1.4; }
 .boxNewAssets .box .boxVoucher .priceGold { font-size:30px; color:#000; font-family:"SFProDisplay", 'Sans-serif'; font-weight:500; line-height:36px; }
 .boxNewAssets .box .boxVoucher .priceGold span { font-size:26px; }
 .boxNewAssets .box .boxVoucher .priceWon { font-size:16px; color:#936b07; }
@@ -342,4 +342,11 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:300; color:#2c2c2c; }
   .boxAssets .boxVoucher .priceGold { font-size:25px; }
   .boxAssets .boxVoucher .priceGold span { font-size:15px; }
   .boxAssets .boxVoucher .priceWon { font-size:12px; }
+
+  .boxNewAssets .box .boxVoucher .priceGold { font-size:26px; }
+  .boxNewAssets .box .boxVoucher .priceWon { font-size:14px; }
+  .boxNewAssets .box .btn button { font-size:14px; }
+
+  .boxQuickVoucher ul li a .title { font-size:13px; }
+  .boxQuickVoucher ul li a .cont { font-size:11px; }
 }
