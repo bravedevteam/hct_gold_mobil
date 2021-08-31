@@ -826,6 +826,8 @@ h4.title span { font-size:12px; }
 .boxNotice .cont .btn.type--full { display:block; }
 .boxNotice .cont .btn.type--full button { margin:0; }
 .boxNotice .cont .btn.type--full button+button { margin-top:10px; }
+.boxNotice .cont ul li { position:relative; padding-left:10px; }
+.boxNotice .cont ul li:after { content:'·'; position:absolute; left:2px; top:0; font-weight:700; }
 .boxNotice table { width:100%; margin-bottom:20px; }
 .boxNotice table th { text-align:left; border:1px solid #d5d5d5; background:#f2f4f6; padding:5px 10px; font-size:15px; font-weight:300; }
 .boxNotice table td { border:1px solid #d5d5d5; padding:5px 10px; font-size:15px; }
@@ -1153,7 +1155,10 @@ h4.title span { font-size:12px; }
 .boxBusinessModList div:nth-child(3n+3) { width:calc(33.3% - 6px); margin-right:0; }
 
 .boxTokenTop { margin-top:30px; padding:23px 0 17px; text-align:center; background:#3b0080; border-radius:5px; position:relative; color:#ffcc24; font-size:19px; font-weight:500; }
-.boxTokenTop:before { content:''; width:85px; height:78px; position:absolute; left:50%; top:-54px; background:url('../images/content/imgTokenTop.png') center top no-repeat; background-size:100% auto; }
+.boxTokenTop:before { content:''; width:85px; height:78px; position:absolute; left:50%; top:-54px; background:url('../images/content/imgTokenTop.png') center top no-repeat; background-size:100% auto; transform:translateX(-50%); }
+.boxTokenTop.type--add { margin-top:0; background:#beaedb; color:#88faff; }
+.boxTokenTop.type--add:before { width:100%; height:66px; left:auto; right:0; top:0; background-image:url('../images/content/imgTokenTop2.png'); transform:unset; background-size:auto 100%; background-position:right center; z-index:1; }
+.boxTokenTop.type--add span { position:relative; z-index:2; }
 
 @media screen and (max-width: 360px){
   .listSecurity li > a .opt .name { float:none; }

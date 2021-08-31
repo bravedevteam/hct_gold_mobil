@@ -96,6 +96,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 
 
 /* Margin */
+.ml5 { margin-left:5px !important; }
 .ml10 { margin-left:10px !important; }
 
 .mtb0 { margin:0px 0 !important; }
