@@ -75,6 +75,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .color--red { color:#c10000; }
 .color--blue { color:#2750f2; }
 
+.wpx50 { width:50px !important; }
+.wpx100 { width:100px !important; }
 .wpx150 { width:150px !important; }
 .w50 { width:50% !important; }
 .w100 { width:100%; }
@@ -89,6 +91,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 .mb35 { margin-bottom:35px !important; }
 .mb40 { margin-bottom:40px !important; }
 
+.mr10 { margin-right:10px !important; }
+
 .ml10 { margin-left:10px !important; }
 .ml50 { margin-left:50px !important; }
 .ml100 { margin-left:100px !important; }
@@ -102,6 +106,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 
 .inputBasic { width:100%; height:52px; padding:0 23px; border:1px solid #b1bfd5; border-radius:2px; font-size:17px; }
 .inputBasic:disabled { background:#ededed; }
+.inputBasic.small { width:70px; height:42px; padding:0 5px; text-align:center; }
 
 .btnBasic { width:110px; height:38px; display:inline-block; background:#5899ff; border-radius:2px; color:#fff; line-height:38px; text-align:center; font-size:17px; }
 .btnBasic.modify { background:#c10000; }
@@ -343,11 +348,13 @@ input[type="checkbox"]:checked + label:after { content:''; width:12px; height:12
 label+input+label { margin-left:30px; }
 
 .row { display:flex; position:relative; align-items:center; }
+.row+.row { margin-top:20px; }
 .row.is--division input { width:100%; margin-right:118px; }
 .row.is--division button { position:absolute; right:0; top:0; }
 .row.is--division button.btnBasic { width:110px; height:52px; background:#2750f2; }
 .row.is--half > * { width:50%; }
 .row.is--flex > * { flex:1; }
+.row.type--vertical { flex-direction:column; align-items:flex-start; }
 
 #wrap.page--dashboard:before { display:none; }
 #wrap.page--dashboard #container { margin:0; }
