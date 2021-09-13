@@ -330,6 +330,15 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .boxCertifySix .limit.danger { color:#ff6363; }
 .boxCertifySix .retry { color:#2750f2; font-size:17px; }
 
+.boxDepositCertify { position:relative; display:flex; justify-content: space-between; }
+.boxDepositCertify input { position:absolute; left:-999999px; top:0; opacity:0; }
+.boxDepositCertify label { width:calc(50% - 5px); height:82px; display:flex; flex-direction:column; align-items:center; justify-content:center; border:1px solid #d5d5d5; border-radius:5px; }
+.boxDepositCertify label:before { content:''; width:28px; height:22px; margin-bottom:12px; display:block; background-position:center; background-size:100% auto; background-repeat:no-repeat; }
+.boxDepositCertify label.iconPay1:before { background-image:url('../images/content/iconCertifyPay1.png'); }
+.boxDepositCertify label.iconPay2:before { background-image:url('../images/content/iconCertifyPay2.png'); }
+.boxDepositCertify input:checked + label { border-color:#2750f2; }
+
+
 .boxCheckBlue { position:relative; }
 .boxCheckBlue:after { content:''; display:block; clear:both; visibility:visible; }
 .boxCheckBlue input { position:absolute; left:-99999px; top:0; opacity:0; }
@@ -542,6 +551,8 @@ h1 .tokenSelect { margin:0 auto; }
 .guide-text.type--line { padding:0 0 0 10px; position:relative; font-size:15px; color:#000; letter-spacing:-.075em; }
 .guide-text.type--line:before { content:'-'; position:absolute; left:0; top:0; }
 .guide-text.type--line+.guide-text { margin-top:5px; }
+.guide-text.type--imp { padding-left:15px; position:relative; }
+.guide-text.type--imp:before { content:'※'; position:absolute; left:0; top:0; }
 .guide-text.boxGray { padding:8px; background:#f2f4f6; text-align:center; border-radius:5px; }
 .guide-text.boxPurple { padding:23px 18px 18px; background:#edeffa; font-size:15px; line-height:28px; border-radius:5px; color:#2c2c2c; font-weight:500; }
 .guide-text.boxPurple span { color:#2750f2; }
@@ -552,5 +563,7 @@ h1 .tokenSelect { margin:0 auto; }
 .guide-text .listDetail { color:#000; }
 .guide-text .listDetail .title { text-align:left; }
 .guide-text .listDetail .cont strong { color:#000; }
+
+.guide-small { display:block; color:rgba(0,0,0,0.5); font-size:12px; }
 
 .clear { clear:both; }

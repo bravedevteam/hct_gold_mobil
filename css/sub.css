@@ -896,31 +896,31 @@ h4.title span { font-size:12px; }
 .boxTradeHidden input { position:absolute; left:-99999px; top:0; opacity:0; }
 .boxTradeHidden label { max-height:85px; padding-bottom:10px; display:block; position:relative; transition:all .3s ease; overflow:hidden; }
 .boxTradeHidden label:last-of-type { padding-bottom:0; }
-.boxTradeHidden label:before { content:''; width:20px; height:20px; position:absolute; left:20px; top:28px; border-radius:20px; border:1px solid #2750f2; background:#fff; z-index:10; }
+.boxTradeHidden label:before { content:''; width:20px; height:20px; position:absolute; left:20px; top:28px; border-radius:20px; border:1px solid #d4d8db; background:#fff; z-index:10; }
 .boxTradeHidden input[type="radio"]:checked + label { max-height:500px; }
 .boxTradeHidden input[type="radio"]:checked + label:after { content:''; width:12px; height:12px; position:absolute; left:25px; top:33px; border-radius:12px; background:#2750f2; z-index:11; }
 .boxTradeHidden label .guide-text { max-height:0; overflow:hidden; transition:max-height .3s ease; }
 .boxTradeHidden input[type="radio"]:checked + label .guide-text { max-height:500px; }
-.boxTradeHidden label.chk_arowana:before { border-color:#c4c2c2; background:#7b7b7b; }
 .boxTradeHidden input[type="radio"]:checked + label.chk_arowana:before { border-color:#2750f2; background:#fff; }
 .boxTradeHidden .hiddenBox .item { height:75px; padding:0 26px; margin-bottom:10px; position:relative; display:block; border-radius:20px; overflow:hidden; transition:all .3s ease; }
 .boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--hancom .item { height:152px; box-shadow: 0 7px 5px 0 rgba(48, 68, 160, 0.44); }
-.boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--account .item { height:250px; box-shadow: 0 7px 5px 0 rgba(39, 80, 242, 0.47); }
+.boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--account .item { height:152px; box-shadow: 0 7px 5px 0 rgba(48, 68, 160, 0.44); }
 .boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--arowana .item { height:240px; box-shadow: 0 7px 5px 0 rgba(39, 80, 242, 0.47); background:#2750f2; }
 .boxTradeHidden .hiddenBox.type--hancom .item { background:#092159; }
-.boxTradeHidden .hiddenBox.type--account .item { background:#2750f2; }
-.boxTradeHidden .hiddenBox.type--arowana .item { background:#999; }
+.boxTradeHidden .hiddenBox.type--account .item { background:#4c00cf; }
+.boxTradeHidden .hiddenBox.type--arowana .item { background:#2750f2; }
 .boxTradeHidden .hiddenBox .item .top { height:75px; padding:0 2px 0 36px; overflow:hidden; line-height:75px; }
-.boxTradeHidden .hiddenBox.type--arowana .item .top { position:absolute; left:26px; right:26px; background:#999; z-index:2; }
+.boxTradeHidden .hiddenBox.type--arowana .item .top { position:absolute; left:26px; right:26px; background:#2750f2; z-index:2; }
 .boxTradeHidden input[type="radio"]:checked + label .hiddenBox.type--arowana .item .top { display:none; }
-.boxTradeHidden .hiddenBox .item .top .title { float:left; color:#fff; font-size:20px; }
+.boxTradeHidden .hiddenBox .item .top .title { float:left; color:#fff; font-size:20px; font-weight:500; }
 .boxTradeHidden .hiddenBox.type--hancom .item .top .title { width:143px; height:100%; background:url('../images/content/imgVoucherHancom.png') left center no-repeat; background-size:100% auto; font-size:0; text-indent:-99999px; }
 .boxTradeHidden .hiddenBox.type--account .item > .cont { padding-top:20px; border-top:1px solid #1735aa; }
+.boxTradeHidden .hiddenBox.type--account .item .top .title { padding-left:26px; background:url('../images/content/iconVoucherVirtual.png') left  center no-repeat; background-size:18px auto; font-size:17px; }
 .boxTradeHidden .hiddenBox.type--account .item .listDetail li .title,
 .boxTradeHidden .hiddenBox.type--account .item .listDetail li .cont { font-size:15px; color:#fff; }
 .boxTradeHidden .hiddenBox.type--account .item .listDetail li:first-child .title { color:#ffd800; font-weight:500; }
 .boxTradeHidden .hiddenBox.type--account .item .listDetail li:first-child .cont { color:#ffd800; font-weight:500; font-size:20px; }
-.boxTradeHidden .hiddenBox.type--arowana .item .top .title { padding-left:26px; background:url('../images/content/iconVoucherARW.png') left center no-repeat; background-size:18px auto; font-weight:500; }
+.boxTradeHidden .hiddenBox.type--arowana .item .top .title { padding-left:26px; background:url('../images/content/iconVoucherARW.png') left center no-repeat; background-size:18px auto; }
 .boxTradeHidden .hiddenBox .item .top .subject { float:right; text-align:right; color:#fff; font-size:15px; }
 .boxTradeUse { margin-bottom:8px; padding:24px 26px 32px; background:#29c1cf; border-radius:20px; box-shadow: 0 7px 5px 0 rgba(41, 193, 207, 0.2); text-align:center; }
 .boxTradeHidden .hiddenBox .item .price { height:75px; display:flex; border-top:1px solid #464b64; text-align:center; color:#fff; align-items:center; justify-content:center; font-size:15px; }

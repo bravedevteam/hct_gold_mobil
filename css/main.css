@@ -211,7 +211,8 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:300; color:#2c2c2c; }
 .boxVoucherUse .list { margin:0 15px; border:1px solid #ddd; border-radius:10px; overflow:hidden; }
 .boxVoucherUse .list a { display:block; padding:33px 25px 23px 87px; margin-left:17px; position:relative; border-top:1px solid #ddd; letter-spacing:-.08em; }
 .boxVoucherUse .list a:before { content:''; width:36px; height:36px; position:absolute; left:24px; top:40px; background-repeat:no-repeat; background-size:100% auto; background-position:center center; }
-.boxVoucherUse .list a:nth-child(1):before { border-top:0; background-image:url('../images/main/iconVoucherUse1.png'); }
+.boxVoucherUse .list a:nth-child(1) { border-top:0; }
+.boxVoucherUse .list a:nth-child(1):before { background-image:url('../images/main/iconVoucherUse1.png'); }
 .boxVoucherUse .list a:nth-child(2):before { background-image:url('../images/main/iconVoucherUse2.png'); }
 .boxVoucherUse .list a:nth-child(3):before { background-image:url('../images/main/iconVoucherUse3.png'); }
 .boxVoucherUse .list .linkTit { margin-bottom:8px; font-size:17px; color:#000; line-height:25px; }
@@ -300,7 +301,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:300; color:#2c2c2c; }
 .boxDigitalPawn li a.type--wait { background:#999; }
 .boxDigitalPawn li a.type--wait:after { display:none; }
 
-.boxDigitalGold { padding:0 0 76px; overflow:hidden; }
+.boxDigitalGold { padding:40px 0 76px; overflow:hidden; }
 .boxDigitalGold .title { margin:0 15px 11px; font-size:18px; color:#2c2c2c; font-weight:500; }
 .boxDigitalGold .swiper-container { overflow:visible; }
 .boxDigitalGold .swiper-slide { padding:0 15px; }
@@ -329,7 +330,7 @@ h4.title { margin-bottom:15px; font-size:15px; font-weight:300; color:#2c2c2c; }
 
 
 /* Customer Link */
-.listCustomer { margin:0 23px; padding-bottom:16px; }
+.listCustomer { margin:0 15px; padding-bottom:16px; }
 .listCustomer li+li { border-top:1px solid #f2f4f6; }
 .listCustomer li a { height:58px; position:relative; display:block; color:#070707; font-size:15px; line-height:58px; }
 .listCustomer li a:after { content:''; width:6px; height:10px; position:absolute; right:6px; top:50%; margin-top:-5px; background:url('../images/common/iconArrow.png') center center no-repeat; background-size:100% auto; }
