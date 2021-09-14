@@ -291,7 +291,7 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .bottomLayer .layerTop { margin-bottom:10px; }
 .bottomLayer .layerTop:after { content:''; display:block; clear:both; }
 .bottomLayer .layerTop .title { float:left; margin:0; font-size:17px; font-weight:500; }
-.bottomLayer .layerTop .mark_status { width:48px; height:22px; margin:2px 0 0 10px; float:left; border:1px solid #5facdd; border-radius:11px; text-align:center; line-height:20px; font-size:10px; color:#5facdd; }
+.bottomLayer .layerTop .mark_status { width:60px; height:22px; margin:2px 0 0 10px; float:left; border:1px solid #5facdd; border-radius:11px; text-align:center; line-height:20px; font-size:10px; color:#5facdd; }
 .bottomLayer .layerTop .mark_status.is--ing { border-color:#4fd884; color:#4fd884; }
 .bottomLayer .layerTop .mark_status.is--cancel { border-color:#ff7474; color:#ff7474; }
 .bottomLayer .footer--btn { position:absolute; }
