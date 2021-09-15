@@ -357,7 +357,7 @@ h4.title span { font-size:12px; }
 .boxAccountList .cont .info .price { font-size:17px; font-weight:500; color:#2750f2; font-family:"SFProDisplay", 'Sans-serif'; }
 .boxAccountList .cont .info .price.out { color:#000; }
 .boxAccountList .cont .info .total { font-size:15px; color:#999; font-family:"SFProDisplay", 'Sans-serif'; }
-.boxAccountList.voucher .cont .title .status { color:#ffdf31; }
+.boxAccountList.voucher .cont .title .status { color:#5facdd; }
 .boxAccountList.voucher .cont .title .status.ing { color:#4fd884 }
 .boxAccountList.voucher .cont .title .status.error { color:#ff6363; }
 .boxAccountList .noData { padding:100px 10px; font-size:17px; text-align:center; }
