@@ -567,3 +567,7 @@ h1 .tokenSelect { margin:0 auto; }
 .guide-small { display:block; color:rgba(0,0,0,0.5); font-size:12px; }
 
 .clear { clear:both; }
+
+.ui-datepicker { width:24em; }
+.ui-datepicker table { font-size:1em; }
+.ui-datepicker td span, .ui-datepicker td a { height:3em; padding:0.5em; }
