@@ -402,6 +402,7 @@ label+input+label { margin-left:30px; }
 .popupBasic .tableBasic.type--vertical tr td a { display:inline-block; margin-left:30px; text-decoration:underline; color:#2750f2; }
 
 .popupBasic.type--preview { width:390px; height:667px; border-radius:0; overflow:auto; }
+.popupBasic.type--large { width:1000px; }
 
 .contPreview { position:relative; background:#fff; }
 .contPreview .headerArea { margin:0 15px; position:relative; }
