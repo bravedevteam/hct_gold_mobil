@@ -22,7 +22,7 @@
 					<li><a href="#" class="icon3">금 예치/인출</a></li>
 					<li><a href="#" class="icon4">상품관리</a></li>
 					<li><a href="#" class="icon5">디지털전당포</a></li>
-					<li class="on"><a href="#" class="icon6">바우처판매</a></li>
+					<li class="on"><a href="#" class="icon6">디지털 금 판매관리</a></li>
 					<li><a href="#" class="icon7">입출금관리</a></li>
 					<li><a href="#" class="icon8">운영관리</a></li>
 					<li><a href="#" class="icon9">시스템관리</a></li>
@@ -34,15 +34,15 @@
 			</div>
 		</header>
 		<div id="lnb">
-			<h2 class="icon6">바우처판매</h2>
+			<h2 class="icon6">디지털 금 판매관리</h2>
 			<ul>
-				<li class="on"><a href="#"><span>바우처 판매내역</span></a></li>
+				<li class="on"><a href="#"><span>디지털 금 환매내역</span></a></li>
 			</ul>
 		</div>
 		<div id="container">
 			<div class="titCont">
 				<div class="title">환매승인</div>
-				<div class="info">메인 > <a href="#">바우처 판매/환매내역</a> > <a href="#">판매등록(법인계좌)</a></div>
+				<div class="info">메인 > <a href="#">디지털 금 판매/환매내역</a> > <a href="#">환매승인</a></div>
 			</div>
 			<div class="wrapCont">
 				<div class="boxCont">
@@ -59,44 +59,24 @@
 							<td colspan="3" class="ta-l">
 								<input type="radio" id="chk1_1" name="chk1" />
 								<label for="chk1_1">개인회원</label>
-								<input type="radio" id="chk1_2" name="chk1" checked="checked" />
-								<label for="chk1_2" class="ml100">기업회원</label>
 							</td>
 						</tr>
 						<tr>
-							<th>사업자</th>
-							<td>기업 1</td>
-              <th>아이디</th>
-							<td>abc@email.com</td>
+							<th>아이디</th>
+							<td>abc@naver.com</td>
+              <th>회원명</th>
+							<td>김골드</td>
 						</tr>
 						<tr>
-							<th>사업자 유형</th>
-							<td>법인 사업자</td>
-							<th>사업자 등록번호</th>
-							<td>000-00-00000</td>
-						</tr>
-						<tr>
-							<th>대표자명</th>
-							<td>홍길동</td>
+							<th>보안레벨</th>
+							<td>2</td>
 							<th>휴대폰번호</th>
-							<td>010-1234-5678</td>
-						</tr>
-						<tr>
-							<th>사업장 주소</th>
-							<td>서울특별시 종로구 돈의동 돈화문로5가길 1, 3층(우편번호 16990)</td>
-							<th>직원수</th>
-							<td>12 명</td>
-						</tr>
-						<tr>
-							<th>담당자명</th>
-							<td>홍길서</td>
-							<th>담당자 휴대폰번호</th>
-							<td>010-1234-5678</td>
+							<td>01012345678</td>
 						</tr>
 					</table>
 				</div>
 				<div class="boxCont">
-					<h4 class="title">바우처 환매 신청 정보</h4>
+					<h4 class="title">디지털 금 환매 신청 정보</h4>
 					<table class="tableBasic type--vertical">
 						<colgroup>
 							<col width="100" />
@@ -105,27 +85,53 @@
 							<col width="300" />
 						</colgroup>
 						<tr>
-							<th>바우처 보유량</th>
-							<td>34.54g</td>
+							<th>디지털 금 보유량</th>
+							<td>108.68g</td>
 							<th>환매신청량</th>
-							<td>34.54g (1g=63,456 원)</td>
+							<td>10.1g</td>
+						</tr>
+						<tr>
+							<th>환매 적용 시세</th>
+							<td>65,288원</td>
+							<th>환매 시세율</th>
+							<td>108%</td>
 						</tr>
 						<tr>
 							<th>환매 수수료</th>
-							<td>34,456원</td>
+							<td>6,594원</td>
 							<th>환매금액</th>
-							<td>123,345,678원</td>
+							<td>652,815원</td>
+						</tr>
+						<tr>
+							<th>환매 수수료율</th>
+							<td>4%</td>
+							<th>환매 신청 일시</th>
+							<td>2021.10.25 12:55:20</td>
 						</tr>
 						<tr>
 							<th>은행명</th>
-							<td>신한은행</td>
+							<td>
+								<div class="row is--half">
+									<div class="selectBasic">
+										<select>
+											<option>은행명</option>
+											<option>-</option>
+											<option>-</option>
+										</select>
+									</div>
+								</div>
+							</td>
 							<th>계좌번호</th>
-							<td>34987523984759</td>
+							<td>
+								<div class="row is--half">
+									<input type="text" value="489572943785234" class="inputBasic" />
+								</div>
+							</td>
 						</tr>
 					</table>
 				</div>
 				<div class="boxCont">
-					<h4 class="title">환매승인</h4>
+					<h4 class="title">환매 처리 내역</h4>
 					<table class="tableBasic type--vertical">
 						<colgroup>
 							<col width="100" />
@@ -138,8 +144,8 @@
 							<td>
 								<div class="row is--half">
 									<div class="selectBasic">
-										<select disabled="disabled">
-											<option>승인완료</option>
+										<select>
+											<option>승인 대기중</option>
 											<option>-</option>
 											<option>-</option>
 										</select>
@@ -149,20 +155,15 @@
 							<th>메모</th>
 							<td>
 								<div class="row is--half">
-									<input type="text" value="정상 승인처리" class="inputBasic" disabled="disabled" />
+									<input type="text" value="환매 입금 준비 중" class="inputBasic" />
 								</div>
 							</td>
 						</tr>
-            <tr>
-              <th>처리일시</th>
-              <td>2021.05.21</td>
-              <th>승인자</th>
-              <td>관리자1</td>
-            </tr>
 					</table>
 				</div>
 				<div class="boxBtn">
-					<button type="button" class="submit">확인</button>
+					<button type="button">취소</button>
+					<button type="button" class="submit">저장</button>
 				</div>
 			</div>
 		</div>
