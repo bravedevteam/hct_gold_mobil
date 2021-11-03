@@ -445,6 +445,7 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .row.division_half { display:flex; }
 .row.division_half > div { flex: 1; }
 .row.division_half > div+div { margin-left:5px; }
+.row.division_between { display:flex; justify-content:space-between; }
 
 
 /* Input */
