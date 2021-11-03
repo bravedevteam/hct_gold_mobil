@@ -255,7 +255,7 @@ a.type--link+button { margin-left:40px; }
 #container .wrapCont .boxSearch .inputPicker { margin:0 5px 0 0; }
 #container .wrapCont .boxSearch .inputPicker input { margin-right:0; }
 #container .wrapCont .boxSearch span.hyp { height:30px; display:inline-block; margin:0 5px 0 0; line-height:30px; }
-#container .wrapCont .boxSearch select { width:162px; background:url('../images/iconSelect.png') 134px center no-repeat; }
+#container .wrapCont .boxSearch select { min-width:162px; padding-right:50px; background:url('../images/iconSelect.png') calc(100% - 18px) center no-repeat; }
 #container .wrapCont .boxSearch input.datepicker { width:224px; }
 #container .wrapCont .boxSearch input.searchText { width:300px; }
 #container .wrapCont .boxSearch .btn { position:absolute; right:28px; top:38px; overflow:hidden; }
