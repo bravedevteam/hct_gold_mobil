@@ -133,7 +133,7 @@ a.type--link+a.type--link { margin-left:80px; }
 a.type--link+button { margin-left:40px; }
 
 .boxBtn { position:relative; margin:70px 0; text-align:center; }
-.boxBtn button { width:110px; height:52px; border-radius:2px; font-size:17px; background:#273444; color:#fff; }
+.boxBtn button { min-width:110px; height:52px; padding:0 20px; border-radius:2px; font-size:17px; background:#273444; color:#fff; }
 .boxBtn button+button { margin-left:16px; }
 .boxBtn .submit { background:#2750f2; }
 .boxBtn .modify { background:#c10000; }
