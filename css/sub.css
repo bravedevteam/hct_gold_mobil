@@ -457,7 +457,7 @@ h4.title span { font-size:12px; }
 .listSecurity li > a .btn.type--certify button.active.iconOTP:before { width:12px; height:12px; left:10px; background-image:url('../images/common/iconComplate.png') }
 .listSecurity li > a .btn.type--certify button+button { margin-left:8px; }
 
-.btnReset { width:calc(100% - 36px); height:50px; display:block; margin:15px 18px 0; border-radius:14px; background:#fff; border:1px solid #f2f4f6; color:#2c2c2c; font-size:13px; font-weight:500; }
+.btnReset { width:calc(100% - 36px); height:50px; display:block; margin:15px 18px 0; border-radius:14px; background:#fff; border:1px solid #d5d5d5; color:#2c2c2c; font-size:13px; font-weight:500; }
 
 
 /* Gold Service */
