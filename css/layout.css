@@ -208,6 +208,7 @@ span.en { font-family:"SFProDisplay", 'Sans-serif'; }
 .boxBtn.center { text-align:center; }
 .boxBtn.btn--full { display:flex; }
 .boxBtn.btn--full button { flex:1; }
+.boxBtn.btn--full .btnBasic+.btnBasic { margin-left:8px; }
 .boxBtn.btn--join button { position:relative; }
 .boxBtn.btn--join button+button:after { content:''; width:1px; height:90px; position:absolute; left:0; top:50%; margin-top:-45px; background:#f2f4f6; }
 
@@ -350,8 +351,8 @@ i.icon--clock { width:16px; height:16px; margin:-2px 2px 0 0; display:inline-blo
 .basicPopup .cont { text-align:center; font-size:17px; font-weight:500; }
 .basicPopup .cont.icon--complete { margin-bottom:30px; padding-top:82px; background:url('../images/common/iconExMarkBlack.png') center 10px no-repeat; background-size:36px; }
 .basicPopup .cont .subject { margin-top:8px; font-weight:300; font-size:15px; }
-.basicPopup .boxBtn button:first-child { margin-right:4px; }
-.basicPopup .boxBtn button:last-child { margin-left:4px; }
+.basicPopup ul li { padding-left:10px; position:relative; text-align:left; font-weight:300; font-size:15px; }
+.basicPopup ul li:before { content:''; width:3px; height:3px; position:absolute; left:0; top:11px; border-radius:50%; background:#000; }
 .basicPopup .box { margin-top:20px; font-weight:300; }
 
 .basicPopup.popEvent { width:90%; max-height:100%; max-width:300px; left:50%; right:auto; padding:0; transform:translate(-50%, -50%); overflow:auto; }

@@ -22,28 +22,6 @@
       <button type="button">자주묻는 질문</button>
       <button type="button" class="active">1:1 문의</button>
     </div>
-		<div class="section mt30">
-			<h3 class="title">이메일 주소</h3>
-			<div class="row">
-				<input type="text" class="inputBasic" placeholder="정보를 입력하세요" value="abcds@naver.com" disabled="disabled" />
-			</div>
-		</div>
-		<div class="section">
-			<h3 class="title">휴대폰 번호</h3>
-			<div class="row">
-				<input type="number" class="inputBasic" placeholder="-없이 번호 입력" value="01012345678" />
-			</div>
-		</div>
-		<div class="section mb50">
-			<h3 class="title">문의항목</h3>
-			<div class="row">
-				<div class="select">
-					<select>
-						<option>문의 분야 선택</option>
-					</select>
-				</div>
-			</div>
-		</div>
 		<div class="section">
 			<h3 class="title">제목</h3>
 			<div class="row">
@@ -57,23 +35,22 @@
 				<div class="boxTACount">0 / 500자</div>
 			</div>
 		</div>
-		<div class="section">
-			<h3 class="title">파일첨부</h3>
-			<div class="row">
-				<div class="filebox boxBlue">
-          <input type="text" class="uploadName">
-          <label for="upload_1">파일찾기</label>
-          <input type="file" id="upload_1" class="uploadHidden">
-        </div>
-				<div class="guide-text">* 첨부 가능한 확장자는 jpg, jpeg, gif, png입니다.</div>
-				<div class="guide-text type-dot mt50">문의 접수는 24시간 가능하며 답변은 평일 10:00 ~ 18:00시 이메일로 보내 드립니다.</div>
-				<div class="guide-text type-dot">답변 등록 시 고객님의 휴대폰 번호로 알림톡 또는 SMS로 알림 메시지가 발송됩니다.</div>
-				<div class="guide-text type-dot">문의 처리 결과는 고객센터 > 1:1문의에서 확인 가능합니다.</div>
-			</div>
-		</div>
 		<div class="footer--btn">
-			<button type="button" class="btnBasic active">등록하기</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
+			<button type="button" class="btnBasic active layer--open" data-pop="popWrite">등록하기</button><!-- 입력 폼에 따른 동작시 활성화 클래스 'active' 추가-->
 		</div>
 	</div>
+
+	<div id="popWrite" class="basicPopup">
+    <div class="cont icon--complete">
+      <ul>
+				<li>문의하신 내용 등록이 완료되었습니다.</li>
+				<li>문의 처리 결과는 고객센터 > 1:1문의에서 확인 가능합니다.</li>
+			</ul>
+    </div>
+    <div class="boxBtn btn--full">
+      <button type="button" class="btnBasic bgBlue layer--close">확인</button>
+    </div>
+  </div>
+  <div id="dim"></div>
 </body>
 </html>

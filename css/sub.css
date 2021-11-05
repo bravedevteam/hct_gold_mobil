@@ -418,10 +418,12 @@ h4.title span { font-size:12px; }
 .listSecurity li > a.active .lv { background:#2750f2; border:0; color:#fff; line-height:24px; }
 .listSecurity li > a.active .lv:before { content:'Level'; position:absolute; left:50%; bottom:100%; transform:translateX(-50%); color:#2750f2; line-height:1; }
 .listSecurity li > a .opt { position:absolute; right:20px; top:20px; }
+
 .listSecurity li > a .opt .name { height:26px; float:left; line-height:26px; color:#a1a4a7; }
 .listSecurity li > a .opt .link { height:26px; float:left; margin-left:5px; padding:0 10px; border:1px solid #d5d5d5; border-radius:5px; line-height:24px; letter-spacing:-.06em; }
 .listSecurity li > a .title { margin-bottom:15px; font-size:17px; color:rgba(0,0,0,0.4); font-weight:500; }
 .listSecurity li > a .title span { margin-left:5px; font-size:12px; color:#28edff; font-weight:300; }
+.listSecurity li > a .title .btnReset { padding:0 10px; height:24px; display:block; margin-top:5px; border-radius:24px; background:#2750F2; color:#fff; font-size:12px; }
 .listSecurity li > a.complate .title { color:#2c2c2c; }
 .listSecurity li > a .item { color:rgba(0,0,0,0.4); letter-spacing:-0.06em; }
 .listSecurity li > a.active .title,
@@ -842,24 +844,21 @@ h4.title span { font-size:12px; }
 .listInquery li { position:relative; border-bottom:1px solid #f0f0f0; }
 .listInquery li:after { content:'답변대기'; position:absolute; right:18px; bottom:22px; color:#2750f2; font-weight:500; font-size:13px; }
 .listInquery li.complate:after { content:'답변완료'; color:#ff7474; }
-.listInquery li a { display:block; padding:22px 18px 46px; }
-.listInquery li .top { margin-bottom:10px; overflow:hidden; }
-.listInquery li .top .title { float:left; font-size:15px; font-weight:500; }
-.listInquery li .top .date { float:right; margin-top:2px; color:#d5d5d5; text-align:right; }
-.listInquery li .cont { font-size:15px; }
+.listInquery li a { display:block; padding:22px 18px; }
+.listInquery li .title { font-size:15px; font-weight:500; }
+.listInquery li .date { margin-top:5px; color:#d5d5d5; }
 
 .boxInquery {  }
-.boxInquery .topArea { padding:22px 18px 46px; position:relative; border-bottom:1px solid #f0f0f0; }
+.boxInquery .topArea { padding:22px 18px; position:relative; border-bottom:1px solid #f0f0f0; }
 .boxInquery .topArea:after { content:'답변대기'; position:absolute; right:18px; bottom:22px; color:#2750f2; font-weight:500; font-size:13px; }
 .boxInquery .topArea.complate:after { content:'답변완료'; color:#ff7474; }
-.boxInquery .topArea .top { margin-bottom:10px; overflow:hidden; }
-.boxInquery .topArea .top .title { float:left; font-size:15px; font-weight:500; }
-.boxInquery .topArea .top .date { float:right; margin-top:2px; color:#d5d5d5; text-align:right; }
+.boxInquery .topArea .title { font-size:15px; font-weight:500; }
+.boxInquery .topArea .date { margin-top:5px; color:#d5d5d5; }
 .boxInquery .topArea .cont { font-size:15px; }
 .boxInquery .content { padding:22px 18px; border-bottom:1px solid #f0f0f0; font-size:15px; }
 .boxInquery .inquery { padding:22px 0 18px; background:rgba(240,240,240,0.2); border-bottom:1px solid #f0f0f0; }
 .boxInquery .inquery .top { position:relative; padding:0 18px; margin-bottom:23px; overflow:hidden; }
-.boxInquery .inquery .top:after { content:''; width:11px; height:13px; position:absolute; left:2px; top:50%; background:url('../images/common/iconInquery.png') center center no-repeat; background-size:100% auto; transform:translateY(-50%); }
+.boxInquery .inquery .top:after { content:''; width:11px; height:12px; position:absolute; left:2px; top:50%; background:url('../images/common/iconInquery.png') center center no-repeat; background-size:100% auto; transform:translateY(-50%); }
 .boxInquery .inquery .top .title { float:left; font-size:15px; font-weight:500; }
 .boxInquery .inquery .top .date { float:right; margin-top:2px; color:#d5d5d5; text-align:right; }
 .boxInquery .inquery .cont { padding:0 18px; font-size:15px; line-height:26px; }

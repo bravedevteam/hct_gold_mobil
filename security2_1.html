@@ -43,8 +43,8 @@
         <li>
           <a href="#" class="complate">
             <div class="lv">2</div>
-            <div class="title">지문 / OTP 인증</div>
-            <div class="item">대출신청, 디지털 금 구매, 금 인출 신청</div>
+            <div class="title">지문 / OTP 인증 <button type="button" class="btnReset layer--open" data-pop="popReset">지문/OTP 초기화</button></div>
+            <div class="item">대금지급, 출금 등 모든 서비스 이용 가능</div>
             <div class="opt">
               <div class="process">인증완료</div>
             </div>
@@ -68,5 +68,17 @@
 			<button type="button" class="btnText">안전을 위해 주기적인 비밀번호 변경을 권장합니다.</button>
 		</div>
   </div>
+
+  <div id="popReset" class="basicPopup">
+    <div class="cont mb30">
+      <div>지문/OTP 등록을<br />초기화 하시겠습니까?</div>
+      <div class="subject">지문/OTP 초기화하시면<br />보안 레벨이 1로 다운됩니다.</div>
+    </div>
+    <div class="boxBtn btn--full">
+      <button type="button" class="btnBasic layer--close">취소</button>
+      <button type="button" class="btnBasic active layer--close">초기화</button>
+    </div>
+  </div>
+  <div id="dim"></div>
 </body>
 </html>
