@@ -131,6 +131,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
 a.type--link { font-size:17px; color:#2750f2; }
 a.type--link+a.type--link { margin-left:80px; }
 a.type--link+button { margin-left:40px; }
+a.underLink { color:#2750f2; text-decoration:underline; font-weight:700; }
 
 .boxBtn { position:relative; margin:70px 0; text-align:center; }
 .boxBtn button { min-width:110px; height:52px; padding:0 20px; border-radius:2px; font-size:17px; background:#273444; color:#fff; }
