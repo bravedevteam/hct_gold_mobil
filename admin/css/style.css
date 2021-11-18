@@ -152,7 +152,7 @@ a.underLink { color:#2750f2; text-decoration:underline; font-weight:700; }
 #header .topInfo .btnLogout:after { content:''; width:40px; height:40px; margin:-20px 0 0 -20px; position:absolute; left:50%; top:50%; background:url('../images/split.png') 0 -80px no-repeat; }
 
 #nav { height:100px; margin:0 248px 0 168px; overflow-x:auto; overflow-y:hidden; }
-#nav ul { width:814px; height:100%; overflow:hidden; }
+#nav ul { width:max-content; height:100%; overflow:hidden; }
 #nav li { height:100%; float:left; }
 #nav li a { height:100%; padding:0 16px; display:flex; align-items:center; justify-content:center; color:#c1c1c1; font-size:14px; }
 #nav li a:hover, #nav li.on a { background-color:#202e3f; color:#4880ff; }
